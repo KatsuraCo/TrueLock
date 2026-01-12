@@ -46,7 +46,7 @@
   <main id="top">
     <section class="section hero">
       <div class="container hero-stack">
-        <div class="hero-block">
+        <div class="hero-block" style=" display: flex;">
           <div class="hero-copy reveal">
             <div class="eyebrow" data-i18n="hero_eyebrow"></div>
             <h1 data-i18n="hero_title"></h1>
@@ -57,10 +57,14 @@
               <a class="btn ghost" href="#breakthrough" data-i18n="cta_secondary"></a>
             </div>
           </div>
-          <div class="media-frame reveal" style="--delay: .05s" role="img" aria-label="Screenshot or video placeholder"></div>
+          <!--<img class="media-frame reveal" style="flex-grow: 1" src="img/photo_2.jpg" /> -->
+          <video height="600" style="border-radius: 15px;" controls poster="img/photo_3.jpg">
+            <source src="vid/app.mp4" type="video/mp4">
+            Error!
+          </video>
         </div>
-        <div class="hero-block hero-steps">
-          <div class="media-frame reveal" style="--delay: .1s" role="img" aria-label="Screenshot placeholder"></div>
+        <div class="hero-block hero-steps" style=" display: flex; justify-content: center">
+          <img class="media-frame reveal" style=" max-height: 70vh" src="img/photo_2.jpg" />
           <div class="hero-visual">
             <div class="hero-card card reveal" style="--delay: .05s">
               <div class="card-index">01</div>
@@ -90,6 +94,7 @@
         </div>
         <div class="grid two">
           <article class="card reveal">
+            <div class="problem-icon" style="font-size: 3rem; margin-bottom: var(--spacing-md); text-align: center;">👤</div>
             <ul class="use-case-list">
               <li data-i18n="pain_list_1"></li>
               <li data-i18n="pain_list_2"></li>
@@ -99,6 +104,7 @@
             </ul>
           </article>
           <article class="card reveal" style="--delay: .08s">
+            <div class="problem-icon" style="font-size: 3rem; margin-bottom: var(--spacing-md); text-align: center;">📁</div>
             <h3 data-i18n="pain_statement_title"></h3>
             <p data-i18n="pain_statement_text"></p>
             <p class="micro" data-i18n="pain_proof_title"></p>
@@ -120,9 +126,12 @@
         </div>
         <div class="grid two">
           <article class="card reveal">
+          <div class="problem-icon" style="font-size: 3rem; margin-bottom: var(--spacing-md); text-align: center;">🔒</div>
             <p data-i18n-html="breakthrough_text_html"></p>
           </article>
+          
           <article class="card reveal" style="--delay: .1s">
+          <div class="problem-icon" style="font-size: 3rem; margin-bottom: var(--spacing-md); text-align: center;">💊</div>
             <ul class="use-case-list">
               <li data-i18n="breakthrough_list_1"></li>
               <li data-i18n="breakthrough_list_2"></li>
@@ -143,6 +152,8 @@
         </div>
         <div class="grid three use-cases-grid">
           <article class="card reveal">
+            
+          <div class="problem-icon" style="font-size: 3rem; margin-bottom: var(--spacing-md); text-align: center;">📈</div>
             <div class="card-label" data-i18n="case1_label"></div>
             <h3 data-i18n="case1_title"></h3>
             <p data-i18n="case1_headline"></p>
@@ -156,6 +167,8 @@
             <p class="micro" data-i18n="case1_tail"></p>
           </article>
           <article class="card reveal" style="--delay: .1s">
+            
+          <div class="problem-icon" style="font-size: 3rem; margin-bottom: var(--spacing-md); text-align: center;">✨</div>
             <div class="card-label" data-i18n="case2_label"></div>
             <h3 data-i18n="case2_title"></h3>
             <p data-i18n="case2_headline"></p>
@@ -170,6 +183,8 @@
             <p class="use-case-value" data-i18n="case2_note"></p>
           </article>
           <article class="card reveal" style="--delay: .2s">
+            
+          <div class="problem-icon" style="font-size: 3rem; margin-bottom: var(--spacing-md); text-align: center;">💼</div>
             <div class="card-label" data-i18n="case3_label"></div>
             <h3 data-i18n="case3_title"></h3>
             <p data-i18n="case3_headline"></p>
@@ -188,18 +203,22 @@
         </div>
         <div class="grid four">
           <div class="card reveal">
+            <div class="problem-icon" style="font-size: 3rem; margin-bottom: var(--spacing-md); text-align: center;">🎨</div>
             <h3 data-i18n="audience_1_title"></h3>
             <p data-i18n="audience_1_text"></p>
           </div>
           <div class="card reveal" style="--delay: .08s">
+            <div class="problem-icon" style="font-size: 3rem; margin-bottom: var(--spacing-md); text-align: center;">💰</div>
             <h3 data-i18n="audience_2_title"></h3>
             <p data-i18n="audience_2_text"></p>
           </div>
           <div class="card reveal" style="--delay: .16s">
+            <div class="problem-icon" style="font-size: 3rem; margin-bottom: var(--spacing-md); text-align: center;">🤝</div>
             <h3 data-i18n="audience_3_title"></h3>
             <p data-i18n="audience_3_text"></p>
           </div>
           <div class="card reveal" style="--delay: .24s">
+            <div class="problem-icon" style="font-size: 3rem; margin-bottom: var(--spacing-md); text-align: center;">🌎</div>
             <h3 data-i18n="audience_4_title"></h3>
             <p data-i18n="audience_4_text"></p>
           </div>
@@ -215,38 +234,47 @@
         </div>
         <div class="grid two security-cards">
           <article class="card reveal security-card">
+            <div class="problem-icon" style="font-size: 3rem; margin-bottom: var(--spacing-md); text-align: center;"></div>
             <h3 data-i18n="security_block1_title"></h3>
             <div class="rich" data-i18n-html="security_block1_html"></div>
           </article>
           <article class="card reveal security-card" style="--delay: .06s">
+            <div class="problem-icon" style="font-size: 3rem; margin-bottom: var(--spacing-md); text-align: center;"></div>
             <h3 data-i18n="security_block2_title"></h3>
             <div class="rich" data-i18n-html="security_block2_html"></div>
           </article>
           <article class="card reveal security-card" style="--delay: .12s">
+            <div class="problem-icon" style="font-size: 3rem; margin-bottom: var(--spacing-md); text-align: center;"></div>
             <h3 data-i18n="security_block3_title"></h3>
             <div class="rich" data-i18n-html="security_block3_html"></div>
           </article>
           <article class="card reveal security-card" style="--delay: .18s">
+            <div class="problem-icon" style="font-size: 3rem; margin-bottom: var(--spacing-md); text-align: center;"></div>
             <h3 data-i18n="security_block4_title"></h3>
             <div class="rich" data-i18n-html="security_block4_html"></div>
           </article>
           <article class="card reveal security-card" style="--delay: .24s">
+            <div class="problem-icon" style="font-size: 3rem; margin-bottom: var(--spacing-md); text-align: center;"></div>
             <h3 data-i18n="security_block5_title"></h3>
             <div class="rich" data-i18n-html="security_block5_html"></div>
           </article>
           <article class="card reveal security-card" style="--delay: .3s">
+            <div class="problem-icon" style="font-size: 3rem; margin-bottom: var(--spacing-md); text-align: center;"></div>
             <h3 data-i18n="security_block6_title"></h3>
             <div class="rich" data-i18n-html="security_block6_html"></div>
           </article>
           <article class="card reveal security-card" style="--delay: .36s">
+            <div class="problem-icon" style="font-size: 3rem; margin-bottom: var(--spacing-md); text-align: center;"></div>
             <h3 data-i18n="security_block7_title"></h3>
             <div class="rich" data-i18n-html="security_block7_html"></div>
           </article>
           <article class="card reveal security-card" style="--delay: .42s">
+            <div class="problem-icon" style="font-size: 3rem; margin-bottom: var(--spacing-md); text-align: center;"></div>
             <h3 data-i18n="security_block8_title"></h3>
             <div class="rich" data-i18n-html="security_block8_html"></div>
           </article>
           <article class="card reveal security-summary" style="--delay: .48s">
+            <div class="problem-icon" style="font-size: 3rem; margin-bottom: var(--spacing-md); text-align: center;"></div>
             <h3 data-i18n="security_summary_title"></h3>
             <div class="rich" data-i18n-html="security_summary_html"></div>
           </article>
@@ -262,6 +290,7 @@
         </div>
         <div class="grid two">
           <div class="card reveal">
+            <div class="problem-icon" style="font-size: 3rem; margin-bottom: var(--spacing-md); text-align: center;">🙎‍♂️</div>
             <h3 data-i18n="pricing_free_title"></h3>
             <p class="micro" data-i18n="pricing_free_price"></p>
             <ul class="use-case-list">
@@ -271,6 +300,7 @@
             </ul>
           </div>
           <div class="card reveal" style="--delay: .1s">
+            <div class="problem-icon" style="font-size: 3rem; margin-bottom: var(--spacing-md); text-align: center;">👨🏻‍💼</div>
             <h3 data-i18n="pricing_pro_title"></h3>
             <p class="micro" data-i18n="pricing_pro_price"></p>
             <ul class="use-case-list">
