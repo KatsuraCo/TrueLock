@@ -9,6 +9,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -23,6 +24,7 @@
         <a href="#pain" data-i18n="nav_pain"></a>
         <a href="#breakthrough" data-i18n="nav_breakthrough"></a>
         <a href="#cases" data-i18n="nav_cases"></a>
+        <a href="#audience" data-i18n="nav_audience"></a>
         <a href="#security" data-i18n="nav_security"></a>
         <a href="#pricing" data-i18n="nav_pricing"></a>
         <a href="#download" data-i18n="nav_download"></a>
@@ -46,7 +48,7 @@
   <main id="top">
     <section class="section hero">
       <div class="container hero-stack">
-        <div class="hero-block" style=" display: flex;">
+        <div class="hero-block">
           <div class="hero-copy reveal">
             <div class="eyebrow" data-i18n="hero_eyebrow"></div>
             <h1 data-i18n="hero_title"></h1>
@@ -58,13 +60,95 @@
             </div>
           </div>
           <!--<img class="media-frame reveal" style="flex-grow: 1" src="img/photo_2.jpg" /> -->
-          <video height="600" style="border-radius: 15px;" controls poster="img/photo_3.jpg">
+          <video width="600" style="border-radius: 15px;" controls poster="img/photo_3.png">
             <source src="vid/app.mp4" type="video/mp4">
             Error!
           </video>
         </div>
-        <div class="hero-block hero-steps" style=" display: flex; justify-content: center">
-          <img class="media-frame reveal" style=" max-height: 70vh" src="img/photo_2.jpg" />
+        
+    <section id="pain" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="pain_title"></h2>
+        </div>
+        <div class="grid two">
+          <article class="card reveal">
+            <div class="problem-icon" style="font-size: 3rem; margin-bottom: var(--spacing-md); text-align: center;">⚠️</div>
+            <h3 data-i18n="pain_proof_problem_title" style="text-align: center;"></h3>
+            <p data-i18n="pain_statement_problem_text"></p>
+            <ul class="use-case-list" >
+              <li data-i18n="pain_list_1"></li>
+              <li data-i18n="pain_list_2"></li>
+              <li data-i18n="pain_list_3"></li>
+              <li data-i18n="pain_list_4"></li>
+              <li data-i18n="pain_list_5"></li>
+              <li data-i18n="pain_list_6"></li>
+            </ul>
+          </article>
+          <article class="card reveal" style="--delay: .08s">
+            <div class="problem-icon" style="font-size: 3rem; margin-bottom: var(--spacing-md); text-align: center;">💡</div>
+            <h3 data-i18n="pain_statement_title" style="text-align: center;"></h3>
+            <p data-i18n="pain_statement_text"></p>
+            <ul class="use-case-list" >
+              <li data-i18n="pain_proof_1"></li>
+              <li data-i18n="pain_proof_2"></li>
+              <li data-i18n="pain_proof_3"></li>
+              <li data-i18n="pain_proof_4"></li>
+              <li data-i18n="pain_proof_5"></li>
+              <li data-i18n="pain_proof_6"></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="breakthrough" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="breakthrough_title"></h2>
+        </div>
+        <div class="grid two">
+          <article class="card reveal">
+          <div class="problem-icon" style="font-size: 3rem; margin-bottom: var(--spacing-md); text-align: center;">🔒</div>
+            <p data-i18n-html="breakthrough_text_html"></p>
+          </article>
+          
+          <article class="card reveal" style="--delay: .1s">
+          <div class="problem-icon" style="font-size: 3rem; margin-bottom: var(--spacing-md); text-align: center;">💊</div>
+            <ul class="use-case-list">
+              <li data-i18n="breakthrough_list_1"></li>
+              <li data-i18n="breakthrough_list_2"></li>
+              <li data-i18n="breakthrough_list_3"></li>
+              <li data-i18n="breakthrough_list_4"></li>
+              <li data-i18n="breakthrough_list_5"></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+        <div class="hero-block hero-steps">
+          <div id="carouselExample" class="carousel slide carousel-dark" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" >
+                <img style="border-radius: 15px; display: block; margin-left: auto; margin-right: auto;" class="d-block w-50" src="img/photo_4.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item" >
+                <img style="border-radius: 15px; display: block; margin-left: auto; margin-right: auto;" class="d-block w-50" src="img/photo_6.png" alt="First slide">
+              </div>
+              <div class="carousel-item" >
+                <img style="border-radius: 15px; display: block; margin-left: auto; margin-right: auto;" class="d-block w-50" src="img/photo_7.png" alt="Second slide">
+              </div>
+              <div class="carousel-item" >
+                <img style="border-radius: 15px; display: block; margin-left: auto; margin-right: auto;" class="d-block w-50" src="img/photo_8.png" alt="Third slide">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" style="color: blue;"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" style="color: blue;"></span>
+            </button>
+          </div>
           <div class="hero-visual">
             <div class="hero-card card reveal" style="--delay: .05s">
               <div class="card-index">01</div>
@@ -86,63 +170,6 @@
       </div>
     </section>
 
-    <section id="pain" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2 data-i18n="pain_title"></h2>
-          <p data-i18n="pain_subtitle"></p>
-        </div>
-        <div class="grid two">
-          <article class="card reveal">
-            <div class="problem-icon" style="font-size: 3rem; margin-bottom: var(--spacing-md); text-align: center;">👤</div>
-            <ul class="use-case-list">
-              <li data-i18n="pain_list_1"></li>
-              <li data-i18n="pain_list_2"></li>
-              <li data-i18n="pain_list_3"></li>
-              <li data-i18n="pain_list_4"></li>
-              <li data-i18n="pain_list_5"></li>
-            </ul>
-          </article>
-          <article class="card reveal" style="--delay: .08s">
-            <div class="problem-icon" style="font-size: 3rem; margin-bottom: var(--spacing-md); text-align: center;">📁</div>
-            <h3 data-i18n="pain_statement_title"></h3>
-            <p data-i18n="pain_statement_text"></p>
-            <p class="micro" data-i18n="pain_proof_title"></p>
-            <ul class="use-case-list">
-              <li data-i18n="pain_proof_1"></li>
-              <li data-i18n="pain_proof_2"></li>
-              <li data-i18n="pain_proof_3"></li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="breakthrough" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2 data-i18n="breakthrough_title"></h2>
-          <p data-i18n-html="breakthrough_text_html"></p>
-        </div>
-        <div class="grid two">
-          <article class="card reveal">
-          <div class="problem-icon" style="font-size: 3rem; margin-bottom: var(--spacing-md); text-align: center;">🔒</div>
-            <p data-i18n-html="breakthrough_text_html"></p>
-          </article>
-          
-          <article class="card reveal" style="--delay: .1s">
-          <div class="problem-icon" style="font-size: 3rem; margin-bottom: var(--spacing-md); text-align: center;">💊</div>
-            <ul class="use-case-list">
-              <li data-i18n="breakthrough_list_1"></li>
-              <li data-i18n="breakthrough_list_2"></li>
-              <li data-i18n="breakthrough_list_3"></li>
-              <li data-i18n="breakthrough_list_4"></li>
-            </ul>
-            <p class="micro" data-i18n="breakthrough_note"></p>
-          </article>
-        </div>
-      </div>
-    </section>
 
     <section id="cases" class="section">
       <div class="container">
@@ -153,16 +180,16 @@
         <div class="grid three use-cases-grid">
           <article class="card reveal">
             
-          <div class="problem-icon" style="font-size: 3rem; margin-bottom: var(--spacing-md); text-align: center;">📈</div>
+          <div class="problem-icon" style="font-size: 3rem; margin-bottom: var(--spacing-md); text-align: center;">⏱️</div>
             <div class="card-label" data-i18n="case1_label"></div>
             <h3 data-i18n="case1_title"></h3>
             <p data-i18n="case1_headline"></p>
-            <ul class="use-case-list">
+            <ol class="use-case-list" type="1" >
               <li data-i18n="case1_step1"></li>
               <li data-i18n="case1_step2"></li>
               <li data-i18n="case1_step3"></li>
               <li data-i18n="case1_step4"></li>
-            </ul>
+            </ol>
             <p class="use-case-value" data-i18n="case1_note"></p>
             <p class="micro" data-i18n="case1_tail"></p>
           </article>
@@ -172,7 +199,6 @@
             <div class="card-label" data-i18n="case2_label"></div>
             <h3 data-i18n="case2_title"></h3>
             <p data-i18n="case2_headline"></p>
-            <p class="micro" data-i18n="case2_example"></p>
             <p data-i18n="case2_inside_title"></p>
             <ul class="use-case-list">
               <li data-i18n="case2_inside_1"></li>
@@ -203,7 +229,7 @@
         </div>
         <div class="grid four">
           <div class="card reveal">
-            <div class="problem-icon" style="font-size: 3rem; margin-bottom: var(--spacing-md); text-align: center;">🎨</div>
+            <div class="problem-icon" style="font-size: 3rem; margin-bottom: var(--spacing-md); text-align: center;">🖋️</div>
             <h3 data-i18n="audience_1_title"></h3>
             <p data-i18n="audience_1_text"></p>
           </div>
@@ -275,7 +301,7 @@
           </article>
           <article class="card reveal security-summary" style="--delay: .48s">
             <div class="problem-icon" style="font-size: 3rem; margin-bottom: var(--spacing-md); text-align: center;"></div>
-            <h3 data-i18n="security_summary_title"></h3>
+            
             <div class="rich" data-i18n-html="security_summary_html"></div>
           </article>
         </div>
@@ -291,8 +317,8 @@
         <div class="grid two">
           <div class="card reveal">
             <div class="problem-icon" style="font-size: 3rem; margin-bottom: var(--spacing-md); text-align: center;">🙎‍♂️</div>
-            <h3 data-i18n="pricing_free_title"></h3>
-            <p class="micro" data-i18n="pricing_free_price"></p>
+            <h3 data-i18n="pricing_free_title" style="text-align: center;"></h3>
+            <p class="micro" data-i18n="pricing_free_price" style="text-align: center;"></p>
             <ul class="use-case-list">
               <li data-i18n="pricing_free_item1"></li>
               <li data-i18n="pricing_free_item2"></li>
@@ -301,24 +327,61 @@
           </div>
           <div class="card reveal" style="--delay: .1s">
             <div class="problem-icon" style="font-size: 3rem; margin-bottom: var(--spacing-md); text-align: center;">👨🏻‍💼</div>
-            <h3 data-i18n="pricing_pro_title"></h3>
-            <p class="micro" data-i18n="pricing_pro_price"></p>
+            <h3 data-i18n="pricing_pro_title" style="text-align: center;"></h3>
+            <p class="micro" data-i18n="pricing_pro_price" style="text-align: center;"></p>
             <ul class="use-case-list">
               <li data-i18n="pricing_pro_item1"></li>
               <li data-i18n="pricing_pro_item2"></li>
               <li data-i18n="pricing_pro_item3"></li>
               <li data-i18n="pricing_pro_item4"></li>
             </ul>
-            <p class="micro" data-i18n="pricing_pro_note"></p>
+            <p class="micro" data-i18n="pricing_pro_note" style="text-align: center;"></p>
             <div class="cta-row">
               <a class="btn primary" href="#download" data-i18n="pricing_cta"></a>
+              <a class="btn ghost" href="#upgrade" data-i18n="pricing_cta_secondary"></a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="download" class="section">
+    
+    <section id="upgrade" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="upgrade_title"></h2>
+        </div>
+
+        <div class="grid two">
+          <article class="card reveal">
+            <h3 data-i18n="upgrade_how_title"></h3>
+            <ol class="steps">
+              <li data-i18n="upgrade_step1"></li>
+              <li data-i18n="upgrade_step2"></li>
+              <li data-i18n="upgrade_step3"></li>
+            </ol>
+            <p class="muted" data-i18n="upgrade_note"></p>
+            <div class="cta-row">
+              <a class="btn primary" href="#download" data-i18n="upgrade_cta_download"></a>
+              <a class="btn ghost" href="#pricing" data-i18n="upgrade_cta_back"></a>
+            </div>
+          </article>
+
+          <article class="card reveal" style="--delay:.06s">
+            <h3 data-i18n="upgrade_why_title"></h3>
+            <ul class="checklist" style="list-style-type: none;">
+              <li data-i18n="upgrade_why_1"></li>
+              <li data-i18n="upgrade_why_2"></li>
+              <li data-i18n="upgrade_why_3"></li>
+              <li data-i18n="upgrade_why_4"></li>
+            </ul>
+            <p class="muted" data-i18n="upgrade_refund" style="color:rgb(91, 162, 255)"></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+<section id="download" class="section">
       <div class="container download-grid">
         <div class="download-copy reveal">
           <h2 data-i18n="download_title"></h2>
@@ -354,7 +417,7 @@
       </div>
     </div>
   </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="app.js"></script>
   <script src="overrides.js"></script>
 </body>

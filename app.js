@@ -1,1576 +1,2024 @@
-﻿const translations = {
-  en: {
-    meta_title: "TrueLock — Secure Capsules",
-    meta_description: "Lock a message or file so it opens only when rules are met. Offline-first.",
-    logo_alt: "TrueLock logo",
-    nav_use_cases: "What it is",
-    nav_how: "How it works",
-    nav_features: "Features",
-    nav_security: "Security",
-    nav_download: "Download",
-    nav_faq: "FAQ",
-    cta_download: "Download TrueLock",
-    cta_how: "See the steps",
-    hero_eyebrow: "Simple secure sharing",
-    hero_title: "Send a message or file that opens only when the rules are met.",
-    hero_subtitle: "TrueLock creates a capsule — a secure file. You set the rules (time, place, password) and send it. The recipient opens it for free.",
-    hero_bullet_proof: "Create a capsule with text, files, or media.",
-    hero_bullet_event: "Set rules: time, place, password, visual key.",
-    hero_note: "No accounts. Works offline. Decrypt & verify are free.",
-    hero_card_1_title: "Create",
-    hero_card_1_desc: "Add text, files, or media.",
-    hero_card_2_title: "Set rules",
-    hero_card_2_desc: "Time, location, password, AND/OR.",
-    hero_card_3_title: "Send",
-    hero_card_3_desc: "Share anywhere. Open for free.",
-    use_cases_title: "What is a TrueLock capsule?",
-    use_case_proof_title: "Create a capsule",
-    use_case_proof_text: "Put the content inside and set the rules. It takes about a minute.",
-    use_case_proof_cta: "See the steps",
-    use_case_event_title: "Send it like a file",
-    use_case_event_text: "Share via Telegram, WhatsApp, email, USB or cloud. The recipient opens for free.",
-    use_case_event_cta: "See sharing",
-    chain_title: "Need several steps? Use Chain Capsules",
-    chain_text: "Link capsules so each one reveals the next step. Great for quests, launches, and staged reveals.",
-    chain_step_1: "Step 1: first capsule opens",
-    chain_step_2: "Step 2: it reveals a clue or link",
-    chain_step_3: "Step 3: next capsule unlocks the reward",
-    how_title: "How TrueLock works",
-    how_step1_title: "Create",
-    how_step1_text: "Choose text, files, or media.",
-    how_step2_title: "Add rules",
-    how_step2_text: "Time, location, password, visual key, AND/OR.",
-    how_step3_title: "Send",
-    how_step3_text: "Share the capsule. The recipient opens for free.",
-    products_title: "Inside the app: 4 simple tools",
-    products_subtitle: "Start with Capsules. Use other modes for files and folders.",
-    product_capsules_title: "Capsules",
-    product_capsules_text: "The main mode for secure sharing with rules.",
-    product_files_title: "Files",
-    product_files_text: "Quick file encryption and decryption.",
-    product_batch_title: "Batch & Archive",
-    product_batch_text: "Folders and archives at scale.",
-    product_policy_title: "Policy Encryption",
-    product_policy_text: "Advanced rules for special cases.",
-    features_title: "What TrueLock can do",
-    feature_time: "Open only after a time",
-    feature_geo: "Open only at a place",
-    feature_visual: "Visual key (easy to remember)",
-    feature_andor: "Combine rules with AND/OR",
-    feature_offline: "Offline-first, no servers",
-    feature_cross: "Cross-platform and 8 languages",
-    feature_share: "Share capsules like normal files",
-    feature_history: "Local history + auto-cleanup",
-    security_title: "Security & Trust",
-    security_text: "Your data stays on your device. The capsule is a file that opens only when rules are met.",
-    security_point1: "No cloud and no accounts",
-    security_point2: "If a file is changed, it won’t open",
-    security_point3: "Decrypt & verify are always free",
-    social_title: "Early users & communities",
-    social_line1: "Used in trading, privacy, and creator communities.",
-    social_line2: "Launching globally in 8 languages.",
-    roadmap_title: "Open roadmap",
-    roadmap_line: "Next: camera capsules, more presets, and UX polish.",
-    download_title: "Download TrueLock",
-    download_text: "Choose your platform. Opening capsules is always free.",
-    download_android: "Android",
-    download_ios: "iOS",
-    download_windows: "Windows",
-    download_macos: "macOS",
-    download_linux: "Linux",
-    faq_title: "FAQ",
-    faq_q1: "What is a capsule in simple words?",
-    faq_a1: "It is a secure file that opens only when its rules are met.",
-    faq_q2: "Does the recipient need to pay?",
-    faq_a2: "No. Opening and verifying are always free.",
-    faq_q3: "Do I need internet?",
-    faq_a3: "No. Opening and verifying work offline (geo uses GPS).",
-    faq_q4: "What if I lose my password?",
-    faq_a4: "The capsule won’t open. TrueLock cannot reset access.",
-    faq_q5: "Is there tracking?",
-    faq_a5: "No. No accounts, no cloud, no analytics.",
-    final_title: "Make your first capsule in 30 seconds.",
-    final_text: "Share securely with clear rules.",
-    final_cta: "Download TrueLock",
-    quick_title: "30-second scenario",
-    quick_step1: "Create a capsule and add text or a file.",
-    quick_step2: "Set rules (time, place, password).",
-    quick_step3: "Send the capsule like a normal file.",
-    quick_step4: "It opens only when the rules are met.",
-    quick_note: "Recipients open for free. No accounts.",
-    mini_faq_title: "Quick answers",
-    mini_faq_q1: "What is a capsule?",
-    mini_faq_a1: "A secure file that opens only by rules.",
-    mini_faq_q2: "Does the recipient pay?",
-    mini_faq_a2: "No. Open & verify is free.",
-    mini_faq_q3: "Do I need internet?",
-    mini_faq_a3: "No. Works offline (geo uses GPS).",
-    use_cases_title: "Three flagship use cases",
-    use_case_1_label: "Proof Capsules",
-    use_case_1_title: "Proof Capsules (Trust Infrastructure)",
-    use_case_1_item1: "Trading signals",
-    use_case_1_item2: "Predictions",
-    use_case_1_item3: "Legal evidence",
-    use_case_1_value: "Value: This information existed before the event.",
-    use_case_2_label: "Event Capsules",
-    use_case_2_title: "Event Capsules (Offline Activation)",
-    use_case_2_item1: "Offline events",
-    use_case_2_item2: "Geo drops",
-    use_case_2_item3: "Exclusive unlocks",
-    use_case_2_value: "Value: Unlock content only at the right place and time.",
-    use_case_3_label: "Campaign Capsules",
-    use_case_3_title: "Campaign / Quest Capsules (Marketing Engine)",
-    use_case_3_item1: "Brand quests",
-    use_case_3_item2: "Influencer activations",
-    use_case_3_item3: "Retail traffic",
-    use_case_3_value: "Value: Run real-world campaigns without servers.",
-    problems_title: "Problems we solve",
-    problems_subtitle: "The pain points people already pay for.",
-    problem_1_label: "Problem 1",
-    problem_1_title: "They don’t believe it existed before the event.",
-    problem_1_text: "Screenshots, PDFs, and posts can be edited or deleted. Timing is hard to prove.",
-    problem_1_cost: "Cost: trust loss and reputation disputes.",
-    problem_2_label: "Problem 2",
-    problem_2_title: "I need content to open only at the right time or place.",
-    problem_2_text: "Messengers open instantly. Links can be forwarded. Websites require servers and logins.",
-    problem_2_cost: "Cost: no control and no wow effect.",
-    problem_3_label: "Problem 3",
-    problem_3_title: "I need trust, not just encryption.",
-    problem_3_text: "Classic encryptors protect a file but don’t prove context or rules.",
-    problem_3_cost: "Cost: hard to explain value, low virality.",
-    problem_4_label: "Problem 4",
-    problem_4_title: "I don’t want accounts or cloud trust.",
-    problem_4_text: "Accounts, servers, subscriptions, and logs create fear and friction.",
-    problem_4_cost: "Cost: people drop off.",
-    problem_5_label: "Problem 5",
-    problem_5_title: "I need a tool that works between people.",
-    problem_5_text: "Trust needs two sides: one creates, the other verifies.",
-    problem_5_cost: "Cost: most tools are single-user and not proof-friendly.",
-    shift_title: "The shift",
-    shift_subtitle: "What TrueLock does differently.",
-    shift_1_title: "Proof Capsules",
-    shift_1_text: "Create a capsule, publish it, open later — no edits or re-packaging.",
-    shift_2_title: "Event Capsules",
-    shift_2_text: "Open only at the right time/place. Combine rules with AND/OR.",
-    shift_3_title: "Trust engine, not just encryption",
-    shift_3_text: "Portable proof, offline verification, transparent rules.",
-    shift_4_title: "Decrypt & Verify is always free",
-    shift_4_text: "Anyone can open and verify without registration or payment.",
-    shift_5_title: "One ensemble, many scenarios",
-    shift_5_text: "Trading, influencers, marketing, events, teams — same engine.",
-    shift_formula: "TrueLock solves the problem of creating trust between people.",
-    shift_cta_primary: "Create your first Proof Capsule",
-    shift_cta_secondary: "See use cases",
-    security_subtitle: "Built for proof, not promises.",
-    security_block1_title: "Built for proof, not promises",
-    security_block1_html: "<p>TrueLock is designed not just to encrypt data, but to help prove integrity, origin, and immutability.</p><ul><li>When it was created</li><li>That it wasn’t modified</li><li>That it followed the rules you set</li></ul><p class=\"micro\">No accounts. No servers. No trust required.</p>",
-    security_block2_title: "Modern cryptographic standards",
-    security_block2_html: "<ul><li>AES-256-GCM — authenticated encryption</li><li>PBKDF2 — password-based key derivation</li><li>SHA-256 / SHA-512 — hashing and integrity</li><li>Secure random nonces & salts</li><li>Authenticated headers to deter tampering</li></ul><p class=\"micro\">If a single byte changes, verification is expected to fail.</p>",
-    security_block3_title: "Hardware-backed protection (when available)",
-    security_block3_html: "<p>On supported platforms, TrueLock can use hardware-backed protection.</p><ul><li>Secure Enclave on iOS</li><li>TPM / OS-level security modules on desktop</li><li>Secure storage on Android</li></ul><ul><li>Keys are not logged</li><li>Not hardcoded</li><li>Cleared from memory where possible</li></ul>",
-    security_block4_title: "Verifiable integrity — over time",
-    security_block4_html: "<p>Capsules are verifiable offline — now or later.</p><ul><li>No cloud dependency</li><li>No server to trust</li><li>No account required</li></ul><p class=\"micro\">Verification is always free.</p>",
-    security_block5_title: "Tamper & replay resistance",
-    security_block5_html: "<ul><li>Tampering → detected by authenticated encryption</li><li>Replay attacks → reduced by unique nonces</li><li>Timing attacks → mitigated where possible</li><li>Partial extraction → breaks verification</li></ul><p class=\"micro\">If someone tries to fake or re-package a capsule, verification should fail.</p>",
-    security_block6_title: "Privacy by design",
-    security_block6_html: "<ul><li>No tracking</li><li>No analytics SDKs inside capsules</li><li>No hidden metadata injection</li><li>No server-side logging of content</li></ul><p class=\"micro\">What you lock is known only to you and the recipient.</p>",
-    security_block7_title: "Transparent & auditable",
-    security_block7_html: "<p>Security decisions are explicit and designed to be audited. Capsule format and crypto flow are documented.</p><p class=\"micro\">Trust comes from verifiability, not marketing.</p>",
-    security_block8_title: "What this means for users",
-    security_block8_html: "<ul><li>You don’t need to believe anything</li><li>You don’t need to trust a company</li><li>You don’t need an account</li></ul><p class=\"micro\">You can prove: it existed at a moment, it wasn’t changed, rules were enforced.</p>",
-    security_summary_title: "Summary",
-    security_summary_html: "<ul><li>Modern cryptography</li><li>Offline-first, serverless verification</li><li>Hardware-backed protection when available</li><li>Privacy-by-design</li><li>Proof over promises</li></ul>",
-    footer_tagline: "No servers • No accounts • Offline-first",
-    footer_copy: "© 2025 TrueLock"
-  },
+﻿/* TrueLock landing — i18n + small UX helpers
+   Generated: v3 (full copy, no placeholder headings)
+*/
+(() => {
+  'use strict';
+
+  const translations = {
+    en: {
+  "nav_pain": "Problem",
+  "nav_breakthrough": "How it works?",
+  "nav_cases": "Use cases",
+  "nav_audience": "Who is it for?",
+  "nav_security": "Security",
+  "nav_pricing": "Pricing",
+  "nav_download": "Download",
+
+  "cta_primary": "Download TrueLock",
+  "cta_secondary": "View use cases",
+
+  "hero_note": "Works offline. No accounts. One protected file. Opening is free.",
+  "hero_eyebrow": "Share data online without fear of leaks",
+  "hero_title": "TrueLock — smart protection for digital information",
+
+  "hero_subtitle_html":
+    "Create your own <strong>Secure Capsule</strong> and control access: it opens only by <strong>time</strong>, <strong>location</strong>, <strong>password</strong>, or <strong>visual key</strong>. Everything stays under your control.",
+
+  "hero_feature_1": "Time-Lock",
+  "hero_feature_2": "Geo-Lock",
+  "hero_feature_3": "Password / Visual key",
+  "hero_feature_4": "AND / OR logic",
+
+  "hero_card_1_title": "Proof Capsule",
+  "hero_card_1_desc": "Lock information now and prove it later.",
+
+  "hero_card_2_title": "Event Capsule",
+  "hero_card_2_desc": "Opens only at the right place and time.",
+
+  "hero_card_3_title": "AND/OR Unlock",
+  "hero_card_3_desc": "Combine conditions and control access.",
+
+  "pain_title": "The problem is not security — the problem is control over security",
+  "pain_subtitle": "",
+
+  "pain_list_1": "✉️ Messages can be intercepted.",
+  "pain_list_2": "🌐 Platforms have access to your data.",
+  "pain_list_3": "📝 Files can be copied or forged.",
+  "pain_list_4": "®️ It is impossible to prove originality.",
+  "pain_list_5": "🧩 Complex encryption tools scare away regular users.",
+  "pain_list_6": "⚙️ Data may be revealed earlier than intended or in the wrong place.",
+
+  "pain_proof_problem_title": "Problem",
+  "pain_statement_title": "Solution",
+
+  "pain_statement_desc":
+    "A capsule is a file with a built-in release policy. No accounts, no servers, no “trust me”.",
+
+  "breakthrough_title": "How does it work?",
+  "breakthrough_subtitle":
+    "Create a capsule, set the rules, send it anywhere. The recipient opens it only when conditions are met.",
+
+  "breakthrough_list_1":
+    "1. Create a capsule with text, files, photos, or video.",
+  "breakthrough_list_2":
+    "2. Set conditions: time, location, password, visual key.",
+  "breakthrough_list_3":
+    "3. Combine conditions using AND / OR logic.",
+  "breakthrough_list_4":
+    "4. Send the file via any messenger.",
+  "breakthrough_list_5":
+    "5. Opening and verification are always free.",
+
+  "breakthrough_note_title": "Not just another encryptor",
+
+  "audience_title": "Who is it for?",
+  "audience_subtitle":
+    "Creators. Traders. Teams. Mass consumers. Different words — one powerful mechanism.",
+
+  "audience_1_title": "Journalists and authors",
+  "audience_1_desc": "Protection of materials and sources.",
+
+  "audience_2_title": "Traders and analysts",
+  "audience_2_desc": "Fixation of signals and forecasts.",
+
+  "audience_3_title": "Teams and businesses",
+  "audience_3_desc": "File sharing without cloud services.",
+
+  "audience_4_title": "Everyday users",
+  "audience_4_desc": "Personal information protected from outsiders.",
+
+  "audience_1_text": "Protection of materials and sources.",
+  "audience_2_text": "Fixation of signals and forecasts.",
+  "audience_3_text": "File sharing without cloud services and event creation.",
+  "audience_4_text": "Personal information protected from outsiders.",
+
+  "cases_title": "Use cases",
+  "cases_subtitle": "Clear problems — clear solutions.",
+
+  "case1_title": "Proof Capsule",
+  "case1_subtitle": "Fixing information in time.",
+
+  "case1_bullet1":
+    "You publish the capsule now (publicly or in a group).",
+  "case1_bullet2":
+    "You set the unlock time (optionally a password for premium access).",
+  "case1_bullet3":
+    "When opened, it is clear that the content was not edited after the event.",
+
+  "case1_tag": "A trust mechanism for traders and creators.",
+
+  "case2_title": "Event Capsule",
+  "case2_subtitle":
+    "Bring people to a place at a time — because the unlock is real.",
+
+  "case2_bullet1":
+    "You place a prize, hint, coupon, or instruction inside.",
+  "case2_bullet2":
+    "You set geo + time window (e.g. “Warsaw center 21:00–21:30”).",
+  "case2_bullet3":
+    "People show up. You get a viral IRL moment.",
+
+  "case2_tag": "A superpower for marketing and creators.",
+
+  "case3_title": "Pay-to-Unlock",
+  "case3_subtitle":
+    "Sell access legally: time-lock for everyone, password for buyers.",
+
+  "case3_bullet1":
+    "Create a capsule with Time-Lock enabled.",
+  "case3_bullet2":
+    "Add Password as an OR condition for early access.",
+  "case3_bullet3":
+    "Buyers pay for the password and unlock instantly — others wait.",
+
+  "case3_tag": "Perfect for paid signals and premium drops.",
+
+  "security_title": "Security",
+  "security_subtitle":
+    "You don’t need a cloud account to trust TrueLock. The file is encrypted and verified on the device.",
+
+  "security_summary_title": "What this gives you",
+
+  "pricing_title": "Pricing",
+  "pricing_subtitle":
+    "Opening is free forever. Pro is a one-time $9.99 upgrade for advanced capsules.",
+
+  "pricing_free_title": "Free",
+  "pricing_free_price": "$0",
+  "pricing_free_b1": "Open/decrypt without limits",
+  "pricing_free_b2": "Basic text capsules (limited)",
+  "pricing_free_b3": "Offline, no account",
+
+  "pricing_pro_title": "Pro (lifetime)",
+  "pricing_pro_price": "$9.99",
+  "pricing_pro_note": "One-time payment. No subscriptions.",
+
+  "pricing_pro_b1": "Unlimited capsules + attachments",
+  "pricing_pro_b2": "Time / Geo / Password / Visual + AND/OR",
+  "pricing_pro_b3": "Batch scenarios and advanced modes",
+
+  "pricing_cta": "Download and upgrade in the app",
+  "pricing_cta_secondary": "How Pro purchase works",
+
+  "upgrade_title": "How to buy Pro ($9.99)",
+  "upgrade_subtitle":
+    "A clean landing flow: download first, then upgrade inside the app.",
+
+  "upgrade_how_title": "Step by step",
+  "upgrade_step1": "Download TrueLock for your platform.",
+  "upgrade_step2": "Open the app → tap “Upgrade to Pro”.",
+  "upgrade_step3":
+    "Pay $9.99 via the connected provider and get Pro instantly.",
+
+  "upgrade_note":
+    "This approach is more reliable: no hardcoded payment links, provider can be changed without redesign.",
+
+  "upgrade_cta_download": "Download",
+  "upgrade_cta_back": "Back to pricing",
+
+  "upgrade_why_title": "What Pro gives you",
+  "upgrade_why_1": "🌟 Unlimited capsules + files/photos/videos",
+  "upgrade_why_2": "🌟 Conditions: time / geo / password / visual",
+  "upgrade_why_3":
+    "🌟 AND/OR policies (paid unlock, early access, multi-factor)",
+  "upgrade_why_4": "🌟 Batch operations and advanced modes",
+
+  "upgrade_refund":
+    "Refunds depend on the payment channel or store.",
+
+  "download_title": "Download",
+  "download_subtitle":
+    "Desktop and mobile. Pro is purchased inside the app for $9.99.",
+
+  "download_windows": "Windows",
+  "download_macos": "macOS",
+  "download_linux": "Linux",
+  "download_android": "Android",
+  "download_ios": "iOS",
+  "download_web": "Web (preview)",
+
+  "download_note":
+    "After installation: open the app → Upgrade to Pro. Payment is handled by the connected provider (e.g. Mercuryo).",
+
+  "final_title": "Trust — in a single file.",
+  "final_text":
+    "Proof capsules, drops, and on-site unlocks — without servers and without “trust me”.",
+
+  "final_cta": "Download TrueLock",
+
+  "footer_tagline":
+    "TrueLock — smart protection for digital information",
+
+  "footer_copy":
+    "© TrueLock. Offline encryption + policy engine. Decryption is always free.",
+
+  "breakthrough_text_html":
+    "TrueLock is a <strong>secure capsule format</strong> with access rules.",
+
+  "security_block1_html":
+    "AES-256-GCM, per-file salt, and cryptographic randomness for nonces.",
+  "security_block2_html":
+    "No accounts and no mandatory cloud.",
+  "security_block3_html":
+    "One capsule format for desktop and mobile devices.",
+  "security_block4_html":
+    "Time window AND location, or password OR visual key.",
+  "security_block5_html":
+    "Sensitive data remains inside encryption.",
+  "security_block6_html":
+    "You see which condition failed — without revealing secrets.",
+  "security_block7_html":
+    "Capsules can be shared publicly with no paywall for recipients.",
+  "security_block8_html":
+    "Built for privacy and trust. Use within the law.",
+
+  "security_summary_html":
+    "If you need to <strong>prove</strong>, <strong>unlock later</strong>, or <strong>open at a specific place</strong> — TrueLock makes it simple.",
+
+  "logo_alt": "TrueLock logo",
+
+  "pain_statement_text":
+    "TrueLock keeps control on your side. You get:",
+
+  "pain_statement_problem_text":
+    "Let’s look at the real data security problems:",
+
+  "pain_proof_1": "✉️ Secure sharing over open channels.",
+  "pain_proof_2": "🌐 Protection from platforms and intermediaries.",
+  "pain_proof_3":
+    "📝 Viewing and editing happen only inside a secure app.",
+  "pain_proof_4":
+    "®️ Proof of data integrity thanks to built-in logs.",
+  "pain_proof_5":
+    "🧩 A simple, intuitive app for protecting and sending data.",
+  "pain_proof_6":
+    "⚙️ Data opens only at the right time and/or place.",
+
+  "breakthrough_note":
+    "We built a “trust mechanics” layer — encryption is just the engine.",
+
+  "cases_proof_title": "Proof Capsule",
+  "cases_proof_text": "Fixing information in time.",
+
+  "cases_event_title": "Event Capsule",
+  "cases_event_text":
+    "Geo + time for viral meetups, quests, giveaways, and drops.",
+
+  "cases_unlock_title": "Pay-to-Unlock",
+  "cases_unlock_text":
+    "Public time-lock, sell the password for early access (AND/OR).",
+
+  "case1_label": "PROOF",
+  "case1_headline":
+    "Publish now — reveal later. Creation date is stored in built-in logs.",
+
+  "case1_step1":
+    "1. Create a capsule and put the signal or forecast inside.",
+  "case1_step2": "2. Set the unlock date.",
+  "case1_step3":
+    "3. Share the capsule publicly (Telegram, WhatsApp, X, email).",
+  "case1_step4":
+    "When opened, everyone sees that there were no edits.",
+
+  "case1_note":
+    "The “trust mechanism” is implemented at the software level.",
+  "case1_tail":
+    "Best for traders, tipsters, analysts, and creators.",
+
+  "case2_label": "EVENT",
+  "case2_headline":
+    "Bring people to a specific place at a specific time.",
+
+  "case2_step1":
+    "Put a prize, hint, or instruction inside.",
+  "case2_step2":
+    "Set geo + time window (Geo-Lock + Time-Lock).",
+  "case2_step3":
+    "Publish it to your audience. The unlock is verifiable.",
+  "case2_step4":
+    "People arrive on time because the reward is real.",
+
+  "case2_note":
+    "Perfect for events and promotional campaigns.",
+  "case2_tail":
+    "Best for creators, marketing teams, communities, and venues.",
+
+  "case3_label": "PAID UNLOCK",
+  "case3_headline":
+    "Sell access via AND/OR — simple and legal.",
+
+  "case3_step1":
+    "Create a capsule and enable Time-Lock for everyone.",
+  "case3_step2":
+    "Add Password as an OR condition (early access).",
+  "case3_step3":
+    "Publish the capsule and sell the password separately.",
+  "case3_step4":
+    "Buyers unlock instantly; others wait for the time window.",
+
+  "case3_note":
+    "You are selling access to valuable data.",
+  "case3_tail":
+    "Best for paid signals, premium drops, and gated content.",
+
+  "security_block1_title": "Modern cryptographic primitives",
+  "security_block2_title": "Offline-first by default",
+  "security_block3_title": "Cross-platform capsule format",
+  "security_block4_title": "Policy engine (AND/OR)",
+  "security_block5_title": "Minimal metadata",
+  "security_block6_title": "Clear failure states",
+  "security_block7_title": "Free to open",
+  "security_block8_title": "Responsible positioning",
+
+  "pricing_free_item1": "⭐ Open/decrypt without limits",
+  "pricing_free_item2": "⭐ Basic text capsules (limited)",
+  "pricing_free_item3": "⭐ Offline, no account",
+
+  "pricing_pro_item1":
+    "⭐ Unlimited capsules + attachments (files/photos/videos)",
+  "pricing_pro_item2": "⭐ Time-Lock + Geo-Lock",
+  "pricing_pro_item3":
+    "⭐ Password / Visual key + AND/OR",
+  "pricing_pro_item4":
+    "⭐ Advanced encryption scenarios",
+
+  "download_text":
+    "Choose a platform, install, then upgrade to Pro inside the app for $9.99 when you need advanced capsules.",
+
+  "case2_inside_title": "Capsule chains (quests)",
+  "case2_example":
+    "Example: Capsule #1 opens and tells you where to go. Capsule #2 asks for photo proof. Capsule #3 delivers the reward. Many variations are possible!",
+
+  "case3_text":
+    "This is a fair monetization mechanic: the capsule is public, the unlock key is paid.",
+
+  "case3_example":
+    "Example: a broker publishes a time-locked capsule. To use the signal immediately, you buy the password and unlock instantly.",
+
+  "case2_inside_1":
+    "1. Capsule #1: “Be at the spot no later than 18:00 — the next step will open there.”",
+  "case2_inside_2":
+    "2. Capsule #2: “Go to the mall and take a photo with the partner store.”",
+  "case2_inside_3":
+    "3. Capsule #3: “Send the photo — receive a $100 certificate.”",
+  "case2_inside_4":
+    "You can build endless chains (and every step will be verifiable)."
+},
+
   ru: {
-    meta_title: "TrueLock — безопасные капсулы",
-    meta_description: "Запри сообщение или файл так, чтобы он открылся только по правилам. Оффлайн.",
-    logo_alt: "Логотип TrueLock",
-    nav_use_cases: "Что это",
-    nav_how: "Как работает",
-    nav_features: "Функции",
-    nav_security: "Безопасность",
-    nav_download: "Скачать",
-    nav_faq: "FAQ",
-    cta_download: "Скачать TrueLock",
-    cta_how: "Посмотреть шаги",
-    hero_eyebrow: "Простая безопасная отправка",
-    hero_title: "Отправляй сообщение или файл, который откроется только при выполнении условий.",
-    hero_subtitle: "TrueLock делает капсулу — защищенный файл. Ты задаёшь правила (время, место, пароль) и отправляешь. Получатель открывает бесплатно.",
-    hero_bullet_proof: "Создай капсулу с текстом, файлом или медиа.",
-    hero_bullet_event: "Задай правила: время, место, пароль, визуальный ключ.",
-    hero_note: "Без аккаунтов. Работает оффлайн. Расшифровка и проверка бесплатны.",
-    hero_card_1_title: "Создай",
-    hero_card_1_desc: "Добавь текст, файлы или медиа.",
-    hero_card_2_title: "Задай правила",
-    hero_card_2_desc: "Время, место, пароль, AND/OR.",
-    hero_card_3_title: "Отправь",
-    hero_card_3_desc: "Любым способом. Открытие бесплатно.",
-    use_cases_title: "Что такое капсула TrueLock?",
-    use_case_proof_title: "Создай капсулу",
-    use_case_proof_text: "Положи содержимое и задай правила. Это занимает минуту.",
-    use_case_proof_cta: "Посмотреть шаги",
-    use_case_event_title: "Отправь как файл",
-    use_case_event_text: "Перешли через Telegram, WhatsApp, email, флешку или облако. Получатель открывает бесплатно.",
-    use_case_event_cta: "Как отправлять",
-    chain_title: "Нужна серия шагов? Используй цепочку капсул",
-    chain_text: "Можно связать капсулы: каждая открывает следующий шаг. Подходит для квестов, запусков и поэтапных раскрытий.",
-    chain_step_1: "Шаг 1: первая капсула открывается",
-    chain_step_2: "Шаг 2: она выдаёт подсказку или ссылку",
-    chain_step_3: "Шаг 3: следующая капсула открывает награду",
-    how_title: "Как работает TrueLock",
-    how_step1_title: "Создай",
-    how_step1_text: "Выбери текст, файл или медиа.",
-    how_step2_title: "Добавь правила",
-    how_step2_text: "Время, место, пароль, визуальный ключ, AND/OR.",
-    how_step3_title: "Отправь",
-    how_step3_text: "Поделись капсулой. Получатель открывает бесплатно.",
-    products_title: "Внутри приложения — 4 простых режима",
-    products_subtitle: "Начни с «Капсул». Остальные режимы — для файлов и папок.",
-    product_capsules_title: "Капсулы",
-    product_capsules_text: "Главный режим для безопасной отправки с правилами.",
-    product_files_title: "Файлы",
-    product_files_text: "Быстрое шифрование и расшифровка файлов.",
-    product_batch_title: "Пакеты и архивы",
-    product_batch_text: "Папки и архивы в масштабе.",
-    product_policy_title: "Шифрование по правилам",
-    product_policy_text: "Продвинутые сценарии с правилами.",
-    features_title: "Что умеет TrueLock",
-    feature_time: "Открытие только по времени",
-    feature_geo: "Открытие только по месту",
-    feature_visual: "Визуальный ключ (легко запомнить)",
-    feature_andor: "Комбинации правил AND/OR",
-    feature_offline: "Оффлайн-first, без серверов",
-    feature_cross: "Кроссплатформа и 8 языков",
-    feature_share: "Отправка как обычного файла",
-    feature_history: "Локальная история и автоочистка",
-    security_title: "Безопасность и доверие",
-    security_text: "Данные остаются на твоём устройстве. Капсула — это файл, который открывается только по правилам.",
-    security_point1: "Нет облака и аккаунтов",
-    security_point2: "Если файл изменён — он не откроется",
-    security_point3: "Расшифровка и проверка всегда бесплатны",
-    social_title: "Ранние пользователи и сообщества",
-    social_line1: "Используется в трейдинге, privacy и creator-сообществах.",
-    social_line2: "Запуск на 8 языках.",
-    roadmap_title: "Открытый роадмап",
-    roadmap_line: "Дальше: камера-капсулы, больше пресетов, полировка UX.",
-    download_title: "Скачать TrueLock",
-    download_text: "Выбери платформу. Открытие капсул всегда бесплатно.",
-    download_android: "Android",
-    download_ios: "iOS",
-    download_windows: "Windows",
-    download_macos: "macOS",
-    download_linux: "Linux",
-    faq_title: "FAQ",
-    faq_q1: "Что такое капсула простыми словами?",
-    faq_a1: "Это защищенный файл, который открывается только по правилам.",
-    faq_q2: "Получателю нужно платить?",
-    faq_a2: "Нет. Открытие и проверка всегда бесплатны.",
-    faq_q3: "Нужен ли интернет?",
-    faq_a3: "Нет. Открытие и проверка работают оффлайн (гео использует GPS).",
-    faq_q4: "Что если я потеряю пароль?",
-    faq_a4: "Капсула не откроется. TrueLock не может сбросить доступ.",
-    faq_q5: "Есть ли трекинг?",
-    faq_a5: "Нет. Ни аккаунтов, ни облака, ни аналитики.",
-    final_title: "Создай первую капсулу за 30 секунд.",
-    final_text: "Безопасная отправка с понятными правилами.",
-    final_cta: "Скачать TrueLock",
-    quick_title: "Сценарий за 30 секунд",
-    quick_step1: "Создай капсулу и добавь текст или файл.",
-    quick_step2: "Задай правила (время, место, пароль).",
-    quick_step3: "Отправь капсулу как обычный файл.",
-    quick_step4: "Она откроется только при выполнении условий.",
-    quick_note: "Получатель открывает бесплатно. Без аккаунтов.",
-    mini_faq_title: "Быстрые ответы",
-    mini_faq_q1: "Что такое капсула?",
-    mini_faq_a1: "Это защищенный файл, который открывается только по правилам.",
-    mini_faq_q2: "Получателю нужно платить?",
-    mini_faq_a2: "Нет. Открытие и проверка бесплатны.",
-    mini_faq_q3: "Нужен интернет?",
-    mini_faq_a3: "Нет. Работает оффлайн (гео использует GPS).",
-    use_cases_title: "Три флагманских кейса",
-    use_case_1_label: "Proof Capsules",
-    use_case_1_title: "Proof Capsules (Инфраструктура доверия)",
-    use_case_1_item1: "Торговые сигналы",
-    use_case_1_item2: "Прогнозы",
-    use_case_1_item3: "Юридические доказательства",
-    use_case_1_value: "Ценность: эта информация существовала до события.",
-    use_case_2_label: "Event Capsules",
-    use_case_2_title: "Event Capsules (Оффлайн-активации)",
-    use_case_2_item1: "Оффлайн-ивенты",
-    use_case_2_item2: "Гео-дропы",
-    use_case_2_item3: "Эксклюзивные открытия",
-    use_case_2_value: "Ценность: контент открывается только в нужном месте и в нужное время.",
-    use_case_3_label: "Campaign Capsules",
-    use_case_3_title: "Campaign / Quest Capsules (Маркетинговый движок)",
-    use_case_3_item1: "Бренд-квесты",
-    use_case_3_item2: "Инфлюенсер-активации",
-    use_case_3_item3: "Ритейл-трафик",
-    use_case_3_value: "Ценность: запускай кампании в реальном мире без серверов.",
-    problems_title: "Проблемы, которые мы решаем",
-    problems_subtitle: "Боли, за которые уже платят деньги.",
-    problem_1_label: "Проблема 1",
-    problem_1_title: "Мне не верят, что это было создано заранее.",
-    problem_1_text: "Скриншоты, PDF и посты можно изменить или удалить. Момент создания сложно доказать.",
-    problem_1_cost: "Цена: потеря доверия и репутационные споры.",
-    problem_2_label: "Проблема 2",
-    problem_2_title: "Нужно открыть контент только в нужное время или месте.",
-    problem_2_text: "Мессенджеры открывают сразу. Ссылки пересылаются. Сайты требуют серверов и логинов.",
-    problem_2_cost: "Цена: нет контроля и вау-эффекта.",
-    problem_3_label: "Проблема 3",
-    problem_3_title: "Нужен инструмент доверия, а не просто шифрование.",
-    problem_3_text: "Обычные шифраторы защищают файл, но не доказывают контекст и правила.",
-    problem_3_cost: "Цена: трудно объяснить ценность, низкая вирусность.",
-    problem_4_label: "Проблема 4",
-    problem_4_title: "Не хочу аккаунты и доверие облакам.",
-    problem_4_text: "Аккаунты, сервера, подписки и логи создают страх и трение.",
-    problem_4_cost: "Цена: пользователи уходят.",
-    problem_5_label: "Проблема 5",
-    problem_5_title: "Нужен инструмент, который работает между людьми.",
-    problem_5_text: "Доверие требует двух сторон: один создает, другой проверяет.",
-    problem_5_cost: "Цена: большинство инструментов одиночные и не подходят для доказательств.",
-    shift_title: "Сдвиг",
-    shift_subtitle: "Что TrueLock делает иначе.",
-    shift_1_title: "Proof Capsules",
-    shift_1_text: "Создай капсулу, опубликуй, открой позже — без правок и перепаковки.",
-    shift_2_title: "Event Capsules",
-    shift_2_text: "Открытие только в нужное время/место. Комбинации AND/OR.",
-    shift_3_title: "Trust-engine, а не просто шифратор",
-    shift_3_text: "Переносимое доказательство, оффлайн-проверка, прозрачные правила.",
-    shift_4_title: "Decrypt & Verify всегда бесплатно",
-    shift_4_text: "Любой может открыть и проверить без регистрации и оплаты.",
-    shift_5_title: "Один ансамбль, много сценариев",
-    shift_5_text: "Трейдинг, инфлюенсеры, маркетинг, ивенты, команды — один движок.",
-    shift_formula: "TrueLock решает задачу создания доверия между людьми.",
-    shift_cta_primary: "Создать первую Proof-капсулу",
-    shift_cta_secondary: "Смотреть кейсы",
-    security_subtitle: "Создано для доказательств, а не обещаний.",
-    security_block1_title: "Создано для доказательств, а не обещаний",
-    security_block1_html: "<p>TrueLock создан не только для шифрования, но и чтобы помогать доказывать целостность, происхождение и неизменность.</p><ul><li>Когда это было создано</li><li>Что это не изменялось</li><li>Что соблюдены заданные правила</li></ul><p class=\"micro\">Без аккаунтов. Без серверов. Без доверия к третьей стороне.</p>",
-    security_block2_title: "Современные крипто-стандарты",
-    security_block2_html: "<ul><li>AES-256-GCM — аутентифицированное шифрование</li><li>PBKDF2 — вывод ключей из пароля</li><li>SHA-256 / SHA-512 — хеширование и целостность</li><li>Случайные nonce и salt для каждой капсулы</li><li>Аутентифицированные заголовки против подмены</li></ul><p class=\"micro\">При изменении байта проверка должна провалиться.</p>",
-    security_block3_title: "Аппаратная защита (когда доступна)",
-    security_block3_html: "<p>На поддерживаемых платформах TrueLock может использовать аппаратную защиту.</p><ul><li>Secure Enclave на iOS</li><li>TPM / системные модули безопасности на десктопе</li><li>Secure storage на Android</li></ul><ul><li>Ключи не логируются</li><li>Не хардкодятся</li><li>Очищаются из памяти, где это возможно</li></ul>",
-    security_block4_title: "Проверяемая целостность — со временем",
-    security_block4_html: "<p>Капсулы проверяются оффлайн — сейчас или позже.</p><ul><li>Без облака</li><li>Без сервера, которому нужно доверять</li><li>Без аккаунта</li></ul><p class=\"micro\">Проверка всегда бесплатна.</p>",
-    security_block5_title: "Защита от подмены и повторов",
-    security_block5_html: "<ul><li>Подмена → обнаруживается аутентифицированным шифрованием</li><li>Replay-атаки → снижены уникальными nonce</li><li>Timing-атаки → снижены там, где это возможно</li><li>Частичное извлечение → ломает проверку</li></ul><p class=\"micro\">Попытка подделки обычно приводит к провалу проверки.</p>",
-    security_block6_title: "Приватность по умолчанию",
-    security_block6_html: "<ul><li>Без трекинга</li><li>Без аналитических SDK внутри капсул</li><li>Без скрытой подстановки метаданных</li><li>Без серверного логирования контента</li></ul><p class=\"micro\">То, что ты закрываешь, известно только тебе и получателю.</p>",
-    security_block7_title: "Прозрачно и аудируемо",
-    security_block7_html: "<p>Решения безопасности явные и рассчитаны на аудит. Формат капсулы и крипто-поток документируются.</p><p class=\"micro\">Доверие строится на проверяемости, а не на маркетинге.</p>",
-    security_block8_title: "Что это значит для пользователей",
-    security_block8_html: "<ul><li>Не нужно верить на слово</li><li>Не нужно доверять компании</li><li>Не нужен аккаунт</li></ul><p class=\"micro\">Можно доказать: контент существовал, не менялся и правила соблюдены.</p>",
-    security_summary_title: "Итог",
-    security_summary_html: "<ul><li>Современная криптография</li><li>Оффлайн-проверка без серверов</li><li>Аппаратная защита, когда доступна</li><li>Приватность по умолчанию</li><li>Доказательство вместо обещаний</li></ul>",
-    footer_tagline: "Без серверов • Без аккаунтов • Оффлайн-first",
-    footer_copy: "© 2025 TrueLock"
-  },
-  de: {
-    meta_title: "TrueLock — Sichere Kapseln",
-    meta_description: "Sperre eine Nachricht oder Datei, die nur nach Regeln öffnet. Offline-first.",
-    logo_alt: "TrueLock Logo",
-    nav_use_cases: "Was ist das",
-    nav_how: "So funktioniert’s",
-    nav_features: "Features",
-    nav_security: "Sicherheit",
-    nav_download: "Download",
-    nav_faq: "FAQ",
-    cta_download: "TrueLock herunterladen",
-    cta_how: "Schritte ansehen",
-    hero_eyebrow: "Einfache sichere Weitergabe",
-    hero_title: "Sende eine Nachricht oder Datei, die nur bei erfüllten Regeln öffnet.",
-    hero_subtitle: "TrueLock erstellt eine Kapsel — eine sichere Datei. Du setzt Regeln (Zeit, Ort, Passwort) und sendest sie. Der Empfänger öffnet kostenlos.",
-    hero_bullet_proof: "Erstelle eine Kapsel mit Text, Dateien oder Medien.",
-    hero_bullet_event: "Setze Regeln: Zeit, Ort, Passwort, visueller Schlüssel.",
-    hero_note: "Keine Accounts. Offline. Entschlüsseln und Prüfen gratis.",
-    hero_card_1_title: "Erstellen",
-    hero_card_1_desc: "Text, Dateien oder Medien hinzufügen.",
-    hero_card_2_title: "Regeln setzen",
-    hero_card_2_desc: "Zeit, Ort, Passwort, AND/OR.",
-    hero_card_3_title: "Senden",
-    hero_card_3_desc: "Überall teilen. Kostenlos öffnen.",
-    use_cases_title: "Was ist eine TrueLock-Kapsel?",
-    use_case_proof_title: "Kapsel erstellen",
-    use_case_proof_text: "Inhalt einfügen und Regeln setzen. Dauert etwa eine Minute.",
-    use_case_proof_cta: "Schritte ansehen",
-    use_case_event_title: "Wie eine Datei senden",
-    use_case_event_text: "Teile per Telegram, WhatsApp, E-Mail, USB oder Cloud. Der Empfänger öffnet gratis.",
-    use_case_event_cta: "Teilen ansehen",
-    chain_title: "Mehrere Schritte? Nutze Chain Capsules",
-    chain_text: "Verbinde Kapseln, sodass jede den nächsten Schritt enthüllt. Gut für Quests und gestufte Releases.",
-    chain_step_1: "Schritt 1: erste Kapsel öffnet",
-    chain_step_2: "Schritt 2: Hinweis oder Link",
-    chain_step_3: "Schritt 3: nächste Kapsel gibt die Belohnung",
-    how_title: "So funktioniert TrueLock",
-    how_step1_title: "Erstellen",
-    how_step1_text: "Text, Dateien oder Medien wählen.",
-    how_step2_title: "Regeln hinzufügen",
-    how_step2_text: "Zeit, Ort, Passwort, visueller Schlüssel, AND/OR.",
-    how_step3_title: "Senden",
-    how_step3_text: "Kapsel teilen. Empfänger öffnet kostenlos.",
-    products_title: "In der App: 4 einfache Tools",
-    products_subtitle: "Starte mit Kapseln. Andere Modi sind für Dateien und Ordner.",
-    product_capsules_title: "Kapseln",
-    product_capsules_text: "Hauptmodus für sichere Weitergabe mit Regeln.",
-    product_files_title: "Dateien",
-    product_files_text: "Schnelle Datei-Verschlüsselung.",
-    product_batch_title: "Batch & Archive",
-    product_batch_text: "Ordner und Archive im großen Stil.",
-    product_policy_title: "Policy Encryption",
-    product_policy_text: "Erweiterte Regeln für Spezialfälle.",
-    features_title: "Was TrueLock kann",
-    feature_time: "Öffnet nur nach Zeit",
-    feature_geo: "Öffnet nur am Ort",
-    feature_visual: "Visueller Schlüssel",
-    feature_andor: "Regeln mit AND/OR kombinieren",
-    feature_offline: "Offline-first, keine Server",
-    feature_cross: "Plattformübergreifend und 8 Sprachen",
-    feature_share: "Kapseln wie normale Dateien teilen",
-    feature_history: "Lokaler Verlauf + Auto-Cleanup",
-    security_title: "Sicherheit ohne Hype",
-    security_text: "Deine Daten bleiben auf dem Gerät. Die Kapsel öffnet nur bei erfüllten Regeln.",
-    security_point1: "Keine Cloud und keine Accounts",
-    security_point2: "Geänderte Dateien öffnen nicht",
-    security_point3: "Entschlüsseln und Prüfen immer gratis",
-    social_title: "Frühe Nutzer & Communities",
-    social_line1: "Genutzt in Trading-, Privacy- und Creator-Communities.",
-    social_line2: "Start in 8 Sprachen.",
-    roadmap_title: "Offene Roadmap",
-    roadmap_line: "Als Nächstes: Kamera-Kapseln, mehr Presets, UX-Polish.",
-    download_title: "TrueLock herunterladen",
-    download_text: "Wähle die Plattform. Öffnen ist immer kostenlos.",
-    download_android: "Android",
-    download_ios: "iOS",
-    download_windows: "Windows",
-    download_macos: "macOS",
-    download_linux: "Linux",
-    faq_title: "FAQ",
-    faq_q1: "Was ist eine Kapsel in einfachen Worten?",
-    faq_a1: "Eine sichere Datei, die nur bei Regeln öffnet.",
-    faq_q2: "Muss der Empfänger zahlen?",
-    faq_a2: "Nein. Öffnen und Prüfen ist kostenlos.",
-    faq_q3: "Brauche ich Internet?",
-    faq_a3: "Nein. Öffnen und Prüfen offline (Geo nutzt GPS).",
-    faq_q4: "Was, wenn ich das Passwort verliere?",
-    faq_a4: "Die Kapsel öffnet nicht. TrueLock kann keinen Zugang zurücksetzen.",
-    faq_q5: "Gibt es Tracking?",
-    faq_a5: "Nein. Keine Accounts, keine Cloud, keine Analytics.",
-    final_title: "Erstelle deine erste Kapsel in 30 Sekunden.",
-    final_text: "Sicher teilen mit klaren Regeln.",
-    final_cta: "TrueLock herunterladen",
-    quick_title: "30-Sekunden-Szenario",
-    quick_step1: "Erstelle eine Kapsel und f?ge Text oder Datei hinzu.",
-    quick_step2: "Setze Regeln (Zeit, Ort, Passwort).",
-    quick_step3: "Sende die Kapsel wie eine normale Datei.",
-    quick_step4: "Sie ?ffnet nur, wenn die Regeln erf?llt sind.",
-    quick_note: "Empf?nger ?ffnen kostenlos. Keine Accounts.",
-    mini_faq_title: "Schnelle Antworten",
-    mini_faq_q1: "Was ist eine Kapsel?",
-    mini_faq_a1: "Eine sichere Datei, die nur mit Regeln ?ffnet.",
-    mini_faq_q2: "Muss der Empf?nger zahlen?",
-    mini_faq_a2: "Nein. ?ffnen und Pr?fen ist kostenlos.",
-    mini_faq_q3: "Brauche ich Internet?",
-    mini_faq_a3: "Nein. Offline (Geo nutzt GPS).",
-    use_cases_title: "Drei wichtigste Use Cases",
-    use_case_1_label: "Proof Capsules",
-    use_case_1_title: "Proof Capsules (Vertrauens-Infrastruktur)",
-    use_case_1_item1: "Trading-Signale",
-    use_case_1_item2: "Prognosen",
-    use_case_1_item3: "Juristische Nachweise",
-    use_case_1_value: "Wert: Diese Information existierte vor dem Ereignis.",
-    use_case_2_label: "Event Capsules",
-    use_case_2_title: "Event Capsules (Offline-Aktivierung)",
-    use_case_2_item1: "Offline-Events",
-    use_case_2_item2: "Geo-Drops",
-    use_case_2_item3: "Exklusive ?ffnungen",
-    use_case_2_value: "Wert: Inhalte nur am richtigen Ort und zur richtigen Zeit ?ffnen.",
-    use_case_3_label: "Campaign Capsules",
-    use_case_3_title: "Campaign / Quest Capsules (Marketing Engine)",
-    use_case_3_item1: "Brand-Quests",
-    use_case_3_item2: "Influencer-Aktivierungen",
-    use_case_3_item3: "Retail-Traffic",
-    use_case_3_value: "Wert: Echte Kampagnen ohne Server starten.",
-    problems_title: "Probleme, die wir lösen",
-    problems_subtitle: "Die Probleme, für die Menschen bereits zahlen.",
-    problem_1_label: "Problem 1",
-    problem_1_title: "Man glaubt nicht, dass es vor dem Ereignis existierte.",
-    problem_1_text: "Screenshots, PDFs und Posts können geändert oder gelöscht werden. Der Zeitpunkt ist schwer zu beweisen.",
-    problem_1_cost: "Kosten: Vertrauensverlust und Reputationsstreit.",
-    problem_2_label: "Problem 2",
-    problem_2_title: "Inhalte sollen nur zur richtigen Zeit oder am richtigen Ort öffnen.",
-    problem_2_text: "Messenger öffnen sofort. Links können weitergeleitet werden. Websites benötigen Server und Logins.",
-    problem_2_cost: "Kosten: keine Kontrolle und kein Wow‑Effekt.",
-    problem_3_label: "Problem 3",
-    problem_3_title: "Ich brauche Vertrauen, nicht nur Verschlüsselung.",
-    problem_3_text: "Klassische Encryptor schützen eine Datei, beweisen aber keinen Kontext oder Regeln.",
-    problem_3_cost: "Kosten: schwer erklärbarer Wert, geringe Viralität.",
-    problem_4_label: "Problem 4",
-    problem_4_title: "Keine Accounts und kein Cloud‑Vertrauen.",
-    problem_4_text: "Accounts, Server, Abos und Logs erzeugen Angst und Reibung.",
-    problem_4_cost: "Kosten: Nutzer springen ab.",
-    problem_5_label: "Problem 5",
-    problem_5_title: "Ein Tool, das zwischen Menschen funktioniert.",
-    problem_5_text: "Vertrauen braucht zwei Seiten: einer erstellt, der andere prüft.",
-    problem_5_cost: "Kosten: die meisten Tools sind Single‑User und nicht proof‑tauglich.",
-    shift_title: "Der Wandel",
-    shift_subtitle: "Was TrueLock anders macht.",
-    shift_1_title: "Proof Capsules",
-    shift_1_text: "Kapsel erstellen, veröffentlichen, später öffnen — ohne Bearbeitung oder Re‑Packaging.",
-    shift_2_title: "Event Capsules",
-    shift_2_text: "Öffnet nur zur richtigen Zeit/am richtigen Ort. Regeln mit AND/OR kombinieren.",
-    shift_3_title: "Vertrauens‑Engine, nicht nur Verschlüsselung",
-    shift_3_text: "Portabler Proof, Offline‑Verifikation, transparente Regeln.",
-    shift_4_title: "Entschlüsseln & Prüfen ist immer kostenlos",
-    shift_4_text: "Jeder kann ohne Registrierung oder Zahlung öffnen und prüfen.",
-    shift_5_title: "Ein Ensemble, viele Szenarien",
-    shift_5_text: "Trading, Influencer, Marketing, Events, Teams — gleiche Engine.",
-    shift_formula: "TrueLock löst das Problem, Vertrauen zwischen Menschen zu schaffen.",
-    shift_cta_primary: "Erstelle deine erste Proof‑Capsule",
-    shift_cta_secondary: "Use Cases ansehen",
-    security_subtitle: "Für Beweise, nicht für Versprechen.",
-    security_block1_title: "Für Beweise, nicht für Versprechen",
-    security_block1_html: "<p>TrueLock wurde nicht nur zur Verschlüsselung entwickelt, sondern um Integrität, Herkunft und Unveränderlichkeit nachweisbar zu machen.</p><ul><li>Wann es erstellt wurde</li><li>Dass es nicht verändert wurde</li><li>Dass es den von dir gesetzten Regeln folgte</li></ul><p class=\"micro\">Keine Accounts. Keine Server. Kein Vertrauen nötig.</p>",
-    security_block2_title: "Moderne Kryptografie-Standards",
-    security_block2_html: "<ul><li>AES-256-GCM — authentifizierte Verschlüsselung</li><li>PBKDF2 — Schlüsselableitung aus Passwörtern</li><li>SHA-256 / SHA-512 — Hashing und Integrität</li><li>Sichere zufällige Nonces & Salts</li><li>Authentifizierte Header gegen Manipulation</li></ul><p class=\"micro\">Wenn ein Byte geändert wird, sollte die Prüfung fehlschlagen.</p>",
-    security_block3_title: "Hardware‑gestützte Sicherheit (wenn verfügbar)",
-    security_block3_html: "<p>Auf unterstützten Plattformen kann TrueLock hardware‑gestützte Sicherheit nutzen.</p><ul><li>Secure Enclave auf iOS</li><li>TPM / System‑Sicherheitsmodule auf Desktop</li><li>Secure Storage auf Android</li></ul><ul><li>Schlüssel werden nicht geloggt</li><li>Nicht hardcodiert</li><li>Wenn möglich nach Nutzung aus dem Speicher gelöscht</li></ul>",
-    security_block4_title: "Nachweisbare Integrität — über die Zeit",
-    security_block4_html: "<p>Kapseln sind offline überprüfbar — jetzt oder später.</p><ul><li>Keine Cloud‑Abhängigkeit</li><li>Kein Server, dem man vertrauen muss</li><li>Kein Account erforderlich</li></ul><p class=\"micro\">Die Verifikation ist immer kostenlos.</p>",
-    security_block5_title: "Manipulations‑ und Replay‑Schutz",
-    security_block5_html: "<ul><li>Manipulation → durch authentifizierte Verschlüsselung erkennbar</li><li>Replay‑Angriffe → durch einzigartige Nonces reduziert</li><li>Timing‑Angriffe → wo möglich reduziert</li><li>Teilweise Extraktion → bricht die Verifikation</li></ul><p class=\"micro\">Wenn jemand versucht, eine Kapsel zu fälschen oder neu zu verpacken, sollte die Prüfung fehlschlagen.</p>",
-    security_block6_title: "Datenschutz by design",
-    security_block6_html: "<ul><li>Kein Tracking</li><li>Keine Analytics‑SDKs in Kapseln</li><li>Keine versteckte Metadaten‑Injection</li><li>Kein serverseitiges Logging von Inhalten</li></ul><p class=\"micro\">Was du sperrst, ist nur dir und dem Empfänger bekannt.</p>",
-    security_block7_title: "Transparent & auditierbar",
-    security_block7_html: "<p>Sicherheitsentscheidungen sind explizit und auf Audit ausgelegt. Kapsel‑Format und Crypto‑Flow sind dokumentiert.</p><p class=\"micro\">Vertrauen kommt von Nachprüfbarkeit, nicht von Marketing.</p>",
-    security_block8_title: "Was das für Nutzer bedeutet",
-    security_block8_html: "<ul><li>Du musst nichts glauben</li><li>Du musst keinem Unternehmen vertrauen</li><li>Du brauchst keinen Account</li></ul><p class=\"micro\">Du kannst beweisen: es existierte, wurde nicht verändert, Regeln wurden eingehalten.</p>",
-    security_summary_title: "Zusammenfassung",
-    security_summary_html: "<ul><li>Moderne Kryptografie</li><li>Offline‑Verifikation ohne Server</li><li>Hardware‑gestützte Sicherheit, wenn verfügbar</li><li>Datenschutz by Design</li><li>Beweise statt Versprechen</li></ul>",
+    "nav_pain": "Проблема",
+    "nav_breakthrough": "Как работает?",
+    "nav_cases": "Кейсы",
+    "nav_audience": "Кому подойдет?",
+    "nav_security": "Безопасность",
+    "nav_pricing": "Цены",
+    "nav_download": "Скачать",
+    "cta_primary": "Скачать TrueLock",
+    "cta_secondary": "Посмотреть кейсы",
+    "hero_note": "Работает офлайн. Без аккаунтов. Один защищённый файл. Открытие бесплатно.",
+    "hero_eyebrow": "Передавайте данные в сети, не боясь утечек",
+    "hero_title": "TrueLock — умный замок для цифровой информации",
+    "hero_subtitle_html": "Создавай свою <strong>Secure Capsule</strong> и контролируй доступ: откроется только по <strong>времени</strong>, <strong>месту</strong>, <strong>паролю</strong> или <strong>визуальному ключу</strong>. Всё под твоим контролем!",
+    "hero_feature_1": "Time‑Lock",
+    "hero_feature_2": "Geo‑Lock",
+    "hero_feature_3": "Пароль / Визуальный ключ",
+    "hero_feature_4": "Логика и / или",
+    "hero_card_1_title": "Proof Capsule",
+    "hero_card_1_desc": "Зафиксируй информацию сейчас и докажи это позже.",
+    "hero_card_2_title": "Event Capsule",
+    "hero_card_2_desc": "Раскрывается только в нужном месте и времени.",
+    "hero_card_3_title": "AND/OR Unlock",
+    "hero_card_3_desc": "Комбинируй условия и управляй доступом.",
+    "pain_title": "Проблема не в безопасности - проблема в контроле над безопасностью",
+    "pain_subtitle": "",
+    "pain_list_1": "✉️ Переписку можно перехватить.",
+    "pain_list_2": "🌐 Платформы имеют доступ к вашим данным.",
+    "pain_list_3": "📝 Файлы можно скопировать или подделать.",
+    "pain_list_4": "®️ Невозможно доказать оригинальность.",
+    "pain_list_5": "🧩 Сложные решения по шифровке данных отпугивают обычных людей.",
+    "pain_list_6": "⚙️ Нежелательное раскрытие данных раньше положенного времени или в неподходящем месте.",
+    "pain_proof_problem_title": "Проблема",
+    "pain_statement_title": "Решение",
+    "pain_statement_desc": "Капсула — файл со встроенной политикой раскрытия. Без аккаунтов, без серверов, без «поверь на слово».",
+    "breakthrough_title": "Как это работает?",
+    "breakthrough_subtitle": "Создай капсулу, задай правила, отправь куда угодно. Получатель откроет только при выполнении условий.",
+    "breakthrough_list_1": "1. Создай капсулу с текстом, файлами, фото или видео.Создай капсулу с текстом, файлами, фото или видео.",
+    "breakthrough_list_2": "2. Задай условия: время, место, пароль, визуальный ключ.",
+    "breakthrough_list_3": "3. Комбинируй условия с логикой И / ИЛИ.",
+    "breakthrough_list_4": "4. Отправь файл через любой мессенджер.",
+    "breakthrough_list_5":"5. Открытие и проверка всегда бесплатны.",
+    "breakthrough_note_title": "Не «очередной шифратор»",
+    "audience_title": "Кому подойдёт?",
+    "audience_subtitle": "Криэйторы. Трейдеры. Команды. Массовый consumer. Разные слова — одна мощная механика.",
+    "audience_1_title": "Журналисты и авторы",
+    "audience_1_desc": "Защита материалов и источников.",
+    "audience_2_title": "Трейдеры и аналитики",
+    "audience_2_desc": "Фиксация сигналов и прогнозов.",
+    "audience_3_title": "Команды и бизнес",
+    "audience_3_desc": "Передача файлов без облаков.",
+    "audience_4_title": "Обычные пользователи",
+    "audience_4_desc": "Личная информация защищена от посторонних.",
+    "audience_1_text": "Защита материалов и источников.",
+    "audience_2_text": "Фиксация сигналов и прогнозов.",
+    "audience_3_text": "Передача файлов без облаков и создание мероприятий.",
+    "audience_4_text": "Личная информация защищена от посторонних.",
+    "cases_title": "Кейсы",
+    "cases_subtitle": "Понятные задачи — понятные решения.",
+    "case1_title": "Proof-Капсула",
+    "case1_subtitle": "Фиксация информации во времени.",
+    "case1_bullet1": "Выкладываешь капсулу сейчас (публично или в группу).",
+    "case1_bullet2": "Ставишь время раскрытия (и при желании пароль для премиум‑доступа).",
+    "case1_bullet3": "При раскрытии видно: контент не правился после события.",
+    "case1_tag": "Механика доверия для трейдеров и криэйторов.",
+    "case2_title": "Event-Капсула",
+    "case2_subtitle": "Собирай людей в месте и времени — потому что раскрытие реально.",
+    "case2_bullet1": "Кладёшь внутрь приз/подсказку/купон/инструкцию.",
+    "case2_bullet2": "Ставишь гео + окно времени (например, «центр Варшавы 21:00–21:30»).",
+    "case2_bullet3": "Люди приходят. Получается вирусный IRL‑момент.",
+    "case2_tag": "Супер‑сила для маркетинга и блогеров.",
+    "case3_title": "Pay-to-Unlock",
+    "case3_subtitle": "Продавай доступ легально: по времени — всем, по паролю — покупателям.",
+    "case3_bullet1": "Создаёшь капсулу с Time‑Lock.",
+    "case3_bullet2": "Добавляешь Пароль как условие ИЛИ для раннего доступа.",
+    "case3_bullet3": "Покупатели платят за пароль и открывают сразу — остальные ждут.",
+    "case3_tag": "Идеально для платных сигналов и премиум‑дропов.",
+    "security_title": "Безопасность",
+    "security_subtitle": "Чтобы доверять TrueLock, не нужен облачный аккаунт. Файл шифруется и проверяется на устройстве.",
+    "security_summary_title": "Что это даёт",
+    "pricing_title": "Цены",
+    "pricing_subtitle": "Открытие бесплатно навсегда. Pro — разовый апгрейд $9.99 для создания продвинутых капсул.",
+    "pricing_free_title": "Free",
+    "pricing_free_price": "$0",
+    "pricing_free_b1": "Открывать/расшифровывать без лимитов",
+    "pricing_free_b2": "Базовые текст‑капсулы (лимит)",
+    "pricing_free_b3": "Офлайн, без аккаунта",
+    "pricing_pro_title": "Pro (навсегда)",
+    "pricing_pro_price": "$9.99",
+    "pricing_pro_note": "Один платёж. Без подписок.",
+    "pricing_pro_b1": "Капсулы без лимитов + вложения",
+    "pricing_pro_b2": "Время/Гео/Пароль/Визуал + AND/OR",
+    "pricing_pro_b3": "Batch‑сценарии и продвинутые режимы",
+    "pricing_cta": "Скачать и апгрейднуться в приложении",
+    "pricing_cta_secondary": "Как проходит покупка Pro",
+    "upgrade_title": "Как купить Pro ($9.99)",
+    "upgrade_subtitle": "Чистый flow для лендинга: сначала скачал, затем апгрейд внутри приложения.",
+    "upgrade_how_title": "Пошагово",
+    "upgrade_step1": "Скачай TrueLock под свою платформу.",
+    "upgrade_step2": "Открой приложение → нажми «Upgrade to Pro».",
+    "upgrade_step3": "Оплати $9.99 через подключённого провайдера и получи Pro сразу.",
+    "upgrade_note": "Так надёжнее: не нужно хардкодить платёжные ссылки, провайдера можно менять без редизайна.",
+    "upgrade_cta_download": "Скачать",
+    "upgrade_cta_back": "Вернуться к ценам",
+    "upgrade_why_title": "Что даёт Pro",
+    "upgrade_why_1": "🌟 Капсулы без лимитов + файлы/фото/видео",
+    "upgrade_why_2": "🌟 Условия: время/гео/пароль/визуал",
+    "upgrade_why_3": "🌟 Политики AND/OR (платное раскрытие, ранний доступ, multi‑factor)",
+    "upgrade_why_4": "🌟 Batch‑операции и продвинутые режимы",
+    "upgrade_refund": "Возвраты зависят от канала оплаты/магазина.",
+    "download_title": "Скачать",
+    "download_subtitle": "Десктоп и мобильные. Pro покупается внутри приложения за $9.99.",
+    "download_windows": "Windows",
+    "download_macos": "macOS",
+    "download_linux": "Linux",
+    "download_android": "Android",
+    "download_ios": "iOS",
+    "download_web": "Web (preview)",
+    "download_note": "После установки: открой приложение → Upgrade to Pro. Платёж идёт через подключённого провайдера (например, Mercuryo).",
+    "final_title": "Доверие — в одном файле.",
+    "final_text": "Proof‑капсулы, дропы и раскрытие «на месте» — без серверов и без «поверь на слово».",
+    "final_cta": "Скачать TrueLock",
+    "footer_tagline": "TrueLock — умный замок для цифровой информации",
+    "footer_copy": "© TrueLock. Офлайн шифрование + policy engine. Расшифровка всегда бесплатна.",
+    "breakthrough_text_html": "TrueLock — это <strong>формат защищённой капсулы</strong> с правилами доступа.",
+    "security_block1_html": "AES‑256‑GCM, salt на файл и крипто‑рандом для nonce.",
+    "security_block2_html": "Без аккаунтов и обязательного облака.",
+    "security_block3_html": "Один формат капсулы на ПК и мобильных устройствах.",
+    "security_block4_html": "Окно времени И локация, или пароль ИЛИ визуальный ключ.",
+    "security_block5_html": "Чувствительные данные остаются внутри шифра.",
+    "security_block6_html": "Видно, какое условие не выполнено — без раскрытия секретов.",
+    "security_block7_html": "Можно передавать капсулы публично без paywall для получателя.",
+    "security_block8_html": "Для приватности и доверия. Используйте в рамках закона.",
+    "security_summary_html": "Если нужно <strong>доказать</strong>, <strong>раскрыть позже</strong> или <strong>открыть в определенном месте</strong> — TrueLock делает это проще всего.",
+    "logo_alt": "Логотип TrueLock",
+    "pain_statement_text": "TrueLock оставляет контроль у вас. Вам обеспечена:",
+    "pain_statement_problem_text": "Рассмотрим настоящие проблемы безопасности данных:",
+    "pain_proof_1": "✉️ Безопасная отправка по открытым каналам.",
+    "pain_proof_2": "🌐 Защита от платформ и посредников.",
+    "pain_proof_3": "📝 Просмотр и редактирование осуществляется в защищенном приложении",
+    "pain_proof_4": "®️ Доказательство неизменности данных, благодаря встроенному логу.",
+    "pain_proof_5": "🧩 Простое интуитивно понятное приложение для защиты и отправки данных.",
+    "pain_proof_6": "⚙️ Доступ к данным раскроется только в нужный время и / или место.",
+    "breakthrough_note": "Мы сделали слой “механик доверия” — шифрование здесь просто двигатель.",
+    "cases_proof_title": "Proof-капсула",
+    "cases_proof_text": "Фиксация информации во времени.",
+    "cases_event_title": "Event Capsule",
+    "cases_event_text": "Гео + время для вирусных встреч, квестов, розыгрышей и дропов.",
+    "cases_unlock_title": "Pay-to-Unlock",
+    "cases_unlock_text": "Публично time‑lock, пароль продаёшь для раннего доступа (AND/OR).",
+    "case1_label": "PROOF",
+    "case1_headline": "Публикуешь сейчас - раскрываешь позже. Дата создания хранится во встроенных логах.",
+    "case1_step1": "1. Создай капсулу и положи внутрь сигнал/прогноз.",
+    "case1_step2": "2. Поставь дату раскрытия.",
+    "case1_step3": "3. Поделись капсулой публично (Telegram, WhatsApp, X, почта).",
+    "case1_step4": "При раскрытии всем видно: правок не было.",
+    "case1_note": "“Механика доверия” реализована на программном уровне.",
+    "case1_tail": "Лучше всего для трейдеров, типстеров, аналитиков, криэйторов.",
+    "case2_label": "EVENT",
+    "case2_headline": "Собирай людей в определенном месте и времени.",
+    "case2_step1": "Положи внутрь приз/подсказку/инструкцию.",
+    "case2_step2": "Поставь гео + окно времени (Geo‑Lock + Time‑Lock).",
+    "case2_step3": "Опубликуй для аудитории. Раскрытие проверяемо.",
+    "case2_step4": "Люди приходят вовремя, потому что награда реальна.",
+    "case2_note": "Идеально для ивентов и промо‑акций.",
+    "case2_tail": "Лучше всего для блогеров, маркетинга, комьюнити, площадок.",
+    "case3_label": "PAID UNLOCK",
+    "case3_headline": "Продавай доступ через AND/OR — просто и легально.",
+    "case3_step1": "Создай капсулу и включи Time‑Lock для всех.",
+    "case3_step2": "Добавь Пароль как условие ИЛИ (ранний доступ).",
+    "case3_step3": "Капсулу публикуешь, пароль продаёшь отдельно.",
+    "case3_step4": "Покупатели открывают сразу; остальные ждут окно времени.",
+    "case3_note": "Ты продаёшь доступ к востребованным данным.",
+    "case3_tail": "Лучше всего для платных сигналов, премиум‑дропов и gated‑контента.",
+    "security_block1_title": "Современные крипто‑примитивы",
+    "security_block2_title": "Офлайн работа по умолчанию",
+    "security_block3_title": "Мультиплатформенный формат капсулы",
+    "security_block4_title": "Policy engine (AND/OR)",
+    "security_block5_title": "Минимум метаданных",
+    "security_block6_title": "Понятные статусы отказа",
+    "security_block7_title": "Открытие бесплатно",
+    "security_block8_title": "Ответственное позиционирование",
+    "pricing_free_item1": "⭐ Открывать/расшифровывать без лимитов",
+    "pricing_free_item2": "⭐ Базовые текст‑капсулы (лимит)",
+    "pricing_free_item3": "⭐ Офлайн, без аккаунта",
+    "pricing_pro_item1": "⭐ Капсулы без лимитов + вложения (файлы/фото/видео)",
+    "pricing_pro_item2": "⭐ Time‑Lock + Geo‑Lock",
+    "pricing_pro_item3": "⭐ Пароль / Визуальный ключ + AND/OR",
+    "pricing_pro_item4": "⭐ Продвинутые сценарии шифрования",
+    "download_text": "Выбери платформу, установи, а затем апгрейднись до Pro внутри приложения за $9.99, когда понадобятся продвинутые капсулы.",
+    "case2_inside_title": "Цепочки капсул (квесты)",
+    "case2_example": "Пример: капсула №1 открывается и говорит, куда идти. Капсула №2 просит фото‑доказательство. Капсула №3 выдаёт награду. Вариантов множество!",
+    "case3_text": "Это честная механика монетизации: капсула публичная, а ключ раскрытия — платный.",
+    "case3_example": "Пример: брокер публикует капсулу по времени. Чтобы воспользоваться сигналом сразу, ты покупаешь пароль и открываешь мгновенно.",
+    "case2_inside_1": "1. Капсула №1: «Будь у точки не позже 18:00 — там откроется следующий шаг».",
+    "case2_inside_2": "2. Капсула №2: «Зайди в ТЦ и сделай фото с партнёрским магазином».",
+    "case2_inside_3": "3. Капсула №3: «Пришли фото — получишь сертификат на $100».",
+    "case2_inside_4": "Можно строить бесконечные цепочки (и каждый шаг будет проверяемым)."
+},
+    // Fallback languages: default to English copy (can be localized later)
+    de: {
+  "nav_pain": "Problem",
+  "nav_breakthrough": "Wie funktioniert es?",
+  "nav_cases": "Anwendungsfälle",
+  "nav_audience": "Für wen?",
+  "nav_security": "Sicherheit",
+  "nav_pricing": "Preise",
+  "nav_download": "Download",
 
-    footer_tagline: "Keine Server • Keine Accounts • Offline-first",
-    footer_copy: "© 2025 TrueLock"
-  },
-  es: {
-    meta_title: "TrueLock — Cápsulas seguras",
-    meta_description: "Bloquea un mensaje o archivo que se abre solo con reglas. Offline-first.",
-    logo_alt: "Logo de TrueLock",
-    nav_use_cases: "Qué es",
-    nav_how: "Cómo funciona",
-    nav_features: "Funciones",
-    nav_security: "Seguridad",
-    nav_download: "Descargar",
-    nav_faq: "FAQ",
-    cta_download: "Descargar TrueLock",
-    cta_how: "Ver los pasos",
-    hero_eyebrow: "Compartir seguro y simple",
-    hero_title: "Envía un mensaje o archivo que se abre solo cuando se cumplen las reglas.",
-    hero_subtitle: "TrueLock crea una cápsula: un archivo seguro. Tú defines reglas (tiempo, lugar, contraseña) y la envías. El receptor abre gratis.",
-    hero_bullet_proof: "Crea una cápsula con texto, archivos o media.",
-    hero_bullet_event: "Define reglas: tiempo, lugar, contraseña, clave visual.",
-    hero_note: "Sin cuentas. Offline. Descifrar y verificar es gratis.",
-    hero_card_1_title: "Crear",
-    hero_card_1_desc: "Añade texto, archivos o media.",
-    hero_card_2_title: "Definir reglas",
-    hero_card_2_desc: "Tiempo, lugar, contraseña, AND/OR.",
-    hero_card_3_title: "Enviar",
-    hero_card_3_desc: "Comparte donde quieras. Abre gratis.",
-    use_cases_title: "¿Qué es una cápsula TrueLock?",
-    use_case_proof_title: "Crear una cápsula",
-    use_case_proof_text: "Pon el contenido y define reglas. Tarda aproximadamente un minuto.",
-    use_case_proof_cta: "Ver los pasos",
-    use_case_event_title: "Enviar como archivo",
-    use_case_event_text: "Comparte por Telegram, WhatsApp, email, USB o cloud. El receptor abre gratis.",
-    use_case_event_cta: "Ver envío",
-    chain_title: "¿Varios pasos? Usa Chain Capsules",
-    chain_text: "Conecta cápsulas para revelar el siguiente paso. Ideal para quests y lanzamientos.",
-    chain_step_1: "Paso 1: la primera cápsula se abre",
-    chain_step_2: "Paso 2: revela una pista o enlace",
-    chain_step_3: "Paso 3: la siguiente cápsula desbloquea el premio",
-    how_title: "Cómo funciona TrueLock",
-    how_step1_title: "Crear",
-    how_step1_text: "Elige texto, archivos o media.",
-    how_step2_title: "Añadir reglas",
-    how_step2_text: "Tiempo, lugar, contraseña, clave visual, AND/OR.",
-    how_step3_title: "Enviar",
-    how_step3_text: "Comparte la cápsula. El receptor abre gratis.",
-    products_title: "En la app: 4 herramientas simples",
-    products_subtitle: "Empieza con Cápsulas. Otros modos para archivos y carpetas.",
-    product_capsules_title: "Cápsulas",
-    product_capsules_text: "Modo principal para compartir con reglas.",
-    product_files_title: "Archivos",
-    product_files_text: "Cifrado rápido de archivos.",
-    product_batch_title: "Batch y Archivos",
-    product_batch_text: "Carpetas y archivos a escala.",
-    product_policy_title: "Cifrado por políticas",
-    product_policy_text: "Reglas avanzadas para casos especiales.",
-    features_title: "Lo que TrueLock puede hacer",
-    feature_time: "Abrir solo por tiempo",
-    feature_geo: "Abrir solo por lugar",
-    feature_visual: "Clave visual",
-    feature_andor: "Combinar reglas con AND/OR",
-    feature_offline: "Offline-first, sin servidores",
-    feature_cross: "Multiplataforma y 8 idiomas",
-    feature_share: "Comparte como un archivo normal",
-    feature_history: "Historial local + auto-limpieza",
-    security_title: "Seguridad sin humo",
-    security_text: "Tus datos se quedan en el dispositivo. La cápsula abre solo con reglas.",
-    security_point1: "Sin nube ni cuentas",
-    security_point2: "Si el archivo cambia, no se abre",
-    security_point3: "Descifrar y verificar siempre es gratis",
-    social_title: "Usuarios y comunidades tempranas",
-    social_line1: "Usado en trading, privacidad y creators.",
-    social_line2: "Lanzamiento en 8 idiomas.",
-    roadmap_title: "Hoja de ruta abierta",
-    roadmap_line: "Siguiente: cápsulas con cámara, más presets, polish UX.",
-    download_title: "Descargar TrueLock",
-    download_text: "Elige tu plataforma. Abrir cápsulas es gratis.",
-    download_android: "Android",
-    download_ios: "iOS",
-    download_windows: "Windows",
-    download_macos: "macOS",
-    download_linux: "Linux",
-    faq_title: "FAQ",
-    faq_q1: "¿Qué es una cápsula en palabras simples?",
-    faq_a1: "Es un archivo seguro que solo se abre con reglas.",
-    faq_q2: "¿El receptor paga?",
-    faq_a2: "No. Abrir y verificar es gratis.",
-    faq_q3: "¿Necesito internet?",
-    faq_a3: "No. Abrir y verificar funciona offline (geo usa GPS).",
-    faq_q4: "¿Qué pasa si pierdo la contraseña?",
-    faq_a4: "La cápsula no se abre. TrueLock no puede resetear el acceso.",
-    faq_q5: "¿Hay tracking?",
-    faq_a5: "No. Sin cuentas, sin nube, sin analytics.",
-    final_title: "Crea tu primera cápsula en 30 segundos.",
-    final_text: "Comparte seguro con reglas claras.",
-    final_cta: "Descargar TrueLock",
-    quick_title: "Escenario en 30 segundos",
-    quick_step1: "Crea una c?psula y a?ade texto o archivo.",
-    quick_step2: "Define reglas (tiempo, lugar, contrase?a).",
-    quick_step3: "Env?a la c?psula como un archivo normal.",
-    quick_step4: "Se abre solo si se cumplen las reglas.",
-    quick_note: "El receptor abre gratis. Sin cuentas.",
-    mini_faq_title: "Respuestas r?pidas",
-    mini_faq_q1: "?Qu? es una c?psula?",
-    mini_faq_a1: "Un archivo seguro que abre solo con reglas.",
-    mini_faq_q2: "?El receptor paga?",
-    mini_faq_a2: "No. Abrir y verificar es gratis.",
-    mini_faq_q3: "?Necesito internet?",
-    mini_faq_a3: "No. Funciona offline (geo usa GPS).",
-    use_cases_title: "Tres casos de uso principales",
-    use_case_1_label: "Proof Capsules",
-    use_case_1_title: "Proof Capsules (Infraestructura de confianza)",
-    use_case_1_item1: "Se?ales de trading",
-    use_case_1_item2: "Pron?sticos",
-    use_case_1_item3: "Evidencia legal",
-    use_case_1_value: "Valor: Esta informaci?n exist?a antes del evento.",
-    use_case_2_label: "Event Capsules",
-    use_case_2_title: "Event Capsules (Activaci?n offline)",
-    use_case_2_item1: "Eventos offline",
-    use_case_2_item2: "Geo drops",
-    use_case_2_item3: "Aperturas exclusivas",
-    use_case_2_value: "Valor: Desbloquea contenido solo en el lugar y tiempo correctos.",
-    use_case_3_label: "Campaign Capsules",
-    use_case_3_title: "Campaign / Quest Capsules (Motor de marketing)",
-    use_case_3_item1: "Quests de marca",
-    use_case_3_item2: "Activaciones con influencers",
-    use_case_3_item3: "Tr?fico retail",
-    use_case_3_value: "Valor: Campa?as reales sin servidores.",
-    problems_title: "Problemas que resolvemos",
-    problems_subtitle: "Los dolores por los que la gente ya paga.",
-    problem_1_label: "Problema 1",
-    problem_1_title: "No creen que existiera antes del evento.",
-    problem_1_text: "Capturas, PDFs y posts se pueden editar o borrar. El momento es difícil de demostrar.",
-    problem_1_cost: "Costo: pérdida de confianza y disputas de reputación.",
-    problem_2_label: "Problema 2",
-    problem_2_title: "Necesito que el contenido se abra solo en el momento o lugar correctos.",
-    problem_2_text: "Los mensajeros abren al instante. Los enlaces se pueden reenviar. Los sitios requieren servidores y logins.",
-    problem_2_cost: "Costo: sin control ni efecto wow.",
-    problem_3_label: "Problema 3",
-    problem_3_title: "Necesito confianza, no solo cifrado.",
-    problem_3_text: "Los cifradores clásicos protegen un archivo, pero no prueban contexto ni reglas.",
-    problem_3_cost: "Costo: valor difícil de explicar, baja viralidad.",
-    problem_4_label: "Problema 4",
-    problem_4_title: "No quiero cuentas ni confiar en la nube.",
-    problem_4_text: "Cuentas, servidores, suscripciones y logs crean miedo y fricción.",
-    problem_4_cost: "Costo: los usuarios se van.",
-    problem_5_label: "Problema 5",
-    problem_5_title: "Necesito una herramienta que funcione entre personas.",
-    problem_5_text: "La confianza necesita dos lados: uno crea, otro verifica.",
-    problem_5_cost: "Costo: la mayoría de herramientas son de un solo usuario y no son aptas para pruebas.",
-    shift_title: "El cambio",
-    shift_subtitle: "Qué hace TrueLock de forma diferente.",
-    shift_1_title: "Proof Capsules",
-    shift_1_text: "Crea una cápsula, publícala y ábrela después — sin ediciones ni re‑empaquetado.",
-    shift_2_title: "Event Capsules",
-    shift_2_text: "Se abre solo en el momento/lugar correcto. Combina reglas con AND/OR.",
-    shift_3_title: "Motor de confianza, no solo cifrado",
-    shift_3_text: "Prueba portátil, verificación offline, reglas transparentes.",
-    shift_4_title: "Descifrar y verificar siempre es gratis",
-    shift_4_text: "Cualquiera puede abrir y verificar sin registro ni pago.",
-    shift_5_title: "Un conjunto, muchos escenarios",
-    shift_5_text: "Trading, influencers, marketing, eventos, equipos — mismo motor.",
-    shift_formula: "TrueLock resuelve el problema de crear confianza entre personas.",
-    shift_cta_primary: "Crea tu primera Proof Capsule",
-    shift_cta_secondary: "Ver casos de uso",
-    security_subtitle: "Creado para pruebas, no promesas.",
-    security_block1_title: "Creado para pruebas, no promesas",
-    security_block1_html: "<p>TrueLock no solo cifra datos; está diseñado para ayudar a demostrar integridad, origen e inmutabilidad.</p><ul><li>Cuándo se creó</li><li>Que no se modificó</li><li>Que siguió las reglas que definiste</li></ul><p class=\"micro\">Sin cuentas. Sin servidores. Sin confianza requerida.</p>",
-    security_block2_title: "Criptografía moderna basada en estándares",
-    security_block2_html: "<ul><li>AES-256-GCM — cifrado autenticado</li><li>PBKDF2 — derivación de claves desde contraseña</li><li>SHA-256 / SHA-512 — hashing e integridad</li><li>Nonces y salts aleatorios seguros</li><li>Cabeceras autenticadas contra manipulación</li></ul><p class=\"micro\">Si un byte cambia, la verificación debería fallar.</p>",
-    security_block3_title: "Protección con hardware (cuando esté disponible)",
-    security_block3_html: "<p>En plataformas compatibles, TrueLock puede usar protección con hardware.</p><ul><li>Secure Enclave en iOS</li><li>TPM / módulos de seguridad del sistema en desktop</li><li>Secure storage en Android</li></ul><ul><li>Las claves no se registran</li><li>No se hardcodean</li><li>Se borran de memoria cuando es posible</li></ul>",
-    security_block4_title: "Integridad verificable — con el tiempo",
-    security_block4_html: "<p>Las cápsulas se pueden verificar offline — ahora o después.</p><ul><li>Sin dependencia de la nube</li><li>Sin servidor en quien confiar</li><li>Sin cuenta requerida</li></ul><p class=\"micro\">La verificación siempre es gratis.</p>",
-    security_block5_title: "Resistencia a manipulación y replay",
-    security_block5_html: "<ul><li>Manipulación → detectada por cifrado autenticado</li><li>Ataques replay → reducidos con nonces únicos</li><li>Ataques de timing → mitigados cuando es posible</li><li>Extracción parcial → rompe la verificación</li></ul><p class=\"micro\">Si alguien intenta falsificar o re‑empaquetar una cápsula, la verificación debería fallar.</p>",
-    security_block6_title: "Privacidad por diseño",
-    security_block6_html: "<ul><li>Sin tracking</li><li>Sin SDKs de analítica dentro de cápsulas</li><li>Sin inyección oculta de metadatos</li><li>Sin logging de contenido en servidor</li></ul><p class=\"micro\">Lo que bloqueas es conocido solo por ti y el destinatario.</p>",
-    security_block7_title: "Transparente y auditable",
-    security_block7_html: "<p>Las decisiones de seguridad son explícitas y pensadas para auditoría. El formato de la cápsula y el flujo criptográfico están documentados.</p><p class=\"micro\">La confianza viene de la verificación, no del marketing.</p>",
-    security_block8_title: "Qué significa para los usuarios",
-    security_block8_html: "<ul><li>No necesitas creer nada</li><li>No necesitas confiar en una empresa</li><li>No necesitas cuenta</li></ul><p class=\"micro\">Puedes demostrar: existía en un momento, no cambió y las reglas se aplicaron.</p>",
-    security_summary_title: "Resumen",
-    security_summary_html: "<ul><li>Criptografía moderna</li><li>Verificación offline sin servidores</li><li>Protección con hardware cuando esté disponible</li><li>Privacidad por diseño</li><li>Prueba sobre promesas</li></ul>",
+  "cta_primary": "TrueLock herunterladen",
+  "cta_secondary": "Anwendungsfälle ansehen",
 
-    footer_tagline: "Sin servidores • Sin cuentas • Offline-first",
-    footer_copy: "© 2025 TrueLock"
-  },
-  fr: {
-    meta_title: "TrueLock — Capsules sûres",
-    meta_description: "Bloque un message ou fichier qui s’ouvre seulement avec des règles. Offline-first.",
-    logo_alt: "Logo TrueLock",
-    nav_use_cases: "C’est quoi",
-    nav_how: "Comment ça marche",
-    nav_features: "Fonctions",
-    nav_security: "Sécurité",
-    nav_download: "Télécharger",
-    nav_faq: "FAQ",
-    cta_download: "Télécharger TrueLock",
-    cta_how: "Voir les étapes",
-    hero_eyebrow: "Partage sécurisé et simple",
-    hero_title: "Envoie un message ou fichier qui s’ouvre seulement quand les règles sont remplies.",
-    hero_subtitle: "TrueLock crée une capsule — un fichier sécurisé. Tu définis les règles (temps, lieu, mot de passe) et tu l’envoies. Le destinataire ouvre gratuitement.",
-    hero_bullet_proof: "Crée une capsule avec texte, fichiers ou média.",
-    hero_bullet_event: "Définis les règles : temps, lieu, mot de passe, clé visuelle.",
-    hero_note: "Pas de comptes. Offline. Déchiffrer et vérifier est gratuit.",
-    hero_card_1_title: "Créer",
-    hero_card_1_desc: "Ajoute texte, fichiers ou média.",
-    hero_card_2_title: "Définir règles",
-    hero_card_2_desc: "Temps, lieu, mot de passe, AND/OR.",
-    hero_card_3_title: "Envoyer",
-    hero_card_3_desc: "Partage partout. Ouverture gratuite.",
-    use_cases_title: "Qu’est-ce qu’une capsule TrueLock ?",
-    use_case_proof_title: "Créer une capsule",
-    use_case_proof_text: "Ajoute le contenu et définis les règles. Ça prend une minute.",
-    use_case_proof_cta: "Voir les étapes",
-    use_case_event_title: "Envoyer comme un fichier",
-    use_case_event_text: "Partage via Telegram, WhatsApp, email, USB ou cloud. Le destinataire ouvre gratuitement.",
-    use_case_event_cta: "Voir l’envoi",
-    chain_title: "Plusieurs étapes ? Utilise Chain Capsules",
-    chain_text: "Relie les capsules pour révéler l’étape suivante. Idéal pour quests et lancements.",
-    chain_step_1: "Étape 1 : première capsule s’ouvre",
-    chain_step_2: "Étape 2 : indice ou lien",
-    chain_step_3: "Étape 3 : la suivante débloque la récompense",
-    how_title: "Comment fonctionne TrueLock",
-    how_step1_title: "Créer",
-    how_step1_text: "Choisis texte, fichiers ou média.",
-    how_step2_title: "Ajouter règles",
-    how_step2_text: "Temps, lieu, mot de passe, clé visuelle, AND/OR.",
-    how_step3_title: "Envoyer",
-    how_step3_text: "Partage la capsule. Le destinataire ouvre gratuitement.",
-    products_title: "Dans l’app : 4 outils simples",
-    products_subtitle: "Commence par Capsules. Les autres modes sont pour fichiers et dossiers.",
-    product_capsules_title: "Capsules",
-    product_capsules_text: "Mode principal pour partager avec règles.",
-    product_files_title: "Fichiers",
-    product_files_text: "Chiffrement rapide de fichiers.",
-    product_batch_title: "Batch & Archives",
-    product_batch_text: "Dossiers et archives à l’échelle.",
-    product_policy_title: "Chiffrement par politiques",
-    product_policy_text: "Règles avancées pour cas spéciaux.",
-    features_title: "Ce que TrueLock peut faire",
-    feature_time: "Ouvrir seulement après un temps",
-    feature_geo: "Ouvrir seulement à un lieu",
-    feature_visual: "Clé visuelle",
-    feature_andor: "Combiner règles AND/OR",
-    feature_offline: "Offline-first, pas de serveurs",
-    feature_cross: "Multi-plateforme et 8 langues",
-    feature_share: "Partager comme un fichier normal",
-    feature_history: "Historique local + auto-nettoyage",
-    security_title: "Sécurité sans hype",
-    security_text: "Tes données restent sur l’appareil. La capsule s’ouvre seulement avec des règles.",
-    security_point1: "Pas de cloud ni de comptes",
-    security_point2: "Si le fichier change, il ne s’ouvre pas",
-    security_point3: "Déchiffrer et vérifier est gratuit",
-    social_title: "Premiers utilisateurs & communautés",
-    social_line1: "Utilisé dans trading, privacy et creators.",
-    social_line2: "Lancement en 8 langues.",
-    roadmap_title: "Feuille de route ouverte",
-    roadmap_line: "Ensuite : capsules caméra, plus de presets, polish UX.",
-    download_title: "Télécharger TrueLock",
-    download_text: "Choisis ta plateforme. Ouvrir est gratuit.",
-    download_android: "Android",
-    download_ios: "iOS",
-    download_windows: "Windows",
-    download_macos: "macOS",
-    download_linux: "Linux",
-    faq_title: "FAQ",
-    faq_q1: "Une capsule, c’est quoi simplement ?",
-    faq_a1: "Un fichier sécurisé qui s’ouvre seulement avec des règles.",
-    faq_q2: "Le destinataire doit payer ?",
-    faq_a2: "Non. Ouvrir et vérifier est gratuit.",
-    faq_q3: "Faut-il internet ?",
-    faq_a3: "Non. Ouvrir et vérifier offline (géo utilise GPS).",
-    faq_q4: "Et si je perds le mot de passe ?",
-    faq_a4: "La capsule ne s’ouvrira pas. TrueLock ne peut pas réinitialiser l’accès.",
-    faq_q5: "Y a-t-il du tracking ?",
-    faq_a5: "Non. Pas de comptes, pas de cloud, pas d’analytics.",
-    final_title: "Crée ta première capsule en 30 secondes.",
-    final_text: "Partage sécurisé avec règles claires.",
-    final_cta: "Télécharger TrueLock",
-    quick_title: "Sc?nario en 30 secondes",
-    quick_step1: "Cr?e une capsule et ajoute texte ou fichier.",
-    quick_step2: "D?finis des r?gles (temps, lieu, mot de passe).",
-    quick_step3: "Envoie la capsule comme un fichier normal.",
-    quick_step4: "Elle s?ouvre seulement si les r?gles sont remplies.",
-    quick_note: "Le destinataire ouvre gratuitement. Sans comptes.",
-    mini_faq_title: "R?ponses rapides",
-    mini_faq_q1: "Qu?est-ce qu?une capsule ?",
-    mini_faq_a1: "Un fichier s?curis? qui s?ouvre seulement avec des r?gles.",
-    mini_faq_q2: "Le destinataire paie ?",
-    mini_faq_a2: "Non. Ouvrir et v?rifier est gratuit.",
-    mini_faq_q3: "Faut-il internet ?",
-    mini_faq_a3: "Non. Offline (la g?o utilise le GPS).",
-    use_cases_title: "Trois cas d?usage phares",
-    use_case_1_label: "Proof Capsules",
-    use_case_1_title: "Proof Capsules (Infrastructure de confiance)",
-    use_case_1_item1: "Signaux de trading",
-    use_case_1_item2: "Pr?dictions",
-    use_case_1_item3: "Preuves juridiques",
-    use_case_1_value: "Valeur : Cette information existait avant l??v?nement.",
-    use_case_2_label: "Event Capsules",
-    use_case_2_title: "Event Capsules (Activation offline)",
-    use_case_2_item1: "?v?nements offline",
-    use_case_2_item2: "Geo drops",
-    use_case_2_item3: "Ouvertures exclusives",
-    use_case_2_value: "Valeur : D?verrouiller le contenu au bon lieu et au bon moment.",
-    use_case_3_label: "Campaign Capsules",
-    use_case_3_title: "Campaign / Quest Capsules (Moteur marketing)",
-    use_case_3_item1: "Qu?tes de marque",
-    use_case_3_item2: "Activations d?influenceurs",
-    use_case_3_item3: "Trafic retail",
-    use_case_3_value: "Valeur : Lancer des campagnes r?elles sans serveurs.",
-    problems_title: "Problèmes que nous résolvons",
-    problems_subtitle: "Les douleurs pour lesquelles on paie déjà.",
-    problem_1_label: "Problème 1",
-    problem_1_title: "On ne croit pas que cela existait avant l’événement.",
-    problem_1_text: "Captures, PDF et posts peuvent être modifiés ou supprimés. Le timing est difficile à prouver.",
-    problem_1_cost: "Coût : perte de confiance et conflits de réputation.",
-    problem_2_label: "Problème 2",
-    problem_2_title: "Je veux ouvrir le contenu seulement au bon moment ou au bon endroit.",
-    problem_2_text: "Les messageries ouvrent immédiatement. Les liens se transfèrent. Les sites exigent serveurs et comptes.",
-    problem_2_cost: "Coût : pas de contrôle, pas d’effet wow.",
-    problem_3_label: "Problème 3",
-    problem_3_title: "Je veux de la confiance, pas juste du chiffrement.",
-    problem_3_text: "Les chiffreurs classiques protègent un fichier mais ne prouvent pas le contexte ni les règles.",
-    problem_3_cost: "Coût : valeur difficile à expliquer, faible viralité.",
-    problem_4_label: "Problème 4",
-    problem_4_title: "Je ne veux ni comptes ni confiance dans le cloud.",
-    problem_4_text: "Comptes, serveurs, abonnements et logs créent peur et friction.",
-    problem_4_cost: "Coût : les utilisateurs abandonnent.",
-    problem_5_label: "Problème 5",
-    problem_5_title: "Je veux un outil qui fonctionne entre personnes.",
-    problem_5_text: "La confiance a besoin de deux côtés : l’un crée, l’autre vérifie.",
-    problem_5_cost: "Coût : la plupart des outils sont solo et pas adaptés à la preuve.",
-    shift_title: "Le basculement",
-    shift_subtitle: "Ce que TrueLock fait différemment.",
-    shift_1_title: "Proof Capsules",
-    shift_1_text: "Crée une capsule, publie‑la, ouvre‑la plus tard — sans édition ni re‑packaging.",
-    shift_2_title: "Event Capsules",
-    shift_2_text: "S’ouvre seulement au bon moment/lieu. Combine les règles AND/OR.",
-    shift_3_title: "Moteur de confiance, pas seulement du chiffrement",
-    shift_3_text: "Preuve portable, vérification offline, règles transparentes.",
-    shift_4_title: "Déchiffrer & vérifier est toujours gratuit",
-    shift_4_text: "N’importe qui peut ouvrir et vérifier sans inscription ni paiement.",
-    shift_5_title: "Un ensemble, plusieurs scénarios",
-    shift_5_text: "Trading, influenceurs, marketing, événements, équipes — même moteur.",
-    shift_formula: "TrueLock résout le problème de la confiance entre personnes.",
-    shift_cta_primary: "Crée ta première Proof Capsule",
-    shift_cta_secondary: "Voir les cas d’usage",
-    security_subtitle: "Conçu pour la preuve, pas pour les promesses.",
-    security_block1_title: "Conçu pour la preuve, pas pour les promesses",
-    security_block1_html: "<p>TrueLock n’est pas seulement un chiffrement : il est conçu pour aider à prouver l’intégrité, l’origine et l’immutabilité.</p><ul><li>Quand c’est créé</li><li>Que cela n’a pas été modifié</li><li>Que les règles définies ont été respectées</li></ul><p class=\"micro\">Sans comptes. Sans serveurs. Sans confiance requise.</p>",
-    security_block2_title: "Cryptographie moderne basée sur des standards",
-    security_block2_html: "<ul><li>AES-256-GCM — chiffrement authentifié</li><li>PBKDF2 — dérivation de clés depuis un mot de passe</li><li>SHA-256 / SHA-512 — hachage et intégrité</li><li>Nonces et salts aléatoires sécurisés</li><li>En‑têtes authentifiés contre la manipulation</li></ul><p class=\"micro\">Si un octet change, la vérification devrait échouer.</p>",
-    security_block3_title: "Protection matérielle (quand disponible)",
-    security_block3_html: "<p>Sur les plateformes compatibles, TrueLock peut utiliser une protection matérielle.</p><ul><li>Secure Enclave sur iOS</li><li>TPM / modules de sécurité système sur desktop</li><li>Secure storage sur Android</li></ul><ul><li>Les clés ne sont pas loggées</li><li>Pas hardcodées</li><li>Nettoyées de la mémoire quand c'est possible</li></ul>",
-    security_block4_title: "Intégrité vérifiable — dans le temps",
-    security_block4_html: "<p>Les capsules sont vérifiables hors‑ligne — maintenant ou plus tard.</p><ul><li>Aucune dépendance cloud</li><li>Aucun serveur à qui faire confiance</li><li>Aucun compte requis</li></ul><p class=\"micro\">La vérification est toujours gratuite.</p>",
-    security_block5_title: "Résistance à la manipulation et au replay",
-    security_block5_html: "<ul><li>Manipulation → détectée via chiffrement authentifié</li><li>Attaques replay → réduites par nonces uniques</li><li>Attaques de timing → atténuées quand c'est possible</li><li>Extraction partielle → casse la vérification</li></ul><p class=\"micro\">Si quelqu’un tente de falsifier ou de re‑packager, la vérification devrait échouer.</p>",
-    security_block6_title: "Confidentialité par conception",
-    security_block6_html: "<ul><li>Aucun tracking</li><li>Aucun SDK d’analytics dans les capsules</li><li>Aucune injection cachée de métadonnées</li><li>Aucun logging serveur du contenu</li></ul><p class=\"micro\">Ce que tu verrouilles n’est connu que de toi et du destinataire.</p>",
-    security_block7_title: "Transparent et auditable",
-    security_block7_html: "<p>Les décisions de sécurité sont explicites et pensées pour l’audit. Le format de la capsule et le flux cryptographique sont documentés.</p><p class=\"micro\">La confiance vient de la vérification, pas du marketing.</p>",
-    security_block8_title: "Ce que cela signifie pour les utilisateurs",
-    security_block8_html: "<ul><li>Pas besoin de croire</li><li>Pas besoin de faire confiance à une entreprise</li><li>Pas besoin de compte</li></ul><p class=\"micro\">Vous pouvez prouver : existence, non‑modification, règles appliquées.</p>",
-    security_summary_title: "Résumé",
-    security_summary_html: "<ul><li>Cryptographie moderne</li><li>Vérification offline sans serveurs</li><li>Protection matérielle quand disponible</li><li>Confidentialité dès la conception</li><li>La preuve plutôt que les promesses</li></ul>",
+  "hero_note": "Funktioniert offline. Keine Konten. Eine geschützte Datei. Öffnen ist kostenlos.",
+  "hero_eyebrow": "Daten online teilen — ohne Angst vor Leaks",
+  "hero_title": "TrueLock — intelligenter Schutz für digitale Informationen",
 
-    footer_tagline: "Sans serveurs • Sans comptes • Offline-first",
-    footer_copy: "© 2025 TrueLock"
-  },
-  it: {
-    meta_title: "TrueLock — Capsule sicure",
-    meta_description: "Blocca un messaggio o file che si apre solo con regole. Offline-first.",
-    logo_alt: "Logo TrueLock",
-    nav_use_cases: "Cos’è",
-    nav_how: "Come funziona",
-    nav_features: "Funzionalità",
-    nav_security: "Sicurezza",
-    nav_download: "Download",
-    nav_faq: "FAQ",
-    cta_download: "Scarica TrueLock",
-    cta_how: "Vedi i passaggi",
-    hero_eyebrow: "Condivisione sicura e semplice",
-    hero_title: "Invia un messaggio o file che si apre solo quando le regole sono rispettate.",
-    hero_subtitle: "TrueLock crea una capsula — un file sicuro. Imposti le regole (tempo, luogo, password) e la invii. Il destinatario apre gratis.",
-    hero_bullet_proof: "Crea una capsula con testo, file o media.",
-    hero_bullet_event: "Imposta regole: tempo, luogo, password, chiave visiva.",
-    hero_note: "Nessun account. Offline. Decifrare e verificare è gratis.",
-    hero_card_1_title: "Crea",
-    hero_card_1_desc: "Aggiungi testo, file o media.",
-    hero_card_2_title: "Imposta regole",
-    hero_card_2_desc: "Tempo, luogo, password, AND/OR.",
-    hero_card_3_title: "Invia",
-    hero_card_3_desc: "Condividi ovunque. Apertura gratuita.",
-    use_cases_title: "Cos’è una capsula TrueLock?",
-    use_case_proof_title: "Crea una capsula",
-    use_case_proof_text: "Metti il contenuto e imposta le regole. Ci vuole un minuto.",
-    use_case_proof_cta: "Vedi i passaggi",
-    use_case_event_title: "Invia come file",
-    use_case_event_text: "Condividi via Telegram, WhatsApp, email, USB o cloud. Il destinatario apre gratis.",
-    use_case_event_cta: "Vedi invio",
-    chain_title: "Più passaggi? Usa Chain Capsules",
-    chain_text: "Collega le capsule per rivelare il passo successivo. Ottimo per quest e lanci.",
-    chain_step_1: "Step 1: prima capsula si apre",
-    chain_step_2: "Step 2: rivela un indizio o link",
-    chain_step_3: "Step 3: la successiva sblocca la ricompensa",
-    how_title: "Come funziona TrueLock",
-    how_step1_title: "Crea",
-    how_step1_text: "Scegli testo, file o media.",
-    how_step2_title: "Aggiungi regole",
-    how_step2_text: "Tempo, luogo, password, chiave visiva, AND/OR.",
-    how_step3_title: "Invia",
-    how_step3_text: "Condividi la capsula. Il destinatario apre gratis.",
-    products_title: "Dentro l’app: 4 strumenti semplici",
-    products_subtitle: "Inizia con Capsule. Gli altri modi sono per file e cartelle.",
-    product_capsules_title: "Capsule",
-    product_capsules_text: "Modalità principale per condividere con regole.",
-    product_files_title: "File",
-    product_files_text: "Cifratura rapida dei file.",
-    product_batch_title: "Batch e Archivi",
-    product_batch_text: "Cartelle e archivi su scala.",
-    product_policy_title: "Cifratura a politiche",
-    product_policy_text: "Regole avanzate per casi speciali.",
-    features_title: "Cosa può fare TrueLock",
-    feature_time: "Apre solo dopo un tempo",
-    feature_geo: "Apre solo in un luogo",
-    feature_visual: "Chiave visiva",
-    feature_andor: "Combina regole AND/OR",
-    feature_offline: "Offline-first, niente server",
-    feature_cross: "Multipiattaforma e 8 lingue",
-    feature_share: "Condividi come file normale",
-    feature_history: "Cronologia locale + auto-pulizia",
-    security_title: "Sicurezza senza hype",
-    security_text: "I dati restano sul dispositivo. La capsula si apre solo con regole.",
-    security_point1: "Niente cloud né account",
-    security_point2: "Se il file cambia, non si apre",
-    security_point3: "Decifrare e verificare è sempre gratis",
-    social_title: "Early users & community",
-    social_line1: "Usato in trading, privacy e creators.",
-    social_line2: "Lancio in 8 lingue.",
-    roadmap_title: "Roadmap aperta",
-    roadmap_line: "Prossimo: capsule camera, più preset, polish UX.",
-    download_title: "Scarica TrueLock",
-    download_text: "Scegli la piattaforma. Aprire è gratis.",
-    download_android: "Android",
-    download_ios: "iOS",
-    download_windows: "Windows",
-    download_macos: "macOS",
-    download_linux: "Linux",
-    faq_title: "FAQ",
-    faq_q1: "Cos’è una capsula in parole semplici?",
-    faq_a1: "Un file sicuro che si apre solo con regole.",
-    faq_q2: "Il destinatario deve pagare?",
-    faq_a2: "No. Aprire e verificare è gratis.",
-    faq_q3: "Serve internet?",
-    faq_a3: "No. Apertura e verifica offline (geo usa GPS).",
-    faq_q4: "Se perdo la password?",
-    faq_a4: "La capsula non si apre. TrueLock non può resettare l’accesso.",
-    faq_q5: "C’è tracking?",
-    faq_a5: "No. Nessun account, nessun cloud, nessuna analytics.",
-    final_title: "Crea la tua prima capsula in 30 secondi.",
-    final_text: "Condivisione sicura con regole chiare.",
-    final_cta: "Scarica TrueLock",
-    quick_title: "Scenario in 30 secondi",
-    quick_step1: "Crea una capsula e aggiungi testo o file.",
-    quick_step2: "Imposta regole (tempo, luogo, password).",
-    quick_step3: "Invia la capsula come un file normale.",
-    quick_step4: "Si apre solo se le regole sono rispettate.",
-    quick_note: "Il destinatario apre gratis. Nessun account.",
-    mini_faq_title: "Risposte rapide",
-    mini_faq_q1: "Cos?? una capsula?",
-    mini_faq_a1: "Un file sicuro che si apre solo con regole.",
-    mini_faq_q2: "Il destinatario paga?",
-    mini_faq_a2: "No. Aprire e verificare ? gratis.",
-    mini_faq_q3: "Serve internet?",
-    mini_faq_a3: "No. Funziona offline (geo usa GPS).",
-    use_cases_title: "Tre casi d?uso principali",
-    use_case_1_label: "Proof Capsules",
-    use_case_1_title: "Proof Capsules (Infrastruttura di fiducia)",
-    use_case_1_item1: "Segnali di trading",
-    use_case_1_item2: "Previsioni",
-    use_case_1_item3: "Prove legali",
-    use_case_1_value: "Valore: Questa informazione esisteva prima dell?evento.",
-    use_case_2_label: "Event Capsules",
-    use_case_2_title: "Event Capsules (Attivazione offline)",
-    use_case_2_item1: "Eventi offline",
-    use_case_2_item2: "Geo drop",
-    use_case_2_item3: "Aperture esclusive",
-    use_case_2_value: "Valore: Sblocca contenuti solo nel luogo e nel momento giusto.",
-    use_case_3_label: "Campaign Capsules",
-    use_case_3_title: "Campaign / Quest Capsules (Motore marketing)",
-    use_case_3_item1: "Quest di brand",
-    use_case_3_item2: "Attivazioni influencer",
-    use_case_3_item3: "Traffico retail",
-    use_case_3_value: "Valore: Lancia campagne reali senza server.",
-    problems_title: "Problemi che risolviamo",
-    problems_subtitle: "I problemi per cui le persone già pagano.",
-    problem_1_label: "Problema 1",
-    problem_1_title: "Non credono che esistesse prima dell'evento.",
-    problem_1_text: "Screenshot, PDF e post possono essere modificati o cancellati. Il momento è difficile da provare.",
-    problem_1_cost: "Costo: perdita di fiducia e dispute reputazionali.",
-    problem_2_label: "Problema 2",
-    problem_2_title: "Voglio che il contenuto si apra solo al momento o luogo giusto.",
-    problem_2_text: "I messenger aprono subito. I link si inoltrano. I siti richiedono server e login.",
-    problem_2_cost: "Costo: niente controllo e niente effetto wow.",
-    problem_3_label: "Problema 3",
-    problem_3_title: "Mi serve fiducia, non solo cifratura.",
-    problem_3_text: "I cifratori classici proteggono un file ma non provano contesto o regole.",
-    problem_3_cost: "Costo: valore difficile da spiegare, bassa viralità.",
-    problem_4_label: "Problema 4",
-    problem_4_title: "Non voglio account né fidarmi del cloud.",
-    problem_4_text: "Account, server, abbonamenti e log creano paura e attrito.",
-    problem_4_cost: "Costo: gli utenti abbandonano.",
-    problem_5_label: "Problema 5",
-    problem_5_title: "Mi serve uno strumento che funzioni tra persone.",
-    problem_5_text: "La fiducia richiede due parti: uno crea, l'altro verifica.",
-    problem_5_cost: "Costo: la maggior parte degli strumenti è single‑user e poco adatta alla prova.",
-    shift_title: "Il cambio",
-    shift_subtitle: "Cosa fa TrueLock in modo diverso.",
-    shift_1_title: "Proof Capsules",
-    shift_1_text: "Crea una capsula, pubblicala, aprila dopo — senza modifiche né re‑packaging.",
-    shift_2_title: "Event Capsules",
-    shift_2_text: "Si apre solo al momento/luogo giusto. Combina regole con AND/OR.",
-    shift_3_title: "Motore di fiducia, non solo cifratura",
-    shift_3_text: "Prova portabile, verifica offline, regole trasparenti.",
-    shift_4_title: "Decifrare & verificare è sempre gratis",
-    shift_4_text: "Chiunque può aprire e verificare senza registrazione o pagamento.",
-    shift_5_title: "Un ensemble, molti scenari",
-    shift_5_text: "Trading, influencer, marketing, eventi, team — stesso motore.",
-    shift_formula: "TrueLock risolve il problema di creare fiducia tra persone.",
-    shift_cta_primary: "Crea la tua prima Proof Capsule",
-    shift_cta_secondary: "Vedi i casi d’uso",
-    security_subtitle: "Creato per la prova, non per promesse.",
-    security_block1_title: "Creato per la prova, non per promesse",
-    security_block1_html: "<p>TrueLock non è solo cifratura: è progettato per aiutare a provare integrità, origine e immutabilità.</p><ul><li>Quando è stato creato</li><li>Che non è stato modificato</li><li>Che ha seguito le regole definite</li></ul><p class=\"micro\">Niente account. Niente server. Nessuna fiducia richiesta.</p>",
-    security_block2_title: "Crittografia moderna basata su standard",
-    security_block2_html: "<ul><li>AES-256-GCM — cifratura autenticata</li><li>PBKDF2 — derivazione chiavi da password</li><li>SHA-256 / SHA-512 — hashing e integrità</li><li>Nonce e salt casuali sicuri</li><li>Header autenticati contro manomissione</li></ul><p class=\"micro\">Se cambia un byte, la verifica dovrebbe fallire.</p>",
-    security_block3_title: "Protezione hardware (quando disponibile)",
-    security_block3_html: "<p>Su piattaforme supportate, TrueLock può usare protezione hardware.</p><ul><li>Secure Enclave su iOS</li><li>TPM / moduli di sicurezza di sistema su desktop</li><li>Secure storage su Android</li></ul><ul><li>Le chiavi non vengono loggate</li><li>Non hardcoded</li><li>Rimosse dalla memoria quando possibile</li></ul>",
-    security_block4_title: "Integrità verificabile — nel tempo",
-    security_block4_html: "<p>Le capsule sono verificabili offline — ora o più tardi.</p><ul><li>Nessuna dipendenza dal cloud</li><li>Nessun server di cui fidarsi</li><li>Nessun account richiesto</li></ul><p class=\"micro\">La verifica è sempre gratuita.</p>",
-    security_block5_title: "Resistenza a manomissione e replay",
-    security_block5_html: "<ul><li>Manomissione → rilevata da cifratura autenticata</li><li>Replay → ridotti con nonces unici</li><li>Attacchi di timing → mitigati quando possibile</li><li>Estrazione parziale → rompe la verifica</li></ul><p class=\"micro\">Se qualcuno tenta di falsificare o re‑impacchettare, la verifica dovrebbe fallire.</p>",
-    security_block6_title: "Privacy by design",
-    security_block6_html: "<ul><li>Nessun tracking</li><li>Nessun SDK di analytics nelle capsule</li><li>Nessuna iniezione nascosta di metadati</li><li>Nessun logging server del contenuto</li></ul><p class=\"micro\">Ciò che blocchi è noto solo a te e al destinatario.</p>",
-    security_block7_title: "Trasparente e auditabile",
-    security_block7_html: "<p>Le decisioni di sicurezza sono esplicite e progettate per l’audit. Il formato della capsula e il flusso crittografico sono documentati.</p><p class=\"micro\">La fiducia viene dalla verificabilità, non dal marketing.</p>",
-    security_block8_title: "Cosa significa per gli utenti",
-    security_block8_html: "<ul><li>Non serve credere a parole</li><li>Non serve fidarsi di un’azienda</li><li>Non serve un account</li></ul><p class=\"micro\">Puoi provare: esisteva, non è cambiato, le regole sono state applicate.</p>",
-    security_summary_title: "Riepilogo",
-    security_summary_html: "<ul><li>Crittografia moderna</li><li>Verifica offline senza server</li><li>Protezione hardware quando disponibile</li><li>Privacy by design</li><li>Prova sopra le promesse</li></ul>",
+  "hero_subtitle_html":
+    "Erstelle deine eigene <strong>Secure Capsule</strong> und kontrolliere den Zugriff: Sie öffnet sich nur nach <strong>Zeit</strong>, <strong>Ort</strong>, <strong>Passwort</strong> oder <strong>visuellem Schlüssel</strong>. Alles bleibt unter deiner Kontrolle.",
 
-    footer_tagline: "Nessun server • Nessun account • Offline-first",
-    footer_copy: "© 2025 TrueLock"
-  },
-  pt: {
-    meta_title: "TrueLock — Cápsulas seguras",
-    meta_description: "Tranque uma mensagem ou arquivo que abre só com regras. Offline-first.",
-    logo_alt: "Logo TrueLock",
-    nav_use_cases: "O que é",
-    nav_how: "Como funciona",
-    nav_features: "Recursos",
-    nav_security: "Segurança",
-    nav_download: "Baixar",
-    nav_faq: "FAQ",
-    cta_download: "Baixar TrueLock",
-    cta_how: "Ver os passos",
-    hero_eyebrow: "Compartilhamento seguro e simples",
-    hero_title: "Envie uma mensagem ou arquivo que abre só quando as regras são cumpridas.",
-    hero_subtitle: "TrueLock cria uma cápsula — um arquivo seguro. Você define regras (tempo, lugar, senha) e envia. O destinatário abre grátis.",
-    hero_bullet_proof: "Crie uma cápsula com texto, arquivos ou mídia.",
-    hero_bullet_event: "Defina regras: tempo, lugar, senha, chave visual.",
-    hero_note: "Sem contas. Offline. Decifrar e verificar é grátis.",
-    hero_card_1_title: "Criar",
-    hero_card_1_desc: "Adicione texto, arquivos ou mídia.",
-    hero_card_2_title: "Definir regras",
-    hero_card_2_desc: "Tempo, lugar, senha, AND/OR.",
-    hero_card_3_title: "Enviar",
-    hero_card_3_desc: "Compartilhe onde quiser. Abre grátis.",
-    use_cases_title: "O que é uma cápsula TrueLock?",
-    use_case_proof_title: "Crie uma cápsula",
-    use_case_proof_text: "Coloque o conteúdo e defina as regras. Leva cerca de um minuto.",
-    use_case_proof_cta: "Ver os passos",
-    use_case_event_title: "Envie como arquivo",
-    use_case_event_text: "Compartilhe via Telegram, WhatsApp, email, USB ou cloud. O destinatário abre grátis.",
-    use_case_event_cta: "Ver envio",
-    chain_title: "Vários passos? Use Chain Capsules",
-    chain_text: "Conecte cápsulas para revelar o próximo passo. Ótimo para quests e lançamentos.",
-    chain_step_1: "Passo 1: primeira cápsula abre",
-    chain_step_2: "Passo 2: revela pista ou link",
-    chain_step_3: "Passo 3: próxima cápsula libera a recompensa",
-    how_title: "Como funciona o TrueLock",
-    how_step1_title: "Criar",
-    how_step1_text: "Escolha texto, arquivos ou mídia.",
-    how_step2_title: "Adicionar regras",
-    how_step2_text: "Tempo, lugar, senha, chave visual, AND/OR.",
-    how_step3_title: "Enviar",
-    how_step3_text: "Compartilhe a cápsula. O destinatário abre grátis.",
-    products_title: "Dentro do app: 4 ferramentas simples",
-    products_subtitle: "Comece com Cápsulas. Outros modos são para arquivos e pastas.",
-    product_capsules_title: "Cápsulas",
-    product_capsules_text: "Modo principal para compartilhar com regras.",
-    product_files_title: "Arquivos",
-    product_files_text: "Criptografia rápida de arquivos.",
-    product_batch_title: "Batch e Arquivos",
-    product_batch_text: "Pastas e arquivos em escala.",
-    product_policy_title: "Criptografia por políticas",
-    product_policy_text: "Regras avançadas para casos especiais.",
-    features_title: "O que o TrueLock pode fazer",
-    feature_time: "Abrir só após um tempo",
-    feature_geo: "Abrir só em um lugar",
-    feature_visual: "Chave visual",
-    feature_andor: "Combinar regras com AND/OR",
-    feature_offline: "Offline-first, sem servidores",
-    feature_cross: "Multiplataforma e 8 idiomas",
-    feature_share: "Compartilhe como arquivo normal",
-    feature_history: "Histórico local + auto-limpeza",
-    security_title: "Segurança sem hype",
-    security_text: "Seus dados ficam no dispositivo. A cápsula abre só com regras.",
-    security_point1: "Sem nuvem e sem contas",
-    security_point2: "Se o arquivo mudar, não abre",
-    security_point3: "Decifrar e verificar é sempre grátis",
-    social_title: "Usuários e comunidades iniciais",
-    social_line1: "Usado em trading, privacidade e creators.",
-    social_line2: "Lançamento em 8 idiomas.",
-    roadmap_title: "Roadmap aberto",
-    roadmap_line: "Próximo: cápsulas com câmera, mais presets, polish UX.",
-    download_title: "Baixar TrueLock",
-    download_text: "Escolha a plataforma. Abrir cápsulas é grátis.",
-    download_android: "Android",
-    download_ios: "iOS",
-    download_windows: "Windows",
-    download_macos: "macOS",
-    download_linux: "Linux",
-    faq_title: "FAQ",
-    faq_q1: "O que é uma cápsula em termos simples?",
-    faq_a1: "É um arquivo seguro que só abre com regras.",
-    faq_q2: "O destinatário precisa pagar?",
-    faq_a2: "Não. Abrir e verificar é grátis.",
-    faq_q3: "Preciso de internet?",
-    faq_a3: "Não. Abrir e verificar funciona offline (geo usa GPS).",
-    faq_q4: "E se eu perder a senha?",
-    faq_a4: "A cápsula não abre. TrueLock não pode redefinir o acesso.",
-    faq_q5: "Há tracking?",
-    faq_a5: "Não. Sem contas, sem nuvem, sem analytics.",
-    final_title: "Crie sua primeira cápsula em 30 segundos.",
-    final_text: "Compartilhamento seguro com regras claras.",
-    final_cta: "Baixar TrueLock",
-    quick_title: "Cen?rio em 30 segundos",
-    quick_step1: "Crie uma c?psula e adicione texto ou arquivo.",
-    quick_step2: "Defina regras (tempo, lugar, senha).",
-    quick_step3: "Envie a c?psula como um arquivo normal.",
-    quick_step4: "Ela abre s? quando as regras s?o cumpridas.",
-    quick_note: "O destinat?rio abre gr?tis. Sem contas.",
-    mini_faq_title: "Respostas r?pidas",
-    mini_faq_q1: "O que ? uma c?psula?",
-    mini_faq_a1: "Um arquivo seguro que abre s? com regras.",
-    mini_faq_q2: "O destinat?rio paga?",
-    mini_faq_a2: "N?o. Abrir e verificar ? gr?tis.",
-    mini_faq_q3: "Preciso de internet?",
-    mini_faq_a3: "N?o. Funciona offline (geo usa GPS).",
-    use_cases_title: "Tr?s casos de uso principais",
-    use_case_1_label: "Proof Capsules",
-    use_case_1_title: "Proof Capsules (Infraestrutura de confian?a)",
-    use_case_1_item1: "Sinais de trading",
-    use_case_1_item2: "Previs?es",
-    use_case_1_item3: "Provas legais",
-    use_case_1_value: "Valor: Esta informa??o existia antes do evento.",
-    use_case_2_label: "Event Capsules",
-    use_case_2_title: "Event Capsules (Ativa??o offline)",
-    use_case_2_item1: "Eventos offline",
-    use_case_2_item2: "Geo drops",
-    use_case_2_item3: "Aberturas exclusivas",
-    use_case_2_value: "Valor: Desbloqueie conte?do s? no lugar e hora certos.",
-    use_case_3_label: "Campaign Capsules",
-    use_case_3_title: "Campaign / Quest Capsules (Motor de marketing)",
-    use_case_3_item1: "Quests de marca",
-    use_case_3_item2: "Ativa??es de influenciadores",
-    use_case_3_item3: "Tr?fego retail",
-    use_case_3_value: "Valor: Campanhas reais sem servidores.",
-    problems_title: "Problemas que resolvemos",
-    problems_subtitle: "As dores pelas quais as pessoas já pagam.",
-    problem_1_label: "Problema 1",
-    problem_1_title: "Não acreditam que existia antes do evento.",
-    problem_1_text: "Capturas, PDFs e posts podem ser editados ou apagados. O momento é difícil de provar.",
-    problem_1_cost: "Custo: perda de confiança e disputas de reputação.",
-    problem_2_label: "Problema 2",
-    problem_2_title: "Preciso que o conteúdo abra só no momento ou lugar certo.",
-    problem_2_text: "Mensageiros abrem na hora. Links são encaminhados. Sites exigem servidores e logins.",
-    problem_2_cost: "Custo: sem controle e sem efeito wow.",
-    problem_3_label: "Problema 3",
-    problem_3_title: "Preciso de confiança, não apenas criptografia.",
-    problem_3_text: "Criptografadores clássicos protegem um arquivo, mas não provam contexto ou regras.",
-    problem_3_cost: "Custo: valor difícil de explicar, baixa viralidade.",
-    problem_4_label: "Problema 4",
-    problem_4_title: "Não quero contas nem confiar na nuvem.",
-    problem_4_text: "Contas, servidores, assinaturas e logs criam medo e atrito.",
-    problem_4_cost: "Custo: usuários desistem.",
-    problem_5_label: "Problema 5",
-    problem_5_title: "Preciso de uma ferramenta que funcione entre pessoas.",
-    problem_5_text: "Confiança precisa de duas partes: um cria, o outro verifica.",
-    problem_5_cost: "Custo: a maioria das ferramentas é single‑user e não é adequada para prova.",
-    shift_title: "A mudança",
-    shift_subtitle: "O que o TrueLock faz de diferente.",
-    shift_1_title: "Proof Capsules",
-    shift_1_text: "Crie uma cápsula, publique e abra depois — sem edições ou re‑packaging.",
-    shift_2_title: "Event Capsules",
-    shift_2_text: "Abre só no momento/lugar certo. Combine regras com AND/OR.",
-    shift_3_title: "Motor de confiança, não só criptografia",
-    shift_3_text: "Prova portátil, verificação offline, regras transparentes.",
-    shift_4_title: "Decifrar & verificar é sempre grátis",
-    shift_4_text: "Qualquer pessoa pode abrir e verificar sem cadastro ou pagamento.",
-    shift_5_title: "Um conjunto, muitos cenários",
-    shift_5_text: "Trading, influenciadores, marketing, eventos, equipes — mesmo motor.",
-    shift_formula: "TrueLock resolve o problema de criar confiança entre pessoas.",
-    shift_cta_primary: "Crie sua primeira Proof Capsule",
-    shift_cta_secondary: "Ver casos de uso",
-    security_subtitle: "Feito para provas, não promessas.",
-    security_block1_title: "Feito para provas, não promessas",
-    security_block1_html: "<p>TrueLock não serve apenas para criptografar; ele ajuda a provar integridade, origem e imutabilidade.</p><ul><li>Quando foi criado</li><li>Que não foi modificado</li><li>Que seguiu as regras definidas</li></ul><p class=\"micro\">Sem contas. Sem servidores. Sem confiança exigida.</p>",
-    security_block2_title: "Criptografia moderna baseada em padrões",
-    security_block2_html: "<ul><li>AES-256-GCM — criptografia autenticada</li><li>PBKDF2 — derivação de chaves de senha</li><li>SHA-256 / SHA-512 — hashing e integridade</li><li>Nonces e salts aleatórios seguros</li><li>Headers autenticados contra manipulação</li></ul><p class=\"micro\">Se um byte mudar, a verificação deve falhar.</p>",
-    security_block3_title: "Proteção com hardware (quando disponível)",
-    security_block3_html: "<p>Em plataformas compatíveis, TrueLock pode usar proteção com hardware.</p><ul><li>Secure Enclave no iOS</li><li>TPM / módulos de segurança do sistema no desktop</li><li>Secure storage no Android</li></ul><ul><li>As chaves não são logadas</li><li>Não hardcoded</li><li>Removidas da memória quando possível</li></ul>",
-    security_block4_title: "Integridade verificável — ao longo do tempo",
-    security_block4_html: "<p>As cápsulas podem ser verificadas offline — agora ou depois.</p><ul><li>Sem dependência de nuvem</li><li>Sem servidor em que confiar</li><li>Sem conta exigida</li></ul><p class=\"micro\">A verificação é sempre gratuita.</p>",
-    security_block5_title: "Resistência a manipulação e replay",
-    security_block5_html: "<ul><li>Manipulação → detectada por criptografia autenticada</li><li>Ataques replay → reduzidos por nonces únicos</li><li>Ataques de timing → mitigados quando possível</li><li>Extração parcial → quebra a verificação</li></ul><p class=\"micro\">Se alguém tentar falsificar ou re‑embalar uma cápsula, a verificação deve falhar.</p>",
-    security_block6_title: "Privacidade por design",
-    security_block6_html: "<ul><li>Sem tracking</li><li>Sem SDKs de analytics nas cápsulas</li><li>Sem injeção oculta de metadados</li><li>Sem logging servidor do conteúdo</li></ul><p class=\"micro\">O que você bloqueia é conhecido apenas por você e o destinatário.</p>",
-    security_block7_title: "Transparente e auditável",
-    security_block7_html: "<p>As decisões de segurança são explícitas e pensadas para auditoria. O formato da cápsula e o fluxo criptográfico são documentados.</p><p class=\"micro\">A confiança vem da verificação, não do marketing.</p>",
-    security_block8_title: "O que isso significa para os usuários",
-    security_block8_html: "<ul><li>Você não precisa acreditar em nada</li><li>Você não precisa confiar em uma empresa</li><li>Você não precisa de conta</li></ul><p class=\"micro\">Você pode provar: existia, não mudou, as regras foram aplicadas.</p>",
-    security_summary_title: "Resumo",
-    security_summary_html: "<ul><li>Criptografia moderna</li><li>Verificação offline sem servidores</li><li>Proteção com hardware quando disponível</li><li>Privacidade por design</li><li>Prova acima de promessas</li></ul>",
+  "hero_feature_1": "Time-Lock",
+  "hero_feature_2": "Geo-Lock",
+  "hero_feature_3": "Passwort / Visueller Schlüssel",
+  "hero_feature_4": "UND / ODER-Logik",
 
-    footer_tagline: "Sem servidores • Sem contas • Offline-first",
-    footer_copy: "© 2025 TrueLock"
-  },
-  tr: {
-    meta_title: "TrueLock — Güvenli Kapsüller",
-    meta_description: "Sadece kurallarla açılan mesaj veya dosya kilitle. Offline-first.",
-    logo_alt: "TrueLock logosu",
-    nav_use_cases: "Nedir",
-    nav_how: "Nasıl çalışır",
-    nav_features: "Özellikler",
-    nav_security: "Güvenlik",
-    nav_download: "İndir",
-    nav_faq: "SSS",
-    cta_download: "TrueLock indir",
-    cta_how: "Adımları gör",
-    hero_eyebrow: "Basit ve güvenli paylaşım",
-    hero_title: "Kurallar sağlanınca açılan bir mesaj veya dosya gönder.",
-    hero_subtitle: "TrueLock bir kapsül oluşturur — güvenli bir dosya. Kuralları (zaman, yer, parola) belirlersin ve gönderirsin. Alıcı ücretsiz açar.",
-    hero_bullet_proof: "Metin, dosya veya medya ile kapsül oluştur.",
-    hero_bullet_event: "Kuralları ayarla: zaman, yer, parola, görsel anahtar.",
-    hero_note: "Hesap yok. Offline. Çözme ve doğrulama ücretsiz.",
-    hero_card_1_title: "Oluştur",
-    hero_card_1_desc: "Metin, dosya veya medya ekle.",
-    hero_card_2_title: "Kural ekle",
-    hero_card_2_desc: "Zaman, yer, parola, AND/OR.",
-    hero_card_3_title: "Gönder",
-    hero_card_3_desc: "Her yerden paylaş. Ücretsiz aç.",
-    use_cases_title: "TrueLock kapsülü nedir?",
-    use_case_proof_title: "Kapsül oluştur",
-    use_case_proof_text: "İçeriği ekle ve kuralları belirle. Yaklaşık bir dakika sürer.",
-    use_case_proof_cta: "Adımları gör",
-    use_case_event_title: "Dosya gibi gönder",
-    use_case_event_text: "Telegram, WhatsApp, email, USB veya cloud ile paylaş. Alıcı ücretsiz açar.",
-    use_case_event_cta: "Paylaşımı gör",
-    chain_title: "Birden çok adım? Chain Capsules kullan",
-    chain_text: "Kapsülleri bağlayarak bir sonraki adımı aç. Görevler ve lansmanlar için iyi.",
-    chain_step_1: "Adım 1: ilk kapsül açılır",
-    chain_step_2: "Adım 2: ipucu veya link verir",
-    chain_step_3: "Adım 3: sonraki kapsül ödülü açar",
-    how_title: "TrueLock nasıl çalışır",
-    how_step1_title: "Oluştur",
-    how_step1_text: "Metin, dosya veya medya seç.",
-    how_step2_title: "Kural ekle",
-    how_step2_text: "Zaman, yer, parola, görsel anahtar, AND/OR.",
-    how_step3_title: "Gönder",
-    how_step3_text: "Kapsülü paylaş. Alıcı ücretsiz açar.",
-    products_title: "Uygulamada: 4 basit araç",
-    products_subtitle: "Kapsüllerle başla. Diğer modlar dosya ve klasörler için.",
-    product_capsules_title: "Kapsüller",
-    product_capsules_text: "Kurallı güvenli paylaşım modu.",
-    product_files_title: "Dosyalar",
-    product_files_text: "Hızlı dosya şifreleme.",
-    product_batch_title: "Batch ve Arşiv",
-    product_batch_text: "Klasörler ve arşivler ölçekli.",
-    product_policy_title: "Politika Şifreleme",
-    product_policy_text: "Özel durumlar için gelişmiş kurallar.",
-    features_title: "TrueLock neler yapar",
-    feature_time: "Sadece belirli zamanda açar",
-    feature_geo: "Sadece belirli yerde açar",
-    feature_visual: "Görsel anahtar",
-    feature_andor: "Kuralları AND/OR ile birleştir",
-    feature_offline: "Offline-first, sunucu yok",
-    feature_cross: "Çoklu platform ve 8 dil",
-    feature_share: "Normal dosya gibi paylaş",
-    feature_history: "Yerel geçmiş + otomatik temizlik",
-    security_title: "Hypesız güvenlik",
-    security_text: "Veriler cihazda kalır. Kapsül sadece kurallarla açılır.",
-    security_point1: "Bulut yok, hesap yok",
-    security_point2: "Dosya değişirse açılmaz",
-    security_point3: "Çözme ve doğrulama ücretsiz",
-    social_title: "Erken kullanıcılar ve topluluklar",
-    social_line1: "Trading, gizlilik ve creator topluluklarında kullanılır.",
-    social_line2: "8 dilde lansman.",
-    roadmap_title: "Açık yol haritası",
-    roadmap_line: "Sırada: kamera kapsülleri, daha fazla preset, UX polish.",
-    download_title: "TrueLock indir",
-    download_text: "Platformunu seç. Kapsüller ücretsiz açılır.",
-    download_android: "Android",
-    download_ios: "iOS",
-    download_windows: "Windows",
-    download_macos: "macOS",
-    download_linux: "Linux",
-    faq_title: "SSS",
-    faq_q1: "Kapsül basitçe nedir?",
-    faq_a1: "Sadece kurallarla açılan güvenli dosya.",
-    faq_q2: "Alıcı ödeme yapar mı?",
-    faq_a2: "Hayır. Açma ve doğrulama ücretsiz.",
-    faq_q3: "İnternet gerekir mi?",
-    faq_a3: "Hayır. Açma ve doğrulama offline çalışır (geo GPS kullanır).",
-    faq_q4: "Parolayı kaybedersem?",
-    faq_a4: "Kapsül açılmaz. TrueLock erişimi sıfırlayamaz.",
-    faq_q5: "Tracking var mı?",
-    faq_a5: "Hayır. Hesap yok, bulut yok, analytics yok.",
-    final_title: "İlk kapsülünü 30 saniyede oluştur.",
-    final_text: "Net kurallarla güvenli paylaşım.",
-    final_cta: "TrueLock indir",
-    quick_title: "30 saniyelik senaryo",
-    quick_step1: "Bir kaps?l olu?tur ve metin ya da dosya ekle.",
-    quick_step2: "Kurallar? ayarla (zaman, yer, parola).",
-    quick_step3: "Kaps?l? normal bir dosya gibi g?nder.",
-    quick_step4: "Yaln?zca kurallar sa?lan?nca a??l?r.",
-    quick_note: "Al?c? ?cretsiz a?ar. Hesap yok.",
-    mini_faq_title: "H?zl? cevaplar",
-    mini_faq_q1: "Kaps?l nedir?",
-    mini_faq_a1: "Kurallarla a??lan g?venli dosya.",
-    mini_faq_q2: "Al?c? ?deme yapar m??",
-    mini_faq_a2: "Hay?r. A?ma ve do?rulama ?cretsiz.",
-    mini_faq_q3: "?nternet gerekir mi?",
-    mini_faq_a3: "Hay?r. Offline ?al???r (geo GPS kullan?r).",
-    use_cases_title: "?? amiral kullan?m senaryosu",
-    use_case_1_label: "Proof Capsules",
-    use_case_1_title: "Proof Capsules (G?ven altyap?s?)",
-    use_case_1_item1: "Trading sinyalleri",
-    use_case_1_item2: "Tahminler",
-    use_case_1_item3: "Hukuki kan?tlar",
-    use_case_1_value: "De?er: Bu bilgi olaydan ?nce vard?.",
-    use_case_2_label: "Event Capsules",
-    use_case_2_title: "Event Capsules (Offline aktivasyon)",
-    use_case_2_item1: "Offline etkinlikler",
-    use_case_2_item2: "Geo drop?lar",
-    use_case_2_item3: "?zel a??l??lar",
-    use_case_2_value: "De?er: ??eri?i yaln?zca do?ru yerde ve zamanda a?.",
-    use_case_3_label: "Campaign Capsules",
-    use_case_3_title: "Campaign / Quest Capsules (Pazarlama motoru)",
-    use_case_3_item1: "Marka quest?leri",
-    use_case_3_item2: "Influencer aktivasyonlar?",
-    use_case_3_item3: "Perakende trafik",
-    use_case_3_value: "De?er: Sunucusuz ger?ek kampanyalar.",
-    problems_title: "Çözdüğümüz problemler",
-    problems_subtitle: "İnsanların zaten para ödediği sorunlar.",
-    problem_1_label: "Problem 1",
-    problem_1_title: "Olaydan önce var olduğuna inanmıyorlar.",
-    problem_1_text: "Ekran görüntüleri, PDF’ler ve gönderiler düzenlenebilir veya silinebilir. Zamanı kanıtlamak zordur.",
-    problem_1_cost: "Maliyet: güven kaybı ve itibar tartışmaları.",
-    problem_2_label: "Problem 2",
-    problem_2_title: "İçerik sadece doğru zamanda veya yerde açılsın.",
-    problem_2_text: "Mesajlaşmalar hemen açılır. Linkler iletilebilir. Siteler sunucu ve giriş ister.",
-    problem_2_cost: "Maliyet: kontrol yok, wow etkisi yok.",
-    problem_3_label: "Problem 3",
-    problem_3_title: "Sadece şifreleme değil, güvene ihtiyacım var.",
-    problem_3_text: "Klasik şifreleyiciler dosyayı korur ama bağlamı ve kuralları kanıtlamaz.",
-    problem_3_cost: "Maliyet: değer anlatması zor, düşük viralite.",
-    problem_4_label: "Problem 4",
-    problem_4_title: "Hesap ve buluta güven istemiyorum.",
-    problem_4_text: "Hesaplar, sunucular, abonelikler ve loglar korku ve sürtünme yaratır.",
-    problem_4_cost: "Maliyet: kullanıcılar vazgeçer.",
-    problem_5_label: "Problem 5",
-    problem_5_title: "İnsanlar arasında çalışan bir araç istiyorum.",
-    problem_5_text: "Güven iki taraf ister: biri oluşturur, diğeri doğrular.",
-    problem_5_cost: "Maliyet: çoğu araç tek kullanıcı odaklıdır ve prova için uygun değildir.",
-    shift_title: "Değişim",
-    shift_subtitle: "TrueLock neyi farklı yapıyor.",
-    shift_1_title: "Proof Capsules",
-    shift_1_text: "Kapsül oluştur, yayınla, daha sonra aç — düzenleme veya yeniden paketleme yok.",
-    shift_2_title: "Event Capsules",
-    shift_2_text: "Sadece doğru zamanda/yerde açılır. Kuralları AND/OR ile birleştir.",
-    shift_3_title: "Güven motoru, sadece şifreleme değil",
-    shift_3_text: "Taşınabilir proof, offline doğrulama, şeffaf kurallar.",
-    shift_4_title: "Çözme ve doğrulama her zaman ücretsiz",
-    shift_4_text: "Herkes kayıt veya ödeme olmadan açıp doğrulayabilir.",
-    shift_5_title: "Tek bir düzen, birçok senaryo",
-    shift_5_text: "Trading, influencerlar, marketing, etkinlikler, ekipler — aynı motor.",
-    shift_formula: "TrueLock, insanlar arasında güven oluşturma sorununu çözer.",
-    shift_cta_primary: "İlk Proof Capsule’ünü oluştur",
-    shift_cta_secondary: "Kullanım örneklerini gör",
-    security_subtitle: "Kanıt için tasarlandı, söz için değil.",
-    security_block1_title: "Kanıt için tasarlandı, söz için değil",
-    security_block1_html: "<p>TrueLock yalnızca şifreleme için değil, bütünlük, köken ve değişmezliği kanıtlamaya yardımcı olmak için tasarlandı.</p><ul><li>Ne zaman oluşturulduğu</li><li>Değiştirilmediği</li><li>Belirlediğin kurallara uyduğu</li></ul><p class=\"micro\">Hesap yok. Sunucu yok. Güven gerekmez.</p>",
-    security_block2_title: "Modern, standartlara dayalı kriptografi",
-    security_block2_html: "<ul><li>AES-256-GCM — kimlik doğrulamalı şifreleme</li><li>PBKDF2 — paroladan anahtar türetme</li><li>SHA-256 / SHA-512 — hashing ve bütünlük</li><li>Güvenli rastgele nonce ve salt</li><li>Manipülasyonu azaltan doğrulanmış başlıklar</li></ul><p class=\"micro\">Bir bayt değişirse doğrulamanın başarısız olması beklenir.</p>",
-    security_block3_title: "Donanım destekli koruma (mevcutsa)",
-    security_block3_html: "<p>Desteklenen platformlarda TrueLock donanım destekli koruma kullanabilir.</p><ul><li>iOS’ta Secure Enclave</li><li>Desktop’ta TPM / sistem güvenlik modülleri</li><li>Android’de Secure storage</li></ul><ul><li>Anahtarlar loglanmaz</li><li>Hardcode edilmez</li><li>Mümkün olduğunda bellekten temizlenir</li></ul>",
-    security_block4_title: "Doğrulanabilir bütünlük — zaman içinde",
-    security_block4_html: "<p>Kapsüller offline doğrulanabilir — şimdi veya daha sonra.</p><ul><li>Bulut bağımlılığı yok</li><li>Güvenilecek sunucu yok</li><li>Hesap gerekmez</li></ul><p class=\"micro\">Doğrulama her zaman ücretsizdir.</p>",
-    security_block5_title: "Manipülasyon ve replay direnci",
-    security_block5_html: "<ul><li>Manipülasyon → kimlik doğrulamalı şifreleme ile tespit edilir</li><li>Replay saldırıları → benzersiz nonce’larla azaltılır</li><li>Zamanlama saldırıları → mümkün olduğunda azaltılır</li><li>Kısmi çıkarım → doğrulamayı bozar</li></ul><p class=\"micro\">Bir kapsül sahtelemeye çalışılırsa doğrulama başarısız olmalıdır.</p>",
-    security_block6_title: "Gizlilik tasarım gereği",
-    security_block6_html: "<ul><li>Takip yok</li><li>Kapsüller içinde analytics SDK yok</li><li>Gizli metadata enjeksiyonu yok</li><li>İçerik için sunucu logları yok</li></ul><p class=\"micro\">Kilitlediğin içerik sadece sen ve alıcı tarafından bilinir.</p>",
-    security_block7_title: "Şeffaf ve denetlenebilir",
-    security_block7_html: "<p>Güvenlik kararları açık ve denetime uygun şekilde tasarlanmıştır. Kapsül formatı ve kripto akışı belgelenmiştir.</p><p class=\"micro\">Güven, pazarlamadan değil, doğrulanabilirlikten gelir.</p>",
-    security_block8_title: "Kullanıcılar için ne anlama gelir",
-    security_block8_html: "<ul><li>İnanmak zorunda değilsin</li><li>Şirkete güvenmek zorunda değilsin</li><li>Hesap gerekmez</li></ul><p class=\"micro\">Kanıtlayabilirsin: var oldu, değişmedi, kurallar uygulandı.</p>",
-    security_summary_title: "Özet",
-    security_summary_html: "<ul><li>Modern kriptografi</li><li>Offline, sunucusuz doğrulama</li><li>Mevcutsa donanım destekli koruma</li><li>Gizlilik odaklı tasarım</li><li>Vaad değil, kanıt</li></ul>",
+  "hero_card_1_title": "Proof Capsule",
+  "hero_card_1_desc": "Informationen jetzt fixieren und später beweisen.",
 
-    footer_tagline: "Sunucu yok • Hesap yok • Offline-first",
-    footer_copy: "© 2025 TrueLock"
-  }
-};
+  "hero_card_2_title": "Event Capsule",
+  "hero_card_2_desc": "Öffnet sich nur am richtigen Ort und zur richtigen Zeit.",
 
-const supported = ["en", "ru", "de", "es", "fr", "it", "pt", "tr"];
+  "hero_card_3_title": "UND/ODER-Freigabe",
+  "hero_card_3_desc": "Bedingungen kombinieren und Zugriff steuern.",
 
-function normalizeLang(lang) {
-  if (!lang) return "en";
-  const lower = lang.toLowerCase();
-  const base = lower.split("-")[0];
-  if (supported.includes(base)) return base;
-  return "en";
-}
+  "pain_title": "Das Problem ist nicht Sicherheit — sondern die Kontrolle über Sicherheit",
+  "pain_subtitle": "",
 
-function applyTranslations(lang) {
-  const t = translations[lang] || translations.en;
-  document.documentElement.lang = lang;
-  document.title = t.meta_title || "TrueLock";
-  const meta = document.getElementById("metaDescription");
-  if (meta && t.meta_description) {
-    meta.setAttribute("content", t.meta_description);
-  }
+  "pain_list_1": "✉️ Nachrichten können abgefangen werden.",
+  "pain_list_2": "🌐 Plattformen haben Zugriff auf Ihre Daten.",
+  "pain_list_3": "📝 Dateien können kopiert oder manipuliert werden.",
+  "pain_list_4": "®️ Die Originalität lässt sich nicht beweisen.",
+  "pain_list_5": "🧩 Komplexe Verschlüsselung schreckt normale Nutzer ab.",
+  "pain_list_6": "⚙️ Daten können zu früh oder am falschen Ort offengelegt werden.",
 
-  document.querySelectorAll("[data-i18n]").forEach((el) => {
-    const key = el.getAttribute("data-i18n");
-    if (t[key]) {
-      el.textContent = t[key];
+  "pain_proof_problem_title": "Problem",
+  "pain_statement_title": "Lösung",
+
+  "pain_statement_desc":
+    "Eine Kapsel ist eine Datei mit integrierter Freigaberichtlinie. Keine Konten, keine Server, kein „Vertrau mir“.",
+
+  "breakthrough_title": "Wie funktioniert es?",
+  "breakthrough_subtitle":
+    "Erstelle eine Kapsel, definiere Regeln und sende sie überallhin. Der Empfänger öffnet sie nur, wenn die Bedingungen erfüllt sind.",
+
+  "breakthrough_list_1":
+    "1. Erstelle eine Kapsel mit Text, Dateien, Fotos oder Videos.",
+  "breakthrough_list_2":
+    "2. Lege Bedingungen fest: Zeit, Ort, Passwort, visueller Schlüssel.",
+  "breakthrough_list_3":
+    "3. Kombiniere Bedingungen mit UND / ODER-Logik.",
+  "breakthrough_list_4":
+    "4. Sende die Datei über jeden Messenger.",
+  "breakthrough_list_5":
+    "5. Öffnen und Verifizieren ist immer kostenlos.",
+
+  "breakthrough_note_title": "Nicht nur ein weiterer Verschlüsseler",
+
+  "audience_title": "Für wen ist es geeignet?",
+  "audience_subtitle":
+    "Creator. Trader. Teams. Endnutzer. Unterschiedliche Rollen — dieselbe starke Mechanik.",
+
+  "audience_1_title": "Journalisten und Autoren",
+  "audience_1_desc": "Schutz von Materialien und Quellen.",
+
+  "audience_2_title": "Trader und Analysten",
+  "audience_2_desc": "Fixierung von Signalen und Prognosen.",
+
+  "audience_3_title": "Teams und Unternehmen",
+  "audience_3_desc": "Dateiaustausch ohne Cloud-Dienste.",
+
+  "audience_4_title": "Alltägliche Nutzer",
+  "audience_4_desc": "Persönliche Informationen bleiben geschützt.",
+
+  "audience_1_text": "Schutz von Materialien und Quellen.",
+  "audience_2_text": "Fixierung von Signalen und Prognosen.",
+  "audience_3_text": "Dateiaustausch ohne Cloud und Event-Erstellung.",
+  "audience_4_text": "Persönliche Informationen bleiben geschützt.",
+
+  "cases_title": "Anwendungsfälle",
+  "cases_subtitle": "Klare Probleme — klare Lösungen.",
+
+  "case1_title": "Proof Capsule",
+  "case1_subtitle": "Informationen zeitlich fixieren.",
+
+  "case1_bullet1":
+    "Du veröffentlichst die Kapsel jetzt (öffentlich oder in einer Gruppe).",
+  "case1_bullet2":
+    "Du legst den Öffnungszeitpunkt fest (optional mit Passwort für Premium-Zugriff).",
+  "case1_bullet3":
+    "Beim Öffnen ist sichtbar, dass der Inhalt nicht verändert wurde.",
+
+  "case1_tag": "Vertrauensmechanik für Trader und Creator.",
+
+  "case2_title": "Event Capsule",
+  "case2_subtitle":
+    "Bringe Menschen zu Ort und Zeit — weil die Öffnung überprüfbar ist.",
+
+  "case2_bullet1":
+    "Du legst einen Preis, Hinweis, Coupon oder eine Anleitung hinein.",
+  "case2_bullet2":
+    "Du setzt Geo + Zeitfenster (z. B. „Zentrum Warschau 21:00–21:30“).",
+  "case2_bullet3":
+    "Menschen kommen. Es entsteht ein viraler IRL-Moment.",
+
+  "case2_tag": "Superkraft für Marketing und Creator.",
+
+  "case3_title": "Pay-to-Unlock",
+  "case3_subtitle":
+    "Zugriff legal verkaufen: Zeit-Lock für alle, Passwort für Käufer.",
+
+  "case3_bullet1":
+    "Erstelle eine Kapsel mit aktiviertem Time-Lock.",
+  "case3_bullet2":
+    "Füge ein Passwort als ODER-Bedingung für frühen Zugriff hinzu.",
+  "case3_bullet3":
+    "Käufer zahlen für das Passwort und öffnen sofort — andere warten.",
+
+  "case3_tag": "Ideal für kostenpflichtige Signale und Premium-Drops.",
+
+  "security_title": "Sicherheit",
+  "security_subtitle":
+    "Um TrueLock zu vertrauen, brauchst du kein Cloud-Konto. Die Datei wird lokal verschlüsselt und geprüft.",
+
+  "security_summary_title": "Was dir das bringt",
+
+  "pricing_title": "Preise",
+  "pricing_subtitle":
+    "Öffnen ist für immer kostenlos. Pro ist ein einmaliges Upgrade für 9,99 $ für erweiterte Kapseln.",
+
+  "pricing_free_title": "Free",
+  "pricing_free_price": "$0",
+  "pricing_free_b1": "Öffnen/Entschlüsseln ohne Limits",
+  "pricing_free_b2": "Basis-Textkapseln (limitiert)",
+  "pricing_free_b3": "Offline, kein Konto",
+
+  "pricing_pro_title": "Pro (lebenslang)",
+  "pricing_pro_price": "$9.99",
+  "pricing_pro_note": "Einmalzahlung. Keine Abos.",
+
+  "pricing_pro_b1": "Unbegrenzte Kapseln + Anhänge",
+  "pricing_pro_b2": "Zeit / Geo / Passwort / Visuell + UND/ODER",
+  "pricing_pro_b3": "Batch-Szenarien und erweiterte Modi",
+
+  "pricing_cta": "Herunterladen und im App upgraden",
+  "pricing_cta_secondary": "So funktioniert der Pro-Kauf",
+
+  "upgrade_title": "So kaufst du Pro (9,99 $)",
+  "upgrade_subtitle":
+    "Klarer Flow für die Landingpage: erst herunterladen, dann Upgrade in der App.",
+
+  "upgrade_how_title": "Schritt für Schritt",
+  "upgrade_step1": "Lade TrueLock für deine Plattform herunter.",
+  "upgrade_step2": "Öffne die App → tippe auf „Upgrade to Pro“.",
+  "upgrade_step3":
+    "Bezahle 9,99 $ über den angebundenen Anbieter und erhalte Pro sofort.",
+
+  "upgrade_note":
+    "Zuverlässiger Ansatz: keine fest verdrahteten Zahlungslinks, Anbieterwechsel ohne Redesign möglich.",
+
+  "upgrade_cta_download": "Download",
+  "upgrade_cta_back": "Zurück zu den Preisen",
+
+  "upgrade_why_title": "Was Pro bietet",
+  "upgrade_why_1": "🌟 Unbegrenzte Kapseln + Dateien/Fotos/Videos",
+  "upgrade_why_2": "🌟 Bedingungen: Zeit / Geo / Passwort / Visuell",
+  "upgrade_why_3":
+    "🌟 UND/ODER-Richtlinien (Bezahltes Öffnen, früher Zugriff, Multi-Faktor)",
+  "upgrade_why_4": "🌟 Batch-Operationen und erweiterte Modi",
+
+  "upgrade_refund":
+    "Rückerstattungen hängen vom Zahlungsanbieter oder Store ab.",
+
+  "download_title": "Download",
+  "download_subtitle":
+    "Desktop und mobil. Pro wird in der App für 9,99 $ gekauft.",
+
+  "download_windows": "Windows",
+  "download_macos": "macOS",
+  "download_linux": "Linux",
+  "download_android": "Android",
+  "download_ios": "iOS",
+  "download_web": "Web (Vorschau)",
+
+  "download_note":
+    "Nach der Installation: App öffnen → Upgrade to Pro. Zahlung erfolgt über den angebundenen Anbieter (z. B. Mercuryo).",
+
+  "final_title": "Vertrauen — in einer einzigen Datei.",
+  "final_text":
+    "Proof-Kapseln, Drops und ortsgebundene Freigaben — ohne Server und ohne „Vertrau mir“.",
+
+  "final_cta": "TrueLock herunterladen",
+
+  "footer_tagline":
+    "TrueLock — intelligenter Schutz für digitale Informationen",
+
+  "footer_copy":
+    "© TrueLock. Offline-Verschlüsselung + Policy Engine. Entschlüsselung immer kostenlos.",
+
+  "breakthrough_text_html":
+    "TrueLock ist ein <strong>sicheres Kapsel-Format</strong> mit Zugriffsregeln.",
+
+  "security_block1_html":
+    "AES-256-GCM, dateispezifisches Salt und kryptografischer Zufall für Nonces.",
+  "security_block2_html":
+    "Keine Konten und keine verpflichtende Cloud.",
+  "security_block3_html":
+    "Ein Kapsel-Format für Desktop und mobile Geräte.",
+  "security_block4_html":
+    "Zeitfenster UND Ort, oder Passwort ODER visueller Schlüssel.",
+  "security_block5_html":
+    "Sensible Daten bleiben vollständig verschlüsselt.",
+  "security_block6_html":
+    "Klare Anzeige, welche Bedingung nicht erfüllt ist — ohne Geheimnisse preiszugeben.",
+  "security_block7_html":
+    "Kapseln können öffentlich geteilt werden — ohne Paywall für Empfänger.",
+  "security_block8_html":
+    "Für Privatsphäre und Vertrauen. Nutzung im gesetzlichen Rahmen.",
+
+  "security_summary_html":
+    "Wenn du <strong>beweisen</strong>, <strong>später öffnen</strong> oder <strong>an einem bestimmten Ort freigeben</strong> willst — TrueLock macht es einfach.",
+
+  "logo_alt": "TrueLock Logo"
+},
+    es: {
+  "nav_pain": "El problema",
+  "nav_breakthrough": "¿Cómo funciona?",
+  "nav_cases": "Casos de uso",
+  "nav_audience": "¿Para quién?",
+  "nav_security": "Seguridad",
+  "nav_pricing": "Precios",
+  "nav_download": "Descargar",
+
+  "cta_primary": "Descargar TrueLock",
+  "cta_secondary": "Ver casos",
+
+  "hero_note": "Funciona sin conexión. Sin cuentas. Un archivo protegido. Abrir es gratis.",
+  "hero_eyebrow": "Comparte información en la red sin miedo a filtraciones",
+  "hero_title": "TrueLock — protección inteligente para la información digital",
+
+  "hero_subtitle_html":
+    "Crea tu propia <strong>Secure Capsule</strong> y controla el acceso: solo se abrirá por <strong>tiempo</strong>, <strong>ubicación</strong>, <strong>contraseña</strong> o <strong>clave visual</strong>. Todo bajo tu control.",
+
+  "hero_feature_1": "Time-Lock",
+  "hero_feature_2": "Geo-Lock",
+  "hero_feature_3": "Contraseña / Clave visual",
+  "hero_feature_4": "Lógica AND / OR",
+
+  "hero_card_1_title": "Proof Capsule",
+  "hero_card_1_desc": "Fija la información ahora y demuéstralo después.",
+
+  "hero_card_2_title": "Event Capsule",
+  "hero_card_2_desc": "Se abre solo en el lugar y momento correctos.",
+
+  "hero_card_3_title": "Desbloqueo AND/OR",
+  "hero_card_3_desc": "Combina condiciones y gestiona el acceso.",
+
+  "pain_title": "El problema no es la seguridad, sino el control sobre la seguridad",
+  "pain_subtitle": "",
+
+  "pain_list_1": "✉️ Los mensajes pueden ser interceptados.",
+  "pain_list_2": "🌐 Las plataformas tienen acceso a tus datos.",
+  "pain_list_3": "📝 Los archivos pueden copiarse o falsificarse.",
+  "pain_list_4": "®️ Es imposible demostrar la originalidad.",
+  "pain_list_5": "🧩 Las soluciones de cifrado complejas alejan a los usuarios comunes.",
+  "pain_list_6": "⚙️ Los datos pueden revelarse antes de tiempo o en el lugar equivocado.",
+
+  "pain_proof_problem_title": "Problema",
+  "pain_statement_title": "Solución",
+
+  "pain_statement_desc":
+    "Una cápsula es un archivo con una política de apertura integrada. Sin cuentas, sin servidores, sin “confía en mí”.",
+
+  "breakthrough_title": "¿Cómo funciona?",
+  "breakthrough_subtitle":
+    "Crea una cápsula, define las reglas y envíala a cualquier lugar. El receptor solo podrá abrirla cuando se cumplan las condiciones.",
+
+  "breakthrough_list_1":
+    "1. Crea una cápsula con texto, archivos, fotos o videos.",
+  "breakthrough_list_2":
+    "2. Define las condiciones: tiempo, ubicación, contraseña, clave visual.",
+  "breakthrough_list_3":
+    "3. Combina condiciones con lógica AND / OR.",
+  "breakthrough_list_4":
+    "4. Envía el archivo por cualquier mensajero.",
+  "breakthrough_list_5":
+    "5. Abrir y verificar siempre es gratis.",
+
+  "breakthrough_note_title": "No es “otro cifrador más”",
+
+  "audience_title": "¿Para quién es?",
+  "audience_subtitle":
+    "Creadores. Traders. Equipos. Usuarios comunes. Diferentes palabras, la misma mecánica potente.",
+
+  "audience_1_title": "Periodistas y autores",
+  "audience_1_desc": "Protección de materiales y fuentes.",
+
+  "audience_2_title": "Traders y analistas",
+  "audience_2_desc": "Fijación de señales y predicciones.",
+
+  "audience_3_title": "Equipos y empresas",
+  "audience_3_desc": "Transferencia de archivos sin la nube.",
+
+  "audience_4_title": "Usuarios cotidianos",
+  "audience_4_desc": "La información personal protegida de terceros.",
+
+  "audience_1_text": "Protección de materiales y fuentes.",
+  "audience_2_text": "Fijación de señales y predicciones.",
+  "audience_3_text": "Transferencia de archivos sin la nube y creación de eventos.",
+  "audience_4_text": "La información personal protegida de terceros.",
+
+  "cases_title": "Casos de uso",
+  "cases_subtitle": "Problemas claros — soluciones claras.",
+
+  "case1_title": "Proof Capsule",
+  "case1_subtitle": "Fijación de información en el tiempo.",
+
+  "case1_bullet1":
+    "Publicas la cápsula ahora (pública o en un grupo).",
+  "case1_bullet2":
+    "Estableces el momento de apertura (opcionalmente con contraseña para acceso premium).",
+  "case1_bullet3":
+    "Al abrirla, se ve que el contenido no fue modificado.",
+
+  "case1_tag": "Mecánica de confianza para traders y creadores.",
+
+  "case2_title": "Event Capsule",
+  "case2_subtitle":
+    "Reúne personas en un lugar y momento — porque la apertura es verificable.",
+
+  "case2_bullet1":
+    "Colocas dentro un premio, pista, cupón o instrucción.",
+  "case2_bullet2":
+    "Configuras geo + ventana de tiempo (por ejemplo, “centro de Varsovia 21:00–21:30”).",
+  "case2_bullet3":
+    "La gente llega. Se crea un momento IRL viral.",
+
+  "case2_tag": "Súper poder para marketing y creadores.",
+
+  "case3_title": "Pay-to-Unlock",
+  "case3_subtitle":
+    "Vende acceso de forma legal: time-lock para todos, contraseña para compradores.",
+
+  "case3_bullet1":
+    "Creas una cápsula con Time-Lock.",
+  "case3_bullet2":
+    "Añades una contraseña como condición OR para acceso anticipado.",
+  "case3_bullet3":
+    "Los compradores pagan por la contraseña y abren al instante — los demás esperan.",
+
+  "case3_tag": "Ideal para señales de pago y lanzamientos premium.",
+
+  "security_title": "Seguridad",
+  "security_subtitle":
+    "Para confiar en TrueLock no necesitas una cuenta en la nube. El archivo se cifra y verifica en el dispositivo.",
+
+  "security_summary_title": "Qué te aporta",
+
+  "pricing_title": "Precios",
+  "pricing_subtitle":
+    "Abrir es gratis para siempre. Pro es una mejora única de $9.99 para cápsulas avanzadas.",
+
+  "pricing_free_title": "Free",
+  "pricing_free_price": "$0",
+  "pricing_free_b1": "Abrir/descifrar sin límites",
+  "pricing_free_b2": "Cápsulas de texto básicas (límite)",
+  "pricing_free_b3": "Sin conexión, sin cuenta",
+
+  "pricing_pro_title": "Pro (para siempre)",
+  "pricing_pro_price": "$9.99",
+  "pricing_pro_note": "Un solo pago. Sin suscripciones.",
+
+  "pricing_pro_b1": "Cápsulas sin límites + adjuntos",
+  "pricing_pro_b2": "Tiempo / Geo / Contraseña / Visual + AND/OR",
+  "pricing_pro_b3": "Escenarios por lotes y modos avanzados",
+
+  "pricing_cta": "Descargar y actualizar dentro de la app",
+  "pricing_cta_secondary": "Cómo funciona la compra Pro",
+
+  "upgrade_title": "Cómo comprar Pro ($9.99)",
+  "upgrade_subtitle":
+    "Flujo limpio para el landing: primero descargas, luego actualizas dentro de la app.",
+
+  "upgrade_how_title": "Paso a paso",
+  "upgrade_step1": "Descarga TrueLock para tu plataforma.",
+  "upgrade_step2": "Abre la app → pulsa “Upgrade to Pro”.",
+  "upgrade_step3":
+    "Paga $9.99 a través del proveedor conectado y obtén Pro al instante.",
+
+  "upgrade_note":
+    "Más fiable: no hay enlaces de pago fijos, el proveedor puede cambiarse sin rediseñar.",
+
+  "upgrade_cta_download": "Descargar",
+  "upgrade_cta_back": "Volver a precios",
+
+  "upgrade_why_title": "Qué incluye Pro",
+  "upgrade_why_1": "🌟 Cápsulas sin límites + archivos/fotos/videos",
+  "upgrade_why_2": "🌟 Condiciones: tiempo / geo / contraseña / visual",
+  "upgrade_why_3":
+    "🌟 Políticas AND/OR (apertura de pago, acceso anticipado, multifactor)",
+  "upgrade_why_4": "🌟 Operaciones por lotes y modos avanzados",
+
+  "upgrade_refund":
+    "Los reembolsos dependen del proveedor de pago o la tienda.",
+
+  "download_title": "Descargar",
+  "download_subtitle":
+    "Escritorio y móvil. Pro se compra dentro de la app por $9.99.",
+
+  "download_windows": "Windows",
+  "download_macos": "macOS",
+  "download_linux": "Linux",
+  "download_android": "Android",
+  "download_ios": "iOS",
+  "download_web": "Web (vista previa)",
+
+  "download_note":
+    "Después de instalar: abre la app → Upgrade to Pro. El pago se procesa a través del proveedor conectado (por ejemplo, Mercuryo).",
+
+  "final_title": "Confianza — en un solo archivo.",
+  "final_text":
+    "Cápsulas proof, drops y aperturas en el lugar correcto — sin servidores y sin “confía en mí”.",
+
+  "final_cta": "Descargar TrueLock",
+
+  "footer_tagline":
+    "TrueLock — protección inteligente para la información digital",
+
+  "footer_copy":
+    "© TrueLock. Cifrado offline + motor de políticas. El descifrado siempre es gratuito.",
+
+  "breakthrough_text_html":
+    "TrueLock es un <strong>formato de cápsula segura</strong> con reglas de acceso.",
+
+  "security_block1_html":
+    "AES-256-GCM, salt por archivo y aleatoriedad criptográfica para nonces.",
+  "security_block2_html":
+    "Sin cuentas ni nube obligatoria.",
+  "security_block3_html":
+    "Un formato de cápsula para escritorio y dispositivos móviles.",
+  "security_block4_html":
+    "Ventana de tiempo Y ubicación, o contraseña O clave visual.",
+  "security_block5_html":
+    "Los datos sensibles permanecen completamente cifrados.",
+  "security_block6_html":
+    "Se muestra qué condición no se cumple — sin revelar secretos.",
+  "security_block7_html":
+    "Las cápsulas pueden compartirse públicamente sin paywall para el receptor.",
+  "security_block8_html":
+    "Para privacidad y confianza. Úsalo dentro del marco legal.",
+
+  "security_summary_html":
+    "Si necesitas <strong>demostrar</strong>, <strong>abrir más tarde</strong> o <strong>desbloquear en un lugar específico</strong> — TrueLock lo hace simple.",
+
+  "logo_alt": "Logotipo de TrueLock"
+},
+
+    fr: {
+  "nav_pain": "Le problème",
+  "nav_breakthrough": "Comment ça marche ?",
+  "nav_cases": "Cas d’usage",
+  "nav_audience": "Pour qui ?",
+  "nav_security": "Sécurité",
+  "nav_pricing": "Tarifs",
+  "nav_download": "Télécharger",
+
+  "cta_primary": "Télécharger TrueLock",
+  "cta_secondary": "Voir les cas",
+
+  "hero_note": "Fonctionne hors ligne. Sans comptes. Un seul fichier sécurisé. L’ouverture est gratuite.",
+  "hero_eyebrow": "Partagez des données en ligne sans craindre les fuites",
+  "hero_title": "TrueLock — protection intelligente des informations numériques",
+
+  "hero_subtitle_html":
+    "Créez votre propre <strong>Secure Capsule</strong> et contrôlez l’accès : ouverture uniquement par <strong>temps</strong>, <strong>lieu</strong>, <strong>mot de passe</strong> ou <strong>clé visuelle</strong>. Tout est sous votre contrôle.",
+
+  "hero_feature_1": "Time-Lock",
+  "hero_feature_2": "Geo-Lock",
+  "hero_feature_3": "Mot de passe / Clé visuelle",
+  "hero_feature_4": "Logique AND / OR",
+
+  "hero_card_1_title": "Proof Capsule",
+  "hero_card_1_desc": "Figez l’information maintenant et prouvez-le plus tard.",
+
+  "hero_card_2_title": "Event Capsule",
+  "hero_card_2_desc": "S’ouvre uniquement au bon endroit et au bon moment.",
+
+  "hero_card_3_title": "Déverrouillage AND/OR",
+  "hero_card_3_desc": "Combinez les conditions et gérez l’accès.",
+
+  "pain_title": "Le problème n’est pas la sécurité, mais le contrôle de la sécurité",
+  "pain_subtitle": "",
+
+  "pain_list_1": "✉️ Les messages peuvent être interceptés.",
+  "pain_list_2": "🌐 Les plateformes ont accès à vos données.",
+  "pain_list_3": "📝 Les fichiers peuvent être copiés ou falsifiés.",
+  "pain_list_4": "®️ Il est impossible de prouver l’originalité.",
+  "pain_list_5": "🧩 Les solutions de chiffrement complexes découragent les utilisateurs ordinaires.",
+  "pain_list_6": "⚙️ Les données peuvent être révélées trop tôt ou au mauvais endroit.",
+
+  "pain_proof_problem_title": "Problème",
+  "pain_statement_title": "Solution",
+
+  "pain_statement_desc":
+    "Une capsule est un fichier avec une politique d’ouverture intégrée. Sans comptes, sans serveurs, sans “faites-moi confiance”.",
+
+  "breakthrough_title": "Comment ça marche ?",
+  "breakthrough_subtitle":
+    "Créez une capsule, définissez les règles et partagez-la partout. Le destinataire ne pourra l’ouvrir que lorsque les conditions seront remplies.",
+
+  "breakthrough_list_1":
+    "1. Créez une capsule avec du texte, des fichiers, des photos ou des vidéos.",
+  "breakthrough_list_2":
+    "2. Définissez les conditions : temps, lieu, mot de passe, clé visuelle.",
+  "breakthrough_list_3":
+    "3. Combinez les conditions avec la logique AND / OR.",
+  "breakthrough_list_4":
+    "4. Envoyez le fichier via n’importe quelle messagerie.",
+  "breakthrough_list_5":
+    "5. L’ouverture et la vérification sont toujours gratuites.",
+
+  "breakthrough_note_title": "Pas “un chiffreur de plus”",
+
+  "audience_title": "À qui s’adresse-t-il ?",
+  "audience_subtitle":
+    "Créateurs. Traders. Équipes. Grand public. Des mots différents — une même mécanique puissante.",
+
+  "audience_1_title": "Journalistes et auteurs",
+  "audience_1_desc": "Protection des contenus et des sources.",
+
+  "audience_2_title": "Traders et analystes",
+  "audience_2_desc": "Horodatage des signaux et prévisions.",
+
+  "audience_3_title": "Équipes et entreprises",
+  "audience_3_desc": "Transfert de fichiers sans cloud.",
+
+  "audience_4_title": "Utilisateurs quotidiens",
+  "audience_4_desc": "Informations personnelles protégées des tiers.",
+
+  "audience_1_text": "Protection des contenus et des sources.",
+  "audience_2_text": "Horodatage des signaux et prévisions.",
+  "audience_3_text": "Transfert de fichiers sans cloud et création d’événements.",
+  "audience_4_text": "Informations personnelles protégées des tiers.",
+
+  "cases_title": "Cas d’usage",
+  "cases_subtitle": "Des problèmes clairs — des solutions claires.",
+
+  "case1_title": "Proof Capsule",
+  "case1_subtitle": "Fixation de l’information dans le temps.",
+
+  "case1_bullet1":
+    "Vous publiez la capsule maintenant (publiquement ou dans un groupe).",
+  "case1_bullet2":
+    "Vous définissez la date d’ouverture (avec option de mot de passe pour un accès premium).",
+  "case1_bullet3":
+    "À l’ouverture, il est visible que le contenu n’a pas été modifié.",
+
+  "case1_tag": "Mécanique de confiance pour traders et créateurs.",
+
+  "case2_title": "Event Capsule",
+  "case2_subtitle":
+    "Rassemblez des personnes à un lieu et un moment précis — avec une ouverture vérifiable.",
+
+  "case2_bullet1":
+    "Placez un prix, un indice, un coupon ou une instruction à l’intérieur.",
+  "case2_bullet2":
+    "Définissez une zone géographique et une fenêtre temporelle (ex. « centre de Varsovie 21:00–21:30 »).",
+  "case2_bullet3":
+    "Les gens se déplacent. Un moment IRL viral est créé.",
+
+  "case2_tag": "Super-pouvoir pour le marketing et les créateurs.",
+
+  "case3_title": "Pay-to-Unlock",
+  "case3_subtitle":
+    "Vendez l’accès légalement : ouverture par le temps pour tous, par mot de passe pour les acheteurs.",
+
+  "case3_bullet1":
+    "Vous créez une capsule avec un Time-Lock.",
+  "case3_bullet2":
+    "Vous ajoutez un mot de passe comme condition OR pour l’accès anticipé.",
+  "case3_bullet3":
+    "Les acheteurs paient le mot de passe et ouvrent immédiatement — les autres attendent.",
+
+  "case3_tag": "Idéal pour les signaux payants et les drops premium.",
+
+  "security_title": "Sécurité",
+  "security_subtitle":
+    "Pour faire confiance à TrueLock, aucun compte cloud n’est nécessaire. Le fichier est chiffré et vérifié sur l’appareil.",
+
+  "security_summary_title": "Ce que cela vous apporte",
+
+  "pricing_title": "Tarifs",
+  "pricing_subtitle":
+    "L’ouverture est gratuite pour toujours. Pro est une mise à niveau unique à 9,99 $ pour des capsules avancées.",
+
+  "pricing_free_title": "Gratuit",
+  "pricing_free_price": "$0",
+  "pricing_free_b1": "Ouverture/déchiffrement illimités",
+  "pricing_free_b2": "Capsules texte de base (limitées)",
+  "pricing_free_b3": "Hors ligne, sans compte",
+
+  "pricing_pro_title": "Pro (à vie)",
+  "pricing_pro_price": "$9.99",
+  "pricing_pro_note": "Paiement unique. Aucun abonnement.",
+
+  "pricing_pro_b1": "Capsules illimitées + pièces jointes",
+  "pricing_pro_b2": "Temps / Géo / Mot de passe / Visuel + AND/OR",
+  "pricing_pro_b3": "Scénarios par lot et modes avancés",
+
+  "pricing_cta": "Télécharger et passer à Pro dans l’application",
+  "pricing_cta_secondary": "Comment fonctionne l’achat Pro",
+
+  "upgrade_title": "Comment acheter Pro (9,99 $)",
+  "upgrade_subtitle":
+    "Flux clair pour la landing : téléchargez d’abord, puis passez à Pro dans l’application.",
+
+  "upgrade_how_title": "Étapes",
+  "upgrade_step1": "Téléchargez TrueLock pour votre plateforme.",
+  "upgrade_step2": "Ouvrez l’application → appuyez sur « Upgrade to Pro ».",
+  "upgrade_step3":
+    "Payez 9,99 $ via le fournisseur connecté et obtenez Pro instantanément.",
+
+  "upgrade_note":
+    "Approche plus fiable : aucun lien de paiement codé en dur, le fournisseur peut être changé sans refonte.",
+
+  "upgrade_cta_download": "Télécharger",
+  "upgrade_cta_back": "Retour aux tarifs",
+
+  "upgrade_why_title": "Ce que débloque Pro",
+  "upgrade_why_1": "🌟 Capsules illimitées + fichiers/photos/vidéos",
+  "upgrade_why_2": "🌟 Conditions : temps / géo / mot de passe / visuel",
+  "upgrade_why_3":
+    "🌟 Politiques AND/OR (déverrouillage payant, accès anticipé, multi-facteur)",
+  "upgrade_why_4": "🌟 Opérations par lot et modes avancés",
+
+  "upgrade_refund":
+    "Les remboursements dépendent du canal de paiement ou de la boutique.",
+
+  "download_title": "Télécharger",
+  "download_subtitle":
+    "Desktop et mobile. Pro s’achète dans l’application pour 9,99 $.",
+
+  "download_windows": "Windows",
+  "download_macos": "macOS",
+  "download_linux": "Linux",
+  "download_android": "Android",
+  "download_ios": "iOS",
+  "download_web": "Web (aperçu)",
+
+  "download_note":
+    "Après l’installation : ouvrez l’application → Upgrade to Pro. Le paiement est traité par le fournisseur connecté (par ex. Mercuryo).",
+
+  "final_title": "La confiance — dans un seul fichier.",
+  "final_text":
+    "Capsules de preuve, drops et ouvertures sur site — sans serveurs et sans “faites-moi confiance”.",
+
+  "final_cta": "Télécharger TrueLock",
+
+  "footer_tagline":
+    "TrueLock — protection intelligente des informations numériques",
+
+  "footer_copy":
+    "© TrueLock. Chiffrement hors ligne + moteur de politiques. Le déchiffrement est toujours gratuit.",
+
+  "breakthrough_text_html":
+    "TrueLock est un <strong>format de capsule sécurisée</strong> avec des règles d’accès.",
+
+  "security_block1_html":
+    "AES-256-GCM, sel par fichier et aléa cryptographique pour les nonces.",
+  "security_block2_html":
+    "Sans comptes ni cloud obligatoire.",
+  "security_block3_html":
+    "Un format de capsule unique pour ordinateur et mobile.",
+  "security_block4_html":
+    "Fenêtre temporelle ET localisation, ou mot de passe OU clé visuelle.",
+  "security_block5_html":
+    "Les données sensibles restent entièrement chiffrées.",
+  "security_block6_html":
+    "Indique quelle condition n’est pas remplie — sans révéler de secrets.",
+  "security_block7_html":
+    "Les capsules peuvent être partagées publiquement sans paywall pour le destinataire.",
+  "security_block8_html":
+    "Conçu pour la confidentialité et la confiance. À utiliser dans le respect de la loi.",
+
+  "security_summary_html":
+    "Si vous devez <strong>prouver</strong>, <strong>ouvrir plus tard</strong> ou <strong>déverrouiller à un endroit précis</strong> — TrueLock est la solution la plus simple.",
+
+  "logo_alt": "Logo TrueLock"
+},
+
+    it: {
+  "nav_pain": "Il problema",
+  "nav_breakthrough": "Come funziona?",
+  "nav_cases": "Casi d’uso",
+  "nav_audience": "Per chi è?",
+  "nav_security": "Sicurezza",
+  "nav_pricing": "Prezzi",
+  "nav_download": "Scarica",
+
+  "cta_primary": "Scarica TrueLock",
+  "cta_secondary": "Vedi i casi",
+
+  "hero_note": "Funziona offline. Senza account. Un unico file protetto. L’apertura è gratuita.",
+  "hero_eyebrow": "Condividi dati online senza paura di fughe di informazioni",
+  "hero_title": "TrueLock — protezione intelligente delle informazioni digitali",
+
+  "hero_subtitle_html":
+    "Crea la tua <strong>Secure Capsule</strong> e controlla l’accesso: si apre solo in base a <strong>tempo</strong>, <strong>luogo</strong>, <strong>password</strong> o <strong>chiave visiva</strong>. Tutto sotto il tuo controllo.",
+
+  "hero_feature_1": "Time-Lock",
+  "hero_feature_2": "Geo-Lock",
+  "hero_feature_3": "Password / Chiave visiva",
+  "hero_feature_4": "Logica AND / OR",
+
+  "hero_card_1_title": "Proof Capsule",
+  "hero_card_1_desc": "Blocca l’informazione ora e dimostralo in seguito.",
+
+  "hero_card_2_title": "Event Capsule",
+  "hero_card_2_desc": "Si apre solo nel luogo e nel momento giusti.",
+
+  "hero_card_3_title": "Sblocco AND/OR",
+  "hero_card_3_desc": "Combina le condizioni e gestisci l’accesso.",
+
+  "pain_title": "Il problema non è la sicurezza, ma il controllo della sicurezza",
+  "pain_subtitle": "",
+
+  "pain_list_1": "✉️ I messaggi possono essere intercettati.",
+  "pain_list_2": "🌐 Le piattaforme hanno accesso ai tuoi dati.",
+  "pain_list_3": "📝 I file possono essere copiati o falsificati.",
+  "pain_list_4": "®️ È impossibile dimostrarne l’originalità.",
+  "pain_list_5": "🧩 Le soluzioni di crittografia complesse allontanano gli utenti comuni.",
+  "pain_list_6": "⚙️ I dati possono essere rivelati troppo presto o nel posto sbagliato.",
+
+  "pain_proof_problem_title": "Problema",
+  "pain_statement_title": "Soluzione",
+
+  "pain_statement_desc":
+    "Una capsula è un file con una politica di apertura integrata. Senza account, senza server, senza “fidati di me”.",
+
+  "breakthrough_title": "Come funziona?",
+  "breakthrough_subtitle":
+    "Crea una capsula, imposta le regole e condividila ovunque. Il destinatario potrà aprirla solo quando le condizioni sono soddisfatte.",
+
+  "breakthrough_list_1":
+    "1. Crea una capsula con testo, file, foto o video.",
+  "breakthrough_list_2":
+    "2. Imposta le condizioni: tempo, luogo, password, chiave visiva.",
+  "breakthrough_list_3":
+    "3. Combina le condizioni con la logica AND / OR.",
+  "breakthrough_list_4":
+    "4. Invia il file tramite qualsiasi messenger.",
+  "breakthrough_list_5":
+    "5. Apertura e verifica sono sempre gratuite.",
+
+  "breakthrough_note_title": "Non “un altro strumento di cifratura”",
+
+  "audience_title": "Per chi è adatto?",
+  "audience_subtitle":
+    "Creator. Trader. Team. Utenti comuni. Parole diverse — la stessa potente meccanica.",
+
+  "audience_1_title": "Giornalisti e autori",
+  "audience_1_desc": "Protezione dei materiali e delle fonti.",
+
+  "audience_2_title": "Trader e analisti",
+  "audience_2_desc": "Fissazione temporale di segnali e previsioni.",
+
+  "audience_3_title": "Team e aziende",
+  "audience_3_desc": "Trasferimento di file senza cloud.",
+
+  "audience_4_title": "Utenti comuni",
+  "audience_4_desc": "Informazioni personali protette da terzi.",
+
+  "audience_1_text": "Protezione dei materiali e delle fonti.",
+  "audience_2_text": "Fissazione temporale di segnali e previsioni.",
+  "audience_3_text": "Trasferimento di file senza cloud e creazione di eventi.",
+  "audience_4_text": "Informazioni personali protette da terzi.",
+
+  "cases_title": "Casi d’uso",
+  "cases_subtitle": "Problemi chiari — soluzioni chiare.",
+
+  "case1_title": "Proof Capsule",
+  "case1_subtitle": "Fissare le informazioni nel tempo.",
+
+  "case1_bullet1":
+    "Pubblici la capsula ora (pubblicamente o in un gruppo).",
+  "case1_bullet2":
+    "Imposti la data di apertura (con password opzionale per l’accesso premium).",
+  "case1_bullet3":
+    "All’apertura è evidente che il contenuto non è stato modificato.",
+
+  "case1_tag": "Meccanica di fiducia per trader e creator.",
+
+  "case2_title": "Event Capsule",
+  "case2_subtitle":
+    "Porta le persone in un luogo e in un momento specifici — con apertura verificabile.",
+
+  "case2_bullet1":
+    "Inserisci un premio, un indizio, un coupon o un’istruzione.",
+  "case2_bullet2":
+    "Imposti un’area geografica e una finestra temporale (es. “centro di Varsavia 21:00–21:30”).",
+  "case2_bullet3":
+    "Le persone arrivano. Nasce un momento IRL virale.",
+
+  "case2_tag": "Superpotere per marketing e creator.",
+
+  "case3_title": "Pay-to-Unlock",
+  "case3_subtitle":
+    "Vendi l’accesso legalmente: sblocco a tempo per tutti, password per gli acquirenti.",
+
+  "case3_bullet1":
+    "Crei una capsula con Time-Lock.",
+  "case3_bullet2":
+    "Aggiungi la password come condizione OR per l’accesso anticipato.",
+  "case3_bullet3":
+    "Gli acquirenti pagano la password e sbloccano subito — gli altri aspettano.",
+
+  "case3_tag": "Ideale per segnali a pagamento e drop premium.",
+
+  "security_title": "Sicurezza",
+  "security_subtitle":
+    "Per fidarsi di TrueLock non serve alcun account cloud. Il file viene cifrato e verificato sul dispositivo.",
+
+  "security_summary_title": "Cosa ottieni",
+
+  "pricing_title": "Prezzi",
+  "pricing_subtitle":
+    "L’apertura è gratuita per sempre. Pro è un upgrade una tantum da $9.99 per capsule avanzate.",
+
+  "pricing_free_title": "Gratis",
+  "pricing_free_price": "$0",
+  "pricing_free_b1": "Apertura/decifratura illimitate",
+  "pricing_free_b2": "Capsule di testo di base (limitato)",
+  "pricing_free_b3": "Offline, senza account",
+
+  "pricing_pro_title": "Pro (a vita)",
+  "pricing_pro_price": "$9.99",
+  "pricing_pro_note": "Pagamento unico. Nessun abbonamento.",
+
+  "pricing_pro_b1": "Capsule illimitate + allegati",
+  "pricing_pro_b2": "Tempo / Geo / Password / Visivo + AND/OR",
+  "pricing_pro_b3": "Scenari batch e modalità avanzate",
+
+  "pricing_cta": "Scarica e passa a Pro nell’app",
+  "pricing_cta_secondary": "Come funziona l’acquisto Pro",
+
+  "upgrade_title": "Come acquistare Pro ($9.99)",
+  "upgrade_subtitle":
+    "Flusso pulito per la landing: prima scarichi, poi passi a Pro dall’app.",
+
+  "upgrade_how_title": "Passaggi",
+  "upgrade_step1": "Scarica TrueLock per la tua piattaforma.",
+  "upgrade_step2": "Apri l’app → tocca “Upgrade to Pro”.",
+  "upgrade_step3":
+    "Paga $9.99 tramite il provider collegato e ottieni Pro subito.",
+
+  "upgrade_note":
+    "Approccio più affidabile: nessun link di pagamento hardcoded, il provider può essere cambiato senza redesign.",
+
+  "upgrade_cta_download": "Scarica",
+  "upgrade_cta_back": "Torna ai prezzi",
+
+  "upgrade_why_title": "Cosa sblocca Pro",
+  "upgrade_why_1": "🌟 Capsule illimitate + file/foto/video",
+  "upgrade_why_2": "🌟 Condizioni: tempo / geo / password / visivo",
+  "upgrade_why_3":
+    "🌟 Politiche AND/OR (sblocco a pagamento, accesso anticipato, multi-fattore)",
+  "upgrade_why_4": "🌟 Operazioni batch e modalità avanzate",
+
+  "upgrade_refund":
+    "I rimborsi dipendono dal canale di pagamento o dallo store.",
+
+  "download_title": "Scarica",
+  "download_subtitle":
+    "Desktop e mobile. Pro si acquista nell’app per $9.99.",
+
+  "download_windows": "Windows",
+  "download_macos": "macOS",
+  "download_linux": "Linux",
+  "download_android": "Android",
+  "download_ios": "iOS",
+  "download_web": "Web (anteprima)",
+
+  "download_note":
+    "Dopo l’installazione: apri l’app → Upgrade to Pro. Il pagamento è gestito dal provider collegato (es. Mercuryo).",
+
+  "final_title": "La fiducia — in un solo file.",
+  "final_text":
+    "Capsule di prova, drop e sblocco sul posto — senza server e senza “fidati”.",
+
+  "final_cta": "Scarica TrueLock",
+
+  "footer_tagline":
+    "TrueLock — protezione intelligente delle informazioni digitali",
+
+  "footer_copy":
+    "© TrueLock. Crittografia offline + policy engine. La decifratura è sempre gratuita.",
+
+  "breakthrough_text_html":
+    "TrueLock è un <strong>formato di capsula sicura</strong> con regole di accesso.",
+
+  "security_block1_html":
+    "AES-256-GCM, salt per file e casualità crittografica per i nonce.",
+  "security_block2_html":
+    "Senza account e senza cloud obbligatorio.",
+  "security_block3_html":
+    "Un unico formato di capsula per desktop e mobile.",
+  "security_block4_html":
+    "Finestra temporale E posizione, oppure password O chiave visiva.",
+  "security_block5_html":
+    "I dati sensibili restano completamente cifrati.",
+  "security_block6_html":
+    "Mostra quale condizione non è soddisfatta — senza rivelare segreti.",
+  "security_block7_html":
+    "Le capsule possono essere condivise pubblicamente senza paywall per il destinatario.",
+  "security_block8_html":
+    "Pensato per privacy e fiducia. Utilizzare nel rispetto della legge.",
+
+  "security_summary_html":
+    "Se devi <strong>dimostrare</strong>, <strong>sbloccare più tardi</strong> o <strong>aprire in un luogo specifico</strong> — TrueLock è il modo più semplice."
+},
+
+    pt: {
+    "nav_pain": "Problema",
+    "nav_breakthrough": "Como funciona?",
+    "nav_cases": "Casos",
+    "nav_audience": "Para quem é?",
+    "nav_security": "Segurança",
+    "nav_pricing": "Preços",
+    "nav_download": "Baixar",
+    "cta_primary": "Baixar TrueLock",
+    "cta_secondary": "Ver casos",
+    "hero_note": "Funciona offline. Sem contas. Um arquivo protegido. A abertura é gratuita.",
+    "hero_eyebrow": "Transfira dados na rede sem medo de vazamentos",
+    "hero_title": "TrueLock — fechadura inteligente para informações digitais",
+    "hero_subtitle_html": "Crie sua <strong>Secure Capsule</strong> e controle o acesso: será aberta apenas por <strong>tempo</strong>, <strong>local</strong>, <strong>senha</strong> ou <strong>chave visual</strong>. Tudo sob seu controle!",
+    "hero_feature_1": "Time‑Lock",
+    "hero_feature_2": "Geo‑Lock",
+    "hero_feature_3": "Senha / Chave visual",
+    "hero_feature_4": "Lógica E / OU",
+    "hero_card_1_title": "Proof Capsule",
+    "hero_card_1_desc": "Registre informações agora e comprove depois.",
+    "hero_card_2_title": "Event Capsule",
+    "hero_card_2_desc": "É revelada apenas no local e momento certos.",
+    "hero_card_3_title": "AND/OR Unlock",
+    "hero_card_3_desc": "Combine condições e gerencie o acesso.",
+    "pain_title": "O problema não é a segurança — é o controle da segurança",
+    "pain_subtitle": "",
+    "pain_list_1": "✉️ Mensagens podem ser interceptadas.",
+    "pain_list_2": "🌐 Plataformas têm acesso aos seus dados.",
+    "pain_list_3": "📝 Arquivos podem ser copiados ou falsificados.",
+    "pain_list_4": "®️ Impossível provar originalidade.",
+    "pain_list_5": "🧩 Soluções complexas de criptografia afastam usuários comuns.",
+    "pain_list_6": "⚙️ Divulgação indesejada de dados antes do tempo ou no lugar errado.",
+    "pain_proof_problem_title": "Problema",
+    "pain_statement_title": "Solução",
+    "pain_statement_desc": "Capsula — arquivo com política de revelação incorporada. Sem contas, sem servidores, sem 'acredite em mim'.",
+    "breakthrough_title": "Como funciona?",
+    "breakthrough_subtitle": "Crie uma cápsula, defina as regras, envie para qualquer lugar. O destinatário só abrirá se as condições forem atendidas.",
+    "breakthrough_list_1": "1. Crie uma cápsula com texto, arquivos, fotos ou vídeos.",
+    "breakthrough_list_2": "2. Defina condições: tempo, local, senha, chave visual.",
+    "breakthrough_list_3": "3. Combine condições com lógica E / OU.",
+    "breakthrough_list_4": "4. Envie o arquivo por qualquer mensageiro.",
+    "breakthrough_list_5":"5. A abertura e verificação são sempre gratuitas.",
+    "breakthrough_note_title": "Não é 'mais um criptografador'",
+    "audience_title": "Para quem é?",
+    "audience_subtitle": "Criadores. Traders. Equipes. Consumidores em massa. Palavras diferentes — mesma mecânica poderosa.",
+    "audience_1_title": "Jornalistas e autores",
+    "audience_1_desc": "Proteção de materiais e fontes.",
+    "audience_2_title": "Traders e analistas",
+    "audience_2_desc": "Registro de sinais e previsões.",
+    "audience_3_title": "Equipes e empresas",
+    "audience_3_desc": "Transferência de arquivos sem nuvem.",
+    "audience_4_title": "Usuários comuns",
+    "audience_4_desc": "Informações pessoais protegidas de terceiros.",
+    "audience_1_text": "Proteção de materiais e fontes.",
+    "audience_2_text": "Registro de sinais e previsões.",
+    "audience_3_text": "Transferência de arquivos sem nuvem e criação de eventos.",
+    "audience_4_text": "Informações pessoais protegidas de terceiros.",
+    "cases_title": "Casos",
+    "cases_subtitle": "Tarefas claras — soluções claras.",
+    "case1_title": "Proof-Capsule",
+    "case1_subtitle": "Registro de informações no tempo.",
+    "case1_bullet1": "Publique a cápsula agora (publicamente ou em grupo).",
+    "case1_bullet2": "Defina hora de abertura (e senha para acesso premium, se desejar).",
+    "case1_bullet3": "Ao abrir, é visível que o conteúdo não foi alterado após o evento.",
+    "case1_tag": "Mecânica de confiança para traders e criadores.",
+    "case2_title": "Event-Capsule",
+    "case2_subtitle": "Reúna pessoas no local e hora certos — a revelação é real.",
+    "case2_bullet1": "Coloque prêmio/dica/cupom/instrução dentro.",
+    "case2_bullet2": "Defina geo + janela de tempo (ex.: 'centro de Varsóvia 21:00–21:30').",
+    "case2_bullet3": "As pessoas aparecem. Surge um momento viral no mundo real.",
+    "case2_tag": "Superpoder para marketing e influenciadores.",
+    "case3_title": "Pay-to-Unlock",
+    "case3_subtitle": "Venda acesso legalmente: por tempo — para todos, por senha — para compradores.",
+    "case3_bullet1": "Crie uma cápsula com Time-Lock.",
+    "case3_bullet2": "Adicione senha como condição OU para acesso antecipado.",
+    "case3_bullet3": "Compradores pagam pela senha e abrem imediatamente — os demais aguardam.",
+    "case3_tag": "Ideal para sinais pagos e drops premium.",
+    "security_title": "Segurança",
+    "security_subtitle": "Para confiar no TrueLock, não é necessário conta na nuvem. O arquivo é criptografado e verificado no dispositivo.",
+    "security_summary_title": "Benefícios",
+    "pricing_title": "Preços",
+    "pricing_subtitle": "Abertura gratuita para sempre. Pro — upgrade único de $9,99 para criar cápsulas avançadas.",
+    "pricing_free_title": "Grátis",
+    "pricing_free_price": "$0",
+    "pricing_free_b1": "Abrir/descriptografar sem limites",
+    "pricing_free_b2": "Cápsulas de texto básicas (limite)",
+    "pricing_free_b3": "Offline, sem conta",
+    "pricing_pro_title": "Pro (para sempre)",
+    "pricing_pro_price": "$9.99",
+    "pricing_pro_note": "Pagamento único. Sem assinaturas.",
+    "pricing_pro_b1": "Cápsulas sem limites + anexos",
+    "pricing_pro_b2": "Tempo/Geo/Senha/Visual + E/OU",
+    "pricing_pro_b3": "Cenários em lote e modos avançados",
+    "pricing_cta": "Baixar e fazer upgrade no app",
+    "pricing_cta_secondary": "Como adquirir o Pro",
+    "upgrade_title": "Como comprar Pro ($9,99)",
+    "upgrade_subtitle": "Fluxo simples: primeiro baixe, depois faça upgrade dentro do app.",
+    "upgrade_how_title": "Passo a passo",
+    "upgrade_step1": "Baixe o TrueLock para sua plataforma.",
+    "upgrade_step2": "Abra o app → clique em 'Upgrade to Pro'.",
+    "upgrade_step3": "Pague $9,99 via provedor conectado e obtenha Pro imediatamente.",
+    "upgrade_note": "Mais seguro assim: não precisa codificar links de pagamento; o provedor pode ser alterado sem redesign.",
+    "upgrade_cta_download": "Baixar",
+    "upgrade_cta_back": "Voltar para preços",
+    "upgrade_why_title": "Benefícios do Pro",
+    "upgrade_why_1": "🌟 Cápsulas ilimitadas + arquivos/fotos/vídeos",
+    "upgrade_why_2": "🌟 Condições: tempo/geo/senha/visual",
+    "upgrade_why_3": "🌟 Políticas E/OU (revelação paga, acesso antecipado, multifator)",
+    "upgrade_why_4": "🌟 Operações em lote e modos avançados",
+    "upgrade_refund": "Reembolsos dependem do canal de pagamento/loja.",
+    "download_title": "Baixar",
+    "download_subtitle": "Desktop e mobile. Pro adquirido dentro do app por $9,99.",
+    "download_windows": "Windows",
+    "download_macos": "macOS",
+    "download_linux": "Linux",
+    "download_android": "Android",
+    "download_ios": "iOS",
+    "download_web": "Web (prévia)",
+    "download_note": "Após instalar: abra o app → Upgrade to Pro. O pagamento é via provedor conectado (ex.: Mercuryo).",
+    "final_title": "Confiança em um arquivo.",
+    "final_text": "Proof-cápsulas, drops e revelações 'no local' — sem servidores e sem 'acredite em mim'.",
+    "final_cta": "Baixar TrueLock",
+    "footer_tagline": "TrueLock — fechadura inteligente para informações digitais",
+    "footer_copy": "© TrueLock. Criptografia offline + policy engine. Descriptografia sempre gratuita.",
+    "breakthrough_text_html": "TrueLock é <strong>formato de cápsula protegida</strong> com regras de acesso.",
+    "security_block1_html": "AES‑256‑GCM, salt por arquivo e random criptográfico para nonce.",
+    "security_block2_html": "Sem contas e sem nuvem obrigatória.",
+    "security_block3_html": "Um formato de cápsula para PC e dispositivos móveis.",
+    "security_block4_html": "Janela de tempo E localização, ou senha OU chave visual.",
+    "security_block5_html": "Dados sensíveis permanecem dentro da criptografia.",
+    "security_block6_html": "Vê-se qual condição não foi atendida — sem revelar segredos.",
+    "security_block7_html": "Cápsulas podem ser públicas sem paywall para o destinatário.",
+    "security_block8_html": "Para privacidade e confiança. Use conforme a lei.",
+    "security_summary_html": "Se precisar <strong>provar</strong>, <strong>revelar depois</strong> ou <strong>abrir em local específico</strong> — TrueLock faz isso de forma simples.",
+    "logo_alt": "Logotipo TrueLock",
+    "pain_statement_text": "TrueLock mantém o controle com você. Você obtém:",
+    "pain_statement_problem_text": "Vamos considerar os problemas reais de segurança de dados:",
+    "pain_proof_1": "✉️ Envio seguro por canais abertos.",
+    "pain_proof_2": "🌐 Proteção contra plataformas e intermediários.",
+    "pain_proof_3": "📝 Visualização e edição em app seguro",
+    "pain_proof_4": "®️ Prova de imutabilidade graças ao log incorporado.",
+    "pain_proof_5": "🧩 App intuitivo para proteger e enviar dados.",
+    "pain_proof_6": "⚙️ Acesso aos dados é liberado apenas no tempo e / ou local corretos.",
+    "breakthrough_note": "Criamos uma camada de 'mecânica de confiança' — a criptografia é apenas o motor.",
+    "cases_proof_title": "Proof-cápsula",
+    "cases_proof_text": "Registro de informações no tempo.",
+    "cases_event_title": "Event Capsule",
+    "cases_event_text": "Geo + tempo para encontros virais, quests, sorteios e drops.",
+    "cases_unlock_title": "Pay-to-Unlock",
+    "cases_unlock_text": "Time-lock público, venda a senha para acesso antecipado (E/OU).",
+    "case1_label": "PROOF",
+    "case1_headline": "Publique agora — revele depois. Data de criação registrada nos logs internos.",
+    "case1_step1": "1. Crie a cápsula e coloque sinal/previsão dentro.",
+    "case1_step2": "2. Defina a data de abertura.",
+    "case1_step3": "3. Compartilhe a cápsula publicamente (Telegram, WhatsApp, X, email).",
+    "case1_step4": "Ao abrir, todos veem: não houve alterações.",
+    "case1_note": "A 'mecânica de confiança' é implementada em software.",
+    "case1_tail": "Melhor para traders, tipsters, analistas e criadores.",
+    "case2_label": "EVENT",
+    "case2_headline": "Reúna pessoas em local e hora determinados.",
+    "case2_step1": "Coloque prêmio/dica/instrução dentro.",
+    "case2_step2": "Defina geo + janela de tempo (Geo-Lock + Time-Lock).",
+    "case2_step3": "Publique para o público. A revelação é verificável.",
+    "case2_step4": "As pessoas chegam no horário, porque a recompensa é real.",
+    "case2_note": "Ideal para eventos e promoções.",
+    "case2_tail": "Melhor para influenciadores, marketing, comunidades e plataformas.",
+    "case3_label": "PAID UNLOCK",
+    "case3_headline": "Venda acesso via E/OU — simples e legal.",
+    "case3_step1": "Crie a cápsula e ative Time-Lock para todos.",
+    "case3_step2": "Adicione senha como condição OU (acesso antecipado).",
+    "case3_step3": "Publique a cápsula, venda a senha separadamente.",
+    "case3_step4": "Compradores abrem imediatamente; os demais aguardam janela de tempo.",
+    "case3_note": "Você vende acesso a dados valiosos.",
+    "case3_tail": "Melhor para sinais pagos, drops premium e conteúdo restrito.",
+    "security_block1_title": "Primitivos criptográficos modernos",
+    "security_block2_title": "Trabalho offline por padrão",
+    "security_block3_title": "Formato de cápsula multiplataforma",
+    "security_block4_title": "Policy engine (E/OU)",
+    "security_block5_title": "Mínimos metadados",
+    "security_block6_title": "Status de falha claros",
+    "security_block7_title": "Abertura gratuita",
+    "security_block8_title": "Posicionamento responsável",
+    "pricing_free_item1": "⭐ Abrir/descriptografar sem limites",
+    "pricing_free_item2": "⭐ Cápsulas de texto básicas (limite)",
+    "pricing_free_item3": "⭐ Offline, sem conta",
+    "pricing_pro_item1": "⭐ Cápsulas ilimitadas + anexos (arquivos/fotos/vídeos)",
+    "pricing_pro_item2": "⭐ Time-Lock + Geo-Lock",
+    "pricing_pro_item3": "⭐ Senha / Chave visual + E/OU",
+    "pricing_pro_item4": "⭐ Cenários de criptografia avançados",
+    "download_text": "Escolha a plataforma, instale e depois faça upgrade para Pro dentro do app por $9,99 quando precisar de cápsulas avançadas.",
+    "case2_inside_title": "Cadeias de cápsulas (quests)",
+    "case2_example": "Exemplo: cápsula nº1 abre e indica o próximo passo. Cápsula nº2 pede foto como prova. Cápsula nº3 entrega recompensa. Muitas variações!",
+    "case3_text": "Mecânica de monetização justa: cápsula pública, chave de revelação paga.",
+    "case3_example": "Exemplo: corretor publica cápsula com time-lock. Para usar o sinal imediatamente, compre a senha e abra instantaneamente.",
+    "case2_inside_1": "1. Cápsula nº1: 'Esteja no ponto até 18:00 — o próximo passo abrirá lá'.",
+    "case2_inside_2": "2. Cápsula nº2: 'Vá ao shopping e tire foto com loja parceira'.",
+    "case2_inside_3": "3. Cápsula nº3: 'Envie a foto — receberá certificado de $100'.",
+    "case2_inside_4": "Pode criar cadeias infinitas (cada passo é verificável)."
+},
+
+    tr: {
+    "nav_pain": "Sorun",
+    "nav_breakthrough": "Nasıl çalışır?",
+    "nav_cases": "Vaka Çalışmaları",
+    "nav_audience": "Kimler için?",
+    "nav_security": "Güvenlik",
+    "nav_pricing": "Fiyatlar",
+    "nav_download": "İndir",
+    "cta_primary": "TrueLock'u İndir",
+    "cta_secondary": "Vaka Çalışmalarını Görüntüle",
+    "hero_note": "Çevrimdışı çalışır. Hesap gerekmez. Tek korumalı dosya. Açma ücretsizdir.",
+    "hero_eyebrow": "Verileri ağda sızıntı korkusu olmadan paylaşın",
+    "hero_title": "TrueLock — Dijital bilgi için akıllı kilit",
+    "hero_subtitle_html": "<strong>Secure Capsule</strong> oluşturun ve erişimi kontrol edin: yalnızca <strong>zaman</strong>, <strong>konum</strong>, <strong>şifre</strong> veya <strong>görsel anahtar</strong> ile açılır. Her şey sizin kontrolünüzde!",
+    "hero_feature_1": "Time‑Lock",
+    "hero_feature_2": "Geo‑Lock",
+    "hero_feature_3": "Şifre / Görsel anahtar",
+    "hero_feature_4": "Mantık VE / VEYA",
+    "hero_card_1_title": "Proof Capsule",
+    "hero_card_1_desc": "Bilgiyi şimdi kaydedin ve sonra kanıtlayın.",
+    "hero_card_2_title": "Event Capsule",
+    "hero_card_2_desc": "Sadece doğru yerde ve zamanda açılır.",
+    "hero_card_3_title": "AND/OR Unlock",
+    "hero_card_3_desc": "Şartları birleştirin ve erişimi yönetin.",
+    "pain_title": "Sorun güvenlik değil — güvenlik üzerinde kontrol",
+    "pain_subtitle": "",
+    "pain_list_1": "✉️ Yazışmalar ele geçirilebilir.",
+    "pain_list_2": "🌐 Platformlar verilerinize erişebilir.",
+    "pain_list_3": "📝 Dosyalar kopyalanabilir veya sahte olabilir.",
+    "pain_list_4": "®️ Orijinalliği kanıtlamak imkansızdır.",
+    "pain_list_5": "🧩 Karmaşık şifreleme çözümleri sıradan kullanıcıları uzaklaştırır.",
+    "pain_list_6": "⚙️ Verilerin istenmeyen şekilde erken veya yanlış konumda açılması.",
+    "pain_proof_problem_title": "Sorun",
+    "pain_statement_title": "Çözüm",
+    "pain_statement_desc": "Kapsül — dahili açılma politikası olan dosya. Hesapsız, sunucusuz, 'inan bana' yok.",
+    "breakthrough_title": "Nasıl çalışır?",
+    "breakthrough_subtitle": "Bir kapsül oluşturun, kuralları belirleyin, her yere gönderin. Alıcı yalnızca şartlar sağlanırsa açabilir.",
+    "breakthrough_list_1": "1. Metin, dosya, fotoğraf veya video ile bir kapsül oluşturun.",
+    "breakthrough_list_2": "2. Şartları belirleyin: zaman, konum, şifre, görsel anahtar.",
+    "breakthrough_list_3": "3. Şartları VE / VEYA mantığıyla birleştirin.",
+    "breakthrough_list_4": "4. Dosyayı herhangi bir mesajlaşma uygulamasıyla gönderin.",
+    "breakthrough_list_5":"5. Açma ve doğrulama her zaman ücretsizdir.",
+    "breakthrough_note_title": "Sıradan bir şifreleyici değil",
+    "audience_title": "Kimler için?",
+    "audience_subtitle": "Yaratıcılar. Traderlar. Takımlar. Kitlesel kullanıcılar. Farklı kelimeler — aynı güçlü mekanik.",
+    "audience_1_title": "Gazeteciler ve yazarlar",
+    "audience_1_desc": "Materyal ve kaynak koruması.",
+    "audience_2_title": "Traderlar ve analistler",
+    "audience_2_desc": "Sinyal ve tahmin kaydı.",
+    "audience_3_title": "Takımlar ve işletmeler",
+    "audience_3_desc": "Dosya aktarımı bulutsuz.",
+    "audience_4_title": "Normal kullanıcılar",
+    "audience_4_desc": "Kişisel bilgiler üçüncü kişilerden korunur.",
+    "audience_1_text": "Materyal ve kaynak koruması.",
+    "audience_2_text": "Sinyal ve tahmin kaydı.",
+    "audience_3_text": "Bulutsuz dosya aktarımı ve etkinlik oluşturma.",
+    "audience_4_text": "Kişisel bilgiler üçüncü kişilerden korunur.",
+    "cases_title": "Vaka Çalışmaları",
+    "cases_subtitle": "Açık görevler — net çözümler.",
+    "case1_title": "Proof-Kapsül",
+    "case1_subtitle": "Bilginin zaman içinde kaydı.",
+    "case1_bullet1": "Kapsülü şimdi yayınlayın (herkese veya gruba).",
+    "case1_bullet2": "Açılma zamanını ayarlayın (ve isterseniz premium erişim için şifre).",
+    "case1_bullet3": "Açıldığında içerik olay sonrası değiştirilmediği görülebilir.",
+    "case1_tag": "Traderlar ve yaratıcılar için güven mekanizması.",
+    "case2_title": "Event-Kapsül",
+    "case2_subtitle": "İnsanları doğru yer ve zamanda toplayın — açılma gerçek.",
+    "case2_bullet1": "İçine ödül/ipucu/kupom/talimat koyun.",
+    "case2_bullet2": "Geo + zaman penceresi ayarlayın (ör. 'Varşova merkezi 21:00–21:30').",
+    "case2_bullet3": "İnsanlar gelir. Gerçek dünyada viral bir an oluşur.",
+    "case2_tag": "Pazarlama ve influencerlar için süper güç.",
+    "case3_title": "Pay-to-Unlock",
+    "case3_subtitle": "Erişimi yasal olarak satın: zamanla — herkes için, şifre ile — alıcılar için.",
+    "case3_bullet1": "Time-Lock ile bir kapsül oluşturun.",
+    "case3_bullet2": "Erken erişim için şifreyi VEYA şart olarak ekleyin.",
+    "case3_bullet3": "Alıcılar şifreyi ödeyip hemen açar — diğerleri bekler.",
+    "case3_tag": "Ücretli sinyaller ve premium drops için ideal.",
+    "security_title": "Güvenlik",
+    "security_subtitle": "TrueLock'a güvenmek için bulut hesabı gerekmez. Dosya cihazda şifrelenir ve doğrulanır.",
+    "security_summary_title": "Avantajlar",
+    "pricing_title": "Fiyatlar",
+    "pricing_subtitle": "Açma her zaman ücretsiz. Pro — gelişmiş kapsüller için tek seferlik $9,99 yükseltme.",
+    "pricing_free_title": "Ücretsiz",
+    "pricing_free_price": "$0",
+    "pricing_free_b1": "Sınırsız açma/şifre çözme",
+    "pricing_free_b2": "Temel metin kapsülleri (sınırlı)",
+    "pricing_free_b3": "Çevrimdışı, hesap gereksiz",
+    "pricing_pro_title": "Pro (kalıcı)",
+    "pricing_pro_price": "$9.99",
+    "pricing_pro_note": "Tek ödeme. Abonelik yok.",
+    "pricing_pro_b1": "Sınırsız kapsül + ekler",
+    "pricing_pro_b2": "Zaman/Geo/Şifre/Görsel + VE/VEYA",
+    "pricing_pro_b3": "Toplu senaryolar ve gelişmiş modlar",
+    "pricing_cta": "İndir ve uygulama içinden yükselt",
+    "pricing_cta_secondary": "Pro satın alma süreci",
+    "upgrade_title": "Pro Nasıl Satın Alınır ($9,99)",
+    "upgrade_subtitle": "Basit akış: önce indir, sonra uygulama içinden yükselt.",
+    "upgrade_how_title": "Adım adım",
+    "upgrade_step1": "Platformunuz için TrueLock'u indirin.",
+    "upgrade_step2": "Uygulamayı açın → 'Upgrade to Pro' tıklayın.",
+    "upgrade_step3": "$9,99'u bağlı sağlayıcı üzerinden ödeyin ve hemen Pro elde edin.",
+    "upgrade_note": "Daha güvenli: ödeme bağlantılarını kodlamaya gerek yok; sağlayıcıyı redesign olmadan değiştirebilirsiniz.",
+    "upgrade_cta_download": "İndir",
+    "upgrade_cta_back": "Fiyatlara geri dön",
+    "upgrade_why_title": "Pro'nun sağladıkları",
+    "upgrade_why_1": "🌟 Sınırsız kapsül + dosya/fotoğraf/video",
+    "upgrade_why_2": "🌟 Şartlar: zaman/geo/şifre/görsel",
+    "upgrade_why_3": "🌟 VE/VEYA politikaları (ücretli açılma, erken erişim, çok faktörlü)",
+    "upgrade_why_4": "🌟 Toplu işlemler ve gelişmiş modlar",
+    "upgrade_refund": "İadeler ödeme kanalı/mağazaya bağlıdır.",
+    "download_title": "İndir",
+    "download_subtitle": "Masaüstü ve mobil. Pro uygulama içinden $9,99 ile satın alınır.",
+    "download_windows": "Windows",
+    "download_macos": "macOS",
+    "download_linux": "Linux",
+    "download_android": "Android",
+    "download_ios": "iOS",
+    "download_web": "Web (önizleme)",
+    "download_note": "Kurulumdan sonra: uygulamayı açın → Upgrade to Pro. Ödeme bağlı sağlayıcı üzerinden yapılır (ör. Mercuryo).",
+    "final_title": "Güven tek dosyada.",
+    "final_text": "Proof-capsule, drops ve 'yerinde' açılma — sunucusuz ve 'inan bana' yok.",
+    "final_cta": "TrueLock'u İndir",
+    "footer_tagline": "TrueLock — Dijital bilgi için akıllı kilit",
+    "footer_copy": "© TrueLock. Çevrimdışı şifreleme + policy engine. Şifre çözme her zaman ücretsiz.",
+    "breakthrough_text_html": "TrueLock <strong>korumalı kapsül formatı</strong> ve erişim kurallarıdır.",
+    "security_block1_html": "AES‑256‑GCM, dosya başına salt ve nonce için kripto rastgeleliği.",
+    "security_block2_html": "Hesapsız ve zorunlu bulut yok.",
+    "security_block3_html": "PC ve mobil cihazlarda tek kapsül formatı.",
+    "security_block4_html": "Zaman ve konum VE, veya şifre VEYA görsel anahtar.",
+    "security_block5_html": "Hassas veriler şifre içinde kalır.",
+    "security_block6_html": "Hangi şartın sağlanmadığı görülebilir — sırlar açılmaz.",
+    "security_block7_html": "Kapsüller alıcı için paywall olmadan halka açık paylaşılabilir.",
+    "security_block8_html": "Gizlilik ve güven için. Yasal çerçevede kullanın.",
+    "security_summary_html": "<strong>Kanıtlamak</strong>, <strong>sonra açmak</strong> veya <strong>belirli yerde açmak</strong> gerekiyorsa — TrueLock bunu en kolay şekilde yapar.",
+    "logo_alt": "TrueLock Logosu",
+    "pain_statement_text": "TrueLock kontrolü sizde tutar. Şunlar sağlanır:",
+    "pain_statement_problem_text": "Gerçek veri güvenliği sorunlarını ele alalım:",
+    "pain_proof_1": "✉️ Açık kanallarda güvenli gönderim.",
+    "pain_proof_2": "🌐 Platformlar ve aracıdan koruma.",
+    "pain_proof_3": "📝 Görüntüleme ve düzenleme güvenli uygulamada.",
+    "pain_proof_4": "®️ Dahili log ile değişmezlik kanıtı.",
+    "pain_proof_5": "🧩 Basit ve sezgisel uygulama ile veri koruma ve gönderme.",
+    "pain_proof_6": "⚙️ Verilere erişim yalnızca doğru zaman ve/veya konumda açılır.",
+    "breakthrough_note": "“Güven mekanikleri” katmanı oluşturduk — şifreleme sadece motor.",
+    "cases_proof_title": "Proof-kapsül",
+    "cases_proof_text": "Bilginin zaman içinde kaydı.",
+    "cases_event_title": "Event Capsule",
+    "cases_event_text": "Viral buluşmalar, görevler, çekilişler ve drops için Geo + zaman.",
+    "cases_unlock_title": "Pay-to-Unlock",
+    "cases_unlock_text": "Herkese açık time-lock, erken erişim için şifreyi sat (VE/VEYA).",
+    "case1_label": "PROOF",
+    "case1_headline": "Şimdi yayınla — sonra aç. Oluşturma tarihi dahili loglarda saklanır.",
+    "case1_step1": "1. Kapsülü oluştur ve sinyal/tahmini içine koy.",
+    "case1_step2": "2. Açılma tarihini ayarla.",
+    "case1_step3": "3. Kapsülü herkese paylaş (Telegram, WhatsApp, X, e-posta).",
+    "case1_step4": "Açıldığında herkes görür: değişiklik yok.",
+    "case1_note": "“Güven mekanikleri” yazılım seviyesinde uygulanır.",
+    "case1_tail": "Traderlar, tipsterlar, analistler ve yaratıcılar için en iyisi.",
+    "case2_label": "EVENT",
+    "case2_headline": "İnsanları belirli yer ve zamanda toplayın.",
+    "case2_step1": "İçine ödül/ipucu/talimat koy.",
+    "case2_step2": "Geo + zaman penceresi ayarla (Geo-Lock + Time-Lock).",
+    "case2_step3": "Hedef kitleye yayınla. Açılma doğrulanabilir.",
+    "case2_step4": "İnsanlar doğru zamanda gelir, çünkü ödül gerçek.",
+    "case2_note": "Etkinlikler ve promosyonlar için ideal.",
+    "case2_tail": "Influencerlar, pazarlama, topluluk ve platformlar için en iyisi.",
+    "case3_label": "PAID UNLOCK",
+    "case3_headline": "Erişimi VE/VEYA ile satın — basit ve yasal.",
+    "case3_step1": "Kapsülü oluştur ve herkes için Time-Lock etkinleştir.",
+    "case3_step2": "Erken erişim için şifreyi VEYA şart olarak ekle.",
+    "case3_step3": "Kapsülü yayınla, şifreyi ayrı sat.",
+    "case3_step4": "Alıcılar hemen açar; diğerleri zaman penceresini bekler.",
+    "case3_note": "Talep gören verilere erişimi satıyorsun.",
+    "case3_tail": "Ücretli sinyaller, premium drops ve gated içerik için en iyisi.",
+    "security_block1_title": "Modern kripto-primitifler",
+    "security_block2_title": "Varsayılan olarak çevrimdışı çalışma",
+    "security_block3_title": "Çok platformlu kapsül formatı",
+    "security_block4_title": "Policy engine (VE/VEYA)",
+    "security_block5_title": "Minimum meta veri",
+    "security_block6_title": "Net başarısızlık durumu",
+    "security_block7_title": "Açma ücretsiz",
+    "security_block8_title": "Sorumlu konumlandırma",
+    "pricing_free_item1": "⭐ Sınırsız açma/şifre çözme",
+    "pricing_free_item2": "⭐ Temel metin kapsülleri (sınırlı)",
+    "pricing_free_item3": "⭐ Çevrimdışı, hesap gereksiz",
+    "pricing_pro_item1": "⭐ Sınırsız kapsül + ekler (dosya/fotoğraf/video)",
+    "pricing_pro_item2": "⭐ Time-Lock + Geo-Lock",
+    "pricing_pro_item3": "⭐ Şifre / Görsel anahtar + VE/VEYA",
+    "pricing_pro_item4": "⭐ Gelişmiş şifreleme senaryoları",
+    "download_text": "Platform seç, kur ve gelişmiş kapsüller gerektiğinde uygulama içinden $9,99 ile Pro’ya yükselt.",
+    "case2_inside_title": "Kapsül zincirleri (görevler)",
+    "case2_example": "Örnek: kapsül №1 açılır ve sonraki adrese yönlendirir. Kapsül №2 foto kanıt ister. Kapsül №3 ödül verir. Çok sayıda varyasyon var!",
+    "case3_text": "Adil bir para kazanma mekanizması: kapsül herkese açık, açma anahtarı ücretli.",
+    "case3_example": "Örnek: broker time-lock ile kapsül yayınlar. Sinyali hemen kullanmak için şifreyi satın al ve aç.",
+    "case2_inside_1": "1. Kapsül №1: '18:00’den önce noktada ol — sonraki adım orada açılacak.'",
+    "case2_inside_2": "2. Kapsül №2: 'Alışveriş merkezine git ve ortak mağaza ile fotoğraf çek.'",
+    "case2_inside_3": "3. Kapsül №3: 'Fotoğrafı gönder — 100$ değerinde sertifika al.'",
+    "case2_inside_4": "Sonsuz zincirler oluşturabilirsiniz (her adım doğrulanabilir)."
+
+},
+  };
+
+  function getStoredLang() {
+    try {
+      return localStorage.getItem('truelock_lang');
+    } catch (_) {
+      return null;
     }
-  });
+  }
 
-  document.querySelectorAll("[data-i18n-html]").forEach((el) => {
-    const key = el.getAttribute("data-i18n-html");
-    if (t[key]) {
-      el.innerHTML = t[key];
-    }
-  });
+  function storeLang(lang) {
+    try {
+      localStorage.setItem('truelock_lang', lang);
+    } catch (_) {}
+  }
 
-  document.querySelectorAll("[data-i18n-attr]").forEach((el) => {
-    const raw = el.getAttribute("data-i18n-attr") || "";
-    raw.split(";").forEach((pair) => {
-      const trimmed = pair.trim();
-      if (!trimmed) return;
-      const parts = trimmed.split(":");
-      if (parts.length !== 2) return;
-      const attr = parts[0].trim();
-      const key = parts[1].trim();
-      if (attr && t[key]) {
-        el.setAttribute(attr, t[key]);
-      }
+  function normalizeLang(lang) {
+    if (!lang) return 'en';
+    const short = String(lang).toLowerCase().trim().slice(0, 2);
+    return translations[short] ? short : 'en';
+  }
+
+  function detectLang() {
+    const stored = getStoredLang();
+    if (stored) return normalizeLang(stored);
+    const nav = (navigator.languages && navigator.languages[0]) || navigator.language || 'en';
+    return normalizeLang(nav);
+  }
+
+  function t(lang, key) {
+    const dict = translations[lang] || translations.en;
+    if (Object.prototype.hasOwnProperty.call(dict, key)) return dict[key];
+    // If missing in selected language, fall back to English
+    if (Object.prototype.hasOwnProperty.call(translations.en, key)) return translations.en[key];
+    return '';
+  }
+
+  function applyTranslations(lang) {
+    const root = document.documentElement;
+    root.setAttribute('lang', lang);
+
+    // data-i18n (textContent)
+    document.querySelectorAll('[data-i18n]').forEach((el) => {
+      const key = el.getAttribute('data-i18n');
+      const value = t(lang, key);
+      if (value !== '') el.textContent = value;
     });
-  });
-}
 
-function initReveal() {
-  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const revealEls = document.querySelectorAll(".reveal");
-  if (reduceMotion) {
-    revealEls.forEach((el) => el.classList.add("is-visible"));
-    return;
+    // data-i18n-html (innerHTML)
+    document.querySelectorAll('[data-i18n-html]').forEach((el) => {
+      const key = el.getAttribute('data-i18n-html');
+      const value = t(lang, key);
+      if (value !== '') el.innerHTML = value;
+    });
+
+    // data-i18n-attr="attr:key;attr2:key2"
+    document.querySelectorAll('[data-i18n-attr]').forEach((el) => {
+      const spec = el.getAttribute('data-i18n-attr') || '';
+      spec.split(';').map(s => s.trim()).filter(Boolean).forEach((pair) => {
+        const [attr, key] = pair.split(':').map(s => (s || '').trim());
+        if (!attr || !key) return;
+        const value = t(lang, key);
+        if (value !== '') el.setAttribute(attr, value);
+      });
+    });
   }
 
-  const observer = new IntersectionObserver(
-    (entries) => {
+  function initLanguage() {
+    const select = document.getElementById('lang-select');
+    const initial = detectLang();
+
+    if (select) {
+      select.value = initial;
+      select.addEventListener('change', () => {
+        const lang = normalizeLang(select.value);
+        storeLang(lang);
+        applyTranslations(lang);
+      });
+    }
+
+    applyTranslations(initial);
+  }
+
+  function initSmoothAnchors() {
+    document.querySelectorAll('a[href^="#"]').forEach((a) => {
+      a.addEventListener('click', (e) => {
+        const href = a.getAttribute('href');
+        if (!href || href === '#') return;
+        const target = document.querySelector(href);
+        if (!target) return;
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        history.pushState(null, '', href);
+      });
+    });
+  }
+
+  function initReveal() {
+    const items = Array.from(document.querySelectorAll('.reveal'));
+    if (!items.length) return;
+
+    const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("is-visible");
+          entry.target.classList.add('is-visible');
           observer.unobserve(entry.target);
         }
       });
-    },
-    { threshold: 0.2 }
-  );
+    }, { threshold: 0.12 });
 
-  revealEls.forEach((el) => observer.observe(el));
-}
-
-function initLanguage() {
-  const select = document.getElementById("lang-select");
-  const urlLang = new URLSearchParams(window.location.search).get("lang");
-  const saved = localStorage.getItem("lang");
-  const lang = normalizeLang(urlLang || saved || navigator.language);
-
-  if (select) {
-    select.value = lang;
-    select.addEventListener("change", (e) => {
-      const next = normalizeLang(e.target.value);
-      localStorage.setItem("lang", next);
-      applyTranslations(next);
-    });
+    items.forEach((el) => observer.observe(el));
   }
 
-  applyTranslations(lang);
-}
+  // Optional: allow overrides.js to re-apply translations after load
+  window.TrueLock = {
+    applyTranslations: () => {
+      const select = document.getElementById('lang-select');
+      const lang = normalizeLang((select && select.value) || detectLang());
+      applyTranslations(lang);
+    },
+  };
 
-document.addEventListener("DOMContentLoaded", () => {
-  initLanguage();
-  initReveal();
-});
-
+  document.addEventListener('DOMContentLoaded', () => {
+    initLanguage();
+    initSmoothAnchors();
+    initReveal();
+  });
+})();
