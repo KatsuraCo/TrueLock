@@ -149,7 +149,7 @@
   "pricing_free_b2": "Basic text capsules (limited)",
   "pricing_free_b3": "Offline, no account",
 
-  "pricing_pro_title": "Pro (lifetime)",
+  "pricing_pro_title": "Pro (1 device license forever)",
   "pricing_pro_price": "$9.99",
   "pricing_pro_note": "One-time payment. No subscriptions.",
 
@@ -452,7 +452,7 @@
     "pricing_free_b1": "Открывать/расшифровывать без лимитов",
     "pricing_free_b2": "Базовые текст‑капсулы (лимит)",
     "pricing_free_b3": "Офлайн, без аккаунта",
-    "pricing_pro_title": "Pro (навсегда)",
+    "pricing_pro_title": "Pro (лицензия на 1 устройство навсегда)",
     "pricing_pro_price": "$9.99",
     "pricing_pro_note": "Один платёж. Без подписок.",
     "pricing_pro_b1": "Капсулы без лимитов + вложения",
@@ -709,7 +709,7 @@
   "pricing_free_b2": "Basis-Textkapseln (limitiert)",
   "pricing_free_b3": "Offline, kein Konto",
 
-  "pricing_pro_title": "Pro (lebenslang)",
+  "pricing_pro_title": "Pro (1 Gerätelizenz für immer)",
   "pricing_pro_price": "$9.99",
   "pricing_pro_note": "Einmalzahlung. Keine Abos.",
 
@@ -941,7 +941,7 @@
   "pricing_free_b2": "Cápsulas de texto básicas (límite)",
   "pricing_free_b3": "Sin conexión, sin cuenta",
 
-  "pricing_pro_title": "Pro (para siempre)",
+  "pricing_pro_title": "Pro (1 licencia de dispositivo para siempre)",
   "pricing_pro_price": "$9.99",
   "pricing_pro_note": "Un solo pago. Sin suscripciones.",
 
@@ -1174,7 +1174,7 @@
   "pricing_free_b2": "Capsules texte de base (limitées)",
   "pricing_free_b3": "Hors ligne, sans compte",
 
-  "pricing_pro_title": "Pro (à vie)",
+  "pricing_pro_title": "Pro (Licence pour un seul appareil, à vie)",
   "pricing_pro_price": "$9.99",
   "pricing_pro_note": "Paiement unique. Aucun abonnement.",
 
@@ -1407,7 +1407,7 @@
   "pricing_free_b2": "Capsule di testo di base (limitato)",
   "pricing_free_b3": "Offline, senza account",
 
-  "pricing_pro_title": "Pro (a vita)",
+  "pricing_pro_title": "Pro (1 licenza per dispositivo per sempre)",
   "pricing_pro_price": "$9.99",
   "pricing_pro_note": "Pagamento unico. Nessun abbonamento.",
 
@@ -1581,7 +1581,7 @@
     "pricing_free_b1": "Abrir/descriptografar sem limites",
     "pricing_free_b2": "Cápsulas de texto básicas (limite)",
     "pricing_free_b3": "Offline, sem conta",
-    "pricing_pro_title": "Pro (para sempre)",
+    "pricing_pro_title": "Pro (Licença vitalícia para 1 dispositivo)",
     "pricing_pro_price": "$9.99",
     "pricing_pro_note": "Pagamento único. Sem assinaturas.",
     "pricing_pro_b1": "Cápsulas sem limites + anexos",
@@ -1781,7 +1781,7 @@
     "pricing_free_b1": "Sınırsız açma/şifre çözme",
     "pricing_free_b2": "Temel metin kapsülleri (sınırlı)",
     "pricing_free_b3": "Çevrimdışı, hesap gereksiz",
-    "pricing_pro_title": "Pro (kalıcı)",
+    "pricing_pro_title": "Pro (1 cihaz için ömür boyu lisans)",
     "pricing_pro_price": "$9.99",
     "pricing_pro_note": "Tek ödeme. Abonelik yok.",
     "pricing_pro_b1": "Sınırsız kapsül + ekler",
