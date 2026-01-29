@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TrueLock Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root {
+      --bg: #0f1720;
+      --panel: #16212e;
+      --panel-2: #1c2a3a;
+      --text: #e6eef7;
+      --muted: #9fb0c3;
+      --accent: #7cc3ff;
+      --accent-strong: #4da3ff;
+      --border: #2b3a4d;
+      --success: #3ddc97;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: radial-gradient(1200px 600px at top, #182433, var(--bg));
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .phone {
+      width: 360px;
+      height: 720px; /* 🔒 FIXED HEIGHT */
+      background: linear-gradient(180deg, #131d29, #0f1720);
+      border-radius: 24px;
+      padding: 16px;
+      box-shadow: 0 30px 80px rgba(0,0,0,.6);
+      border: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+
+    h2 {
+      font-size: 14px;
+      font-weight: 600;
+      margin: 16px 0 8px;
+      color: var(--muted);
+    }
+
+    .content {
+      flex: 1;
+      overflow-y: auto;
+      padding-bottom: 16px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 12px;
+      margin-bottom: 12px;
+    }
+
+    .input {
+      background: var(--panel-2);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      background: var(--panel-2);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 8px;
+      cursor: pointer;
+      transition: .2s;
+      color: var(--text);
+    }
+
+    .btn.primary {
+      background: linear-gradient(180deg, var(--accent), var(--accent-strong));
+      color: #04121f;
+      font-weight: 600;
+      border: none;
+    }
+
+    .toggle {
+      display: flex;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+
+    .toggle button {
+      flex: 1;
+      padding: 10px;
+      background: transparent;
+      border: none;
+      color: var(--muted);
+    }
+
+    .toggle button.active {
+      background: var(--panel-2);
+      color: var(--text);
+    }
+
+    .footer-btn {
+      margin-top: 16px;
+    }
+
+    .success {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 24px;
+    }
+
+    .success h3 {
+      color: var(--success);
+      margin-bottom: 12px;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="phone">
+
+  <div class="header">
+    ← <span>Combined Encryption</span> 🔒
+  </div>
+
+  <div class="content">
+
+    <!-- FORM -->
+    <div id="form">
+
+      <h2>Access Conditions</h2>
+
+      <div class="card">
+        <div class="input">Password 👁</div>
+        <button class="btn">🖼 Select Images</button>
+        <button class="btn">📍 Set GPS Coordinates</button>
+
+        <div style="display:flex; gap:8px">
+          <button class="btn">⏰ Set Start Time</button>
+          <button class="btn">⏱ Set End Time</button>
+        </div>
+      </div>
+
+      <h2>Condition Mode</h2>
+      <div class="toggle">
+        <button class="active">AND (all conditions)</button>
+        <button>OR (any condition)</button>
+      </div>
+
+      <h2>Attachment Access</h2>
+      <div class="toggle">
+        <button class="active">Open in app only</button>
+        <button>Allow saving</button>
+      </div>
+
+      <div class="footer-btn">
+        <button class="btn primary" onclick="encrypt()">
+          🔐 Encrypt File
+        </button>
+      </div>
+
+    </div>
+
+    <!-- SUCCESS -->
+    <div id="success" class="hidden success">
+      <h3>✅ File successfully encrypted</h3>
+      <p style="color:var(--muted); margin-bottom:16px">
+        Your secure capsule is ready to be shared
+      </p>
+      <button class="btn primary">
+        📤 Send Capsule
+      </button>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+  function encrypt() {
+    document.getElementById('form').classList.add('hidden');
+    document.getElementById('success').classList.remove('hidden');
+  }
+</script>
+
+</body>
+</html>
