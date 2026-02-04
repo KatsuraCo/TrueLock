@@ -378,7 +378,7 @@
     "hero_note": "Работает офлайн. Без аккаунтов. Один защищённый файл. Открытие бесплатно.",
     "hero_eyebrow": "Передавайте данные в сети, не боясь утечек",
     "hero_title": "TrueLock — умный замок для цифровой информации",
-    "hero_subtitle_html": "Создавай свою <strong>Secure Capsule</strong> и контролируй доступ: откроется только по <strong>времени</strong>, <strong>месту</strong>, <strong>паролю</strong> или <strong>визуальному ключу</strong>. Всё под твоим контролем!",
+    "hero_subtitle_html": "Создавай свою <strong>Капсулу Безопасности</strong> и контролируй доступ: откроется только по <strong>времени</strong>, <strong>месту</strong>, <strong>паролю</strong> или <strong>визуальному ключу</strong>. Всё под твоим контролем!",
     "hero_feature_1": "Time‑Lock",
     "hero_feature_2": "Geo‑Lock",
     "hero_feature_3": "Пароль / Визуальный ключ",
