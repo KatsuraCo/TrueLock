@@ -1,4 +1,4 @@
-﻿/* TrueLock landing — i18n + small UX helpers
+/* TrueLock landing — i18n + small UX helpers
    Generated: v3 (full copy, no placeholder headings)
 */
 (() => {
@@ -168,9 +168,6 @@
   "upgrade_step1": "Download TrueLock for your platform.",
   "upgrade_step2": "Open the app → go to \"Settings\" → then Plan & License.",
   "upgrade_step3": "Copy the Device ID and enter it during purchase on the website to receive your personal license (A license is issued if you specify at least 1 device during purchase. You can request a second one at any time by contacting support).",
-
-    "Pay $9.99 via the connected provider and get Pro instantly.",
-
   "upgrade_note":
     "This approach is more reliable: no hardcoded payment links, provider can be changed without redesign.",
 
