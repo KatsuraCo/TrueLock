@@ -699,7 +699,7 @@
 
   "pricing_title": "Preise",
   "pricing_subtitle":
-    "Öffnen ist für immer kostenlos. Pro ist ein einmaliges Upgrade für 9,99 $ für erweiterte Kapseln.",
+    "Öffnen ist für immer kostenlos. Pro ist ein einmaliges Upgrade für 20 $ für erweiterte Kapseln.",
 
   "pricing_free_title": "Free",
   "pricing_free_price": "$0",
@@ -718,7 +718,7 @@
   "pricing_cta": "Herunterladen und im App upgraden",
   "pricing_cta_secondary": "So funktioniert der Pro-Kauf",
 
-  "upgrade_title": "So kaufst du Pro (9,99 $)",
+  "upgrade_title": "So kaufst du Pro (20 $)",
   "upgrade_subtitle":
     "Klarer Flow für die Landingpage: erst herunterladen, dann Upgrade in der App.",
 
@@ -745,7 +745,7 @@
 
   "download_title": "Download",
   "download_subtitle":
-    "Desktop und mobil. Pro wird in der App für 9,99 $ gekauft.",
+    "Desktop und mobil. Pro wird in der App für 20 $ gekauft.",
 
   "download_windows": "Windows",
   "download_macos": "macOS",
@@ -1162,7 +1162,7 @@
 
   "pricing_title": "Tarifs",
   "pricing_subtitle":
-    "L’ouverture est gratuite pour toujours. Pro est une mise à niveau unique à 9,99 $ pour des capsules avancées.",
+    "L’ouverture est gratuite pour toujours. Pro est une mise à niveau unique à 20 $ pour des capsules avancées.",
 
   "pricing_free_title": "Gratuit",
   "pricing_free_price": "$0",
@@ -1181,7 +1181,7 @@
   "pricing_cta": "Télécharger et passer à Pro dans l’application",
   "pricing_cta_secondary": "Comment fonctionne l’achat Pro",
 
-  "upgrade_title": "Comment acheter Pro (9,99 $)",
+  "upgrade_title": "Comment acheter Pro (20 $)",
   "upgrade_subtitle":
     "Flux clair pour la landing : téléchargez d’abord, puis passez à Pro dans l’application.",
 
@@ -1208,7 +1208,7 @@
 
   "download_title": "Télécharger",
   "download_subtitle":
-    "Desktop et mobile. Pro s’achète dans l’application pour 9,99 $.",
+    "Desktop et mobile. Pro s’achète dans l’application pour 20 $.",
 
   "download_windows": "Windows",
   "download_macos": "macOS",
@@ -1569,7 +1569,7 @@
     "security_subtitle": "Para confiar no TrueLock, não é necessário conta na nuvem. O arquivo é criptografado e verificado no dispositivo.",
     "security_summary_title": "Benefícios",
     "pricing_title": "Preços",
-    "pricing_subtitle": "Abertura gratuita para sempre. Pro — upgrade único de $9,99 para criar cápsulas avançadas.",
+    "pricing_subtitle": "Abertura gratuita para sempre. Pro — upgrade único de $20 para criar cápsulas avançadas.",
     "pricing_free_title": "Grátis",
     "pricing_free_price": "$0",
     "pricing_free_b1": "Abrir/descriptografar sem limites",
@@ -1583,7 +1583,7 @@
     "pricing_pro_b3": "Cenários em lote e modos avançados",
     "pricing_cta": "Baixar e fazer upgrade no app",
     "pricing_cta_secondary": "Como adquirir o Pro",
-    "upgrade_title": "Como comprar Pro ($9,99)",
+    "upgrade_title": "Como comprar Pro ($20)",
     "upgrade_subtitle": "Fluxo simples: primeiro baixe, depois faça upgrade dentro do app.",
     "upgrade_how_title": "Passo a passo",
     "upgrade_step1": "Descarrega o TrueLock para a tua plataforma.",
@@ -1599,7 +1599,7 @@
     "upgrade_why_4": "🌟 Operações em lote e modos avançados",
     "upgrade_refund": "Reembolsos dependem do canal de pagamento/loja.",
     "download_title": "Baixar",
-    "download_subtitle": "Desktop e mobile. Pro adquirido dentro do app por $9,99.",
+    "download_subtitle": "Desktop e mobile. Pro adquirido dentro do app por $20.",
     "download_windows": "Windows",
     "download_macos": "macOS",
     "download_linux": "Linux",
@@ -1677,7 +1677,7 @@
     "pricing_pro_item2": "⭐ Time-Lock + Geo-Lock",
     "pricing_pro_item3": "⭐ Senha / Chave visual + E/OU",
     "pricing_pro_item4": "⭐ Cenários de criptografia avançados",
-    "download_text": "Escolha a plataforma, instale e depois faça upgrade para Pro dentro do app por $9,99 quando precisar de cápsulas avançadas.",
+    "download_text": "Escolha a plataforma, instale e depois faça upgrade para Pro dentro do app por $20 quando precisar de cápsulas avançadas.",
     "case2_inside_title": "Cadeias de cápsulas (quests)",
     "case2_example": "Exemplo: cápsula nº1 abre e indica o próximo passo. Cápsula nº2 pede foto como prova. Cápsula nº3 entrega recompensa. Muitas variações!",
     "case3_text": "Mecânica de monetização justa: cápsula pública, chave de revelação paga.",
@@ -1769,7 +1769,7 @@
     "security_subtitle": "TrueLock'a güvenmek için bulut hesabı gerekmez. Dosya cihazda şifrelenir ve doğrulanır.",
     "security_summary_title": "Avantajlar",
     "pricing_title": "Fiyatlar",
-    "pricing_subtitle": "Açma her zaman ücretsiz. Pro — gelişmiş kapsüller için tek seferlik $9,99 yükseltme.",
+    "pricing_subtitle": "Açma her zaman ücretsiz. Pro — gelişmiş kapsüller için tek seferlik $20 yükseltme.",
     "pricing_free_title": "Ücretsiz",
     "pricing_free_price": "$0",
     "pricing_free_b1": "Sınırsız açma/şifre çözme",
@@ -1783,7 +1783,7 @@
     "pricing_pro_b3": "Toplu senaryolar ve gelişmiş modlar",
     "pricing_cta": "İndir ve uygulama içinden yükselt",
     "pricing_cta_secondary": "Pro satın alma süreci",
-    "upgrade_title": "Pro Nasıl Satın Alınır ($9,99)",
+    "upgrade_title": "Pro Nasıl Satın Alınır ($20)",
     "upgrade_subtitle": "Basit akış: önce indir, sonra uygulama içinden yükselt.",
     "upgrade_how_title": "Adım adım",
     "upgrade_step1": "TrueLock'u platformun için indir.",
@@ -1799,7 +1799,7 @@
     "upgrade_why_4": "🌟 Toplu işlemler ve gelişmiş modlar",
     "upgrade_refund": "İadeler ödeme kanalı/mağazaya bağlıdır.",
     "download_title": "İndir",
-    "download_subtitle": "Masaüstü ve mobil. Pro uygulama içinden $9,99 ile satın alınır.",
+    "download_subtitle": "Masaüstü ve mobil. Pro uygulama içinden $20 ile satın alınır.",
     "download_windows": "Windows",
     "download_macos": "macOS",
     "download_linux": "Linux",
@@ -1877,7 +1877,7 @@
     "pricing_pro_item2": "⭐ Time-Lock + Geo-Lock",
     "pricing_pro_item3": "⭐ Şifre / Görsel anahtar + VE/VEYA",
     "pricing_pro_item4": "⭐ Gelişmiş şifreleme senaryoları",
-    "download_text": "Platform seç, kur ve gelişmiş kapsüller gerektiğinde uygulama içinden $9,99 ile Pro’ya yükselt.",
+    "download_text": "Platform seç, kur ve gelişmiş kapsüller gerektiğinde uygulama içinden $20 ile Pro’ya yükselt.",
     "case2_inside_title": "Kapsül zincirleri (görevler)",
     "case2_example": "Örnek: kapsül №1 açılır ve sonraki adrese yönlendirir. Kapsül №2 foto kanıt ister. Kapsül №3 ödül verir. Çok sayıda varyasyon var!",
     "case3_text": "Adil bir para kazanma mekanizması: kapsül herkese açık, açma anahtarı ücretli.",
