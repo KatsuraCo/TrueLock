@@ -149,7 +149,7 @@
   "pricing_free_b2": "Basic text capsules (limited)",
   "pricing_free_b3": "Offline, no account",
 
-  "pricing_pro_title": "Pro (1 device license forever)",
+  "pricing_pro_title": "Pro (2 device license forever)",
   "pricing_pro_price": "$9.99",
   "pricing_pro_note": "One-time payment. No subscriptions.",
 
@@ -166,8 +166,9 @@
 
   "upgrade_how_title": "Step by step",
   "upgrade_step1": "Download TrueLock for your platform.",
-  "upgrade_step2": "Open the app → tap “Upgrade to Pro”.",
-  "upgrade_step3":
+  "upgrade_step2": "Open the app → go to \"Settings\" → then Plan & License.",
+  "upgrade_step3": "Copy the Device ID and enter it during purchase on the website to receive your personal license (A license is issued if you specify at least 1 device during purchase. You can request a second one at any time by contacting support).",
+
     "Pay $9.99 via the connected provider and get Pro instantly.",
 
   "upgrade_note":
@@ -378,7 +379,7 @@
     "hero_note": "Работает офлайн. Без аккаунтов. Один защищённый файл. Открытие бесплатно.",
     "hero_eyebrow": "Передавайте данные в сети, не боясь утечек",
     "hero_title": "TrueLock — умный замок для цифровой информации",
-    "hero_subtitle_html": "Создавай свою <strong>Капсулу Безопасности</strong> и контролируй доступ: откроется только по <strong>времени</strong>, <strong>месту</strong>, <strong>паролю</strong> или <strong>визуальному ключу</strong>. Всё под твоим контролем!",
+    "hero_subtitle_html": "Создавай свою <strong>Secure Capsule</strong> и контролируй доступ: откроется только по <strong>времени</strong>, <strong>месту</strong>, <strong>паролю</strong> или <strong>визуальному ключу</strong>. Всё под твоим контролем!",
     "hero_feature_1": "Time‑Lock",
     "hero_feature_2": "Geo‑Lock",
     "hero_feature_3": "Пароль / Визуальный ключ",
@@ -452,7 +453,7 @@
     "pricing_free_b1": "Открывать/расшифровывать без лимитов",
     "pricing_free_b2": "Базовые текст‑капсулы (лимит)",
     "pricing_free_b3": "Офлайн, без аккаунта",
-    "pricing_pro_title": "Pro (лицензия на 1 устройство навсегда)",
+    "pricing_pro_title": "Pro (лицензия на 2 устройства навсегда)",
     "pricing_pro_price": "$9.99",
     "pricing_pro_note": "Один платёж. Без подписок.",
     "pricing_pro_b1": "Капсулы без лимитов + вложения",
@@ -464,8 +465,8 @@
     "upgrade_subtitle": "Чистый flow для лендинга: сначала скачал, затем апгрейд внутри приложения.",
     "upgrade_how_title": "Пошагово",
     "upgrade_step1": "Скачай TrueLock под свою платформу.",
-    "upgrade_step2": "Открой приложение → нажми «Upgrade to Pro».",
-    "upgrade_step3": "Оплати $9.99 через подключённого провайдера и получи Pro сразу.",
+    "upgrade_step2": "Открой приложение → перейди в \"Настройки\" → далее Plan & License.",
+    "upgrade_step3": "Скопируй Device ID и введи его при покупке на сайте, чтобы получить персональную лицензию (Лицензия выдается, если вы указали минимум 1 устройство при покупке. Вторую можно получить в любой момент, связавшись с нашей поддержкой).",
     "upgrade_note": "Так надёжнее: не нужно хардкодить платёжные ссылки, провайдера можно менять без редизайна.",
     "upgrade_cta_download": "Скачать",
     "upgrade_cta_back": "Вернуться к ценам",
@@ -485,7 +486,7 @@
     "download_web": "Web (preview)",
     "download_note": "После установки: открой приложение → Upgrade to Pro. Платёж идёт через подключённого провайдера (например, Mercuryo).",
     "final_title": "Доверие — в одном файле.",
-    "final_text": "Proof‑капсулы и раскрытие «на месте» — без серверов и без «поверь на слово».",
+    "final_text": "Proof‑капсулы, дропы и раскрытие «на месте» — без серверов и без «поверь на слово».",
     "final_cta": "Скачать TrueLock",
     "footer_tagline": "TrueLock — умный замок для цифровой информации",
     "footer_copy": "© TrueLock. Офлайн шифрование + policy engine. Расшифровка всегда бесплатна.",
@@ -709,7 +710,7 @@
   "pricing_free_b2": "Basis-Textkapseln (limitiert)",
   "pricing_free_b3": "Offline, kein Konto",
 
-  "pricing_pro_title": "Pro (1 Gerätelizenz für immer)",
+  "pricing_pro_title": "Pro (2 Gerätelizenz für immer)",
   "pricing_pro_price": "$9.99",
   "pricing_pro_note": "Einmalzahlung. Keine Abos.",
 
@@ -726,9 +727,8 @@
 
   "upgrade_how_title": "Schritt für Schritt",
   "upgrade_step1": "Lade TrueLock für deine Plattform herunter.",
-  "upgrade_step2": "Öffne die App → tippe auf „Upgrade to Pro“.",
-  "upgrade_step3":
-    "Bezahle 9,99 $ über den angebundenen Anbieter und erhalte Pro sofort.",
+  "upgrade_step2": "Öffne die App → gehe zu \"Einstellungen\" → dann Plan & License.",
+  "upgrade_step3": "Kopiere die Device ID und gib sie beim Kauf auf der Website ein, um deine persönliche Lizenz zu erhalten (Eine Lizenz wird ausgestellt, wenn du beim Kauf mindestens 1 Gerät angibst. Eine zweite kannst du jederzeit über den Support anfordern).",
 
   "upgrade_note":
     "Zuverlässiger Ansatz: keine fest verdrahteten Zahlungslinks, Anbieterwechsel ohne Redesign möglich.",
@@ -941,7 +941,7 @@
   "pricing_free_b2": "Cápsulas de texto básicas (límite)",
   "pricing_free_b3": "Sin conexión, sin cuenta",
 
-  "pricing_pro_title": "Pro (1 licencia de dispositivo para siempre)",
+  "pricing_pro_title": "Pro (2 licencia de dispositivo para siempre)",
   "pricing_pro_price": "$9.99",
   "pricing_pro_note": "Un solo pago. Sin suscripciones.",
 
@@ -958,9 +958,8 @@
 
   "upgrade_how_title": "Paso a paso",
   "upgrade_step1": "Descarga TrueLock para tu plataforma.",
-  "upgrade_step2": "Abre la app → pulsa “Upgrade to Pro”.",
-  "upgrade_step3":
-    "Paga $9.99 a través del proveedor conectado y obtén Pro al instante.",
+  "upgrade_step2": "Abre la aplicación → ve a \"Configuración\" → luego Plan & License.",
+  "upgrade_step3": "Copia el Device ID e introdúcelo durante la compra en el sitio web para recibir tu licencia personal (La licencia se emite si indicas al menos 1 dispositivo durante la compra. Puedes solicitar una segunda en cualquier momento contactando con soporte).",
 
   "upgrade_note":
     "Más fiable: no hay enlaces de pago fijos, el proveedor puede cambiarse sin rediseñar.",
@@ -1174,7 +1173,7 @@
   "pricing_free_b2": "Capsules texte de base (limitées)",
   "pricing_free_b3": "Hors ligne, sans compte",
 
-  "pricing_pro_title": "Pro (Licence pour un seul appareil, à vie)",
+  "pricing_pro_title": "Pro (Licence pour un deux appareil, à vie)",
   "pricing_pro_price": "$9.99",
   "pricing_pro_note": "Paiement unique. Aucun abonnement.",
 
@@ -1190,10 +1189,9 @@
     "Flux clair pour la landing : téléchargez d’abord, puis passez à Pro dans l’application.",
 
   "upgrade_how_title": "Étapes",
-  "upgrade_step1": "Téléchargez TrueLock pour votre plateforme.",
-  "upgrade_step2": "Ouvrez l’application → appuyez sur « Upgrade to Pro ».",
-  "upgrade_step3":
-    "Payez 9,99 $ via le fournisseur connecté et obtenez Pro instantanément.",
+  "upgrade_step1": "Télécharge TrueLock pour ta plateforme.",
+  "upgrade_step2": "Ouvre l'application → va dans \"Paramètres\" → puis Plan & License.",
+  "upgrade_step3": "Copie le Device ID et saisis-le lors de l'achat sur le site pour recevoir ta licence personnelle (La licence est délivrée si tu indiques au moins 1 appareil lors de l'achat. Tu peux en demander une seconde à tout moment en contactant le support).",
 
   "upgrade_note":
     "Approche plus fiable : aucun lien de paiement codé en dur, le fournisseur peut être changé sans refonte.",
@@ -1407,7 +1405,7 @@
   "pricing_free_b2": "Capsule di testo di base (limitato)",
   "pricing_free_b3": "Offline, senza account",
 
-  "pricing_pro_title": "Pro (1 licenza per dispositivo per sempre)",
+  "pricing_pro_title": "Pro (2 licenza per dispositivo per sempre)",
   "pricing_pro_price": "$9.99",
   "pricing_pro_note": "Pagamento unico. Nessun abbonamento.",
 
@@ -1424,9 +1422,8 @@
 
   "upgrade_how_title": "Passaggi",
   "upgrade_step1": "Scarica TrueLock per la tua piattaforma.",
-  "upgrade_step2": "Apri l’app → tocca “Upgrade to Pro”.",
-  "upgrade_step3":
-    "Paga $9.99 tramite il provider collegato e ottieni Pro subito.",
+  "upgrade_step2": "Apri l'app → vai su \"Impostazioni\" → poi Plan & License.",
+  "upgrade_step3": "Copia il Device ID e inseriscilo durante l'acquisto sul sito per ricevere la tua licenza personale (La licenza viene rilasciata se specifichi almeno 1 dispositivo durante l'acquisto. Puoi richiederne una seconda in qualsiasi momento contattando il supporto).",
 
   "upgrade_note":
     "Approccio più affidabile: nessun link di pagamento hardcoded, il provider può essere cambiato senza redesign.",
@@ -1581,7 +1578,7 @@
     "pricing_free_b1": "Abrir/descriptografar sem limites",
     "pricing_free_b2": "Cápsulas de texto básicas (limite)",
     "pricing_free_b3": "Offline, sem conta",
-    "pricing_pro_title": "Pro (Licença vitalícia para 1 dispositivo)",
+    "pricing_pro_title": "Pro (Licença vitalícia para 2 dispositivo)",
     "pricing_pro_price": "$9.99",
     "pricing_pro_note": "Pagamento único. Sem assinaturas.",
     "pricing_pro_b1": "Cápsulas sem limites + anexos",
@@ -1592,9 +1589,9 @@
     "upgrade_title": "Como comprar Pro ($9,99)",
     "upgrade_subtitle": "Fluxo simples: primeiro baixe, depois faça upgrade dentro do app.",
     "upgrade_how_title": "Passo a passo",
-    "upgrade_step1": "Baixe o TrueLock para sua plataforma.",
-    "upgrade_step2": "Abra o app → clique em 'Upgrade to Pro'.",
-    "upgrade_step3": "Pague $9,99 via provedor conectado e obtenha Pro imediatamente.",
+    "upgrade_step1": "Descarrega o TrueLock para a tua plataforma.",
+    "upgrade_step2": "Abre a aplicação → vai a \"Definições\" → depois Plan & License.",
+    "upgrade_step3": "Copia o Device ID e introduz-o durante a compra no site para receberes a tua licença pessoal (A licença é emitida se indicares pelo menos 1 dispositivo na compra. Podes solicitar uma segunda a qualquer momento contactando o suporte).",
     "upgrade_note": "Mais seguro assim: não precisa codificar links de pagamento; o provedor pode ser alterado sem redesign.",
     "upgrade_cta_download": "Baixar",
     "upgrade_cta_back": "Voltar para preços",
@@ -1781,7 +1778,7 @@
     "pricing_free_b1": "Sınırsız açma/şifre çözme",
     "pricing_free_b2": "Temel metin kapsülleri (sınırlı)",
     "pricing_free_b3": "Çevrimdışı, hesap gereksiz",
-    "pricing_pro_title": "Pro (1 cihaz için ömür boyu lisans)",
+    "pricing_pro_title": "Pro (2 cihaz için ömür boyu lisans)",
     "pricing_pro_price": "$9.99",
     "pricing_pro_note": "Tek ödeme. Abonelik yok.",
     "pricing_pro_b1": "Sınırsız kapsül + ekler",
@@ -1792,9 +1789,9 @@
     "upgrade_title": "Pro Nasıl Satın Alınır ($9,99)",
     "upgrade_subtitle": "Basit akış: önce indir, sonra uygulama içinden yükselt.",
     "upgrade_how_title": "Adım adım",
-    "upgrade_step1": "Platformunuz için TrueLock'u indirin.",
-    "upgrade_step2": "Uygulamayı açın → 'Upgrade to Pro' tıklayın.",
-    "upgrade_step3": "$9,99'u bağlı sağlayıcı üzerinden ödeyin ve hemen Pro elde edin.",
+    "upgrade_step1": "TrueLock'u platformun için indir.",
+    "upgrade_step2": "Uygulamayı aç → \"Ayarlar\" bölümüne git → ardından Plan & License.",
+    "upgrade_step3": "Device ID'yi kopyala ve kişisel lisansını almak için satın alma sırasında web sitesine gir (Satın alma sırasında en az 1 cihaz belirtirsen lisans verilir. İkinci lisansı istediğin zaman destek ile iletişime geçerek alabilirsin).",
     "upgrade_note": "Daha güvenli: ödeme bağlantılarını kodlamaya gerek yok; sağlayıcıyı redesign olmadan değiştirebilirsiniz.",
     "upgrade_cta_download": "İndir",
     "upgrade_cta_back": "Fiyatlara geri dön",
