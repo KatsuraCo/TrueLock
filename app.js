@@ -141,7 +141,7 @@
 
   "pricing_title": "Pricing",
   "pricing_subtitle":
-    "Opening is free forever. Pro is a one-time $9.99 upgrade for advanced capsules.",
+    "Opening is free forever. Pro is a one-time $20 upgrade for advanced capsules.",
 
   "pricing_free_title": "Free",
   "pricing_free_price": "$0",
@@ -150,7 +150,7 @@
   "pricing_free_b3": "Offline, no account",
 
   "pricing_pro_title": "Pro (2 device license forever)",
-  "pricing_pro_price": "$9.99",
+  "pricing_pro_price": "$20",
   "pricing_pro_note": "One-time payment. No subscriptions.",
 
   "pricing_pro_b1": "Unlimited capsules + attachments",
@@ -160,7 +160,7 @@
   "pricing_cta": "Download and upgrade in the app",
   "pricing_cta_secondary": "How Pro purchase works",
 
-  "upgrade_title": "How to buy Pro ($9.99)",
+  "upgrade_title": "How to buy Pro ($20)",
   "upgrade_subtitle":
     "A clean landing flow: download first, then upgrade inside the app.",
 
@@ -186,7 +186,7 @@
 
   "download_title": "Download",
   "download_subtitle":
-    "Desktop and mobile. Pro is purchased inside the app for $9.99.",
+    "Desktop and mobile. Pro is purchased inside the app for $20.",
 
   "download_windows": "Windows",
   "download_macos": "macOS",
@@ -341,7 +341,7 @@
     "⭐ Advanced encryption scenarios",
 
   "download_text":
-    "Choose a platform, install, then upgrade to Pro inside the app for $9.99 when you need advanced capsules.",
+    "Choose a platform, install, then upgrade to Pro inside the app for $20 when you need advanced capsules.",
 
   "case2_inside_title": "Capsule chains (quests)",
   "case2_example":
@@ -444,21 +444,21 @@
     "security_subtitle": "Чтобы доверять TrueLock, не нужен облачный аккаунт. Файл шифруется и проверяется на устройстве.",
     "security_summary_title": "Что это даёт",
     "pricing_title": "Цены",
-    "pricing_subtitle": "Открытие бесплатно навсегда. Pro — разовый апгрейд $9.99 для создания продвинутых капсул.",
+    "pricing_subtitle": "Открытие бесплатно навсегда. Pro — разовый апгрейд $20 для создания продвинутых капсул.",
     "pricing_free_title": "Free",
     "pricing_free_price": "$0",
     "pricing_free_b1": "Открывать/расшифровывать без лимитов",
     "pricing_free_b2": "Базовые текст‑капсулы (лимит)",
     "pricing_free_b3": "Офлайн, без аккаунта",
     "pricing_pro_title": "Pro (лицензия на 2 устройства навсегда)",
-    "pricing_pro_price": "$9.99",
+    "pricing_pro_price": "$20",
     "pricing_pro_note": "Один платёж. Без подписок.",
     "pricing_pro_b1": "Капсулы без лимитов + вложения",
     "pricing_pro_b2": "Время/Гео/Пароль/Визуал + AND/OR",
     "pricing_pro_b3": "Batch‑сценарии и продвинутые режимы",
     "pricing_cta": "Скачать и апгрейднуться в приложении",
     "pricing_cta_secondary": "Как проходит покупка Pro",
-    "upgrade_title": "Как купить Pro ($9.99)",
+    "upgrade_title": "Как купить Pro ($20)",
     "upgrade_subtitle": "Чистый flow для лендинга: сначала скачал, затем апгрейд внутри приложения.",
     "upgrade_how_title": "Пошагово",
     "upgrade_step1": "Скачай TrueLock под свою платформу.",
@@ -474,7 +474,7 @@
     "upgrade_why_4": "🌟 Batch‑операции и продвинутые режимы",
     "upgrade_refund": "Возвраты зависят от канала оплаты/магазина.",
     "download_title": "Скачать",
-    "download_subtitle": "Десктоп и мобильные. Pro покупается внутри приложения за $9.99.",
+    "download_subtitle": "Десктоп и мобильные. Pro покупается внутри приложения за $20.",
     "download_windows": "Windows",
     "download_macos": "macOS",
     "download_linux": "Linux",
@@ -552,7 +552,7 @@
     "pricing_pro_item2": "⭐ Time‑Lock + Geo‑Lock",
     "pricing_pro_item3": "⭐ Пароль / Визуальный ключ + AND/OR",
     "pricing_pro_item4": "⭐ Продвинутые сценарии шифрования",
-    "download_text": "Выбери платформу, установи, а затем апгрейднись до Pro внутри приложения за $9.99, когда понадобятся продвинутые капсулы.",
+    "download_text": "Выбери платформу, установи, а затем апгрейднись до Pro внутри приложения за $20, когда понадобятся продвинутые капсулы.",
     "case2_inside_title": "Цепочки капсул (квесты)",
     "case2_example": "Пример: капсула №1 открывается и говорит, куда идти. Капсула №2 просит фото‑доказательство. Капсула №3 выдаёт награду. Вариантов множество!",
     "case3_text": "Это честная механика монетизации: капсула публичная, а ключ раскрытия — платный.",
@@ -708,7 +708,7 @@
   "pricing_free_b3": "Offline, kein Konto",
 
   "pricing_pro_title": "Pro (2 Gerätelizenz für immer)",
-  "pricing_pro_price": "$9.99",
+  "pricing_pro_price": "$20",
   "pricing_pro_note": "Einmalzahlung. Keine Abos.",
 
   "pricing_pro_b1": "Unbegrenzte Kapseln + Anhänge",
@@ -930,7 +930,7 @@
 
   "pricing_title": "Precios",
   "pricing_subtitle":
-    "Abrir es gratis para siempre. Pro es una mejora única de $9.99 para cápsulas avanzadas.",
+    "Abrir es gratis para siempre. Pro es una mejora única de $20 para cápsulas avanzadas.",
 
   "pricing_free_title": "Free",
   "pricing_free_price": "$0",
@@ -939,7 +939,7 @@
   "pricing_free_b3": "Sin conexión, sin cuenta",
 
   "pricing_pro_title": "Pro (2 licencia de dispositivo para siempre)",
-  "pricing_pro_price": "$9.99",
+  "pricing_pro_price": "$20",
   "pricing_pro_note": "Un solo pago. Sin suscripciones.",
 
   "pricing_pro_b1": "Cápsulas sin límites + adjuntos",
@@ -949,7 +949,7 @@
   "pricing_cta": "Descargar y actualizar dentro de la app",
   "pricing_cta_secondary": "Cómo funciona la compra Pro",
 
-  "upgrade_title": "Cómo comprar Pro ($9.99)",
+  "upgrade_title": "Cómo comprar Pro ($20)",
   "upgrade_subtitle":
     "Flujo limpio para el landing: primero descargas, luego actualizas dentro de la app.",
 
@@ -976,7 +976,7 @@
 
   "download_title": "Descargar",
   "download_subtitle":
-    "Escritorio y móvil. Pro se compra dentro de la app por $9.99.",
+    "Escritorio y móvil. Pro se compra dentro de la app por $20.",
 
   "download_windows": "Windows",
   "download_macos": "macOS",
@@ -1171,7 +1171,7 @@
   "pricing_free_b3": "Hors ligne, sans compte",
 
   "pricing_pro_title": "Pro (Licence pour un deux appareil, à vie)",
-  "pricing_pro_price": "$9.99",
+  "pricing_pro_price": "$20",
   "pricing_pro_note": "Paiement unique. Aucun abonnement.",
 
   "pricing_pro_b1": "Capsules illimitées + pièces jointes",
@@ -1394,7 +1394,7 @@
 
   "pricing_title": "Prezzi",
   "pricing_subtitle":
-    "L’apertura è gratuita per sempre. Pro è un upgrade una tantum da $9.99 per capsule avanzate.",
+    "L’apertura è gratuita per sempre. Pro è un upgrade una tantum da $20 per capsule avanzate.",
 
   "pricing_free_title": "Gratis",
   "pricing_free_price": "$0",
@@ -1403,7 +1403,7 @@
   "pricing_free_b3": "Offline, senza account",
 
   "pricing_pro_title": "Pro (2 licenza per dispositivo per sempre)",
-  "pricing_pro_price": "$9.99",
+  "pricing_pro_price": "$20",
   "pricing_pro_note": "Pagamento unico. Nessun abbonamento.",
 
   "pricing_pro_b1": "Capsule illimitate + allegati",
@@ -1413,7 +1413,7 @@
   "pricing_cta": "Scarica e passa a Pro nell’app",
   "pricing_cta_secondary": "Come funziona l’acquisto Pro",
 
-  "upgrade_title": "Come acquistare Pro ($9.99)",
+  "upgrade_title": "Come acquistare Pro ($20)",
   "upgrade_subtitle":
     "Flusso pulito per la landing: prima scarichi, poi passi a Pro dall’app.",
 
@@ -1440,7 +1440,7 @@
 
   "download_title": "Scarica",
   "download_subtitle":
-    "Desktop e mobile. Pro si acquista nell’app per $9.99.",
+    "Desktop e mobile. Pro si acquista nell’app per $20.",
 
   "download_windows": "Windows",
   "download_macos": "macOS",
@@ -1576,7 +1576,7 @@
     "pricing_free_b2": "Cápsulas de texto básicas (limite)",
     "pricing_free_b3": "Offline, sem conta",
     "pricing_pro_title": "Pro (Licença vitalícia para 2 dispositivo)",
-    "pricing_pro_price": "$9.99",
+    "pricing_pro_price": "$20",
     "pricing_pro_note": "Pagamento único. Sem assinaturas.",
     "pricing_pro_b1": "Cápsulas sem limites + anexos",
     "pricing_pro_b2": "Tempo/Geo/Senha/Visual + E/OU",
@@ -1776,7 +1776,7 @@
     "pricing_free_b2": "Temel metin kapsülleri (sınırlı)",
     "pricing_free_b3": "Çevrimdışı, hesap gereksiz",
     "pricing_pro_title": "Pro (2 cihaz için ömür boyu lisans)",
-    "pricing_pro_price": "$9.99",
+    "pricing_pro_price": "$20",
     "pricing_pro_note": "Tek ödeme. Abonelik yok.",
     "pricing_pro_b1": "Sınırsız kapsül + ekler",
     "pricing_pro_b2": "Zaman/Geo/Şifre/Görsel + VE/VEYA",
