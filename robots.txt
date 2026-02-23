@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-
-Host: truelock.pro
-Sitemap: https://truelock.pro/sitemap.xml
