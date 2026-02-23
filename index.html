@@ -1,5 +1,5 @@
 ﻿<!doctype html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -21,16 +21,20 @@
   <meta id="twitterTitle" name="twitter:title" content="TrueLock — Seal now. Prove later." />
   <meta id="twitterDescription" name="twitter:description" content="Secure capsules that unlock by time, place, password or visual key." />
   <meta name="twitter:image" content="https://truelock.pro/preview.png" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="apple-touch-icon" href="/TrueLock-main/assets/favicon-32.png" />
 
   <link rel="alternate" hreflang="x-default" href="https://truelock.pro/" />
-  <link rel="alternate" hreflang="ru" href="https://truelock.pro/?lang=ru" />
-  <link rel="alternate" hreflang="en" href="https://truelock.pro/?lang=en" />
-  <link rel="alternate" hreflang="de" href="https://truelock.pro/?lang=de" />
-  <link rel="alternate" hreflang="es" href="https://truelock.pro/?lang=es" />
-  <link rel="alternate" hreflang="fr" href="https://truelock.pro/?lang=fr" />
-  <link rel="alternate" hreflang="it" href="https://truelock.pro/?lang=it" />
-  <link rel="alternate" hreflang="pt" href="https://truelock.pro/?lang=pt" />
-  <link rel="alternate" hreflang="tr" href="https://truelock.pro/?lang=tr" />
+  <link rel="alternate" hreflang="ru" href="https://truelock.pro/" />
+  <link rel="alternate" hreflang="en" href="https://truelock.pro/" />
+  <link rel="alternate" hreflang="de" href="https://truelock.pro/" />
+  <link rel="alternate" hreflang="es" href="https://truelock.pro/" />
+  <link rel="alternate" hreflang="fr" href="https://truelock.pro/" />
+  <link rel="alternate" hreflang="it" href="https://truelock.pro/" />
+  <link rel="alternate" hreflang="pt" href="https://truelock.pro/" />
+  <link rel="alternate" hreflang="tr" href="https://truelock.pro/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
@@ -64,16 +68,26 @@
       <a class="brand brand-logo" href="#top" aria-label="TrueLock">
         <img src="TrueLock-main/assets/logo-dark.png" alt="TrueLock" />
       </a>
-      <nav>
-        <a href="#personas" data-i18n="nav_who">Кто использует</a>
-        <a href="#how" data-i18n="nav_how">Как работает</a>
-        <a href="#templates" data-i18n="nav_templates">Шаблоны</a>
-        <a href="#security" data-i18n="nav_security">Безопасность</a>
-        <a href="#pricing" data-i18n="nav_price">Цена</a>
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobileMenu"
+        aria-label="Open menu"
+      >
+        <span class="menu-toggle-icon" aria-hidden="true">☰</span>
+      </button>
+      <nav class="main-nav">
+        <a href="#personas" data-i18n="nav_who">Who uses</a>
+        <a href="#how" data-i18n="nav_how">How it works</a>
+        <a href="#templates" data-i18n="nav_templates">Templates</a>
+        <a href="#security" data-i18n="nav_security">Security</a>
+        <a href="#pricing" data-i18n="nav_price">Pricing</a>
       </nav>
       <select id="langSwitch" class="lang-switch" aria-label="Language">
         <option value="ru">RU</option>
-        <option value="en">EN</option>
+        <option value="en" selected>EN</option>
         <option value="de">DE</option>
         <option value="es">ES</option>
         <option value="fr">FR</option>
@@ -81,7 +95,17 @@
         <option value="pt">PT</option>
         <option value="tr">TR</option>
       </select>
-      <a class="btn btn-primary" href="#download" data-i18n="nav_download">Скачать бесплатно</a>
+      <a class="btn btn-primary" href="#download" data-i18n="nav_download">Download free</a>
+    </div>
+    <div class="container mobile-menu-wrap">
+      <nav class="mobile-nav" id="mobileMenu" hidden>
+        <a href="#personas" data-i18n="nav_who">Who uses</a>
+        <a href="#how" data-i18n="nav_how">How it works</a>
+        <a href="#templates" data-i18n="nav_templates">Templates</a>
+        <a href="#security" data-i18n="nav_security">Security</a>
+        <a href="#pricing" data-i18n="nav_price">Pricing</a>
+        <a href="#download" data-i18n="nav_download">Download free</a>
+      </nav>
     </div>
   </header>
 
@@ -89,19 +113,19 @@
   <section class="hero" id="top">
     <div class="container hero-grid">
       <div class="reveal">
-        <p class="eyebrow">Передавайте данные в сети, не боясь утечек</p>
-        <h1>TrueLock — умный замок для цифровой информации</h1>
-        <p class="hero-lead">Создавай свою <strong>Secure Capsule</strong> и контролируй доступ: откроется только по <strong>времени</strong>, <strong>месту</strong>, <strong>паролю</strong> или <strong>визуальному ключу</strong>. Всё под твоим контролем!</p>
-        <p class="hero-lead" style="font-size:0.94rem; margin-top:-10px;">Работает офлайн. Без аккаунтов. Один защищённый файл. Открытие бесплатно.</p>
+        <p class="eyebrow">Share data online without leaks</p>
+        <h1>TrueLock ? smart lock for digital information</h1>
+        <p class="hero-lead">Create your <strong>Secure Capsule</strong> and control access: it unlocks only by <strong>time</strong>, <strong>location</strong>, <strong>password</strong> or a <strong>visual key</strong>. Everything stays under your control.</p>
+        <p class="hero-lead" style="font-size:0.94rem; margin-top:-10px;">Works offline. No accounts. One protected file. Opening is free.</p>
         <div class="cta-row">
-          <a class="btn btn-primary" href="#download">Скачать бесплатно</a>
-          <a class="btn btn-ghost" href="#personas">Найти свой сценарий</a>
+          <a class="btn btn-primary" href="#download">Download free</a>
+          <a class="btn btn-ghost" href="#personas">Find your scenario</a>
         </div>
         <div class="hero-badges">
           <span class="badge">&#128274; AES-256-GCM</span>
-          <span class="badge">&#128225; Офлайн-first</span>
-          <span class="badge">&#127760; 8 языков</span>
-          <span class="badge">&#128230; 32 шаблона</span>
+          <span class="badge">&#128225; Offline-first</span>
+          <span class="badge">&#127760; 8 languages</span>
+          <span class="badge">&#128230; 32 templates</span>
         </div>
       </div>
 
@@ -121,33 +145,33 @@
   <section class="section-soft" id="pain">
     <div class="container">
       <div class="reveal" style="margin-bottom: 18px;">
-        <h2 class="section-title">Проблема не в безопасности - проблема в контроле над безопасностью</h2>
+        <h2 class="section-title">Security is not the problem ? control is.</h2>
       </div>
 
       <div class="pain-grid">
         <article class="pain-card reveal">
-          <h3>Проблема</h3>
-          <p class="pain-intro">Рассмотрим настоящие проблемы безопасности данных:</p>
+          <h3>Problem</h3>
+          <p class="pain-intro">Here are the real data-security problems:</p>
           <ul class="pain-list">
-            <li>&#9993;&#65039; Переписку можно перехватить.</li>
-            <li>&#127760; Платформы имеют доступ к вашим данным.</li>
-            <li>&#128221; Файлы можно скопировать или подделать.</li>
-            <li>&#174;&#65039; Невозможно доказать оригинальность.</li>
-            <li>&#129513; Сложные решения по шифровке данных отпугивают обычных людей.</li>
-            <li>&#9881;&#65039; Нежелательное раскрытие данных раньше положенного времени или в неподходящем месте.</li>
+            <li>&#9993;&#65039; Messages can be intercepted.</li>
+            <li>&#127760; Platforms can access your data.</li>
+            <li>&#128221; Files can be copied or forged.</li>
+            <li>&#174;&#65039; Authenticity is hard to prove.</li>
+            <li>&#129513; Complex security tools scare off regular users.</li>
+            <li>&#9881;&#65039; Data can be revealed too early or in the wrong place.</li>
           </ul>
         </article>
 
         <article class="pain-card reveal" style="transition-delay:.08s;">
-          <h3>Решение</h3>
-          <p class="pain-intro">TrueLock оставляет контроль у вас. Вам обеспечена:</p>
+          <h3>Solution</h3>
+          <p class="pain-intro">TrueLock keeps control in your hands. You get:</p>
           <ul class="pain-list">
-            <li>&#9993;&#65039; Безопасная отправка по открытым каналам.</li>
-            <li>&#127760; Защита от платформ и посредников.</li>
-            <li>&#128221; Просмотр и редактирование осуществляется в защищенном приложении.</li>
-            <li>&#174;&#65039; Доказательство неизменности данных, благодаря встроенному логу.</li>
-            <li>&#129513; Простое интуитивно понятное приложение для защиты и отправки данных.</li>
-            <li>&#9881;&#65039; Доступ к данным раскроется только в нужный время и / или место.</li>
+            <li>&#9993;&#65039; Secure delivery over public channels.</li>
+            <li>&#127760; Protection from platforms and intermediaries.</li>
+            <li>&#128221; Viewing and editing inside a protected app.</li>
+            <li>&#174;&#65039; Proof of integrity with built-in logs.</li>
+            <li>&#129513; Simple intuitive app for protecting and sharing data.</li>
+            <li>&#9881;&#65039; Access opens only at the right time and/or place.</li>
           </ul>
         </article>
       </div>
@@ -158,31 +182,31 @@
   <section class="section-soft" id="personas">
     <div class="container">
       <div class="reveal" style="margin-bottom:36px;">
-        <p class="eyebrow">Найди свой сценарий</p>
-        <h2 class="section-title">Кто использует TrueLock?</h2>
-        <p style="color:var(--muted);margin-top:10px;font-size:1.02rem;">Один продукт — три способа зарабатывать на контроле доступа.</p>
+        <p class="eyebrow">Find your scenario</p>
+        <h2 class="section-title">Who uses TrueLock?</h2>
+        <p style="color:var(--muted);margin-top:10px;font-size:1.02rem;">One product ? three ways to monetize access control.</p>
       </div>
       <div class="personas-grid">
         <div class="persona-card p-red reveal">
           <span class="persona-emoji">📈</span>
-          <div class="persona-tag">Каперы и трейдеры</div>
-          <div class="persona-pain">Тебе не верят. Говорят — рисуешь задним числом.</div>
-          <div class="persona-solution">Зафиксируй прогноз до события. Капсула откроется автоматически после матча — все увидят: ты знал первым. Или продай пароль заранее тем, кто готов платить.</div>
-          <div class="persona-mechanic">⏰ Открытие после события <strong>ИЛИ</strong> 🔑 по купленному паролю</div>
+          <div class="persona-tag">Cappers and Traders</div>
+          <div class="persona-pain">People do not trust your calls. They say you edit after the fact.</div>
+          <div class="persona-solution">Lock your prediction before the event. The capsule opens after the match so everyone sees you knew first. Or sell the password in advance to paying users.</div>
+          <div class="persona-mechanic">? Unlock after the event <strong>OR</strong> ?? with a purchased password</div>
         </div>
         <div class="persona-card p-blue reveal" style="transition-delay:.1s;">
           <span class="persona-emoji">🏪</span>
-          <div class="persona-tag">Магазины, кафе, рестораны</div>
-          <div class="persona-pain">Клиент пришёл один раз и исчез. Реклама дорогая, результата нет.</div>
-          <div class="persona-solution">Отправь капсулу с призом после покупки. Открывается только в твоём заведении и только до конца недели. Клиент физически возвращается — без рекламного бюджета.</div>
-          <div class="persona-mechanic">📍 Только в гео точке <strong>И</strong> ⏰ не позднее даты</div>
+          <div class="persona-tag">Stores, Cafes, Restaurants</div>
+          <div class="persona-pain">The customer came once and disappeared. Ads are expensive with weak results.</div>
+          <div class="persona-solution">Send a reward capsule after purchase. It opens only in your venue and only until week end. The customer physically returns ? no ad budget needed.</div>
+          <div class="persona-mechanic">?? Only at the geo point <strong>AND</strong> ? before expiry date</div>
         </div>
         <div class="persona-card p-green reveal" style="transition-delay:.2s;">
           <span class="persona-emoji">⚡</span>
-          <div class="persona-tag">Флеш-сейлы и дропы</div>
-          <div class="persona-pain">Объявляешь акцию — никто не реагирует. Таких акций сто в день.</div>
-          <div class="persona-solution">Разошли капсулу заранее всей аудитории. Товар внутри появится ровно в 18:00 и исчезнет в 18:05. Люди ждут, ставят таймер. Ажиотаж без бюджета.</div>
-          <div class="persona-mechanic">⏰ Только с 18:00 <strong>ДО</strong> 18:05 — окно закрыто</div>
+          <div class="persona-tag">Flash Sales and Drops</div>
+          <div class="persona-pain">You launch a promo and nobody reacts. Users see hundreds every day.</div>
+          <div class="persona-solution">Send the capsule in advance to all your audience. The offer appears at 18:00 and disappears at 18:05. People wait with timers. Hype without ad spend.</div>
+          <div class="persona-mechanic">? Only from 18:00 <strong>TO</strong> 18:05 ? then closed</div>
         </div>
       </div>
     </div>
@@ -192,59 +216,59 @@
   <section id="chains" class="section-soft">
     <div class="container">
       <div class="reveal">
-        <p class="eyebrow">Механика в действии</p>
-        <h2 class="section-title">Как выглядит каждый сценарий</h2>
-        <p style="color:var(--muted);margin-top:10px;font-size:1.02rem;">Выбери сценарий — увидишь цепочку условий.</p>
+        <p class="eyebrow">Mechanics in action</p>
+        <h2 class="section-title">How each scenario looks</h2>
+        <p style="color:var(--muted);margin-top:10px;font-size:1.02rem;">Choose a scenario and see its condition chain.</p>
       </div>
 
       <div class="chain-tabs reveal" style="margin-top:28px;">
-        <button class="chain-tab active" onclick="showChain('caper', this)">📈 Капер</button>
-        <button class="chain-tab" onclick="showChain('shop', this)">🏪 Магазин</button>
-        <button class="chain-tab" onclick="showChain('flash', this)">⚡ Флеш-сейл</button>
+        <button class="chain-tab active" onclick="showChain('caper', this)">?? Capper</button>
+        <button class="chain-tab" onclick="showChain('shop', this)">?? Store</button>
+        <button class="chain-tab" onclick="showChain('flash', this)">? Flash Sale</button>
       </div>
 
       <!-- CAPER -->
       <div class="chain-wrap" id="chain-caper">
         <div class="chain-card reveal">
-          <div class="chain-label" style="color:var(--red);">📈 Капер / Трейдер</div>
-          <div class="chain-title">Прогноз с доказательством честности</div>
+          <div class="chain-label" style="color:var(--red);">?? Capper / Trader</div>
+          <div class="chain-title">Prediction with proof of fairness</div>
           <div class="chain-steps">
             <div class="cstep active">
               <div class="cstep-ico">✍️</div>
               <div class="cstep-body">
-                <div class="cstep-title">Прогноз запечатан</div>
-                <div class="cstep-desc">Капер создаёт капсулу с прогнозом до начала матча. Зафиксировано: 14:22, до 20:00</div>
+                <div class="cstep-title">Prediction is sealed</div>
+                <div class="cstep-desc">The capper creates a capsule with prediction before match start. Logged: 14:22, before 20:00.</div>
               </div>
             </div>
             <div class="cstep-arrow">→</div>
             <div class="cstep">
               <div class="cstep-ico">⚽</div>
               <div class="cstep-body">
-                <div class="cstep-title">Событие идёт</div>
-                <div class="cstep-desc">847 подписчиков получили файл. Никто не может открыть раньше времени. Или — платят за пароль</div>
+                <div class="cstep-title">Event is live</div>
+                <div class="cstep-desc">847 subscribers received the file. No one can open early. Or they pay for password access.</div>
               </div>
             </div>
             <div class="cstep-arrow">→</div>
             <div class="cstep">
               <div class="cstep-ico">🔓</div>
               <div class="cstep-body">
-                <div class="cstep-title">Капсула открылась</div>
-                <div class="cstep-desc">После матча — все видят прогноз. Дата создания внутри капсулы. Доказательство неопровержимо</div>
+                <div class="cstep-title">Capsule opened</div>
+                <div class="cstep-desc">After the match everyone sees the prediction. Creation date is inside the capsule. Proof is undeniable.</div>
               </div>
             </div>
             <div class="cstep-arrow">→</div>
             <div class="cstep cstep-final">
               <div class="cstep-ico">💰</div>
               <div class="cstep-body">
-                <div class="cstep-title">Репутация и доход</div>
-                <div class="cstep-desc">Честность доказана публично. Следующий пакет сигналов продаётся дороже</div>
+                <div class="cstep-title">Reputation and revenue</div>
+                <div class="cstep-desc">Fairness is proven publicly. The next signal pack sells at a higher price.</div>
               </div>
             </div>
           </div>
           <div class="chain-logic">
-            <span class="chain-pill">⏰ Открытие после 20:00</span>
-            <span class="chain-or">ИЛИ</span>
-            <span class="chain-pill">🔑 Пароль куплен заранее</span>
+            <span class="chain-pill">? Unlock after 20:00</span>
+            <span class="chain-or">OR</span>
+            <span class="chain-pill">?? Password bought in advance</span>
           </div>
         </div>
       </div>
@@ -252,45 +276,45 @@
       <!-- SHOP -->
       <div class="chain-wrap" id="chain-shop" style="display:none;">
         <div class="chain-card reveal">
-          <div class="chain-label" style="color:var(--primary);">🏪 Магазин / Кафе / Ресторан</div>
-          <div class="chain-title">Возврат клиента без рекламного бюджета</div>
+          <div class="chain-label" style="color:var(--primary);">?? Store / Cafe / Restaurant</div>
+          <div class="chain-title">Bring customers back without ad spend</div>
           <div class="chain-steps">
             <div class="cstep active">
               <div class="cstep-ico">🧾</div>
               <div class="cstep-body">
-                <div class="cstep-title">Покупка совершена</div>
-                <div class="cstep-desc">После оплаты клиент получает капсулу. Внутри — приз, скидка или сюрприз</div>
+                <div class="cstep-title">Purchase completed</div>
+                <div class="cstep-desc">After payment, customer receives a capsule. Inside: reward, discount, or surprise.</div>
               </div>
             </div>
             <div class="cstep-arrow">→</div>
             <div class="cstep">
               <div class="cstep-ico">📱</div>
               <div class="cstep-body">
-                <div class="cstep-title">Клиент видит капсулу</div>
-                <div class="cstep-desc">Файл на телефоне. Интрига: что внутри? Открыть нельзя — нужно вернуться</div>
+                <div class="cstep-title">Customer sees the capsule</div>
+                <div class="cstep-desc">File is on the phone. Intrigue: what is inside? Cannot open yet ? must return.</div>
               </div>
             </div>
             <div class="cstep-arrow">→</div>
             <div class="cstep">
               <div class="cstep-ico">📍</div>
               <div class="cstep-body">
-                <div class="cstep-title">Клиент возвращается</div>
-                <div class="cstep-desc">Приходит физически в заведение до конца недели. Геопозиция подтверждена</div>
+                <div class="cstep-title">Customer returns</div>
+                <div class="cstep-desc">Comes physically to the venue before week end. Geolocation confirmed.</div>
               </div>
             </div>
             <div class="cstep-arrow">→</div>
             <div class="cstep cstep-final">
               <div class="cstep-ico">🎁</div>
               <div class="cstep-body">
-                <div class="cstep-title">Приз открылся</div>
-                <div class="cstep-desc">Капсула открывается прямо в магазине. Клиент доволен. Без рекламы — повторный визит</div>
+                <div class="cstep-title">Reward unlocked</div>
+                <div class="cstep-desc">Capsule opens right in the store. Customer is happy. Repeat visit without ads.</div>
               </div>
             </div>
           </div>
           <div class="chain-logic">
-            <span class="chain-pill">📍 Только в радиусе 100м</span>
-            <span class="chain-and">И</span>
-            <span class="chain-pill">⏰ До воскресенья 23:59</span>
+            <span class="chain-pill">?? Only within 100m radius</span>
+            <span class="chain-and">AND</span>
+            <span class="chain-pill">? Until Sunday 23:59</span>
           </div>
         </div>
       </div>
@@ -298,45 +322,45 @@
       <!-- FLASH -->
       <div class="chain-wrap" id="chain-flash" style="display:none;">
         <div class="chain-card reveal">
-          <div class="chain-label" style="color:var(--green);">⚡ Флеш-сейл / Дроп</div>
-          <div class="chain-title">Ажиотаж который невозможно пропустить</div>
+          <div class="chain-label" style="color:var(--green);">? Flash Sale / Drop</div>
+          <div class="chain-title">Hype you cannot ignore</div>
           <div class="chain-steps">
             <div class="cstep active">
               <div class="cstep-ico">📤</div>
               <div class="cstep-body">
-                <div class="cstep-title">Капсула разослана</div>
-                <div class="cstep-desc">1000 подписчиков получили файл заранее. Все знают: откроется ровно в 18:00</div>
+                <div class="cstep-title">Capsule sent out</div>
+                <div class="cstep-desc">1000 subscribers received the file in advance. Everyone knows: it unlocks exactly at 18:00.</div>
               </div>
             </div>
             <div class="cstep-arrow">→</div>
             <div class="cstep">
               <div class="cstep-ico">⏳</div>
               <div class="cstep-body">
-                <div class="cstep-title">17:59 — все ждут</div>
-                <div class="cstep-desc">Люди ставят таймеры. Обсуждают в чатах. FOMO на максимуме — это событие, не акция</div>
+                <div class="cstep-title">17:59 ? everyone is waiting</div>
+                <div class="cstep-desc">People set timers. They discuss in chats. Maximum FOMO ? this is an event, not a promo.</div>
               </div>
             </div>
             <div class="cstep-arrow">→</div>
             <div class="cstep">
               <div class="cstep-ico">🔓</div>
               <div class="cstep-body">
-                <div class="cstep-title">18:00 — открылась</div>
-                <div class="cstep-desc">Ровно в 18:00 капсула открывается у всех одновременно. Внутри — товар, ссылка, промокод</div>
+                <div class="cstep-title">18:00 ? opened</div>
+                <div class="cstep-desc">At exactly 18:00 the capsule opens for everyone at once. Inside: product, link, promo code.</div>
               </div>
             </div>
             <div class="cstep-arrow">→</div>
             <div class="cstep cstep-final">
               <div class="cstep-ico">🚫</div>
               <div class="cstep-body">
-                <div class="cstep-title">18:05 — закрыта</div>
-                <div class="cstep-desc">Окно закрылось. Кто не успел — не получил. Без серверов, без сложных инструментов</div>
+                <div class="cstep-title">18:05 ? closed</div>
+                <div class="cstep-desc">Window closed. If you missed it, you did not get it. No servers, no complex tools.</div>
               </div>
             </div>
           </div>
           <div class="chain-logic">
-            <span class="chain-pill">⏰ Открыть с 18:00</span>
-            <span class="chain-and">И</span>
-            <span class="chain-pill">⏰ Закрыть в 18:05</span>
+            <span class="chain-pill">? Open from 18:00</span>
+            <span class="chain-and">AND</span>
+            <span class="chain-pill">? Close at 18:05</span>
           </div>
         </div>
       </div>
@@ -348,57 +372,57 @@
   <section id="how" class="section-soft">
     <div class="container">
       <div class="reveal">
-        <p class="eyebrow">Простота использования</p>
-        <h2 class="section-title">Как это работает</h2>
+        <p class="eyebrow">Easy to use</p>
+        <h2 class="section-title">How it works</h2>
       </div>
 
       <div class="how-layout">
         <div class="how-carousel reveal" id="howCarousel">
           <article class="how-slide active" data-step="0">
-            <img src="TrueLock-main/img/step1.png" height="500" style="border-radius: 15px;">
+            <img src="TrueLock-main/img/step1.png" alt="TrueLock step1.png" height="500" style="border-radius: 15px;">
             <div class="how-step-panel">
               <div class="how-step-num">01</div>
-              <h3 class="how-step-title">Создай капсулу</h3>
-              <p class="how-step-desc">Добавь текст, файлы, фото или видео с камеры. Выбери готовый шаблон под свой сценарий.</p>
+              <h3 class="how-step-title">Create a capsule</h3>
+              <p class="how-step-desc">Add text, files, photos, or camera video. Pick a ready-made template for your scenario.</p>
             </div>
           </article>
 
           <article class="how-slide" data-step="1">
-            <img src="TrueLock-main/img/step2.png" height="500" style="border-radius: 15px;">
+            <img src="TrueLock-main/img/step2.png" alt="TrueLock step2.png" height="500" style="border-radius: 15px;">
             <div class="how-step-panel">
               <div class="how-step-num">02</div>
-              <h3 class="how-step-title">Задай условия</h3>
-              <p class="how-step-desc">Время, геопозиция, пароль, визуальный ключ. Комбинируй через логику И/ИЛИ.</p>
+              <h3 class="how-step-title">Set unlock conditions</h3>
+              <p class="how-step-desc">Time, location, password, visual key. Combine with AND/OR logic.</p>
             </div>
           </article>
 
           <article class="how-slide" data-step="2">
-            <img src="TrueLock-main/img/step3.png" height="500" style="border-radius: 15px;">
+            <img src="TrueLock-main/img/step3.png" alt="TrueLock step3.png" height="500" style="border-radius: 15px;">
             <div class="how-step-panel">
               <div class="how-step-num">03</div>
-              <h3 class="how-step-title">Отправь как файл</h3>
-              <p class="how-step-desc">Через любой мессенджер или почту. Один файл — одна капсула. Без сервера.</p>
+              <h3 class="how-step-title">Send as a file</h3>
+              <p class="how-step-desc">Share via any messenger or email. One file, one capsule. No server required.</p>
             </div>
           </article>
 
           <article class="how-slide" data-step="3">
-            <img src="TrueLock-main/img/step4.png" height="500" style="border-radius: 15px;">
+            <img src="TrueLock-main/img/step4.png" alt="TrueLock step4.png" height="500" style="border-radius: 15px;">
             <div class="how-step-panel">
               <div class="how-step-num">04</div>
-              <h3 class="how-step-title">Получатель открывает бесплатно</h3>
-              <p class="how-step-desc">TrueLock бесплатен для всех получателей. Ты создаёшь — они открывают.</p>
+              <h3 class="how-step-title">Recipient opens for free</h3>
+              <p class="how-step-desc">TrueLock is free for recipients. You create, they open.</p>
             </div>
           </article>
 
           <div class="how-carousel-controls">
-            <button class="how-btn" id="howPrev" type="button">← Назад</button>
-            <div class="how-dots" id="howDots" aria-label="Шаги">
-              <button class="how-dot active" type="button" data-step="0" aria-label="Шаг 1"></button>
-              <button class="how-dot" type="button" data-step="1" aria-label="Шаг 2"></button>
-              <button class="how-dot" type="button" data-step="2" aria-label="Шаг 3"></button>
-              <button class="how-dot" type="button" data-step="3" aria-label="Шаг 4"></button>
+            <button class="how-btn" id="howPrev" type="button">← Back</button>
+            <div class="how-dots" id="howDots" aria-label="Steps">
+              <button class="how-dot active" type="button" data-step="0" aria-label="Step 1"></button>
+              <button class="how-dot" type="button" data-step="1" aria-label="Step 2"></button>
+              <button class="how-dot" type="button" data-step="2" aria-label="Step 3"></button>
+              <button class="how-dot" type="button" data-step="3" aria-label="Step 4"></button>
             </div>
-            <button class="how-btn" id="howNext" type="button">Далее →</button>
+            <button class="how-btn" id="howNext" type="button">Next →</button>
           </div>
         </div>
 
@@ -406,21 +430,21 @@
           <div class="how-case-head">
             <div class="how-case-icon">📧</div>
             <div>
-              <div class="how-case-label">Реальный кейс · Universally</div>
-              <h3 class="how-case-title">Большинство утечек — это ошибка отправки, а не взлом</h3>
+              <div class="how-case-label">Real case · Universally</div>
+              <h3 class="how-case-title">Most leaks are sending mistakes, not hacks</h3>
             </div>
           </div>
-          <p class="how-case-desc">Неверный получатель, Reply All, пересланный файл. С TrueLock ты можешь отправить капсулу, но сохранить контроль над раскрытием.</p>
+          <p class="how-case-desc">Wrong recipient, Reply All, forwarded file. With TrueLock you can send the capsule and still keep control over unlock.</p>
           <div class="how-case-compare">
             <div class="how-case-row bad">
-              <div class="how-case-row-title">❌ Обычный email</div>
-              <div class="how-case-flow">PDF → Email → Утечка</div>
-              <div class="how-case-note">После отправки контроль теряется сразу.</div>
+              <div class="how-case-row-title">❌ Regular email</div>
+              <div class="how-case-flow">PDF → Email → Leak</div>
+              <div class="how-case-note">Once sent, control is immediately lost.</div>
             </div>
             <div class="how-case-row good">
               <div class="how-case-row-title">✅ TrueLock Capsule</div>
-              <div class="how-case-flow">Capsule → Email → 🔒 Не откроется без условий</div>
-              <div class="how-case-note">Даже при ошибке отправки данные остаются закрыты.</div>
+              <div class="how-case-flow">Capsule → Email → 🔒 Will not open without conditions</div>
+              <div class="how-case-note">Even if sent by mistake, data stays locked.</div>
             </div>
           </div>
         </aside>
@@ -433,11 +457,11 @@
     <div class="container">
       <div class="templates-top reveal">
         <div>
-          <p class="eyebrow">Готовые сценарии</p>
-          <h2 class="section-title">Не надо думать с нуля</h2>
-          <p style="color:var(--muted);margin-top:8px;">Выбери шаблон — условия уже настроены.</p>
+          <p class="eyebrow">Ready-made scenarios</p>
+          <h2 class="section-title">No need to start from scratch</h2>
+          <p style="color:var(--muted);margin-top:8px;">Pick a template and conditions are pre-configured.</p>
         </div>
-        <div class="template-count">32<small>шаблона</small></div>
+        <div class="template-count">32<small>templates</small></div>
       </div>
       <div class="tabs reveal" id="tabs"></div>
       <div class="templates-grid reveal" id="tplList"></div>
@@ -448,36 +472,36 @@
   <section id="security" class="section-soft">
     <div class="container">
       <div class="reveal">
-        <p class="eyebrow">Без маркетинговых обещаний</p>
-        <h2 class="section-title">Честная модель безопасности</h2>
+        <p class="eyebrow">No marketing promises</p>
+        <h2 class="section-title">Honest security model</h2>
       </div>
       <div class="security-grid">
         <div class="security-points">
           <div class="sec-point reveal">
             <div class="sec-check">✓</div>
-            <div class="sec-text"><strong>AES-256-GCM шифрование</strong><p>Уникальные криптопараметры для каждого файла.</p></div>
+            <div class="sec-text"><strong>AES-256-GCM encryption</strong><p>Unique cryptographic parameters for every file.</p></div>
           </div>
           <div class="sec-point reveal" style="transition-delay:.06s;">
             <div class="sec-check">✓</div>
-            <div class="sec-text"><strong>Офлайн по умолчанию</strong><p>Без обязательного облака и аккаунта. Данные остаются на устройстве.</p></div>
+            <div class="sec-text"><strong>Offline by default</strong><p>No mandatory cloud or account. Data stays on device.</p></div>
           </div>
           <div class="sec-point reveal" style="transition-delay:.12s;">
             <div class="sec-check">✓</div>
-            <div class="sec-text"><strong>Политика И/ИЛИ</strong><p>Комбинируй условия: время И геопозиция, или пароль ИЛИ визуальный ключ.</p></div>
+            <div class="sec-text"><strong>AND/OR policy</strong><p>Combine conditions: time AND geolocation, or password OR visual key.</p></div>
           </div>
           <div class="sec-point reveal" style="transition-delay:.18s;">
             <div class="sec-check">✓</div>
-            <div class="sec-text"><strong>Минимум метаданных</strong><p>Чувствительное содержимое остаётся внутри зашифрованной капсулы.</p></div>
+            <div class="sec-text"><strong>Minimal metadata</strong><p>Sensitive content remains inside the encrypted capsule.</p></div>
           </div>
           <div class="sec-point reveal" style="transition-delay:.24s;">
             <div class="sec-check">✓</div>
-            <div class="sec-text"><strong>Кросс-платформенный формат</strong><p>Один формат для desktop и mobile. Создай на одном — открой на другом.</p></div>
+            <div class="sec-text"><strong>Cross-platform format</strong><p>One format for desktop and mobile. Create on one, open on another.</p></div>
           </div>
         </div>
         <div class="sec-docs reveal" style="transition-delay:.1s;">
-          <h3>Публичные документы</h3>
+          <h3>Public documents</h3>
           <a class="doc-link" href="documents.rar" target="_blank" rel="noreferrer">📄 PUBLIC_CAPSULE_FORMAT.md</a>
-          <div class="sec-note">💡 Не опенсорс, но документация открыта — достаточно чтобы проверить криптографические решения до того как доверять приложению.</div>
+          <div class="sec-note">💡 Not open-source, but docs are public, enough to validate crypto decisions before trust.</div>
         </div>
       </div>
 
@@ -488,33 +512,33 @@
   <section class="section-soft" id="pricing">
     <div class="container">
       <div class="reveal">
-        <p class="eyebrow">Простая модель</p>
-        <h2 class="section-title">Открыть — бесплатно всегда</h2>
+        <p class="eyebrow">Simple pricing</p>
+        <h2 class="section-title">Opening is always free</h2>
       </div>
       <div class="pricing-grid">
         <div class="price-card reveal">
           <div class="price-name">Free</div>
           <div class="price-val"><sup>$</sup>0</div>
-          <div class="price-note">Для всех получателей. Навсегда.</div>
+          <div class="price-note">For every recipient. Forever.</div>
           <ul class="price-features">
-            <li>Открывать и верифицировать капсулы</li>
-            <li>Без аккаунта для получателей</li>
-            <li>На любом устройстве</li>
+            <li>Open and verify capsules</li>
+            <li>No recipient account required</li>
+            <li>On any device</li>
           </ul>
         </div>
         <div class="price-card featured reveal" style="transition-delay:.1s;">
           <div class="price-name">Pro</div>
           <div class="price-val"><sup>$</sup>20</div>
-          <div class="price-note">До 2 устройств · Бессрочно · Один платёж</div>
+          <div class="price-note">Up to 2 devices · Lifetime · One-time payment</div>
           <ul class="price-features">
-            <li>Неограниченное количество капсул</li>
-            <li>Время / Геопозиция / Пароль / Визуальный ключ</li>
-            <li>Комбинации И/ИЛИ</li>
-            <li>32 готовых шаблона сценариев</li>
-            <li>Вложения, фото, видео с камеры</li>
-            <li>Создание собственных шаблонов</li>
+            <li>Unlimited capsules</li>
+            <li>Time / Geolocation / Password / Visual key</li>
+            <li>AND/OR combinations</li>
+            <li>32 ready-made templates</li>
+            <li>Attachments, photos, camera video</li>
+            <li>Create your own templates</li>
           </ul>
-          <a class="btn btn-primary" href="https://moonpay.hel.io/pay/699c40d6087609a6176e7859" target="_blank" style="width:100%;margin-top:20px;">Купить Pro — $20</a>
+          <a class="btn btn-primary" href="https://moonpay.hel.io/pay/699c40d6087609a6176e7859" target="_blank" style="width:100%;margin-top:20px;">Buy Pro — $20</a>
         </div>
       </div>
     </div>
@@ -527,15 +551,15 @@
 
         <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:24px;flex-wrap:wrap;">
           <div>
-            <h2>Твой секрет.<br><em>Твои</em> правила.</h2>
-            <p>Выбери платформу и скачай TrueLock.</p>
+            <h2>Your secret.<br><em>Your</em> rules.</h2>
+            <p>Choose your platform and download TrueLock.</p>
           </div>
           <div class="download-btns">
             <a class="btn btn-ghost" href="#" aria-label="Android download">Android</a>
             <a class="btn btn-ghost" href="#" aria-label="Windows download">Windows</a>
             <a class="btn btn-ghost" href="#" aria-label="Linux download">Linux</a>
-            <button class="btn btn-ghost" disabled style="opacity:.4;cursor:default;">iOS — скоро</button>
-            <button class="btn btn-ghost" disabled style="opacity:.4;cursor:default;">macOS — скоро</button>
+            <button class="btn btn-ghost" disabled style="opacity:.4;cursor:default;">iOS — soon</button>
+            <button class="btn btn-ghost" disabled style="opacity:.4;cursor:default;">macOS — soon</button>
           </div>
         </div>
       </div>
@@ -546,15 +570,17 @@
     <div class="container footer-inner">
       <div class="footer-brand">TRUE<span>LOCK</span></div>
       <div class="footer-text">
-        Офлайн-first капсулы с условиями доступа. Открытие всегда бесплатно.<br>
+        Offline-first capsules with access conditions. Opening is always free.<br>
         Katsura Yakov Daniilovich ·
       </div>
       <div style="margin-left:auto;font-size:0.78rem;color:var(--muted);text-align:right;">
-        AES-256-GCM · Офлайн-first<br>8 языков · 32 шаблона
+        AES-256-GCM · Offline-first<br>8 languages · 32 templates
       </div>
     </div>
-    <div class="contacts" style="display: block; max-width: 1180px; margin-left: auto; margin-right: auto; color: var(--muted)">
-      <a href="mailto:support@truelock.pro">support@truelock.pro</a>
+    <div class="contacts">
+      <div class="container contacts-inner">
+        <a href="mailto:support@truelock.pro">support@truelock.pro</a>
+      </div>
     </div>
   </footer>
 

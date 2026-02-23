@@ -4,7 +4,7 @@
 /* ---- BEGIN i18n.js ---- */
 window.TRUELOCK_I18N = (() => {
   const supported = ["ru", "en", "de", "es", "fr", "it", "pt", "tr"];
-  const defaultLang = "ru";
+  const defaultLang = "en";
 
   const templateBase = [
     { id: "divide_hunt", cat: "social", emoji: "🏁" },

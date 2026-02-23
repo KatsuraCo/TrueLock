@@ -6,7 +6,7 @@
     const I18N = window.TRUELOCK_I18N;
     const langs = I18N?.supported || ["ru", "en"];
     const locales = I18N?.locales || {};
-    const defaultLang = I18N?.defaultLang || "ru";
+    const defaultLang = "en";
     let currentLang = defaultLang;
     let activeTab = "all";
 
@@ -14,7 +14,18 @@
     const howDots = Array.from(document.querySelectorAll(".how-dot"));
     const howPrev = document.getElementById("howPrev");
     const howNext = document.getElementById("howNext");
+    const menuToggle = document.getElementById("menuToggle");
+    const mobileMenu = document.getElementById("mobileMenu");
     let howIndex = 0;
+
+    function setMobileMenuOpen(open) {
+      if (!menuToggle || !mobileMenu) return;
+      menuToggle.setAttribute("aria-expanded", open ? "true" : "false");
+      mobileMenu.hidden = !open;
+      mobileMenu.style.display = open ? "flex" : "none";
+      const icon = menuToggle.querySelector(".menu-toggle-icon");
+      if (icon) icon.textContent = open ? "✕" : "☰";
+    }
 
     function safeLocale(lang) {
       if (locales[lang]) return locales[lang];
@@ -37,19 +48,23 @@
       if (ogDesc) ogDesc.setAttribute("content", desc);
       if (twTitle) twTitle.setAttribute("content", title);
       if (twDesc) twDesc.setAttribute("content", desc);
-      const url = new URL(window.location.href);
-      url.searchParams.set("lang", lang);
-      if (ogUrl) ogUrl.setAttribute("content", url.toString());
+      if (ogUrl) ogUrl.setAttribute("content", "https://truelock.pro/");
       if (canonical) canonical.setAttribute("href", "https://truelock.pro/");
     }
 
     function updateHeader(t) {
-      const navLinks = document.querySelectorAll("header nav a");
+      const navLinks = document.querySelectorAll(".main-nav a, .mobile-nav a");
       if (navLinks[0]) navLinks[0].textContent = t.nav.who;
       if (navLinks[1]) navLinks[1].textContent = t.nav.how;
       if (navLinks[2]) navLinks[2].textContent = t.nav.templates;
       if (navLinks[3]) navLinks[3].textContent = t.nav.security;
       if (navLinks[4]) navLinks[4].textContent = t.nav.pricing;
+      if (navLinks[5]) navLinks[5].textContent = t.nav.who;
+      if (navLinks[6]) navLinks[6].textContent = t.nav.how;
+      if (navLinks[7]) navLinks[7].textContent = t.nav.templates;
+      if (navLinks[8]) navLinks[8].textContent = t.nav.security;
+      if (navLinks[9]) navLinks[9].textContent = t.nav.pricing;
+      if (navLinks[10]) navLinks[10].textContent = t.nav.download;
       const topBtn = document.querySelector(".header-inner .btn-primary");
       if (topBtn) topBtn.textContent = t.nav.download;
       const select = document.getElementById("langSwitch");
@@ -348,8 +363,21 @@
       btn.classList.add("active");
     };
 
-    const queryLang = new URLSearchParams(window.location.search).get("lang");
+    menuToggle?.addEventListener("click", () => {
+      const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+      setMobileMenuOpen(!isOpen);
+    });
+
+    mobileMenu?.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => setMobileMenuOpen(false));
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 1020) setMobileMenuOpen(false);
+    });
+
     const storedLang = localStorage.getItem("truelock_landing_lang");
-    const initialLang = langs.includes(queryLang) ? queryLang : (langs.includes(storedLang) ? storedLang : defaultLang);
+    const initialLang = langs.includes(storedLang) ? storedLang : defaultLang;
     applyLang(initialLang);
+    setMobileMenuOpen(false);
     document.getElementById("langSwitch")?.addEventListener("change", (e) => applyLang(e.target.value));

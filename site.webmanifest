@@ -1,0 +1,17 @@
+{
+  "name": "TrueLock",
+  "short_name": "TrueLock",
+  "description": "Secure capsules with time, geo, password and visual unlock conditions.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#0f2542",
+  "background_color": "#0f2542",
+  "icons": [
+    {
+      "src": "/TrueLock-main/assets/favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ]
+}
