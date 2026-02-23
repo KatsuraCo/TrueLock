@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://truelock.pro/</loc>
+    <lastmod>2026-02-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://truelock.pro/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://truelock.pro/?lang=ru" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://truelock.pro/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://truelock.pro/?lang=de" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://truelock.pro/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://truelock.pro/?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://truelock.pro/?lang=it" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://truelock.pro/?lang=pt" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://truelock.pro/?lang=tr" />
+  </url>
+
+  <url>
+    <loc>https://truelock.pro/?lang=ru</loc>
+    <lastmod>2026-02-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://truelock.pro/?lang=en</loc>
+    <lastmod>2026-02-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://truelock.pro/?lang=de</loc>
+    <lastmod>2026-02-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://truelock.pro/?lang=es</loc>
+    <lastmod>2026-02-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://truelock.pro/?lang=fr</loc>
+    <lastmod>2026-02-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://truelock.pro/?lang=it</loc>
+    <lastmod>2026-02-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://truelock.pro/?lang=pt</loc>
+    <lastmod>2026-02-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://truelock.pro/?lang=tr</loc>
+    <lastmod>2026-02-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>

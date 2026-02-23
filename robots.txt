@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Optional crawl-delay examples (uncomment if needed)
+# Crawl-delay: 2
+
+Sitemap: https://truelock.pro/sitemap.xml
+Host: truelock.pro
