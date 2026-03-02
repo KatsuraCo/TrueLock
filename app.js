@@ -301,7 +301,7 @@
       const buttons = root.querySelectorAll(".download-btns .btn");
       if (buttons[0]) buttons[0].textContent = t.download.android;
       if (buttons[1]) buttons[1].textContent = t.download.windows;
-      if (buttons[2]) buttons[2].textContent = t.download.linux;
+      if (buttons[2]) buttons[2].textContent = t.download.linuxSoon;
       if (buttons[3]) buttons[3].textContent = t.download.iosSoon;
       if (buttons[4]) buttons[4].textContent = t.download.macSoon;
     }
