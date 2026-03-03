@@ -256,18 +256,7 @@
       if (docs) {
         const h3 = docs.querySelector("h3");
         const note = docs.querySelector(".sec-note");
-        const links = docs.querySelectorAll(".doc-link");
-        const docsData = Array.isArray(t.security.docs) ? t.security.docs : [];
         if (h3) h3.textContent = t.security.docsTitle;
-        links.forEach((link, idx) => {
-          if (idx === 0 && docsData[0]) {
-            link.textContent = docsData[0];
-            link.style.display = "";
-          } else {
-            link.style.display = "none";
-          }
-        });
-        if (note) note.textContent = `💡 ${t.security.docsNote}`;
       }
     }
 
