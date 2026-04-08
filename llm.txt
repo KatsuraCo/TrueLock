@@ -1,0 +1,42 @@
+TrueLock
+
+TrueLock is an offline-first software application for protected file and message delivery.
+
+Core idea:
+- create one encrypted capsule file
+- send it through any existing channel
+- open it only when the required conditions are met
+
+Supported access rules:
+- password
+- time window
+- geo location
+- combined AND/OR logic
+- visual key in supported workflows
+
+Platforms:
+- Android
+- Windows
+
+Pricing:
+- recipients open capsules for free
+- Pro unlock for creators is a one-time paid purchase
+
+Primary pages:
+- https://truelock.pro/
+- https://truelock.pro/demo.html
+- https://truelock.pro/privacy-policy.html
+
+Downloads:
+- Android APK: https://truelock.pro/apps/TrueLock.apk
+- Windows installer: https://truelock.pro/apps/TrueLock_installer.exe
+
+Public technical documents:
+- https://truelock.pro/documents/PUBLIC_CAPSULE_FORMAT.md
+- https://truelock.pro/documents/PUBLIC_POLICY_RULES.md
+- https://truelock.pro/documents/PUBLIC_SECURITY_MODEL.md
+- https://truelock.pro/documents/CRYPTO_TEST_VECTORS.md
+- https://truelock.pro/documents/RELEASE_VERIFICATION.md
+
+Support:
+- support@truelock.pro

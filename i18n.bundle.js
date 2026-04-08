@@ -468,3 +468,132 @@ window.TRUELOCK_I18N = (() => {
 })();
 
 /* ---- END i18n-templates-human.js ---- */
+
+(function () {
+  if (!window.TRUELOCK_I18N?.locales) return;
+
+  const faqByLang = {
+    en: {
+      eyebrow: "FAQ",
+      title: "Frequently asked questions",
+      subtitle: "Short answers for users, search engines, and AI systems reading the site.",
+      items: [
+        { q: "What is TrueLock?", a: "TrueLock is an app that protects files and messages as encrypted capsules. A capsule opens only when the required access conditions are met." },
+        { q: "Which access conditions are supported?", a: "TrueLock supports time-based unlock, geo-based unlock, password protection, visual-key unlock, and AND/OR combinations of these rules." },
+        { q: "How is TrueLock different from a normal encrypted file?", a: "Normal encrypted files protect data at rest. TrueLock adds control after sending by attaching unlock rules to the encrypted capsule itself." },
+        { q: "Which platforms does TrueLock support?", a: "TrueLock is currently available for Android and Windows and uses one capsule format across supported platforms." },
+        { q: "Do recipients need to pay?", a: "No. Opening and verifying capsules is free for recipients." },
+        { q: "Does TrueLock require a cloud workflow?", a: "No. TrueLock is offline-first and does not require a mandatory cloud account for core functionality." }
+      ]
+    },
+    ru: {
+      eyebrow: "FAQ",
+      title: "Частые вопросы",
+      subtitle: "Короткие ответы для пользователей, поисковых систем и AI-систем, которые читают сайт.",
+      items: [
+        { q: "Что такое TrueLock?", a: "TrueLock - это приложение, которое защищает файлы и сообщения как зашифрованные капсулы. Капсула открывается только при выполнении нужных условий доступа." },
+        { q: "Какие условия доступа поддерживаются?", a: "TrueLock поддерживает открытие по времени, геолокации, паролю, визуальному ключу и комбинированную логику И/ИЛИ." },
+        { q: "Чем TrueLock отличается от обычного зашифрованного файла?", a: "Обычный зашифрованный файл защищает данные в покое. TrueLock добавляет контроль после отправки и прикрепляет правила открытия к самой капсуле." },
+        { q: "Какие платформы поддерживает TrueLock?", a: "Сейчас TrueLock доступен для Android и Windows и использует единый формат капсулы на всех поддерживаемых платформах." },
+        { q: "Нужно ли получателю платить?", a: "Нет. Открытие и проверка капсул для получателя бесплатны." },
+        { q: "TrueLock требует облачный workflow?", a: "Нет. TrueLock спроектирован как offline-first система и не требует обязательного облачного аккаунта для основной работы." }
+      ]
+    },
+    de: {
+      eyebrow: "FAQ",
+      title: "Häufige Fragen",
+      subtitle: "Kurze Antworten für Nutzer, Suchmaschinen und KI-Systeme, die diese Website lesen.",
+      items: [
+        { q: "Was ist TrueLock?", a: "TrueLock ist eine App, die Dateien und Nachrichten als verschlüsselte Kapseln schützt. Eine Kapsel öffnet sich nur, wenn die erforderlichen Zugriffsbedingungen erfüllt sind." },
+        { q: "Welche Zugriffsbedingungen werden unterstützt?", a: "TrueLock unterstützt zeitbasiertes Öffnen, standortbasiertes Öffnen, Passwortschutz, visuellen Schlüssel und AND/OR-Kombinationen dieser Regeln." },
+        { q: "Worin unterscheidet sich TrueLock von einer normalen verschlüsselten Datei?", a: "Normale verschlüsselte Dateien schützen Daten im Ruhezustand. TrueLock fügt nach dem Versand Kontrolle hinzu und bindet Öffnungsregeln an die Kapsel selbst." },
+        { q: "Welche Plattformen unterstützt TrueLock?", a: "TrueLock ist derzeit für Android und Windows verfügbar und verwendet ein gemeinsames Kapselformat auf allen unterstützten Plattformen." },
+        { q: "Müssen Empfänger bezahlen?", a: "Nein. Das Öffnen und Prüfen von Kapseln ist für Empfänger kostenlos." },
+        { q: "Benötigt TrueLock einen Cloud-Workflow?", a: "Nein. TrueLock ist offline-first und verlangt keinen verpflichtenden Cloud-Account für die Kernfunktionen." }
+      ]
+    },
+    es: {
+      eyebrow: "FAQ",
+      title: "Preguntas frecuentes",
+      subtitle: "Respuestas breves para usuarios, buscadores y sistemas de IA que leen este sitio.",
+      items: [
+        { q: "¿Qué es TrueLock?", a: "TrueLock es una aplicación que protege archivos y mensajes como cápsulas cifradas. Una cápsula se abre solo cuando se cumplen las condiciones de acceso requeridas." },
+        { q: "¿Qué condiciones de acceso admite?", a: "TrueLock admite apertura por tiempo, geolocalización, contraseña, clave visual y combinaciones AND/OR de estas reglas." },
+        { q: "¿En qué se diferencia TrueLock de un archivo cifrado normal?", a: "Un archivo cifrado normal protege los datos en reposo. TrueLock añade control después del envío y vincula las reglas de apertura a la propia cápsula." },
+        { q: "¿Qué plataformas soporta TrueLock?", a: "Actualmente TrueLock está disponible para Android y Windows y utiliza un formato único de cápsula en las plataformas compatibles." },
+        { q: "¿El destinatario tiene que pagar?", a: "No. Abrir y verificar cápsulas es gratis para los destinatarios." },
+        { q: "¿TrueLock requiere un flujo en la nube?", a: "No. TrueLock es offline-first y no exige una cuenta en la nube para la funcionalidad principal." }
+      ]
+    },
+    fr: {
+      eyebrow: "FAQ",
+      title: "Questions fréquentes",
+      subtitle: "Réponses courtes pour les utilisateurs, les moteurs de recherche et les systèmes IA qui lisent ce site.",
+      items: [
+        { q: "Qu'est-ce que TrueLock ?", a: "TrueLock est une application qui protège les fichiers et les messages sous forme de capsules chiffrées. Une capsule ne s'ouvre que lorsque les conditions d'accès requises sont remplies." },
+        { q: "Quelles conditions d'accès sont prises en charge ?", a: "TrueLock prend en charge l'ouverture par heure, géolocalisation, mot de passe, clé visuelle et les combinaisons AND/OR de ces règles." },
+        { q: "Quelle est la différence entre TrueLock et un fichier chiffré normal ?", a: "Un fichier chiffré normal protège les données au repos. TrueLock ajoute du contrôle après l'envoi et attache les règles d'ouverture à la capsule elle-même." },
+        { q: "Quelles plateformes sont prises en charge ?", a: "TrueLock est actuellement disponible sur Android et Windows et utilise un format de capsule unique sur les plateformes prises en charge." },
+        { q: "Le destinataire doit-il payer ?", a: "Non. L'ouverture et la vérification des capsules sont gratuites pour les destinataires." },
+        { q: "TrueLock exige-t-il un workflow cloud ?", a: "Non. TrueLock est offline-first et n'impose pas de compte cloud obligatoire pour les fonctions principales." }
+      ]
+    },
+    it: {
+      eyebrow: "FAQ",
+      title: "Domande frequenti",
+      subtitle: "Risposte brevi per utenti, motori di ricerca e sistemi di IA che leggono il sito.",
+      items: [
+        { q: "Che cos'è TrueLock?", a: "TrueLock è un'app che protegge file e messaggi come capsule crittografate. Una capsula si apre solo quando vengono soddisfatte le condizioni di accesso richieste." },
+        { q: "Quali condizioni di accesso sono supportate?", a: "TrueLock supporta apertura temporizzata, geolocalizzazione, password, chiave visiva e combinazioni AND/OR di queste regole." },
+        { q: "In cosa TrueLock è diverso da un normale file cifrato?", a: "Un normale file cifrato protegge i dati a riposo. TrueLock aggiunge controllo dopo l'invio e collega le regole di apertura direttamente alla capsula." },
+        { q: "Quali piattaforme supporta TrueLock?", a: "TrueLock è attualmente disponibile per Android e Windows e utilizza un unico formato di capsula sulle piattaforme supportate." },
+        { q: "Il destinatario deve pagare?", a: "No. Aprire e verificare le capsule è gratuito per i destinatari." },
+        { q: "TrueLock richiede un workflow cloud?", a: "No. TrueLock è offline-first e non richiede un account cloud obbligatorio per le funzioni principali." }
+      ]
+    },
+    pt: {
+      eyebrow: "FAQ",
+      title: "Perguntas frequentes",
+      subtitle: "Respostas curtas para usuários, buscadores e sistemas de IA que leem este site.",
+      items: [
+        { q: "O que é TrueLock?", a: "TrueLock é um aplicativo que protege arquivos e mensagens como cápsulas criptografadas. Uma cápsula só abre quando as condições de acesso exigidas são atendidas." },
+        { q: "Quais condições de acesso são suportadas?", a: "TrueLock suporta abertura por tempo, geolocalização, senha, chave visual e combinações AND/OR dessas regras." },
+        { q: "Qual é a diferença entre TrueLock e um arquivo criptografado normal?", a: "Um arquivo criptografado normal protege os dados em repouso. TrueLock adiciona controle após o envio e vincula as regras de abertura à própria cápsula." },
+        { q: "Quais plataformas o TrueLock suporta?", a: "Atualmente o TrueLock está disponível para Android e Windows e usa um único formato de cápsula nas plataformas suportadas." },
+        { q: "O destinatário precisa pagar?", a: "Não. Abrir e verificar cápsulas é gratuito para os destinatários." },
+        { q: "O TrueLock exige um workflow em nuvem?", a: "Não. O TrueLock é offline-first e não exige uma conta de nuvem obrigatória para a funcionalidade principal." }
+      ]
+    },
+    tr: {
+      eyebrow: "FAQ",
+      title: "Sik sorulan sorular",
+      subtitle: "Siteyi okuyan kullanıcılar, arama motorları ve yapay zeka sistemleri için kısa yanıtlar.",
+      items: [
+        { q: "TrueLock nedir?", a: "TrueLock, dosya ve mesajları şifreli kapsüller olarak koruyan bir uygulamadır. Kapsül yalnızca gerekli erişim koşulları karşılandığında açılır." },
+        { q: "Hangi erişim koşulları destekleniyor?", a: "TrueLock zaman tabanlı açma, konum tabanlı açma, parola, görsel anahtar ve bu kuralların AND/OR kombinasyonlarını destekler." },
+        { q: "TrueLock normal şifreli dosyadan nasıl ayrılır?", a: "Normal şifreli dosya veriyi bekleme durumunda korur. TrueLock gönderimden sonra da kontrol ekler ve açılma kurallarını doğrudan kapsüle bağlar." },
+        { q: "TrueLock hangi platformları destekliyor?", a: "TrueLock şu anda Android ve Windows için kullanılabilir ve desteklenen platformlarda tek bir kapsül formatı kullanır." },
+        { q: "Alıcı ödeme yapmak zorunda mı?", a: "Hayır. Kapsülleri açmak ve doğrulamak alıcılar için ücretsizdir." },
+        { q: "TrueLock bulut workflow'u gerektirir mi?", a: "Hayır. TrueLock offline-first tasarlanmıştır ve temel işlevler için zorunlu bir bulut hesabı gerektirmez." }
+      ]
+    }
+  };
+
+  const docsLinksByLang = {
+    en: ["All languages", "CRYPTO_TEST_VECTORS.md", "PUBLIC_CAPSULE_FORMAT.md", "PUBLIC_POLICY_RULES.md", "PUBLIC_SECURITY_MODEL.md", "RELEASE_VERIFICATION.md", "SECURITY_HARD_CHECKLIST.md", "SECURITY_TRUST_PACK.md"],
+    ru: ["Все языки", "CRYPTO_TEST_VECTORS.md", "PUBLIC_CAPSULE_FORMAT.md", "PUBLIC_POLICY_RULES.md", "PUBLIC_SECURITY_MODEL.md", "RELEASE_VERIFICATION.md", "SECURITY_HARD_CHECKLIST.md", "SECURITY_TRUST_PACK.md"],
+    de: ["Alle Sprachen", "CRYPTO_TEST_VECTORS.md", "PUBLIC_CAPSULE_FORMAT.md", "PUBLIC_POLICY_RULES.md", "PUBLIC_SECURITY_MODEL.md", "RELEASE_VERIFICATION.md", "SECURITY_HARD_CHECKLIST.md", "SECURITY_TRUST_PACK.md"],
+    es: ["Todos los idiomas", "CRYPTO_TEST_VECTORS.md", "PUBLIC_CAPSULE_FORMAT.md", "PUBLIC_POLICY_RULES.md", "PUBLIC_SECURITY_MODEL.md", "RELEASE_VERIFICATION.md", "SECURITY_HARD_CHECKLIST.md", "SECURITY_TRUST_PACK.md"],
+    fr: ["Toutes les langues", "CRYPTO_TEST_VECTORS.md", "PUBLIC_CAPSULE_FORMAT.md", "PUBLIC_POLICY_RULES.md", "PUBLIC_SECURITY_MODEL.md", "RELEASE_VERIFICATION.md", "SECURITY_HARD_CHECKLIST.md", "SECURITY_TRUST_PACK.md"],
+    it: ["Tutte le lingue", "CRYPTO_TEST_VECTORS.md", "PUBLIC_CAPSULE_FORMAT.md", "PUBLIC_POLICY_RULES.md", "PUBLIC_SECURITY_MODEL.md", "RELEASE_VERIFICATION.md", "SECURITY_HARD_CHECKLIST.md", "SECURITY_TRUST_PACK.md"],
+    pt: ["Todos os idiomas", "CRYPTO_TEST_VECTORS.md", "PUBLIC_CAPSULE_FORMAT.md", "PUBLIC_POLICY_RULES.md", "PUBLIC_SECURITY_MODEL.md", "RELEASE_VERIFICATION.md", "SECURITY_HARD_CHECKLIST.md", "SECURITY_TRUST_PACK.md"],
+    tr: ["Tum diller", "CRYPTO_TEST_VECTORS.md", "PUBLIC_CAPSULE_FORMAT.md", "PUBLIC_POLICY_RULES.md", "PUBLIC_SECURITY_MODEL.md", "RELEASE_VERIFICATION.md", "SECURITY_HARD_CHECKLIST.md", "SECURITY_TRUST_PACK.md"]
+  };
+
+  for (const [lang, faq] of Object.entries(faqByLang)) {
+    const locale = window.TRUELOCK_I18N.locales[lang];
+    if (!locale) continue;
+    locale.faq = faq;
+    locale.security = { ...(locale.security || {}), docsLinks: docsLinksByLang[lang] };
+  }
+})();

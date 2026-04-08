@@ -576,10 +576,42 @@
       display: flex; align-items: flex-start; gap: 8px;
       font-size: 0.84rem; color: var(--ink-soft);
     }
-    .price-features li::before { content: '✓'; color: var(--primary); font-weight: 700; flex-shrink: 0; }
+    .price-features li::before { content: 'вњ“'; color: var(--primary); font-weight: 700; flex-shrink: 0; }
 
     /* FINAL CTA */
     .final-cta { padding: 80px 0 100px; }
+.faq-section { padding-top: 30px; }
+.faq-intro {
+  max-width: 760px;
+  color: var(--muted);
+  margin-top: 10px;
+  font-size: 1rem;
+}
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 30px;
+}
+.faq-card {
+  background: linear-gradient(180deg, rgba(255,255,255,.98), rgba(244,248,255,.92));
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 22px 22px 20px;
+  box-shadow: 0 18px 50px rgba(10, 24, 52, 0.08);
+}
+.faq-card h3 {
+  margin: 0 0 10px;
+  font-family: var(--font-display);
+  font-size: 1.04rem;
+  line-height: 1.35;
+}
+.faq-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+  font-size: .96rem;
+}
 
     .final-inner {
       display: flex; justify-content: space-between; align-items: center;
@@ -892,8 +924,24 @@
     .contacts-inner {
       display: flex;
       justify-content: flex-end;
-      align-items: center;
+      align-items: flex-start;
       min-height: 28px;
+    }
+    .contacts-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      align-items: flex-end;
+    }
+    .contacts-list li {
+      color: var(--muted);
+      font-size: 0.86rem;
+      line-height: 1.5;
+      text-align: right;
+      word-break: break-word;
     }
     .contacts a {
       color: var(--muted);
@@ -935,6 +983,8 @@
       .footer-inner { flex-direction: column; align-items: flex-start; }
       .templates-top { flex-direction: column; }
       .contacts-inner { justify-content: center; }
+      .contacts-list { align-items: center; }
+      .contacts-list li,
       .contacts a { text-align: center; }
       .how-carousel,
       .how-case {

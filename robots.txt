@@ -1,8 +1,14 @@
 User-agent: *
 Allow: /
 
-# Optional crawl-delay examples (uncomment if needed)
-# Crawl-delay: 2
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
 
 Sitemap: https://truelock.pro/sitemap.xml
 Host: truelock.pro

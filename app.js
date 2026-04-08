@@ -1,4 +1,4 @@
-﻿const obs = new IntersectionObserver(entries => {
+const obs = new IntersectionObserver(entries => {
       entries.forEach(e => { if (e.isIntersecting) e.target.classList.add("visible"); });
     }, { threshold: 0.08 });
     document.querySelectorAll(".reveal").forEach(el => obs.observe(el));
@@ -53,18 +53,23 @@
     }
 
     function updateHeader(t) {
-      const navLinks = document.querySelectorAll(".main-nav a, .mobile-nav a");
-      if (navLinks[0]) navLinks[0].textContent = t.nav.who;
-      if (navLinks[1]) navLinks[1].textContent = t.nav.how;
-      if (navLinks[2]) navLinks[2].textContent = t.nav.templates;
-      if (navLinks[3]) navLinks[3].textContent = t.nav.security;
-      if (navLinks[4]) navLinks[4].textContent = t.nav.pricing;
-      if (navLinks[5]) navLinks[5].textContent = t.nav.who;
-      if (navLinks[6]) navLinks[6].textContent = t.nav.how;
-      if (navLinks[7]) navLinks[7].textContent = t.nav.templates;
-      if (navLinks[8]) navLinks[8].textContent = t.nav.security;
-      if (navLinks[9]) navLinks[9].textContent = t.nav.pricing;
-      if (navLinks[10]) navLinks[10].textContent = t.nav.download;
+      const mainNavLinks = document.querySelectorAll(".main-nav a");
+      const mobileNavLinks = document.querySelectorAll(".mobile-nav a");
+
+      if (mainNavLinks[0]) mainNavLinks[0].textContent = t.nav.who;
+      if (mainNavLinks[1]) mainNavLinks[1].textContent = t.nav.how;
+      if (mainNavLinks[2]) mainNavLinks[2].textContent = t.nav.templates;
+      if (mainNavLinks[3]) mainNavLinks[3].textContent = t.nav.security;
+      if (mainNavLinks[4]) mainNavLinks[4].textContent = "FAQ";
+      if (mainNavLinks[5]) mainNavLinks[5].textContent = t.nav.pricing;
+
+      if (mobileNavLinks[0]) mobileNavLinks[0].textContent = t.nav.who;
+      if (mobileNavLinks[1]) mobileNavLinks[1].textContent = t.nav.how;
+      if (mobileNavLinks[2]) mobileNavLinks[2].textContent = t.nav.templates;
+      if (mobileNavLinks[3]) mobileNavLinks[3].textContent = t.nav.security;
+      if (mobileNavLinks[4]) mobileNavLinks[4].textContent = "FAQ";
+      if (mobileNavLinks[5]) mobileNavLinks[5].textContent = t.nav.pricing;
+      if (mobileNavLinks[6]) mobileNavLinks[6].textContent = t.nav.download;
       const topBtn = document.querySelector(".header-inner .btn-primary");
       if (topBtn) topBtn.textContent = t.nav.download;
       const select = document.getElementById("langSwitch");
@@ -256,7 +261,12 @@
       if (docs) {
         const h3 = docs.querySelector("h3");
         const note = docs.querySelector(".sec-note");
+        const links = docs.querySelectorAll(".doc-link");
         if (h3) h3.textContent = t.security.docsTitle;
+        if (note && t.security.docsNote) note.textContent = t.security.docsNote;
+        (t.security.docsLinks || []).forEach((txt, idx) => {
+          if (links[idx]) links[idx].textContent = txt;
+        });
       }
     }
 
@@ -295,6 +305,23 @@
       if (buttons[4]) buttons[4].textContent = t.download.macSoon;
     }
 
+    function updateFaq(t) {
+      const root = document.getElementById("faq");
+      if (!root || !t.faq) return;
+      root.querySelector(".eyebrow").textContent = t.faq.eyebrow;
+      root.querySelector(".section-title").textContent = t.faq.title;
+      const intro = root.querySelector(".faq-intro");
+      if (intro) intro.textContent = t.faq.subtitle;
+      const cards = root.querySelectorAll(".faq-card");
+      (t.faq.items || []).forEach((item, idx) => {
+        const card = cards[idx];
+        if (!card) return;
+        const h3 = card.querySelector("h3");
+        const p = card.querySelector("p");
+        if (h3) h3.textContent = item.q;
+        if (p) p.textContent = item.a;
+      });
+    }
     function updateFooter(t) {
       const txt = document.querySelector("footer .footer-text");
       const stat = document.querySelector("footer .footer-inner > div:last-child");
@@ -317,6 +344,7 @@
       updateSecurity(t);
       updatePricing(t);
       updateDownload(t);
+      updateFaq(t);
       updateFooter(t);
       localStorage.setItem("truelock_landing_lang", currentLang);
     }
