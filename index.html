@@ -42,9 +42,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta id="twitterDescription" name="twitter:description" content="Encrypt files and messages into capsules that unlock only by time, location, password, or visual key." />
   <meta name="twitter:image" content="https://truelock.pro/preview.png" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
-  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-  <link rel="manifest" href="/site.webmanifest" />
-  <link rel="apple-touch-icon" href="/TrueLock-main/assets/favicon-32.png" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="apple-touch-icon" href="TrueLock-main/assets/favicon-32.png" />
 
   <link rel="alternate" hreflang="x-default" href="https://truelock.pro/" />
   <link rel="alternate" hreflang="ru" href="https://truelock.pro/" />
@@ -82,9 +82,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       "screenshot": "https://truelock.pro/preview.png",
       "isAccessibleForFree": true,
       "offers": {
-        "@type": "Offer",
-        "price": "20",
+        "@type": "AggregateOffer",
+        "lowPrice": "10",
+        "highPrice": "20",
         "priceCurrency": "USD",
+        "offerCount": "2",
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "TrueLock Pro crypto checkout",
+            "price": "10",
+            "priceCurrency": "USD",
+            "description": "One Pro license for one device via hosted crypto checkout."
+          },
+          {
+            "@type": "Offer",
+            "name": "TrueLock Pro card checkout",
+            "price": "20",
+            "priceCurrency": "USD",
+            "description": "Two Pro licenses for up to two devices via MoonPay card payment."
+          }
+        ],
         "availability": "https://schema.org/InStock"
       },
       "publisher": {
@@ -189,13 +207,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         aria-controls="mobileMenu"
         aria-label="Open menu"
       >
-        <span class="menu-toggle-icon" aria-hidden="true">☰</span>
+        <span class="menu-toggle-icon" aria-hidden="true">=</span>
       </button>
       <nav class="main-nav">
         <a href="#personas" data-i18n="nav_who">Who uses</a>
         <a href="#how" data-i18n="nav_how">How it works</a>
         <a href="#templates" data-i18n="nav_templates">Templates</a>
         <a href="#security" data-i18n="nav_security">Security</a>
+        <a href="enterprise.html">Enterprise</a>
         <a href="#faq">FAQ</a>
         <a href="#pricing" data-i18n="nav_price">Pricing</a>
       </nav>
@@ -217,6 +236,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a href="#how" data-i18n="nav_how">How it works</a>
         <a href="#templates" data-i18n="nav_templates">Templates</a>
         <a href="#security" data-i18n="nav_security">Security</a>
+        <a href="enterprise.html">Enterprise</a>
         <a href="#faq">FAQ</a>
         <a href="#pricing" data-i18n="nav_price">Pricing</a>
         <a href="#download" data-i18n="nav_download">Download free</a>
@@ -300,25 +320,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="reveal" style="margin-bottom:36px;">
         <p class="eyebrow">Find your scenario</p>
         <h2 class="section-title">Who uses TrueLock?</h2>
-        <p style="color:var(--muted);margin-top:10px;font-size:1.02rem;">One product ? three ways to monetize access control.</p>
+        <p style="color:var(--muted);margin-top:10px;font-size:1.02rem;">One product, three ways to monetize access control.</p>
       </div>
       <div class="personas-grid">
         <div class="persona-card p-red reveal">
-          <span class="persona-emoji">📈</span>
+          <span class="persona-emoji">&#128200;</span>
           <div class="persona-tag">Cappers and Traders</div>
           <div class="persona-pain">People do not trust your calls. They say you edit after the fact.</div>
           <div class="persona-solution">Lock your prediction before the event. The capsule opens after the match so everyone sees you knew first. Or sell the password in advance to paying users.</div>
           <div class="persona-mechanic">Unlock after the event <strong>OR</strong> with a purchased password</div>
         </div>
         <div class="persona-card p-blue reveal" style="transition-delay:.1s;">
-          <span class="persona-emoji">🏪</span>
+          <span class="persona-emoji">&#127970;</span>
           <div class="persona-tag">Stores, Cafes, Restaurants</div>
           <div class="persona-pain">The customer came once and disappeared. Ads are expensive with weak results.</div>
-          <div class="persona-solution">Send a reward capsule after purchase. It opens only in your venue and only until week end. The customer physically returns ? no ad budget needed.</div>
+          <div class="persona-solution">Send a reward capsule after purchase. It opens only in your venue and only until week end. The customer physically returns - no ad budget needed.</div>
           <div class="persona-mechanic">Only at the geo point <strong>AND</strong> before expiry date</div>
         </div>
         <div class="persona-card p-green reveal" style="transition-delay:.2s;">
-          <span class="persona-emoji">⚡</span>
+          <span class="persona-emoji">&#9889;</span>
           <div class="persona-tag">Flash Sales and Drops</div>
           <div class="persona-pain">You launch a promo and nobody reacts. Users see hundreds every day.</div>
           <div class="persona-solution">Send the capsule in advance to all your audience. The offer appears at 18:00 and disappears at 18:05. People wait with timers. Hype without ad spend.</div>
@@ -350,31 +370,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="chain-title">Prediction with proof of fairness</div>
           <div class="chain-steps">
             <div class="cstep active">
-              <div class="cstep-ico">✍️</div>
+              <div class="cstep-ico">&#9998;</div>
               <div class="cstep-body">
                 <div class="cstep-title">Prediction is sealed</div>
                 <div class="cstep-desc">The capper creates a capsule with prediction before match start. Logged: 14:22, before 20:00.</div>
               </div>
             </div>
-            <div class="cstep-arrow">→</div>
+            <div class="cstep-arrow">&rarr;</div>
             <div class="cstep">
-              <div class="cstep-ico">⚽</div>
+              <div class="cstep-ico">&#9917;</div>
               <div class="cstep-body">
                 <div class="cstep-title">Event is live</div>
                 <div class="cstep-desc">847 subscribers received the file. No one can open early. Or they pay for password access.</div>
               </div>
             </div>
-            <div class="cstep-arrow">→</div>
+            <div class="cstep-arrow">&rarr;</div>
             <div class="cstep">
-              <div class="cstep-ico">🔓</div>
+              <div class="cstep-ico">&#128275;</div>
               <div class="cstep-body">
                 <div class="cstep-title">Capsule opened</div>
                 <div class="cstep-desc">After the match everyone sees the prediction. Creation date is inside the capsule. Proof is undeniable.</div>
               </div>
             </div>
-            <div class="cstep-arrow">→</div>
+            <div class="cstep-arrow">&rarr;</div>
             <div class="cstep cstep-final">
-              <div class="cstep-ico">💰</div>
+              <div class="cstep-ico">&#128176;</div>
               <div class="cstep-body">
                 <div class="cstep-title">Reputation and revenue</div>
                 <div class="cstep-desc">Fairness is proven publicly. The next signal pack sells at a higher price.</div>
@@ -396,31 +416,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="chain-title">Bring customers back without ad spend</div>
           <div class="chain-steps">
             <div class="cstep active">
-              <div class="cstep-ico">🧾</div>
+              <div class="cstep-ico">&#128722;</div>
               <div class="cstep-body">
                 <div class="cstep-title">Purchase completed</div>
                 <div class="cstep-desc">After payment, customer receives a capsule. Inside: reward, discount, or surprise.</div>
               </div>
             </div>
-            <div class="cstep-arrow">→</div>
+            <div class="cstep-arrow">&rarr;</div>
             <div class="cstep">
-              <div class="cstep-ico">📱</div>
+              <div class="cstep-ico">&#128241;</div>
               <div class="cstep-body">
                 <div class="cstep-title">Customer sees the capsule</div>
-                <div class="cstep-desc">File is on the phone. Intrigue: what is inside? Cannot open yet ? must return.</div>
+                <div class="cstep-desc">File is on the phone. Intrigue: what is inside? Cannot open yet - must return.</div>
               </div>
             </div>
-            <div class="cstep-arrow">→</div>
+            <div class="cstep-arrow">&rarr;</div>
             <div class="cstep">
-              <div class="cstep-ico">📍</div>
+              <div class="cstep-ico">&#128205;</div>
               <div class="cstep-body">
                 <div class="cstep-title">Customer returns</div>
                 <div class="cstep-desc">Comes physically to the venue before week end. Geolocation confirmed.</div>
               </div>
             </div>
-            <div class="cstep-arrow">→</div>
+            <div class="cstep-arrow">&rarr;</div>
             <div class="cstep cstep-final">
-              <div class="cstep-ico">🎁</div>
+              <div class="cstep-ico">&#127873;</div>
               <div class="cstep-body">
                 <div class="cstep-title">Reward unlocked</div>
                 <div class="cstep-desc">Capsule opens right in the store. Customer is happy. Repeat visit without ads.</div>
@@ -442,33 +462,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="chain-title">Hype you cannot ignore</div>
           <div class="chain-steps">
             <div class="cstep active">
-              <div class="cstep-ico">📤</div>
+              <div class="cstep-ico">&#128228;</div>
               <div class="cstep-body">
                 <div class="cstep-title">Capsule sent out</div>
                 <div class="cstep-desc">1000 subscribers received the file in advance. Everyone knows: it unlocks exactly at 18:00.</div>
               </div>
             </div>
-            <div class="cstep-arrow">→</div>
+            <div class="cstep-arrow">&rarr;</div>
             <div class="cstep">
-              <div class="cstep-ico">⏳</div>
+              <div class="cstep-ico">&#9203;</div>
               <div class="cstep-body">
-                <div class="cstep-title">17:59 ? everyone is waiting</div>
-                <div class="cstep-desc">People set timers. They discuss in chats. Maximum FOMO ? this is an event, not a promo.</div>
+                <div class="cstep-title">17:59 - everyone is waiting</div>
+                <div class="cstep-desc">People set timers. They discuss in chats. Maximum FOMO - this is an event, not a promo.</div>
               </div>
             </div>
-            <div class="cstep-arrow">→</div>
+            <div class="cstep-arrow">&rarr;</div>
             <div class="cstep">
-              <div class="cstep-ico">🔓</div>
+              <div class="cstep-ico">&#128275;</div>
               <div class="cstep-body">
-                <div class="cstep-title">18:00 ? opened</div>
+                <div class="cstep-title">18:00 - opened</div>
                 <div class="cstep-desc">At exactly 18:00 the capsule opens for everyone at once. Inside: product, link, promo code.</div>
               </div>
             </div>
-            <div class="cstep-arrow">→</div>
+            <div class="cstep-arrow">&rarr;</div>
             <div class="cstep cstep-final">
-              <div class="cstep-ico">🚫</div>
+              <div class="cstep-ico">&#128683;</div>
               <div class="cstep-body">
-                <div class="cstep-title">18:05 ? closed</div>
+                <div class="cstep-title">18:05 - closed</div>
                 <div class="cstep-desc">Window closed. If you missed it, you did not get it. No servers, no complex tools.</div>
               </div>
             </div>
@@ -531,35 +551,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </article>
 
           <div class="how-carousel-controls">
-            <button class="how-btn" id="howPrev" type="button">← Back</button>
+            <button class="how-btn" id="howPrev" type="button">&larr; Back</button>
             <div class="how-dots" id="howDots" aria-label="Steps">
               <button class="how-dot active" type="button" data-step="0" aria-label="Step 1"></button>
               <button class="how-dot" type="button" data-step="1" aria-label="Step 2"></button>
               <button class="how-dot" type="button" data-step="2" aria-label="Step 3"></button>
               <button class="how-dot" type="button" data-step="3" aria-label="Step 4"></button>
             </div>
-            <button class="how-btn" id="howNext" type="button">Next →</button>
+            <button class="how-btn" id="howNext" type="button">Next &rarr;</button>
           </div>
         </div>
 
         <aside class="how-case reveal">
           <div class="how-case-head">
-            <div class="how-case-icon">📧</div>
+            <div class="how-case-icon">&#128231;</div>
             <div>
-              <div class="how-case-label">Real case · Universally</div>
+              <div class="how-case-label">Real case - universal</div>
               <h3 class="how-case-title">Most leaks are sending mistakes, not hacks</h3>
             </div>
           </div>
           <p class="how-case-desc">Wrong recipient, Reply All, forwarded file. With TrueLock you can send the capsule and still keep control over unlock.</p>
           <div class="how-case-compare">
             <div class="how-case-row bad">
-              <div class="how-case-row-title">❌ Regular email</div>
-              <div class="how-case-flow">PDF → Email → Leak</div>
+              <div class="how-case-row-title">&times; Regular email</div>
+              <div class="how-case-flow">PDF - Email - Leak</div>
               <div class="how-case-note">Once sent, control is immediately lost.</div>
             </div>
             <div class="how-case-row good">
-              <div class="how-case-row-title">✅ TrueLock Capsule</div>
-              <div class="how-case-flow">Capsule → Email → 🔒 Will not open without conditions</div>
+              <div class="how-case-row-title">&#10003; TrueLock Capsule</div>
+              <div class="how-case-flow">Capsule - Email - Locked until conditions are met</div>
               <div class="how-case-note">Even if sent by mistake, data stays locked.</div>
             </div>
           </div>
@@ -594,37 +614,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="security-grid">
         <div class="security-points">
           <div class="sec-point reveal">
-            <div class="sec-check">✓</div>
+            <div class="sec-check">&#10003;</div>
             <div class="sec-text"><strong>AES-256-GCM encryption</strong><p>Unique cryptographic parameters for every file.</p></div>
           </div>
           <div class="sec-point reveal" style="transition-delay:.06s;">
-            <div class="sec-check">✓</div>
+            <div class="sec-check">&#10003;</div>
             <div class="sec-text"><strong>Offline by default</strong><p>No mandatory cloud or account. Data stays on device.</p></div>
           </div>
           <div class="sec-point reveal" style="transition-delay:.12s;">
-            <div class="sec-check">✓</div>
+            <div class="sec-check">&#10003;</div>
             <div class="sec-text"><strong>AND/OR policy</strong><p>Combine conditions: time AND geolocation, or password OR visual key.</p></div>
           </div>
           <div class="sec-point reveal" style="transition-delay:.18s;">
-            <div class="sec-check">✓</div>
+            <div class="sec-check">&#10003;</div>
             <div class="sec-text"><strong>Minimal metadata</strong><p>Sensitive content remains inside the encrypted capsule.</p></div>
           </div>
           <div class="sec-point reveal" style="transition-delay:.24s;">
-            <div class="sec-check">✓</div>
+            <div class="sec-check">&#10003;</div>
             <div class="sec-text"><strong>Cross-platform format</strong><p>One format for desktop and mobile. Create on one, open on another.</p></div>
           </div>
         </div>
         <div class="sec-docs reveal" style="transition-delay:.1s;">
           <h3>Public documents</h3>
-          <a class="doc-link" href="documents.rar" target="_blank" rel="noreferrer">🗂️ All Languages</a>
-          <a class="doc-link" href="documents/CRYPTO_TEST_VECTORS.md" target="_blank" rel="noreferrer">📄 CRYPTO_TEST_VECTORS.md</a>
-          <a class="doc-link" href="documents/PUBLIC_CAPSULE_FORMAT.md" target="_blank" rel="noreferrer">📄 PUBLIC_CAPSULE_FORMAT.md</a>
-          <a class="doc-link" href="documents/PUBLIC_POLICY_RULES.md" target="_blank" rel="noreferrer">📄 PUBLIC_POLICY_RULES.md</a>
-          <a class="doc-link" href="documents/PUBLIC_SECURITY_MODEL.md" target="_blank" rel="noreferrer">📄 PUBLIC_SECURITY_MODEL.md</a>
-          <a class="doc-link" href="documents/RELEASE_VERIFICATION.md" target="_blank" rel="noreferrer">📄 RELEASE_VERIFICATION.md</a>
-          <a class="doc-link" href="documents/SECURITY_HARD_CHECKLIST.md" target="_blank" rel="noreferrer">📄 SECURITY_HARD_CHECKLIST.md</a>
-          <a class="doc-link" href="documents/SECURITY_TRUST_PACK.md" target="_blank" rel="noreferrer">📄 SECURITY_TRUST_PACK.md</a>
-          <div class="sec-note">💡 Not open-source, but docs are public, enough to validate crypto decisions before trust.</div>
+          <a class="doc-link" href="documents.rar" target="_blank" rel="noreferrer">Archive - all languages</a>
+          <a class="doc-link" href="documents/CRYPTO_TEST_VECTORS.md" target="_blank" rel="noreferrer">CRYPTO_TEST_VECTORS.md</a>
+          <a class="doc-link" href="documents/PUBLIC_CAPSULE_FORMAT.md" target="_blank" rel="noreferrer">PUBLIC_CAPSULE_FORMAT.md</a>
+          <a class="doc-link" href="documents/PUBLIC_POLICY_RULES.md" target="_blank" rel="noreferrer">PUBLIC_POLICY_RULES.md</a>
+          <a class="doc-link" href="documents/PUBLIC_SECURITY_MODEL.md" target="_blank" rel="noreferrer">PUBLIC_SECURITY_MODEL.md</a>
+          <a class="doc-link" href="documents/RELEASE_VERIFICATION.md" target="_blank" rel="noreferrer">RELEASE_VERIFICATION.md</a>
+          <a class="doc-link" href="documents/SECURITY_HARD_CHECKLIST.md" target="_blank" rel="noreferrer">SECURITY_HARD_CHECKLIST.md</a>
+          <a class="doc-link" href="documents/SECURITY_TRUST_PACK.md" target="_blank" rel="noreferrer">SECURITY_TRUST_PACK.md</a>
+          <div class="sec-note">Not open-source, but the trust and security documents are public enough to validate the design before use.</div>
         </div>
       </div>
 
@@ -651,8 +671,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="price-card featured reveal" style="transition-delay:.1s;">
           <div class="price-name">Pro</div>
-          <div class="price-val"><sup>$</sup>20</div>
-          <div class="price-note">Up to 2 devices · Lifetime · One-time payment</div>
+          <div class="price-val">from <sup>$</sup>10</div>
+          <div class="price-note">Choose card or crypto checkout below.</div>
           <ul class="price-features">
             <li>Unlimited capsules</li>
             <li>Time / Geolocation / Password / Visual key</li>
@@ -661,7 +681,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <li>Attachments, photos, camera video</li>
             <li>Create your own templates</li>
           </ul>
-          <a class="btn btn-primary" href="https://moonpay.hel.io/pay/699c40d6087609a6176e7859" target="_blank" style="width:100%;margin-top:20px;">Buy Pro — $20</a>
+          <div class="checkout-box">
+            <div class="checkout-option">
+              <a
+                class="btn btn-primary purchase-btn"
+                id="cardCheckoutButton"
+                href="https://moonpay.hel.io/pay/699c40d6087609a6176e7859"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Buy with card - $20
+              </a>
+              <div class="checkout-caption" id="cardCheckoutCaption">Card payment via MoonPay · 2 Pro licenses · up to 2 devices</div>
+            </div>
+            <div class="checkout-divider" id="checkoutDivider">or</div>
+            <div class="checkout-option">
+              <a
+                class="btn btn-ghost purchase-btn"
+                id="cryptoCheckoutButton"
+                href="https://moonpay.hel.io/pay/69d8eac15662bb321f77caf1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Buy with crypto - $10
+              </a>
+              <div class="checkout-caption" id="cryptoCheckoutCaption">Crypto checkout · 1 Pro license · 1 device</div>
+            </div>
+            <p class="checkout-legal">
+              <span id="offerPrefix">By purchasing Pro, you agree to the</span>
+              <a id="offerLink" href="offer.html">Public Offer</a>.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -678,11 +728,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p>Choose your platform and download TrueLock.</p>
           </div>
           <div class="download-btns">
-            <a class="btn btn-ghost" data-goatcounter-click="download-android" data-goatcounter-title="Скачивание android" href="/apps/TrueLock.apk" aria-label="Android download">Android</a>
-            <a class="btn btn-ghost" data-goatcounter-click="download-windows" data-goatcounter-title="Скачивание windows"  href="/apps/TrueLock_installer.exe" aria-label="Windows download">Windows</a>
-            <button class="btn btn-ghost" disabled style="opacity:.4;cursor:default;">Linux — soon</button>
-            <button class="btn btn-ghost" disabled style="opacity:.4;cursor:default;">iOS — soon</button>
-            <button class="btn btn-ghost" disabled style="opacity:.4;cursor:default;">macOS — soon</button>          
+            <a class="btn btn-ghost" data-goatcounter-click="download-android" data-goatcounter-title="Download Android" href="apps/TrueLock.apk" aria-label="Android download">Android</a>
+            <a class="btn btn-ghost" data-goatcounter-click="download-windows" data-goatcounter-title="Download Windows"  href="apps/TrueLock_installer.exe" aria-label="Windows download">Windows</a>
+            <button class="btn btn-ghost" disabled style="opacity:.4;cursor:default;">Linux - soon</button>
+            <button class="btn btn-ghost" disabled style="opacity:.4;cursor:default;">iOS - soon</button>
+            <button class="btn btn-ghost" disabled style="opacity:.4;cursor:default;">macOS - soon</button>
           </div>
         </div>
         <blockquote data-package-name="com.truelock" data-language="en" class="apkpure-app-card" width=200 style="min-width: 200px;"></blockquote>
@@ -731,10 +781,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="footer-brand">TRUE<span>LOCK</span></div>
       <div class="footer-text">
         Offline-first capsules with access conditions. Opening is always free.<br>
-        Katsura Yakov Daniilovich ·
+        Katsura Yakov Daniilovich -
       </div>
       <div style="margin-left:auto;font-size:0.78rem;color:var(--muted);text-align:right;">
-        AES-256-GCM · Offline-first<br>8 languages · 32 templates
+        AES-256-GCM - Offline-first<br>8 languages - 32 templates
       </div>
     </div>
     <div class="contacts">
@@ -742,8 +792,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <ul class="contacts-list">
           <li><a href="mailto:support@truelock.pro">support@truelock.pro</a></li>
           <li><a href="mailto:dj.frost006@gmail.com">dj.frost006@gmail.com</a></li>
-          <li>ИНН: 772454234279</li>
-          <li><a href="tel:+79153188309">+7 915 318-83-09</a></li>
         </ul>
       </div>
     </div>
@@ -755,6 +803,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script async charset="utf-8" src="https://static.apkpure.com/www/static/script/plugins/appCard-1.0.0.min.js"></script>
 </body>
 </html>
+
 
 
 

@@ -16,6 +16,8 @@ const obs = new IntersectionObserver(entries => {
     const howNext = document.getElementById("howNext");
     const menuToggle = document.getElementById("menuToggle");
     const mobileMenu = document.getElementById("mobileMenu");
+    const cardCheckoutButton = document.getElementById("cardCheckoutButton");
+    const cryptoCheckoutButton = document.getElementById("cryptoCheckoutButton");
     let howIndex = 0;
 
     function setMobileMenuOpen(open) {
@@ -24,7 +26,7 @@ const obs = new IntersectionObserver(entries => {
       mobileMenu.hidden = !open;
       mobileMenu.style.display = open ? "flex" : "none";
       const icon = menuToggle.querySelector(".menu-toggle-icon");
-      if (icon) icon.textContent = open ? "✕" : "☰";
+      if (icon) icon.textContent = open ? "x" : "=";
     }
 
     function safeLocale(lang) {
@@ -60,16 +62,18 @@ const obs = new IntersectionObserver(entries => {
       if (mainNavLinks[1]) mainNavLinks[1].textContent = t.nav.how;
       if (mainNavLinks[2]) mainNavLinks[2].textContent = t.nav.templates;
       if (mainNavLinks[3]) mainNavLinks[3].textContent = t.nav.security;
-      if (mainNavLinks[4]) mainNavLinks[4].textContent = "FAQ";
-      if (mainNavLinks[5]) mainNavLinks[5].textContent = t.nav.pricing;
+      if (mainNavLinks[4]) mainNavLinks[4].textContent = "Enterprise";
+      if (mainNavLinks[5]) mainNavLinks[5].textContent = "FAQ";
+      if (mainNavLinks[6]) mainNavLinks[6].textContent = t.nav.pricing;
 
       if (mobileNavLinks[0]) mobileNavLinks[0].textContent = t.nav.who;
       if (mobileNavLinks[1]) mobileNavLinks[1].textContent = t.nav.how;
       if (mobileNavLinks[2]) mobileNavLinks[2].textContent = t.nav.templates;
       if (mobileNavLinks[3]) mobileNavLinks[3].textContent = t.nav.security;
-      if (mobileNavLinks[4]) mobileNavLinks[4].textContent = "FAQ";
-      if (mobileNavLinks[5]) mobileNavLinks[5].textContent = t.nav.pricing;
-      if (mobileNavLinks[6]) mobileNavLinks[6].textContent = t.nav.download;
+      if (mobileNavLinks[4]) mobileNavLinks[4].textContent = "Enterprise";
+      if (mobileNavLinks[5]) mobileNavLinks[5].textContent = "FAQ";
+      if (mobileNavLinks[6]) mobileNavLinks[6].textContent = t.nav.pricing;
+      if (mobileNavLinks[7]) mobileNavLinks[7].textContent = t.nav.download;
       const topBtn = document.querySelector(".header-inner .btn-primary");
       if (topBtn) topBtn.textContent = t.nav.download;
       const select = document.getElementById("langSwitch");
@@ -278,15 +282,29 @@ const obs = new IntersectionObserver(entries => {
       const cards = root.querySelectorAll(".price-card");
       if (cards[0]) {
         cards[0].querySelector(".price-name").textContent = t.pricing.freeName;
+        const freeValue = cards[0].querySelector(".price-val");
+        if (freeValue) freeValue.innerHTML = t.pricing.freeValueHtml || "<sup>$</sup>0";
         cards[0].querySelector(".price-note").textContent = t.pricing.freeNote;
         setListItems(cards[0].querySelector(".price-features"), t.pricing.freeFeatures);
       }
       if (cards[1]) {
         cards[1].querySelector(".price-name").textContent = t.pricing.proName;
+        const proValue = cards[1].querySelector(".price-val");
+        if (proValue) proValue.innerHTML = t.pricing.proValueHtml || "from <sup>$</sup>10";
         cards[1].querySelector(".price-note").textContent = t.pricing.proNote;
         setListItems(cards[1].querySelector(".price-features"), t.pricing.proFeatures);
-        const btn = cards[1].querySelector(".btn");
-        if (btn) btn.textContent = t.pricing.buyButton;
+        const divider = document.getElementById("checkoutDivider");
+        const cardCaption = document.getElementById("cardCheckoutCaption");
+        const cryptoCaption = document.getElementById("cryptoCheckoutCaption");
+        const offerPrefix = document.getElementById("offerPrefix");
+        const offerLink = document.getElementById("offerLink");
+        if (cardCheckoutButton) cardCheckoutButton.textContent = t.pricing.cardButton;
+        if (cryptoCheckoutButton) cryptoCheckoutButton.textContent = t.pricing.cryptoButton;
+        if (cardCaption) cardCaption.textContent = t.pricing.cardCaption;
+        if (cryptoCaption) cryptoCaption.textContent = t.pricing.cryptoCaption;
+        if (divider) divider.textContent = t.pricing.checkoutDivider;
+        if (offerPrefix) offerPrefix.textContent = t.pricing.offerPrefix;
+        if (offerLink) offerLink.textContent = t.pricing.offerLink;
       }
     }
 
@@ -398,3 +416,5 @@ const obs = new IntersectionObserver(entries => {
     applyLang(initialLang);
     setMobileMenuOpen(false);
     document.getElementById("langSwitch")?.addEventListener("change", (e) => applyLang(e.target.value));
+
+

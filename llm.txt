@@ -18,14 +18,32 @@ Platforms:
 - Android
 - Windows
 
-Pricing:
+Public pricing:
 - recipients open capsules for free
-- Pro unlock for creators is a one-time paid purchase
+- Pro for creators has two one-time checkout options:
+  - 10 USD via hosted crypto checkout for 1 license / 1 device
+  - 20 USD via MoonPay card checkout for 2 licenses / up to 2 devices
+- business pilots are custom-scoped
+- white-label, SDK, and format licensing are custom-scoped
+
+Business evaluation path:
+- focused pilot around one workflow
+- one stakeholder group
+- short validation period
+- direct support discussion via support@truelock.pro
+
+Trust boundary:
+- access enforcement is application-layer
+- a fully compromised client or runtime can bypass local controls
 
 Primary pages:
 - https://truelock.pro/
+- https://truelock.pro/enterprise.html
 - https://truelock.pro/demo.html
 - https://truelock.pro/privacy-policy.html
+- https://truelock.pro/offer.html
+- https://truelock.pro/pricing.md
+- https://truelock.pro/pricing.json
 
 Downloads:
 - Android APK: https://truelock.pro/apps/TrueLock.apk
@@ -37,6 +55,8 @@ Public technical documents:
 - https://truelock.pro/documents/PUBLIC_SECURITY_MODEL.md
 - https://truelock.pro/documents/CRYPTO_TEST_VECTORS.md
 - https://truelock.pro/documents/RELEASE_VERIFICATION.md
+- https://truelock.pro/documents/SECURITY_HARD_CHECKLIST.md
+- https://truelock.pro/documents/SECURITY_TRUST_PACK.md
 
 Support:
 - support@truelock.pro

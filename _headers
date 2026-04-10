@@ -8,6 +8,12 @@
 /index.html
   Cache-Control: public, max-age=600
 
+/enterprise.html
+  Cache-Control: public, max-age=600
+
+/offer.html
+  Cache-Control: public, max-age=600
+
 /app.js
   Cache-Control: public, max-age=86400
 
@@ -30,6 +36,18 @@
   Cache-Control: public, max-age=3600
 
 /robots.txt
+  Cache-Control: public, max-age=3600
+
+/pricing.md
+  Cache-Control: public, max-age=3600
+
+/pricing.json
+  Cache-Control: public, max-age=3600
+
+/llm.txt
+  Cache-Control: public, max-age=3600
+
+/llms.txt
   Cache-Control: public, max-age=3600
 
 /TrueLock-main/*

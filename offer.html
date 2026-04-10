@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TrueLock Public Offer</title>
+  <meta name="description" content="Public Offer governing TrueLock Pro purchases via MoonPay card checkout and hosted crypto checkout." />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="theme-color" content="#0f2542" />
+  <link rel="canonical" href="https://truelock.pro/offer.html" />
+  <meta property="og:title" content="TrueLock Public Offer" />
+  <meta property="og:description" content="Public offer for TrueLock Pro purchases: card checkout and crypto checkout terms, delivery, license scope, and support contacts." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://truelock.pro/offer.html" />
+  <meta property="og:image" content="https://truelock.pro/preview.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="TrueLock Public Offer" />
+  <meta name="twitter:description" content="Terms for TrueLock Pro purchases via card or crypto checkout." />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .offer-page { padding: 72px 0 88px; }
+    .offer-header { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 24px; flex-wrap: wrap; }
+    .offer-back { color: var(--primary); font-weight: 600; font-size: .92rem; }
+    .offer-shell { background: var(--card); border: 1px solid var(--line); border-radius: 24px; box-shadow: var(--shadow); padding: 28px; }
+    .offer-meta { display: flex; gap: 10px; flex-wrap: wrap; margin: 12px 0 18px; color: var(--muted); font-size: .86rem; }
+    .offer-pill { display: inline-flex; align-items: center; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--line); background: rgba(25,104,210,0.06); color: var(--ink-soft); }
+    .offer-note { margin-top: 10px; padding: 12px 14px; border-radius: 14px; border: 1px solid rgba(25,104,210,0.14); background: rgba(25,104,210,0.06); color: var(--ink-soft); font-size: .9rem; line-height: 1.65; }
+    .offer-options { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 24px 0 30px; }
+    .offer-card { border: 1px solid var(--line); border-radius: 18px; padding: 18px; background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(244,248,255,0.92)); }
+    .offer-card h3 { font-family: var(--font-display); font-size: 1.02rem; margin-bottom: 8px; }
+    .offer-card .offer-price { font-family: var(--font-display); font-size: 2rem; color: var(--primary); line-height: 1; margin-bottom: 10px; }
+    .offer-card p, .offer-card li, .offer-section p, .offer-section li { color: var(--ink-soft); font-size: .94rem; line-height: 1.7; }
+    .offer-card ul, .offer-section ul { margin: 12px 0 0; padding-left: 18px; }
+    .offer-lang { display: none; }
+    .offer-lang.active { display: block; }
+    .offer-section + .offer-section { margin-top: 26px; padding-top: 22px; border-top: 1px solid rgba(15,37,66,0.08); }
+    .offer-section h2 { font-family: var(--font-display); font-size: 1.12rem; margin-bottom: 10px; }
+    .offer-contacts { display: grid; gap: 6px; margin-top: 12px; font-size: .94rem; color: var(--ink-soft); }
+    .offer-contacts a { color: var(--primary); font-weight: 600; }
+    @media (max-width: 760px) {
+      .offer-shell { padding: 20px; }
+      .offer-options { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <header>
+    <div class="container header-inner">
+      <a class="brand brand-logo" href="index.html" aria-label="TrueLock">
+        <img src="TrueLock-main/assets/logo-dark.png" alt="TrueLock" />
+      </a>
+      <nav class="main-nav" style="margin-left:auto;">
+        <a href="index.html">Home</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="enterprise.html">Enterprise</a>
+      </nav>
+      <select id="offerLangSwitch" class="lang-switch" aria-label="Offer language">
+        <option value="ru">RU</option>
+        <option value="en">EN</option>
+        <option value="de">DE</option>
+        <option value="es">ES</option>
+        <option value="fr">FR</option>
+        <option value="it">IT</option>
+        <option value="pt">PT</option>
+        <option value="tr">TR</option>
+      </select>
+    </div>
+  </header>
+  <main class="offer-page">
+    <div class="container">
+      <div class="offer-header">
+        <a class="offer-back" href="index.html#pricing" id="offerBackLink">← Back to pricing</a>
+      </div>
+      <div class="offer-shell">
+        <article class="offer-lang" data-lang="en" data-title="TrueLock Public Offer">
+          <p class="eyebrow">Legal terms</p>
+          <h1 class="section-title">Public Offer for the purchase of TrueLock Pro</h1>
+          <div class="offer-meta">
+            <span class="offer-pill">Effective date: 10 April 2026</span>
+            <span class="offer-pill">Website: truelock.pro</span>
+          </div>
+          <p>This Public Offer governs one-time purchases of TrueLock Pro. By completing payment, the buyer accepts these terms in full.</p>
+          <div class="offer-note">The Russian-language version is the governing version in case of conflict or translation mismatch.</div>
+          <div class="offer-options">
+            <section class="offer-card">
+              <h3>Card payment</h3>
+              <div class="offer-price">$20</div>
+              <p>Hosted checkout via MoonPay.</p>
+              <ul>
+                <li>2 Pro licenses</li>
+                <li>Up to 2 devices in total</li>
+                <li>One-time payment</li>
+              </ul>
+            </section>
+            <section class="offer-card">
+              <h3>Crypto payment</h3>
+              <div class="offer-price">$10</div>
+              <p>Hosted crypto checkout.</p>
+              <ul>
+                <li>1 Pro license</li>
+                <li>1 device</li>
+                <li>One-time payment</li>
+              </ul>
+            </section>
+          </div>
+          <section class="offer-section">
+            <h2>1. Subject</h2>
+            <p>The seller grants the buyer a non-exclusive license to use TrueLock Pro. The license is perpetual for the purchased unit, limited to the number of licenses and devices stated at checkout, and does not transfer any intellectual property rights in the software.</p>
+          </section>
+          <section class="offer-section">
+            <h2>2. Contract formation and payment</h2>
+            <p>The contract is concluded when the buyer completes payment through the relevant hosted checkout flow. The buyer must provide an accurate email address for license delivery and may also provide a name for order identification.</p>
+          </section>
+          <section class="offer-section">
+            <h2>3. Delivery and activation</h2>
+            <p>After payment confirmation, TrueLock sends the Pro key to the email provided by the buyer. Delivery is normally completed within 24 hours after payment verification; in exceptional cases it may take up to 3 business days.</p>
+            <p>The seller's obligation is fulfilled when the Pro key is sent to the buyer's email address.</p>
+          </section>
+          <section class="offer-section">
+            <h2>4. License scope and restrictions</h2>
+            <p>The buyer may use the purchased Pro license only within the purchased device limit. Resale, sublicensing, public redistribution, listing or selling the app or the Pro key on third-party websites or marketplaces, reverse engineering, decompilation, application modification, protection bypass, or commercial sharing of the Pro key without written permission is prohibited.</p>
+          </section>
+          <section class="offer-section">
+            <h2>5. Refunds, support, and liability</h2>
+            <p>TrueLock Pro is a digital product. Once the Pro key has been delivered, the digital license is considered supplied. Refunds are only available where required by applicable law or if the seller cannot deliver the purchased license after confirmed payment.</p>
+            <p>The seller is not liable for issues caused by incorrect buyer data, unsupported environments, third-party service outages, or a fully compromised device or runtime.</p>
+          </section>
+          <section class="offer-section">
+            <h2>6. Contacts and governing language</h2>
+            <p>This Offer may be updated by publishing a new version on the website. The current version is the one published on the site at the time of purchase.</p>
+            <div class="offer-contacts">
+              <div>Seller: Katsura Yakov Daniilovich (self-employed)</div>
+              <div>Website: <a href="https://truelock.pro/" target="_blank" rel="noreferrer">https://truelock.pro/</a></div>
+              <div>Support: <a href="mailto:support@truelock.pro">support@truelock.pro</a></div>
+              <div>Additional contact: <a href="mailto:dj.frost006@gmail.com">dj.frost006@gmail.com</a></div>
+            </div>
+          </section>
+        </article>
+
+        <article class="offer-lang" data-lang="ru" data-title="Публичная оферта TrueLock">
+          <p class="eyebrow">Юридические условия</p>
+          <h1 class="section-title">Публичная оферта на покупку TrueLock Pro</h1>
+          <div class="offer-meta">
+            <span class="offer-pill">Дата вступления в силу: 10 апреля 2026</span>
+            <span class="offer-pill">Сайт: truelock.pro</span>
+          </div>
+          <p>Настоящая Публичная оферта регулирует разовые покупки TrueLock Pro. Совершая оплату, покупатель полностью и безоговорочно принимает эти условия.</p>
+          <div class="offer-note">Русскоязычная версия имеет приоритет в случае расхождений или различий перевода.</div>
+          <div class="offer-options">
+            <section class="offer-card">
+              <h3>Оплата картой</h3>
+              <div class="offer-price">$20</div>
+              <p>Hosted checkout через MoonPay.</p>
+              <ul>
+                <li>2 лицензии Pro</li>
+                <li>До 2 устройств суммарно</li>
+                <li>Разовый платеж</li>
+              </ul>
+            </section>
+            <section class="offer-card">
+              <h3>Оплата криптой</h3>
+              <div class="offer-price">$10</div>
+              <p>Hosted crypto checkout.</p>
+              <ul>
+                <li>1 лицензия Pro</li>
+                <li>1 устройство</li>
+                <li>Разовый платеж</li>
+              </ul>
+            </section>
+          </div>
+          <section class="offer-section">
+            <h2>1. Предмет оферты</h2>
+            <p>Продавец предоставляет покупателю неисключительную лицензию на использование TrueLock Pro. Лицензия является бессрочной для приобретенной единицы, ограничена количеством лицензий и устройств, указанным при оплате, и не означает передачу исключительных прав на программное обеспечение.</p>
+          </section>
+          <section class="offer-section">
+            <h2>2. Заключение договора и оплата</h2>
+            <p>Договор считается заключенным с момента успешной оплаты через соответствующую hosted checkout-форму. Покупатель обязан указать корректный адрес электронной почты для доставки лицензии и может дополнительно указать имя для идентификации заказа.</p>
+          </section>
+          <section class="offer-section">
+            <h2>3. Передача ключа и активация</h2>
+            <p>После подтверждения платежа TrueLock направляет ключ Pro на email, указанный покупателем. Обычно отправка осуществляется в течение 24 часов после проверки оплаты; в исключительных случаях срок может составить до 3 рабочих дней.</p>
+            <p>Обязательство продавца считается исполненным в момент отправки ключа Pro на указанный адрес электронной почты.</p>
+          </section>
+          <section class="offer-section">
+            <h2>4. Объем лицензии и ограничения</h2>
+            <p>Покупатель вправе использовать приобретенную лицензию Pro только в пределах оплаченного лимита устройств. Перепродажа, сублицензирование, публичное распространение, размещение или продажа приложения либо ключа Pro на сторонних сайтах и маркетплейсах, реверс-инжиниринг, декомпиляция, модификация приложения, обход защиты или коммерческая передача ключа Pro без письменного разрешения запрещены.</p>
+          </section>
+          <section class="offer-section">
+            <h2>5. Возвраты, поддержка и ответственность</h2>
+            <p>TrueLock Pro является цифровым товаром. После отправки ключа Pro цифровая лицензия считается предоставленной. Возврат возможен только в случаях, прямо предусмотренных применимым законодательством, либо если продавец не может предоставить оплаченную лицензию после подтвержденного платежа.</p>
+            <p>Продавец не отвечает за проблемы, вызванные некорректными данными покупателя, неподдерживаемой средой, сбоями сторонних сервисов, а также полностью скомпрометированным устройством или runtime-средой.</p>
+          </section>
+          <section class="offer-section">
+            <h2>6. Контакты и действующая редакция</h2>
+            <p>Оферта может быть изменена путем публикации новой редакции на сайте. Актуальной считается версия, размещенная на сайте на момент оплаты.</p>
+            <div class="offer-contacts">
+              <div>Продавец: Кацура Яков Даниилович (самозанятый)</div>
+              <div>Сайт: <a href="https://truelock.pro/" target="_blank" rel="noreferrer">https://truelock.pro/</a></div>
+              <div>Поддержка: <a href="mailto:support@truelock.pro">support@truelock.pro</a></div>
+              <div>Дополнительный контакт: <a href="mailto:dj.frost006@gmail.com">dj.frost006@gmail.com</a></div>
+            </div>
+          </section>
+        </article>
+
+        <article class="offer-lang" data-lang="de" data-title="TrueLock Öffentliches Angebot">
+          <p class="eyebrow">Rechtliche Bedingungen</p>
+          <h1 class="section-title">Öffentliches Angebot für den Kauf von TrueLock Pro</h1>
+          <div class="offer-meta">
+            <span class="offer-pill">Gültig ab: 10. April 2026</span>
+            <span class="offer-pill">Website: truelock.pro</span>
+          </div>
+          <p>Dieses öffentliche Angebot regelt einmalige Käufe von TrueLock Pro. Mit Abschluss der Zahlung akzeptiert der Käufer diese Bedingungen vollständig.</p>
+          <div class="offer-note">Im Fall von Abweichungen oder Übersetzungsfehlern ist die russische Fassung maßgeblich.</div>
+          <div class="offer-options">
+            <section class="offer-card">
+              <h3>Kartenzahlung</h3>
+              <div class="offer-price">$20</div>
+              <p>Hosted Checkout über MoonPay.</p>
+              <ul>
+                <li>2 Pro-Lizenzen</li>
+                <li>Bis zu 2 Geräte insgesamt</li>
+                <li>Einmalzahlung</li>
+              </ul>
+            </section>
+            <section class="offer-card">
+              <h3>Krypto-Zahlung</h3>
+              <div class="offer-price">$10</div>
+              <p>Hosted Crypto Checkout.</p>
+              <ul>
+                <li>1 Pro-Lizenz</li>
+                <li>1 Gerät</li>
+                <li>Einmalzahlung</li>
+              </ul>
+            </section>
+          </div>
+          <section class="offer-section">
+            <h2>1. Gegenstand</h2>
+            <p>Der Verkäufer gewährt dem Käufer eine nicht-exklusive Lizenz zur Nutzung von TrueLock Pro. Die Lizenz ist für die gekaufte Einheit unbefristet, auf die beim Checkout angegebene Anzahl von Lizenzen und Geräten beschränkt und überträgt keine geistigen Eigentumsrechte an der Software.</p>
+          </section>
+          <section class="offer-section">
+            <h2>2. Vertragsschluss und Zahlung</h2>
+            <p>Der Vertrag kommt mit erfolgreichem Abschluss der Zahlung über den jeweiligen Hosted-Checkout zustande. Der Käufer muss eine korrekte E-Mail-Adresse für die Zustellung des Lizenzschlüssels angeben und kann zusätzlich einen Namen zur Bestellidentifikation angeben.</p>
+          </section>
+          <section class="offer-section">
+            <h2>3. Zustellung und Aktivierung</h2>
+            <p>Nach Bestätigung der Zahlung sendet TrueLock den Pro-Schlüssel an die vom Käufer angegebene E-Mail-Adresse. Die Zustellung erfolgt normalerweise innerhalb von 24 Stunden nach Zahlungsprüfung; in Ausnahmefällen kann sie bis zu 3 Werktage dauern.</p>
+            <p>Die Verpflichtung des Verkäufers ist erfüllt, sobald der Pro-Schlüssel an die angegebene E-Mail-Adresse gesendet wurde.</p>
+          </section>
+          <section class="offer-section">
+            <h2>4. Lizenzumfang und Beschränkungen</h2>
+            <p>Der Käufer darf die erworbene Pro-Lizenz nur innerhalb der bezahlten Geräteanzahl nutzen. Weiterverkauf, Unterlizenzierung, öffentliche Weitergabe, das Einstellen oder Verkaufen der App oder des Pro-Schlüssels auf Drittseiten oder Marktplätzen, Reverse Engineering, Dekompilierung, Modifikation der Anwendung, Schutzumgehung oder kommerzielle Weitergabe des Pro-Schlüssels ohne schriftliche Zustimmung sind untersagt.</p>
+          </section>
+          <section class="offer-section">
+            <h2>5. Erstattungen, Support und Haftung</h2>
+            <p>TrueLock Pro ist ein digitales Produkt. Sobald der Pro-Schlüssel zugestellt wurde, gilt die digitale Lizenz als geliefert. Rückerstattungen sind nur möglich, wenn das anwendbare Recht dies verlangt oder wenn der Verkäufer die bezahlte Lizenz nach bestätigter Zahlung nicht liefern kann.</p>
+            <p>Der Verkäufer haftet nicht für Probleme aufgrund falscher Käuferdaten, nicht unterstützter Umgebungen, Ausfällen von Drittanbieterdiensten oder eines vollständig kompromittierten Geräts bzw. Laufzeitumfelds.</p>
+          </section>
+          <section class="offer-section">
+            <h2>6. Kontakte und maßgebliche Fassung</h2>
+            <p>Dieses Angebot kann durch Veröffentlichung einer neuen Fassung auf der Website aktualisiert werden. Maßgeblich ist die auf der Website zum Zahlungszeitpunkt veröffentlichte Version.</p>
+            <div class="offer-contacts">
+              <div>Verkäufer: Katsura Yakov Daniilovich (selbstständig)</div>
+              <div>Website: <a href="https://truelock.pro/" target="_blank" rel="noreferrer">https://truelock.pro/</a></div>
+              <div>Support: <a href="mailto:support@truelock.pro">support@truelock.pro</a></div>
+              <div>Zusätzlicher Kontakt: <a href="mailto:dj.frost006@gmail.com">dj.frost006@gmail.com</a></div>
+            </div>
+          </section>
+        </article>
+
+        <article class="offer-lang" data-lang="es" data-title="Oferta Pública de TrueLock">
+          <p class="eyebrow">Condiciones legales</p>
+          <h1 class="section-title">Oferta pública para la compra de TrueLock Pro</h1>
+          <div class="offer-meta">
+            <span class="offer-pill">Fecha de vigencia: 10 de abril de 2026</span>
+            <span class="offer-pill">Sitio web: truelock.pro</span>
+          </div>
+          <p>Esta Oferta pública regula las compras únicas de TrueLock Pro. Al completar el pago, el comprador acepta plenamente estas condiciones.</p>
+          <div class="offer-note">En caso de conflicto o diferencia de traducción, prevalece la versión en ruso.</div>
+          <div class="offer-options">
+            <section class="offer-card">
+              <h3>Pago con tarjeta</h3>
+              <div class="offer-price">$20</div>
+              <p>Checkout alojado vía MoonPay.</p>
+              <ul>
+                <li>2 licencias Pro</li>
+                <li>Hasta 2 dispositivos en total</li>
+                <li>Pago único</li>
+              </ul>
+            </section>
+            <section class="offer-card">
+              <h3>Pago con cripto</h3>
+              <div class="offer-price">$10</div>
+              <p>Checkout cripto alojado.</p>
+              <ul>
+                <li>1 licencia Pro</li>
+                <li>1 dispositivo</li>
+                <li>Pago único</li>
+              </ul>
+            </section>
+          </div>
+          <section class="offer-section">
+            <h2>1. Objeto</h2>
+            <p>El vendedor concede al comprador una licencia no exclusiva para usar TrueLock Pro. La licencia es perpetua para la unidad comprada, limitada al número de licencias y dispositivos indicados en el checkout, y no transfiere derechos de propiedad intelectual sobre el software.</p>
+          </section>
+          <section class="offer-section">
+            <h2>2. Formación del contrato y pago</h2>
+            <p>El contrato se considera celebrado cuando el comprador completa con éxito el pago mediante el flujo de checkout correspondiente. El comprador debe indicar una dirección de correo válida para la entrega de la licencia y puede indicar también un nombre para identificar el pedido.</p>
+          </section>
+          <section class="offer-section">
+            <h2>3. Entrega y activación</h2>
+            <p>Tras la confirmación del pago, TrueLock envía la clave Pro al correo indicado por el comprador. Normalmente el envío se realiza dentro de las 24 horas siguientes a la verificación del pago; en casos excepcionales puede tardar hasta 3 días laborables.</p>
+            <p>La obligación del vendedor se considera cumplida cuando la clave Pro se envía al correo proporcionado por el comprador.</p>
+          </section>
+          <section class="offer-section">
+            <h2>4. Alcance de la licencia y restricciones</h2>
+            <p>El comprador puede utilizar la licencia Pro adquirida solo dentro del límite de dispositivos pagado. Queda prohibida la reventa, sublicencia, redistribución pública, publicación o venta de la aplicación o de la clave Pro en sitios o marketplaces de terceros, ingeniería inversa, descompilación, modificación de la aplicación, evasión de protecciones o transferencia comercial de la clave Pro sin autorización escrita.</p>
+          </section>
+          <section class="offer-section">
+            <h2>5. Reembolsos, soporte y responsabilidad</h2>
+            <p>TrueLock Pro es un producto digital. Una vez entregada la clave Pro, la licencia digital se considera suministrada. Los reembolsos solo están disponibles cuando lo exija la ley aplicable o si el vendedor no puede entregar la licencia pagada tras la confirmación del pago.</p>
+            <p>El vendedor no responde por problemas causados por datos incorrectos del comprador, entornos no compatibles, fallos de servicios de terceros o un dispositivo o entorno de ejecución totalmente comprometido.</p>
+          </section>
+          <section class="offer-section">
+            <h2>6. Contactos y versión aplicable</h2>
+            <p>Esta Oferta puede actualizarse mediante la publicación de una nueva versión en el sitio web. La versión vigente es la publicada en el sitio en el momento del pago.</p>
+            <div class="offer-contacts">
+              <div>Vendedor: Katsura Yakov Daniilovich (autónomo)</div>
+              <div>Sitio web: <a href="https://truelock.pro/" target="_blank" rel="noreferrer">https://truelock.pro/</a></div>
+              <div>Soporte: <a href="mailto:support@truelock.pro">support@truelock.pro</a></div>
+              <div>Contacto adicional: <a href="mailto:dj.frost006@gmail.com">dj.frost006@gmail.com</a></div>
+            </div>
+          </section>
+        </article>
+
+        <article class="offer-lang" data-lang="fr" data-title="Offre Publique TrueLock">
+          <p class="eyebrow">Conditions juridiques</p>
+          <h1 class="section-title">Offre publique pour l'achat de TrueLock Pro</h1>
+          <div class="offer-meta">
+            <span class="offer-pill">Date d'effet : 10 avril 2026</span>
+            <span class="offer-pill">Site web : truelock.pro</span>
+          </div>
+          <p>La présente Offre publique régit les achats uniques de TrueLock Pro. En finalisant le paiement, l'acheteur accepte intégralement ces conditions.</p>
+          <div class="offer-note">En cas de conflit ou de différence de traduction, la version russe prévaut.</div>
+          <div class="offer-options">
+            <section class="offer-card">
+              <h3>Paiement par carte</h3>
+              <div class="offer-price">$20</div>
+              <p>Checkout hébergé via MoonPay.</p>
+              <ul>
+                <li>2 licences Pro</li>
+                <li>Jusqu'à 2 appareils au total</li>
+                <li>Paiement unique</li>
+              </ul>
+            </section>
+            <section class="offer-card">
+              <h3>Paiement crypto</h3>
+              <div class="offer-price">$10</div>
+              <p>Checkout crypto hébergé.</p>
+              <ul>
+                <li>1 licence Pro</li>
+                <li>1 appareil</li>
+                <li>Paiement unique</li>
+              </ul>
+            </section>
+          </div>
+          <section class="offer-section">
+            <h2>1. Objet</h2>
+            <p>Le vendeur accorde à l'acheteur une licence non exclusive d'utilisation de TrueLock Pro. La licence est perpétuelle pour l'unité achetée, limitée au nombre de licences et d'appareils indiqué lors du checkout, et ne transfère aucun droit de propriété intellectuelle sur le logiciel.</p>
+          </section>
+          <section class="offer-section">
+            <h2>2. Formation du contrat et paiement</h2>
+            <p>Le contrat est conclu lorsque l'acheteur finalise avec succès le paiement via le checkout concerné. L'acheteur doit fournir une adresse e-mail valide pour la livraison de la licence et peut également fournir un nom pour l'identification de la commande.</p>
+          </section>
+          <section class="offer-section">
+            <h2>3. Livraison et activation</h2>
+            <p>Après confirmation du paiement, TrueLock envoie la clé Pro à l'adresse e-mail fournie par l'acheteur. La livraison intervient normalement dans les 24 heures suivant la vérification du paiement ; dans des cas exceptionnels, elle peut prendre jusqu'à 3 jours ouvrés.</p>
+            <p>L'obligation du vendeur est réputée exécutée lorsque la clé Pro est envoyée à l'adresse e-mail fournie.</p>
+          </section>
+          <section class="offer-section">
+            <h2>4. Portée de la licence et restrictions</h2>
+            <p>L'acheteur peut utiliser la licence Pro achetée uniquement dans la limite du nombre d'appareils payé. La revente, la sous-licence, la redistribution publique, la mise en vente de l'application ou de la clé Pro sur des sites tiers ou des places de marché, l'ingénierie inverse, la décompilation, la modification de l'application, le contournement des protections ou le partage commercial de la clé Pro sans autorisation écrite sont interdits.</p>
+          </section>
+          <section class="offer-section">
+            <h2>5. Remboursements, support et responsabilité</h2>
+            <p>TrueLock Pro est un produit numérique. Une fois la clé Pro livrée, la licence numérique est considérée comme fournie. Les remboursements ne sont possibles que lorsque la loi applicable l'exige ou si le vendeur ne peut pas livrer la licence achetée après confirmation du paiement.</p>
+            <p>Le vendeur n'est pas responsable des problèmes causés par des données incorrectes fournies par l'acheteur, des environnements non pris en charge, des interruptions de services tiers ou un appareil ou runtime entièrement compromis.</p>
+          </section>
+          <section class="offer-section">
+            <h2>6. Contacts et version applicable</h2>
+            <p>Cette Offre peut être mise à jour par publication d'une nouvelle version sur le site web. La version applicable est celle publiée sur le site au moment du paiement.</p>
+            <div class="offer-contacts">
+              <div>Vendeur : Katsura Yakov Daniilovich (travailleur indépendant)</div>
+              <div>Site web : <a href="https://truelock.pro/" target="_blank" rel="noreferrer">https://truelock.pro/</a></div>
+              <div>Support : <a href="mailto:support@truelock.pro">support@truelock.pro</a></div>
+              <div>Contact supplémentaire : <a href="mailto:dj.frost006@gmail.com">dj.frost006@gmail.com</a></div>
+            </div>
+          </section>
+        </article>
+
+        <article class="offer-lang" data-lang="it" data-title="Offerta Pubblica TrueLock">
+          <p class="eyebrow">Condizioni legali</p>
+          <h1 class="section-title">Offerta pubblica per l'acquisto di TrueLock Pro</h1>
+          <div class="offer-meta">
+            <span class="offer-pill">Data di efficacia: 10 aprile 2026</span>
+            <span class="offer-pill">Sito: truelock.pro</span>
+          </div>
+          <p>La presente Offerta pubblica disciplina gli acquisti singoli di TrueLock Pro. Completando il pagamento, l'acquirente accetta integralmente queste condizioni.</p>
+          <div class="offer-note">In caso di conflitto o differenza di traduzione prevale la versione russa.</div>
+          <div class="offer-options">
+            <section class="offer-card">
+              <h3>Pagamento con carta</h3>
+              <div class="offer-price">$20</div>
+              <p>Checkout ospitato via MoonPay.</p>
+              <ul>
+                <li>2 licenze Pro</li>
+                <li>Fino a 2 dispositivi complessivi</li>
+                <li>Pagamento una tantum</li>
+              </ul>
+            </section>
+            <section class="offer-card">
+              <h3>Pagamento crypto</h3>
+              <div class="offer-price">$10</div>
+              <p>Checkout crypto ospitato.</p>
+              <ul>
+                <li>1 licenza Pro</li>
+                <li>1 dispositivo</li>
+                <li>Pagamento una tantum</li>
+              </ul>
+            </section>
+          </div>
+          <section class="offer-section">
+            <h2>1. Oggetto</h2>
+            <p>Il venditore concede all'acquirente una licenza non esclusiva per l'uso di TrueLock Pro. La licenza è perpetua per l'unità acquistata, limitata al numero di licenze e dispositivi indicati al checkout e non trasferisce diritti di proprietà intellettuale sul software.</p>
+          </section>
+          <section class="offer-section">
+            <h2>2. Formazione del contratto e pagamento</h2>
+            <p>Il contratto si considera concluso quando l'acquirente completa con successo il pagamento tramite il relativo checkout ospitato. L'acquirente deve fornire un indirizzo email valido per la consegna della licenza e può anche indicare un nome per identificare l'ordine.</p>
+          </section>
+          <section class="offer-section">
+            <h2>3. Consegna e attivazione</h2>
+            <p>Dopo la conferma del pagamento, TrueLock invia la chiave Pro all'indirizzo email fornito dall'acquirente. La consegna avviene normalmente entro 24 ore dalla verifica del pagamento; in casi eccezionali può richiedere fino a 3 giorni lavorativi.</p>
+            <p>L'obbligo del venditore si considera adempiuto quando la chiave Pro viene inviata all'indirizzo email fornito.</p>
+          </section>
+          <section class="offer-section">
+            <h2>4. Ambito della licenza e restrizioni</h2>
+            <p>L'acquirente può utilizzare la licenza Pro acquistata solo entro il limite di dispositivi pagato. Sono vietati rivendita, sublicenza, redistribuzione pubblica, pubblicazione o vendita dell'applicazione o della chiave Pro su siti o marketplace di terzi, reverse engineering, decompilazione, modifica dell'applicazione, aggiramento delle protezioni o condivisione commerciale della chiave Pro senza autorizzazione scritta.</p>
+          </section>
+          <section class="offer-section">
+            <h2>5. Rimborsi, supporto e responsabilità</h2>
+            <p>TrueLock Pro è un prodotto digitale. Una volta consegnata la chiave Pro, la licenza digitale si considera fornita. I rimborsi sono disponibili solo se richiesti dalla legge applicabile o se il venditore non può consegnare la licenza acquistata dopo il pagamento confermato.</p>
+            <p>Il venditore non è responsabile per problemi causati da dati errati forniti dall'acquirente, ambienti non supportati, interruzioni di servizi di terzi o da un dispositivo o runtime completamente compromesso.</p>
+          </section>
+          <section class="offer-section">
+            <h2>6. Contatti e versione applicabile</h2>
+            <p>Questa Offerta può essere aggiornata mediante pubblicazione di una nuova versione sul sito. Fa fede la versione pubblicata sul sito al momento del pagamento.</p>
+            <div class="offer-contacts">
+              <div>Venditore: Katsura Yakov Daniilovich (lavoratore autonomo)</div>
+              <div>Sito: <a href="https://truelock.pro/" target="_blank" rel="noreferrer">https://truelock.pro/</a></div>
+              <div>Supporto: <a href="mailto:support@truelock.pro">support@truelock.pro</a></div>
+              <div>Contatto aggiuntivo: <a href="mailto:dj.frost006@gmail.com">dj.frost006@gmail.com</a></div>
+            </div>
+          </section>
+        </article>
+
+        <article class="offer-lang" data-lang="pt" data-title="Oferta Pública TrueLock">
+          <p class="eyebrow">Termos legais</p>
+          <h1 class="section-title">Oferta pública para a compra do TrueLock Pro</h1>
+          <div class="offer-meta">
+            <span class="offer-pill">Data de vigência: 10 de abril de 2026</span>
+            <span class="offer-pill">Site: truelock.pro</span>
+          </div>
+          <p>Esta Oferta pública regula compras únicas do TrueLock Pro. Ao concluir o pagamento, o comprador aceita integralmente estes termos.</p>
+          <div class="offer-note">Em caso de conflito ou diferença de tradução, prevalece a versão em russo.</div>
+          <div class="offer-options">
+            <section class="offer-card">
+              <h3>Pagamento com cartão</h3>
+              <div class="offer-price">$20</div>
+              <p>Checkout hospedado via MoonPay.</p>
+              <ul>
+                <li>2 licenças Pro</li>
+                <li>Até 2 dispositivos no total</li>
+                <li>Pagamento único</li>
+              </ul>
+            </section>
+            <section class="offer-card">
+              <h3>Pagamento com cripto</h3>
+              <div class="offer-price">$10</div>
+              <p>Checkout cripto hospedado.</p>
+              <ul>
+                <li>1 licença Pro</li>
+                <li>1 dispositivo</li>
+                <li>Pagamento único</li>
+              </ul>
+            </section>
+          </div>
+          <section class="offer-section">
+            <h2>1. Objeto</h2>
+            <p>O vendedor concede ao comprador uma licença não exclusiva para usar o TrueLock Pro. A licença é perpétua para a unidade comprada, limitada ao número de licenças e dispositivos informados no checkout e não transfere direitos de propriedade intelectual sobre o software.</p>
+          </section>
+          <section class="offer-section">
+            <h2>2. Formação do contrato e pagamento</h2>
+            <p>O contrato é celebrado quando o comprador conclui com sucesso o pagamento por meio do checkout correspondente. O comprador deve fornecer um e-mail válido para entrega da licença e pode também informar um nome para identificação do pedido.</p>
+          </section>
+          <section class="offer-section">
+            <h2>3. Entrega e ativação</h2>
+            <p>Após a confirmação do pagamento, o TrueLock envia a chave Pro para o e-mail informado pelo comprador. A entrega normalmente ocorre em até 24 horas após a verificação do pagamento; em casos excepcionais pode levar até 3 dias úteis.</p>
+            <p>A obrigação do vendedor é considerada cumprida quando a chave Pro é enviada para o endereço de e-mail informado.</p>
+          </section>
+          <section class="offer-section">
+            <h2>4. Escopo da licença e restrições</h2>
+            <p>O comprador pode usar a licença Pro adquirida apenas dentro do limite de dispositivos pago. Revenda, sublicenciamento, redistribuição pública, publicação ou venda do aplicativo ou da chave Pro em sites ou marketplaces de terceiros, engenharia reversa, descompilação, modificação do aplicativo, bypass de proteção ou compartilhamento comercial da chave Pro sem autorização escrita são proibidos.</p>
+          </section>
+          <section class="offer-section">
+            <h2>5. Reembolsos, suporte e responsabilidade</h2>
+            <p>O TrueLock Pro é um produto digital. Depois que a chave Pro é entregue, a licença digital é considerada fornecida. Reembolsos só estão disponíveis quando exigidos pela legislação aplicável ou se o vendedor não puder entregar a licença comprada após o pagamento confirmado.</p>
+            <p>O vendedor não se responsabiliza por problemas causados por dados incorretos do comprador, ambientes não suportados, falhas de serviços de terceiros ou por um dispositivo ou runtime totalmente comprometido.</p>
+          </section>
+          <section class="offer-section">
+            <h2>6. Contatos e versão aplicável</h2>
+            <p>Esta Oferta pode ser atualizada mediante publicação de uma nova versão no site. A versão válida é a publicada no site no momento do pagamento.</p>
+            <div class="offer-contacts">
+              <div>Vendedor: Katsura Yakov Daniilovich (autônomo)</div>
+              <div>Site: <a href="https://truelock.pro/" target="_blank" rel="noreferrer">https://truelock.pro/</a></div>
+              <div>Suporte: <a href="mailto:support@truelock.pro">support@truelock.pro</a></div>
+              <div>Contato adicional: <a href="mailto:dj.frost006@gmail.com">dj.frost006@gmail.com</a></div>
+            </div>
+          </section>
+        </article>
+
+        <article class="offer-lang" data-lang="tr" data-title="TrueLock Genel Teklifi">
+          <p class="eyebrow">Hukuki koşullar</p>
+          <h1 class="section-title">TrueLock Pro satın alımı için genel teklif</h1>
+          <div class="offer-meta">
+            <span class="offer-pill">Yürürlük tarihi: 10 Nisan 2026</span>
+            <span class="offer-pill">Site: truelock.pro</span>
+          </div>
+          <p>Bu Genel Teklif, TrueLock Pro için tek seferlik satın alımları düzenler. Ödeme tamamlandığında alıcı bu şartları tamamen kabul etmiş olur.</p>
+          <div class="offer-note">Çeviri farkı veya uyuşmazlık durumunda Rusça sürüm geçerlidir.</div>
+          <div class="offer-options">
+            <section class="offer-card">
+              <h3>Kartla ödeme</h3>
+              <div class="offer-price">$20</div>
+              <p>MoonPay üzerinden barındırılan checkout.</p>
+              <ul>
+                <li>2 Pro lisansı</li>
+                <li>Toplam en fazla 2 cihaz</li>
+                <li>Tek seferlik ödeme</li>
+              </ul>
+            </section>
+            <section class="offer-card">
+              <h3>Kripto ile ödeme</h3>
+              <div class="offer-price">$10</div>
+              <p>Barındırılan kripto checkout.</p>
+              <ul>
+                <li>1 Pro lisansı</li>
+                <li>1 cihaz</li>
+                <li>Tek seferlik ödeme</li>
+              </ul>
+            </section>
+          </div>
+          <section class="offer-section">
+            <h2>1. Konu</h2>
+            <p>Satıcı, alıcıya TrueLock Pro kullanımı için münhasır olmayan bir lisans verir. Lisans satın alınan birim için süresizdir, checkout sırasında belirtilen lisans ve cihaz sayısıyla sınırlıdır ve yazılım üzerindeki fikri mülkiyet haklarını devretmez.</p>
+          </section>
+          <section class="offer-section">
+            <h2>2. Sözleşmenin kurulması ve ödeme</h2>
+            <p>Sözleşme, alıcı ilgili checkout akışı üzerinden ödemeyi başarıyla tamamladığında kurulmuş sayılır. Alıcı, lisans teslimi için geçerli bir e-posta adresi vermelidir ve sipariş tanımlaması için adını da belirtebilir.</p>
+          </section>
+          <section class="offer-section">
+            <h2>3. Teslimat ve aktivasyon</h2>
+            <p>Ödeme onaylandıktan sonra TrueLock, Pro anahtarını alıcının verdiği e-posta adresine gönderir. Teslimat genellikle ödeme doğrulamasından sonraki 24 saat içinde yapılır; istisnai durumlarda 3 iş gününe kadar sürebilir.</p>
+            <p>Satıcının yükümlülüğü, Pro anahtarı belirtilen e-posta adresine gönderildiğinde yerine getirilmiş sayılır.</p>
+          </section>
+          <section class="offer-section">
+            <h2>4. Lisans kapsamı ve kısıtlamalar</h2>
+            <p>Alıcı, satın aldığı Pro lisansını yalnızca ödenen cihaz sınırı içinde kullanabilir. Yazılı izin olmadan yeniden satış, alt lisans verme, kamuya yeniden dağıtım, uygulamanın veya Pro anahtarının üçüncü taraf sitelerde ya da pazar yerlerinde listelenmesi veya satılması, tersine mühendislik, dekompilasyon, uygulamanın değiştirilmesi, koruma aşma veya Pro anahtarının ticari paylaşımı yasaktır.</p>
+          </section>
+          <section class="offer-section">
+            <h2>5. İadeler, destek ve sorumluluk</h2>
+            <p>TrueLock Pro dijital bir üründür. Pro anahtarı teslim edildikten sonra dijital lisans sağlanmış kabul edilir. İadeler yalnızca yürürlükteki hukukun zorunlu kıldığı hallerde veya satıcı onaylanmış ödemeden sonra satın alınan lisansı sağlayamadığında mümkündür.</p>
+            <p>Satıcı, alıcının yanlış verileri, desteklenmeyen ortamlar, üçüncü taraf hizmet kesintileri veya tamamen ele geçirilmiş bir cihaz ya da çalışma ortamından kaynaklanan sorunlardan sorumlu değildir.</p>
+          </section>
+          <section class="offer-section">
+            <h2>6. İletişim ve geçerli sürüm</h2>
+            <p>Bu teklif, sitede yeni bir sürüm yayınlanarak güncellenebilir. Ödeme anında sitede yayınlanan sürüm geçerlidir.</p>
+            <div class="offer-contacts">
+              <div>Satıcı: Katsura Yakov Daniilovich (serbest çalışan)</div>
+              <div>Site: <a href="https://truelock.pro/" target="_blank" rel="noreferrer">https://truelock.pro/</a></div>
+              <div>Destek: <a href="mailto:support@truelock.pro">support@truelock.pro</a></div>
+              <div>Ek iletişim: <a href="mailto:dj.frost006@gmail.com">dj.frost006@gmail.com</a></div>
+            </div>
+          </section>
+        </article>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-brand">TRUE<span>LOCK</span></div>
+      <div class="footer-text">
+        Offline-first capsules with access conditions. Opening is always free.<br>
+        Katsura Yakov Daniilovich
+      </div>
+      <div style="margin-left:auto;font-size:0.78rem;color:var(--muted);text-align:right;">
+        support@truelock.pro<br>dj.frost006@gmail.com
+      </div>
+    </div>
+  </footer>
+  <script>
+    (function () {
+      const supported = ["ru", "en", "de", "es", "fr", "it", "pt", "tr"];
+      const labels = {
+        en: "← Back to pricing",
+        ru: "← Назад к покупке",
+        de: "← Zurück zur Zahlung",
+        es: "← Volver al bloque de compra",
+        fr: "← Retour au bloc d'achat",
+        it: "← Torna al blocco acquisto",
+        pt: "← Voltar ao bloco de compra",
+        tr: "← Satın alma bölümüne dön"
+      };
+      const switchEl = document.getElementById("offerLangSwitch");
+      const backLink = document.getElementById("offerBackLink");
+      const items = Array.from(document.querySelectorAll(".offer-lang"));
+      function applyOfferLang(lang) {
+        const safe = supported.includes(lang) ? lang : "en";
+        items.forEach((item) => item.classList.toggle("active", item.dataset.lang === safe));
+        document.documentElement.lang = safe;
+        localStorage.setItem("truelock_landing_lang", safe);
+        if (switchEl) switchEl.value = safe;
+        const active = document.querySelector(".offer-lang.active");
+        if (active?.dataset.title) document.title = active.dataset.title;
+        if (backLink) backLink.textContent = labels[safe] || labels.en;
+      }
+      const initial = localStorage.getItem("truelock_landing_lang") || "en";
+      applyOfferLang(initial);
+      switchEl?.addEventListener("change", (event) => applyOfferLang(event.target.value));
+    })();
+  </script>
+</body>
+</html>

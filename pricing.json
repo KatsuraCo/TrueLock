@@ -1,0 +1,91 @@
+{
+  "product": "TrueLock",
+  "updated_at": "2026-04-08",
+  "currency": "USD",
+  "website": "https://truelock.pro/",
+  "enterprise_page": "https://truelock.pro/enterprise.html",
+  "offer_page": "https://truelock.pro/offer.html",
+  "support_email": "support@truelock.pro",
+  "additional_contact_email": "dj.frost006@gmail.com",
+  "release_scope": ["Android", "Windows"],
+  "trust_boundary": "Access enforcement is application-layer. A fully compromised client or runtime can bypass local controls.",
+  "plans": [
+    {
+      "id": "free",
+      "name": "Free",
+      "pricing_model": "free",
+      "price_usd": 0,
+      "billing": "none",
+      "for": "Recipients and basic evaluation",
+      "includes": [
+        "Open and verify capsules",
+        "Basic capsule creation flow with limits",
+        "Basic sharing and import flow",
+        "No account required"
+      ]
+    },
+    {
+      "id": "pro",
+      "name": "Pro",
+      "pricing_model": "one_time_multi_checkout",
+      "billing": "one-time payment",
+      "for": "Active creators",
+      "payment_options": [
+        {
+          "id": "crypto_checkout",
+          "provider": "MoonPay Commerce",
+          "channel": "crypto",
+          "price_usd": 10,
+          "device_limit": 1,
+          "license_count": 1,
+          "checkout_url": "https://moonpay.hel.io/pay/69d8eac15662bb321f77caf1"
+        },
+        {
+          "id": "card_checkout",
+          "provider": "MoonPay",
+          "channel": "card",
+          "price_usd": 20,
+          "device_limit": 2,
+          "license_count": 2,
+          "checkout_url": "https://moonpay.hel.io/pay/699c40d6087609a6176e7859"
+        }
+      ],
+      "includes": [
+        "Everything in Free",
+        "Advanced creator capabilities",
+        "Extended policy configuration",
+        "Scenario templates and custom template workflows",
+        "Batch-oriented workflows"
+      ]
+    },
+    {
+      "id": "business_pilot",
+      "name": "Business pilot",
+      "pricing_model": "custom_quote",
+      "for": "Teams validating one workflow",
+      "scope": [
+        "1 use case",
+        "1 workflow",
+        "1 stakeholder group",
+        "1 short validation period"
+      ],
+      "includes": [
+        "Direct evaluation support",
+        "Scoped pilot definition",
+        "Workflow fit review"
+      ]
+    },
+    {
+      "id": "enterprise_custom",
+      "name": "White-label / SDK / format licensing",
+      "pricing_model": "custom_quote",
+      "for": "Partners and product teams",
+      "includes": [
+        "White-label discussion",
+        "Format licensing discussion",
+        "SDK or integration discussion",
+        "Commercial scope definition"
+      ]
+    }
+  ]
+}
