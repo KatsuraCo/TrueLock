@@ -1,0 +1,14 @@
+name: truelock_open_core
+description: Auditable reference codec for TrueLock password capsules.
+version: 0.1.0
+publish_to: none
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  cryptography: ^2.7.0
+
+dev_dependencies:
+  lints: ^5.0.0
+  test: ^1.25.0

@@ -58,5 +58,9 @@ Public technical documents:
 - https://truelock.pro/documents/SECURITY_HARD_CHECKLIST.md
 - https://truelock.pro/documents/SECURITY_TRUST_PACK.md
 
+Open core:
+- https://github.com/KatsuraCo/TrueLock/tree/main/open-core
+- Scope: reference password-capsule codec and tests; licensing and advanced policy modules remain closed.
+
 Support:
 - support@truelock.pro
