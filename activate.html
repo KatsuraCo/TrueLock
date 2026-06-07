@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Activate TrueLock Pro</title>
+  <meta name="description" content="Activate a paid TrueLock Pro license after invoice payment." />
+  <meta name="robots" content="index,follow,max-snippet:-1" />
+  <link rel="canonical" href="https://truelock.pro/activate.html" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <header>
+    <div class="container header-inner">
+      <a class="brand brand-logo" href="./index.html" aria-label="TrueLock">
+        <img src="TrueLock-main/assets/logo-dark.png" alt="TrueLock" />
+      </a>
+      <nav class="main-nav">
+        <a href="./index.html#pricing">Pricing</a>
+        <a href="./index.html#security">Security</a>
+        <a href="./index.html#download">Download</a>
+      </nav>
+      <a class="btn btn-primary" href="./index.html">Back to site</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-soft">
+      <div class="container activation-layout">
+        <div class="activation-panel reveal">
+          <p class="eyebrow">TrueLock Pro activation</p>
+          <h1 class="section-title">Get your signed license code.</h1>
+          <p class="activation-copy">
+            Enter the email and order ID from the paid invoice. Add the device ID from TrueLock if you want the license bound to one device.
+          </p>
+
+          <form class="invoice-form" id="activationForm">
+            <label>
+              <span>Email used for payment</span>
+              <input id="emailInput" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              <span>Order ID</span>
+              <input id="orderInput" name="orderId" type="text" autocomplete="off" placeholder="TL-ORDER-001" required />
+            </label>
+            <label>
+              <span>Device ID optional</span>
+              <input id="deviceInput" name="deviceId" type="text" autocomplete="off" placeholder="Paste from TrueLock app" />
+            </label>
+            <button class="btn btn-primary" type="submit">Get activation code</button>
+          </form>
+
+          <div class="activation-result" id="activationResult" hidden>
+            <h2>Your activation code</h2>
+            <textarea id="activationCode" readonly rows="7"></textarea>
+            <div class="cta-row">
+              <button class="btn btn-primary" id="copyCodeButton" type="button">Copy code</button>
+              <a class="btn btn-ghost" href="./apps/TrueLock.apk">Download Android</a>
+            </div>
+            <p class="invoice-status">Open TrueLock, go to license activation, paste this code, and activate.</p>
+          </div>
+
+          <div class="activation-error" id="activationError" hidden></div>
+
+          <div class="activation-result" id="manualActivation" hidden>
+            <h2>Manual activation</h2>
+            <p class="invoice-status">
+              Automatic activation is not connected on this page yet. Send your purchase email, order ID, and optional device ID to support.
+            </p>
+            <a class="btn btn-primary" href="mailto:support@truelock.pro?subject=TrueLock%20activation">Email support</a>
+          </div>
+        </div>
+
+        <aside class="activation-side reveal">
+          <h2>How it works</h2>
+          <ul class="price-features">
+            <li>Payment confirms a paid order.</li>
+            <li>Backend signs a one-device Pro license.</li>
+            <li>TrueLock verifies the signature offline.</li>
+            <li>Your encrypted capsules are never sent to the license server.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <script src="./backend-config.js"></script>
+  <script>
+    const form = document.getElementById("activationForm");
+    const result = document.getElementById("activationResult");
+    const errorBox = document.getElementById("activationError");
+    const codeBox = document.getElementById("activationCode");
+    const copyButton = document.getElementById("copyCodeButton");
+    const manualActivation = document.getElementById("manualActivation");
+    const params = new URLSearchParams(window.location.search);
+    const config = window.TRUELOCK_BACKEND || {};
+    const apiBase = (params.get("api") || window.TRUELOCK_API_BASE || config.apiBaseUrl || "").replace(/\/$/, "");
+
+    document.querySelectorAll(".reveal").forEach((el) => el.classList.add("visible"));
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      result.hidden = true;
+      errorBox.hidden = true;
+      manualActivation.hidden = true;
+
+      if (!apiBase) {
+        manualActivation.hidden = false;
+        return;
+      }
+
+      const payload = {
+        email: document.getElementById("emailInput").value.trim(),
+        orderId: document.getElementById("orderInput").value.trim(),
+        deviceId: document.getElementById("deviceInput").value.trim(),
+      };
+
+      try {
+        const response = await fetch(`${apiBase}/api/licenses/redeem`, {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify(payload),
+        });
+        const data = await response.json();
+        if (!response.ok || !data.ok) {
+          throw new Error(data.message || data.code || "Activation failed.");
+        }
+        codeBox.value = data.activationCode;
+        result.hidden = false;
+      } catch (error) {
+        errorBox.textContent = error.message || "Activation failed.";
+        errorBox.hidden = false;
+      }
+    });
+
+    copyButton.addEventListener("click", async () => {
+      await navigator.clipboard.writeText(codeBox.value);
+      copyButton.textContent = "Copied";
+      setTimeout(() => { copyButton.textContent = "Copy code"; }, 1400);
+    });
+  </script>
+</body>
+</html>

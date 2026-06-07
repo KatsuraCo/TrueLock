@@ -63,6 +63,7 @@ const obs = new IntersectionObserver(entries => {
       if (mainNavLinks[4]) mainNavLinks[4].textContent = "Enterprise";
       if (mainNavLinks[5]) mainNavLinks[5].textContent = "FAQ";
       if (mainNavLinks[6]) mainNavLinks[6].textContent = t.nav.pricing;
+      if (mainNavLinks[7]) mainNavLinks[7].textContent = "Activate";
 
       if (mobileNavLinks[0]) mobileNavLinks[0].textContent = t.nav.who;
       if (mobileNavLinks[1]) mobileNavLinks[1].textContent = t.nav.how;
@@ -71,7 +72,8 @@ const obs = new IntersectionObserver(entries => {
       if (mobileNavLinks[4]) mobileNavLinks[4].textContent = "Enterprise";
       if (mobileNavLinks[5]) mobileNavLinks[5].textContent = "FAQ";
       if (mobileNavLinks[6]) mobileNavLinks[6].textContent = t.nav.pricing;
-      if (mobileNavLinks[7]) mobileNavLinks[7].textContent = t.nav.download;
+      if (mobileNavLinks[7]) mobileNavLinks[7].textContent = "Activate";
+      if (mobileNavLinks[8]) mobileNavLinks[8].textContent = t.nav.download;
       const topBtn = document.querySelector(".header-inner .btn-primary");
       if (topBtn) topBtn.textContent = t.nav.download;
       const select = document.getElementById("langSwitch");
