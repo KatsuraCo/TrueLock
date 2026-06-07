@@ -73,27 +73,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       "screenshot": "https://truelock.pro/preview.png",
       "isAccessibleForFree": true,
       "offers": {
-        "@type": "AggregateOffer",
-        "lowPrice": "10",
-        "highPrice": "20",
+        "@type": "Offer",
+        "name": "TrueLock Pro invoice",
+        "price": "10",
         "priceCurrency": "USD",
-        "offerCount": "2",
-        "offers": [
-          {
-            "@type": "Offer",
-            "name": "TrueLock Pro crypto checkout",
-            "price": "10",
-            "priceCurrency": "USD",
-            "description": "One Pro license for one device via hosted crypto checkout."
-          },
-          {
-            "@type": "Offer",
-            "name": "TrueLock Pro card checkout",
-            "price": "20",
-            "priceCurrency": "USD",
-            "description": "Two Pro licenses for up to two devices via MoonPay card payment."
-          }
-        ],
+        "description": "One Pro license for one device via manual invoice.",
         "availability": "https://schema.org/InStock"
       },
       "publisher": {
@@ -663,8 +647,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="price-card featured reveal" style="transition-delay:.1s;">
           <div class="price-name">Pro</div>
-          <div class="price-val">from <sup>$</sup>10</div>
-          <div class="price-note">Choose card or crypto checkout below.</div>
+          <div class="price-val"><sup>$</sup>10</div>
+          <div class="price-note">1 device · Lifetime · One-time payment</div>
           <ul class="price-features">
             <li>Unlimited capsules</li>
             <li>Time / Geolocation / Password / Visual key</li>
@@ -673,41 +657,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <li>Attachments, photos, camera video</li>
             <li>Create your own templates</li>
           </ul>
-          <div class="checkout-box" style="display: none">
-            <div class="checkout-option">
-              <a
-                data-goatcounter-click="buy-card"
-                data-goatcounter-title="Buy card"
-                class="btn btn-primary purchase-btn"
-                id="cardCheckoutButton"
-                href="https://moonpay.hel.io/pay/699c40d6087609a6176e7859"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Buy with card - $20
-              </a>
-              <div class="checkout-caption" id="cardCheckoutCaption">Card payment via MoonPay · 2 Pro licenses · up to 2 devices</div>
-            </div>
-            <div class="checkout-divider" id="checkoutDivider">or</div>
-            <div class="checkout-option">
-              <a
-                data-goatcounter-click="buy-crypto"
-                data-goatcounter-title="Buy crypto"
-                class="btn btn-ghost purchase-btn"
-                id="cryptoCheckoutButton"
-                href="https://moonpay.hel.io/pay/69d8eac15662bb321f77caf1"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Buy with crypto - $10
-              </a>
-              <div class="checkout-caption" id="cryptoCheckoutCaption">Crypto checkout · 1 Pro license · 1 device</div>
-            </div>
-            <p class="checkout-legal">
-              <span id="offerPrefix">By purchasing Pro, you agree to the</span>
-              <a id="offerLink" href="offer.html">Public Offer</a>.
-            </p>
-          </div>
+          <form id="invoice-request-form" class="invoice-form">
+            <label>
+              <span>Name</span>
+              <input name="name" type="text" autocomplete="name" placeholder="Daniil" />
+            </label>
+            <label>
+              <span>Email</span>
+              <input name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              <span>Telegram / WhatsApp</span>
+              <input name="contact" type="text" autocomplete="off" placeholder="@username or phone" />
+            </label>
+            <label>
+              <span>Device ID / platform</span>
+              <input name="device" type="text" autocomplete="off" placeholder="Windows / Android / Device ID" />
+            </label>
+            <label>
+              <span>Use case</span>
+              <textarea name="useCase" rows="3" placeholder="Timed reveal, file capsule, coupon, proof-before-event"></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit" style="width:100%;margin-top:8px;">Request invoice — $10</button>
+            <p id="invoice-request-status" class="invoice-status" aria-live="polite"></p>
+          </form>
         </div>
       </div>
     </div>

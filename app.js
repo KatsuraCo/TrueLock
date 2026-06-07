@@ -16,8 +16,6 @@ const obs = new IntersectionObserver(entries => {
     const howNext = document.getElementById("howNext");
     const menuToggle = document.getElementById("menuToggle");
     const mobileMenu = document.getElementById("mobileMenu");
-    const cardCheckoutButton = document.getElementById("cardCheckoutButton");
-    const cryptoCheckoutButton = document.getElementById("cryptoCheckoutButton");
     let howIndex = 0;
 
     function setMobileMenuOpen(open) {
@@ -290,22 +288,37 @@ const obs = new IntersectionObserver(entries => {
       if (cards[1]) {
         cards[1].querySelector(".price-name").textContent = t.pricing.proName;
         const proValue = cards[1].querySelector(".price-val");
-        if (proValue) proValue.innerHTML = t.pricing.proValueHtml || "from <sup>$</sup>10";
+        if (proValue) proValue.innerHTML = t.pricing.proValueHtml || "<sup>$</sup>10";
         cards[1].querySelector(".price-note").textContent = t.pricing.proNote;
         setListItems(cards[1].querySelector(".price-features"), t.pricing.proFeatures);
-        const divider = document.getElementById("checkoutDivider");
-        const cardCaption = document.getElementById("cardCheckoutCaption");
-        const cryptoCaption = document.getElementById("cryptoCheckoutCaption");
-        const offerPrefix = document.getElementById("offerPrefix");
-        const offerLink = document.getElementById("offerLink");
-        if (cardCheckoutButton) cardCheckoutButton.textContent = t.pricing.cardButton;
-        if (cryptoCheckoutButton) cryptoCheckoutButton.textContent = t.pricing.cryptoButton;
-        if (cardCaption) cardCaption.textContent = t.pricing.cardCaption;
-        if (cryptoCaption) cryptoCaption.textContent = t.pricing.cryptoCaption;
-        if (divider) divider.textContent = t.pricing.checkoutDivider;
-        if (offerPrefix) offerPrefix.textContent = t.pricing.offerPrefix;
-        if (offerLink) offerLink.textContent = t.pricing.offerLink;
       }
+    }
+
+    function initInvoiceRequest() {
+      const form = document.getElementById("invoice-request-form");
+      const status = document.getElementById("invoice-request-status");
+      if (!form) return;
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const data = new FormData(form);
+        const subject = "TrueLock Pro $10 invoice request";
+        const body = [
+          "TrueLock Pro $10 invoice request",
+          "",
+          `Name: ${data.get("name") || ""}`,
+          `Email: ${data.get("email") || ""}`,
+          `Telegram / WhatsApp: ${data.get("contact") || ""}`,
+          "Plan: TrueLock Pro - $10 invoice",
+          `Device ID / platform: ${data.get("device") || ""}`,
+          `Use case: ${data.get("useCase") || ""}`,
+          "",
+          "Please send an invoice and activation instructions."
+        ].join("\n");
+
+        window.location.href = `mailto:support@truelock.pro?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        if (status) status.textContent = "Invoice request is ready in your email app.";
+      });
     }
 
     function updateDownload(t) {
@@ -414,6 +427,7 @@ const obs = new IntersectionObserver(entries => {
     const storedLang = localStorage.getItem("truelock_landing_lang");
     const initialLang = langs.includes(storedLang) ? storedLang : defaultLang;
     applyLang(initialLang);
+    initInvoiceRequest();
     setMobileMenuOpen(false);
     document.getElementById("langSwitch")?.addEventListener("change", (e) => applyLang(e.target.value));
 

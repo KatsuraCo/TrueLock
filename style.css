@@ -625,6 +625,43 @@
     .checkout-legal a:hover {
       text-decoration: underline;
     }
+    .invoice-form {
+      display: grid;
+      gap: 12px;
+      margin-top: 20px;
+    }
+    .invoice-form label {
+      display: grid;
+      gap: 6px;
+      color: var(--ink);
+      font-size: 0.86rem;
+      font-weight: 700;
+    }
+    .invoice-form input,
+    .invoice-form textarea {
+      width: 100%;
+      border: 1px solid rgba(15, 37, 66, 0.14);
+      border-radius: 12px;
+      background: #f8fbff;
+      color: var(--ink);
+      font: inherit;
+      padding: 11px 12px;
+      outline: none;
+    }
+    .invoice-form input:focus,
+    .invoice-form textarea:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(25, 104, 210, 0.14);
+    }
+    .invoice-form textarea {
+      resize: vertical;
+    }
+    .invoice-status {
+      min-height: 1.2em;
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
     .pricing-meta {
       margin-top: 18px;
       padding: 18px 20px;
