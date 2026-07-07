@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VeilType + TrueLock | Privacy Before Sending, Control After Sharing</title>
+  <meta name="description" content="VeilType and TrueLock form an Android privacy and controlled-access technology package available for licensing, white-label, source-code/IP purchase, or acquisition.">
+  <style>
+    :root {
+      --ink: #101828;
+      --muted: #5b6475;
+      --line: #d7dde8;
+      --soft: #f4f7fb;
+      --blue: #0a2a4f;
+      --gold: #c99a36;
+      --red: #b42318;
+      --green: #087443;
+      --white: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--white);
+      line-height: 1.5;
+    }
+
+    a { color: inherit; }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+      padding: 14px 32px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255,255,255,0.94);
+      backdrop-filter: blur(12px);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+
+    .brand img {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .nav a {
+      text-decoration: none;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 10px 16px;
+      border-radius: 7px;
+      border: 1px solid var(--ink);
+      background: var(--ink);
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .button.secondary {
+      background: var(--white);
+      color: var(--ink);
+      border-color: var(--line);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
+      gap: 48px;
+      align-items: center;
+      min-height: 680px;
+      padding: 72px 48px 42px;
+      background:
+        linear-gradient(90deg, rgba(10,42,79,0.96), rgba(10,42,79,0.72)),
+        url("platform-assets/veiltype-contact-sheet.jpg");
+      background-size: cover;
+      background-position: center;
+      color: var(--white);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      padding: 6px 10px;
+      border: 1px solid rgba(255,255,255,0.28);
+      border-radius: 6px;
+      color: rgba(255,255,255,0.86);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    h1 {
+      max-width: 900px;
+      margin: 22px 0 18px;
+      font-size: clamp(42px, 6vw, 82px);
+      line-height: 0.98;
+      letter-spacing: 0;
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: 0;
+      color: rgba(255,255,255,0.84);
+      font-size: 20px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .hero-actions .button.secondary {
+      color: var(--white);
+      border-color: rgba(255,255,255,0.36);
+      background: rgba(255,255,255,0.08);
+    }
+
+    .signal-panel {
+      background: rgba(255,255,255,0.92);
+      color: var(--ink);
+      border-radius: 8px;
+      padding: 22px;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.24);
+    }
+
+    .signal-panel h2 {
+      margin: 0 0 16px;
+      font-size: 22px;
+    }
+
+    .flow {
+      display: grid;
+      gap: 10px;
+    }
+
+    .flow-row {
+      display: grid;
+      grid-template-columns: 34px 1fr;
+      gap: 12px;
+      align-items: start;
+      padding: 12px;
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 7px;
+    }
+
+    .num {
+      display: grid;
+      place-items: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      background: var(--blue);
+      color: var(--white);
+      font-weight: 800;
+      font-size: 13px;
+    }
+
+    .flow-row strong {
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .flow-row span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    section {
+      padding: 72px 48px;
+    }
+
+    .section-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: end;
+      margin-bottom: 28px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: clamp(30px, 4vw, 50px);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    .section-title p {
+      max-width: 520px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .two {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .product {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 26px;
+      background: var(--white);
+    }
+
+    .product h3 {
+      margin: 0 0 10px;
+      font-size: 28px;
+    }
+
+    .product p {
+      margin: 0 0 18px;
+      color: var(--muted);
+    }
+
+    .tag {
+      display: inline-flex;
+      margin-bottom: 14px;
+      padding: 5px 9px;
+      border-radius: 5px;
+      background: var(--soft);
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 19px;
+      color: var(--muted);
+    }
+
+    li + li { margin-top: 8px; }
+
+    .band {
+      background: var(--soft);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .modules {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .module {
+      min-height: 210px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--white);
+    }
+
+    .module h3 {
+      margin: 0 0 10px;
+      font-size: 21px;
+    }
+
+    .module p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .buyer-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .buyer {
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: var(--white);
+      font-weight: 700;
+      color: var(--blue);
+    }
+
+    .deals {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .deal {
+      padding: 18px;
+      border-left: 4px solid var(--gold);
+      background: var(--white);
+      border-radius: 7px;
+      box-shadow: inset 0 0 0 1px var(--line);
+    }
+
+    .deal strong {
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .deal span {
+      color: var(--muted);
+    }
+
+    .warning {
+      border: 1px solid #f3c7c3;
+      background: #fff6f5;
+      color: #7a271a;
+      border-radius: 8px;
+      padding: 20px;
+    }
+
+    .cta {
+      background: var(--blue);
+      color: var(--white);
+    }
+
+    .cta p {
+      color: rgba(255,255,255,0.78);
+      max-width: 720px;
+      font-size: 18px;
+    }
+
+    .footer {
+      padding: 30px 48px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 920px) {
+      .topbar {
+        align-items: flex-start;
+        padding: 12px 18px;
+      }
+
+      .nav {
+        display: none;
+      }
+
+      .hero,
+      .two,
+      .modules,
+      .buyer-grid,
+      .deals {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 54px 22px 28px;
+      }
+
+      section {
+        padding: 54px 22px;
+      }
+
+      .section-title {
+        display: block;
+      }
+
+      .section-title p {
+        margin-top: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="platform-assets/veiltype-logo-producthunt.png" alt="VeilType logo">
+      <span>VeilType + TrueLock</span>
+    </div>
+    <nav class="nav" aria-label="Primary">
+      <a href="#products">Products</a>
+      <a href="#platform">Platform</a>
+      <a href="#buyers">Buyers</a>
+      <a href="#deals">Deal options</a>
+      <a class="button" href="mailto:dkatsura1@gmail.com?subject=VeilType%20%2B%20TrueLock%20technology%20review">Request demo package</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <span class="eyebrow">Android privacy and controlled-access technology</span>
+        <h1>Protect what you type. Control what you share.</h1>
+        <p>VeilType and TrueLock form a user-controlled privacy layer for everyday communication: encrypt before content enters normal apps, and control access after files or media are shared.</p>
+        <div class="hero-actions">
+          <a class="button" href="#deals">Licensing and acquisition</a>
+          <a class="button secondary" href="#platform">How the platform works</a>
+        </div>
+      </div>
+      <aside class="signal-panel" aria-label="Platform flow">
+        <h2>One privacy layer, two moments</h2>
+        <div class="flow">
+          <div class="flow-row">
+            <div class="num">1</div>
+            <div><strong>Before sending</strong><span>VeilType encrypts at the Android keyboard layer before text or media reaches another app.</span></div>
+          </div>
+          <div class="flow-row">
+            <div class="num">2</div>
+            <div><strong>Through normal apps</strong><span>Users keep Telegram, WhatsApp, SMS, email, business chats, and social apps.</span></div>
+          </div>
+          <div class="flow-row">
+            <div class="num">3</div>
+            <div><strong>After sharing</strong><span>TrueLock adds password, time, geo, and validation rules to encrypted capsules.</span></div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="products">
+      <div class="section-inner">
+        <div class="section-title">
+          <h2>Two working products, one security story.</h2>
+          <p>This is not a pitch for two isolated apps. It is a product/IP package around user-controlled communication and access.</p>
+        </div>
+        <div class="two">
+          <article class="product">
+            <span class="tag">Secure input</span>
+            <h3>VeilType</h3>
+            <p>An Android keyboard privacy layer that encrypts content before it enters another app.</p>
+            <ul>
+              <li>Text encryption before sending.</li>
+              <li>Voice, video, photo, and file capsule flows.</li>
+              <li>Works around existing messengers and apps.</li>
+              <li>Built for privacy without messenger migration.</li>
+            </ul>
+          </article>
+          <article class="product">
+            <span class="tag">Controlled access</span>
+            <h3>TrueLock</h3>
+            <p>Encrypted capsules where having the file or link is not the same as permission to open it.</p>
+            <ul>
+              <li>Password, time, geo, and validation rules.</li>
+              <li>Local cryptography with online validation when conditions require it.</li>
+              <li>Useful for secure sharing, confidential files, and field workflows.</li>
+              <li>Designed for access control after content leaves the device.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="platform" class="band">
+      <div class="section-inner">
+        <div class="section-title">
+          <h2>Platform modules buyers can license or acquire.</h2>
+          <p>The package can be evaluated as a full acquisition, source-code/IP purchase, white-label module, or technology license.</p>
+        </div>
+        <div class="modules">
+          <article class="module">
+            <h3>Secure Input</h3>
+            <p>Keyboard-layer encryption, local key workflow, and message protection before app input.</p>
+          </article>
+          <article class="module">
+            <h3>Media Capsules</h3>
+            <p>Voice, video, photo, and file capsules that can move through normal communication channels.</p>
+          </article>
+          <article class="module">
+            <h3>Controlled Access</h3>
+            <p>Password, time, geo, and validation rules for opening encrypted content after sharing.</p>
+          </article>
+          <article class="module">
+            <h3>White-Label</h3>
+            <p>Buyer-branded packaging for privacy suites, managed devices, secure sharing, or chat platforms.</p>
+          </article>
+          <article class="module">
+            <h3>Evaluation Builds</h3>
+            <p>Demo flows with prepared keys and capsules so product teams can evaluate the technology quickly.</p>
+          </article>
+          <article class="module">
+            <h3>Roadmap IP</h3>
+            <p>Touch Reveal / Palm Shield as a future visual privacy differentiator once implemented.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="buyers">
+      <div class="section-inner">
+        <div class="section-title">
+          <h2>Best-fit buyer categories.</h2>
+          <p>The strongest path is not consumer scale first. It is licensing, white-label, or acquisition by companies that already own distribution.</p>
+        </div>
+        <div class="buyer-grid">
+          <div class="buyer">Password managers</div>
+          <div class="buyer">VPN and privacy suites</div>
+          <div class="buyer">MDM / UEM vendors</div>
+          <div class="buyer">Secure messengers</div>
+          <div class="buyer">Secure file sharing</div>
+          <div class="buyer">DLP / data security</div>
+          <div class="buyer">Chat SDK platforms</div>
+          <div class="buyer">Android utility companies</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="deals" class="band">
+      <div class="section-inner">
+        <div class="section-title">
+          <h2>Deal options.</h2>
+          <p>Keep the conversation commercial and concrete. The ask is not a review. The ask is product, partnership, or corporate-development evaluation.</p>
+        </div>
+        <div class="deals">
+          <div class="deal"><strong>Technology license</strong><span>License the Android privacy and capsule workflows into an existing product.</span></div>
+          <div class="deal"><strong>White-label module</strong><span>Buyer keeps their brand while using the technology package.</span></div>
+          <div class="deal"><strong>Source-code/IP sale</strong><span>Sell code, implementation knowledge, assets, demos, and product roadmap.</span></div>
+          <div class="deal"><strong>Exclusive rights</strong><span>Negotiate category or regional exclusivity for a serious buyer.</span></div>
+          <div class="deal"><strong>Paid evaluation</strong><span>Short technical review with demo builds and integration discussion.</span></div>
+          <div class="deal"><strong>Acquisition</strong><span>Product, IP, roadmap, and founder implementation support.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-inner">
+        <div class="warning">
+          <strong>Technical boundary:</strong> This is not positioned as magic protection against a fully compromised OS, malicious firmware, hardware compromise, or screenshots after decryption. The practical value is encrypting before content enters normal apps and controlling when shared content can be opened.
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="section-inner">
+        <h2>Available for licensing, white-label, source-code/IP purchase, or acquisition.</h2>
+        <p>Recommended next step: review the buyer deck, demo videos, and evaluation outline, then route the conversation to product, partnerships, or corporate development.</p>
+        <div class="hero-actions">
+          <a class="button" href="mailto:dkatsura1@gmail.com?subject=VeilType%20%2B%20TrueLock%20technology%20review">Request demo package</a>
+          <a class="button secondary" href="https://veiltype.tech/">VeilType</a>
+          <a class="button secondary" href="https://truelock.pro/">TrueLock</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    VeilType + TrueLock. Working Android privacy and controlled-access technology package. Prepared for buyer evaluation.
+  </footer>
+</body>
+</html>
+
