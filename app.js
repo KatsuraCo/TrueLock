@@ -90,7 +90,17 @@ const obs = new IntersectionObserver(entries => {
       if (leads[1]) leads[1].textContent = t.hero.sub;
       const ctas = root.querySelectorAll(".cta-row .btn");
       if (ctas[0]) ctas[0].textContent = t.hero.ctaPrimary;
-      if (ctas[1]) ctas[1].textContent = t.hero.ctaSecondary;
+      const businessCtas = {
+        de: "Geschäftliche Evaluierung",
+        en: "Business evaluation",
+        es: "Evaluación empresarial",
+        fr: "Évaluation entreprise",
+        it: "Valutazione business",
+        pt: "Avaliação empresarial",
+        ru: "B2B-оценка",
+        tr: "İş değerlendirmesi"
+      };
+      if (ctas[1]) ctas[1].textContent = businessCtas[currentLang] || businessCtas.en;
       const badges = root.querySelectorAll(".hero-badges .badge");
       (t.hero.badges || []).forEach((txt, idx) => { if (badges[idx]) badges[idx].textContent = txt; });
       const vLabel = root.querySelector(".hero-video-label");
