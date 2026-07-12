@@ -253,6 +253,15 @@
     .proof-rail { display: flex; flex-wrap: wrap; gap: 10px 24px; padding-top: 24px; color: #b8c8da; font-size: 0.76rem; font-weight: 700; text-transform: uppercase; }
     .proof-rail span::before { content: ""; display: inline-block; width: 6px; height: 6px; margin-right: 8px; background: #4ba1ff; }
 
+    .procurement { padding: 76px 0; background: #fff; border-block: 1px solid var(--line); }
+    .procurement-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 56px; align-items: start; }
+    .procurement-lead { max-width: 600px; margin: 18px 0 24px; color: var(--ink-soft); font-size: 1rem; }
+    .evaluation-list { list-style: none; display: grid; margin: 0; border-top: 1px solid var(--line); }
+    .evaluation-list li { display: grid; grid-template-columns: 48px 1fr; gap: 16px; padding: 19px 0; border-bottom: 1px solid var(--line); }
+    .evaluation-list li > span { color: var(--primary); font: 700 0.78rem/1.5 var(--font-body); }
+    .evaluation-list strong { color: var(--ink); }
+    .evaluation-list p { margin-top: 3px; color: var(--muted); font-size: 0.86rem; }
+
     .hero-video-label {
       padding: 10px 16px;
       font-size: 0.8rem;
@@ -1043,6 +1052,7 @@
     .how-step-desc { font-size: 0.78rem; color: var(--muted); }
 
     @media (max-width: 1020px) {
+      .procurement-grid { grid-template-columns: 1fr; gap: 30px; }
       .mission-grid { grid-template-columns: 1fr; }
       .mission-card p { min-height: 0; }
       .how-media-grid { grid-template-columns: 1fr; }
