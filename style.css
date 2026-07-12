@@ -262,6 +262,8 @@
     .evaluation-list strong { color: var(--ink); }
     .evaluation-list p { margin-top: 3px; color: var(--muted); font-size: 0.86rem; }
 
+    #personas, #chains { display: none; }
+
     .hero-video-label {
       padding: 10px 16px;
       font-size: 0.8rem;

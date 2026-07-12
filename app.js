@@ -3,6 +3,10 @@ const obs = new IntersectionObserver(entries => {
     }, { threshold: 0.08 });
     document.querySelectorAll(".reveal").forEach(el => obs.observe(el));
 
+    const missionSection = document.getElementById("missions");
+    const howSection = document.getElementById("how");
+    if (missionSection && howSection) missionSection.insertAdjacentElement("afterend", howSection);
+
     const I18N = window.TRUELOCK_I18N;
     const langs = I18N?.supported || ["ru", "en"];
     const locales = I18N?.locales || {};
@@ -57,6 +61,7 @@ const obs = new IntersectionObserver(entries => {
       const mobileNavLinks = document.querySelectorAll(".mobile-nav a");
 
       if (mainNavLinks[0]) mainNavLinks[0].textContent = t.nav.who;
+      if (mainNavLinks[0]) { mainNavLinks[0].textContent = "Use cases"; mainNavLinks[0].setAttribute("href", "#missions"); }
       if (mainNavLinks[1]) mainNavLinks[1].textContent = t.nav.how;
       if (mainNavLinks[2]) mainNavLinks[2].textContent = t.nav.templates;
       if (mainNavLinks[3]) mainNavLinks[3].textContent = t.nav.security;
@@ -66,6 +71,7 @@ const obs = new IntersectionObserver(entries => {
       if (mainNavLinks[7]) mainNavLinks[7].textContent = "Activate";
 
       if (mobileNavLinks[0]) mobileNavLinks[0].textContent = t.nav.who;
+      if (mobileNavLinks[0]) { mobileNavLinks[0].textContent = "Use cases"; mobileNavLinks[0].setAttribute("href", "#missions"); }
       if (mobileNavLinks[1]) mobileNavLinks[1].textContent = t.nav.how;
       if (mobileNavLinks[2]) mobileNavLinks[2].textContent = t.nav.templates;
       if (mobileNavLinks[3]) mobileNavLinks[3].textContent = t.nav.security;
@@ -304,6 +310,10 @@ const obs = new IntersectionObserver(entries => {
         if (freeValue) freeValue.innerHTML = t.pricing.freeValueHtml || "<sup>$</sup>0";
         cards[0].querySelector(".price-note").textContent = t.pricing.freeNote;
         setListItems(cards[0].querySelector(".price-features"), t.pricing.freeFeatures);
+        const freeItems = cards[0].querySelectorAll(".price-features li");
+        if (freeItems[2]) freeItems[2].textContent = currentLang === "ru"
+          ? "Бесплатное открытие на поддерживаемых Android и Windows устройствах"
+          : "Open free on supported Android and Windows devices";
       }
       if (cards[1]) {
         cards[1].querySelector(".price-name").textContent = t.pricing.proName;
