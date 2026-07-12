@@ -75,7 +75,7 @@ const obs = new IntersectionObserver(entries => {
       if (mobileNavLinks[7]) mobileNavLinks[7].textContent = "Activate";
       if (mobileNavLinks[8]) mobileNavLinks[8].textContent = t.nav.download;
       const topBtn = document.querySelector(".header-inner .btn-primary");
-      if (topBtn) topBtn.textContent = t.nav.download;
+      if (topBtn) topBtn.textContent = currentLang === "en" ? "Private evaluation" : t.nav.download;
       const select = document.getElementById("langSwitch");
       if (select) select.value = currentLang;
     }
@@ -101,6 +101,14 @@ const obs = new IntersectionObserver(entries => {
         tr: "İş değerlendirmesi"
       };
       if (ctas[1]) ctas[1].textContent = businessCtas[currentLang] || businessCtas.en;
+      if (currentLang === "en") {
+        root.querySelector(".eyebrow").textContent = "Controlled disclosure for high-stakes operations";
+        root.querySelector("h1").textContent = "Send the file. Keep control.";
+        if (leads[0]) leads[0].textContent = "TrueLock gives founders, operators and security teams a verifiable way to release sensitive files only when the agreed time, place, password or visual key is present.";
+        if (leads[1]) leads[1].textContent = "No content cloud. No recipient account. One encrypted capsule. Free opening.";
+        if (ctas[0]) ctas[0].textContent = "Request a private evaluation";
+        if (ctas[1]) ctas[1].textContent = "See the control model";
+      }
       const badges = root.querySelectorAll(".hero-badges .badge");
       (t.hero.badges || []).forEach((txt, idx) => { if (badges[idx]) badges[idx].textContent = txt; });
       const vLabel = root.querySelector(".hero-video-label");
