@@ -31,115 +31,71 @@
       <div class="container activation-layout">
         <div class="activation-panel reveal">
           <p class="eyebrow">TrueLock Pro activation</p>
-          <h1 class="section-title">Get your signed license code.</h1>
+          <h1 class="section-title activation-title">Activate TrueLock Pro.</h1>
           <p class="activation-copy">
-            Enter the email and order ID from the paid invoice. Add the device ID from TrueLock if you want the license bound to one device.
+            To receive a TrueLock Pro license, open the request form below and send your email and TrueLock device ID.
+            TrueLock Pro costs <strong>$10</strong>. After we receive your request, we prepare an
+            <a class="inline-trust-link" href="https://easystaff.io/invoice" target="_blank" rel="noreferrer">EasyStaff invoice</a>
+            and send a secure payment link to the email address from the form.
           </p>
 
-          <form class="invoice-form" id="activationForm">
-            <label>
-              <span>Email used for payment</span>
-              <input id="emailInput" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
-            </label>
-            <label>
-              <span>Order ID</span>
-              <input id="orderInput" name="orderId" type="text" autocomplete="off" placeholder="TL-ORDER-001" required />
-            </label>
-            <label>
-              <span>Device ID optional</span>
-              <input id="deviceInput" name="deviceId" type="text" autocomplete="off" placeholder="Paste from TrueLock app" />
-            </label>
-            <button class="btn btn-primary" type="submit">Get activation code</button>
-          </form>
-
-          <div class="activation-result" id="activationResult" hidden>
-            <h2>Your activation code</h2>
-            <textarea id="activationCode" readonly rows="7"></textarea>
+          <div class="activation-result activation-info">
+            <h2>How payment and activation work</h2>
+            <ol class="numbered-steps">
+              <li>Open the license request form.</li>
+              <li>Enter your email and TrueLock device ID from the app.</li>
+              <li>If you paid by crypto, enter your USDT Transaction ID in the form.</li>
+              <li>Send the form.</li>
+              <li>We create an <a class="inline-trust-link" href="https://easystaff.io/invoice" target="_blank" rel="noreferrer">EasyStaff</a> invoice and send the secure payment link to the email address from the form.</li>
+              <li>After payment is confirmed, we send your signed offline TrueLock Pro license code to the email address from the form.</li>
+            </ol>
             <div class="cta-row">
-              <button class="btn btn-primary" id="copyCodeButton" type="button">Copy code</button>
+              <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdGgDfIE6fqGecHElk5b86ZLL_zre-qJ0tVRvCVBXNI5QuyFA/viewform?usp=dialog" target="_blank" rel="noreferrer">Open license request form</a>
               <a class="btn btn-ghost" href="./apps/TrueLock.apk">Download Android</a>
             </div>
-            <p class="invoice-status">Open TrueLock, go to license activation, paste this code, and activate.</p>
           </div>
 
-          <div class="activation-error" id="activationError" hidden></div>
-
-          <div class="activation-result" id="manualActivation" hidden>
-            <h2>Manual activation</h2>
+          <div class="activation-result activation-info">
+            <h2>USDT payment option</h2>
             <p class="invoice-status">
-              Automatic activation is not connected on this page yet. Send your purchase email, order ID, and optional device ID to support.
+              You can also send <strong>$10 in USDT</strong> before submitting the form. After payment, write your
+              <a class="inline-trust-link" href="https://www.binance.com/en/academy/glossary/transaction-id" target="_blank" rel="noreferrer">Transaction ID (TXID)</a>
+              in the request form.
             </p>
-            <a class="btn btn-primary" href="mailto:support@truelock.pro?subject=TrueLock%20activation">Email support</a>
+            <div class="wallet-box" aria-label="USDT wallet address">0x31359b2fc0cf826a1d23b2e3e91b40ad713c1ae3</div>
+            <p class="invoice-status">
+              If you are not sure which network to use, choose the EasyStaff invoice option instead.
+            </p>
+          </div>
+
+          <div class="activation-error activation-info">
+            <strong>Refund policy.</strong>
+            An issued offline license key cannot be revoked remotely, so the payment cannot be refunded after the key is sent.
+            If you have a problem, email
+            <a href="mailto:support@truelock.pro">support@truelock.pro</a>
+            or <a href="mailto:dkatsura1@gmail.com">dkatsura1@gmail.com</a> and include the product name and the issue.
           </div>
         </div>
 
         <aside class="activation-side reveal">
-          <h2>How it works</h2>
+          <h2>Manual checkout for early users</h2>
+          <p class="support-note">
+            Payments will become easier as soon as TrueLock has enough active users. Today we process early licenses manually
+            so that customers can still buy, test and use the product before a full automated checkout is connected.
+            If you support us now, thank you. It helps us reach the smoother automatic payment flow faster.
+          </p>
           <ul class="price-features">
-            <li>Payment confirms a paid order.</li>
-            <li>Backend signs a one-device Pro license.</li>
-            <li>TrueLock verifies the signature offline.</li>
-            <li>Your encrypted capsules are never sent to the license server.</li>
+            <li>One-time TrueLock Pro license: $10.</li>
+            <li>The key is sent to the email from the request form.</li>
+            <li>TrueLock verifies the license offline.</li>
+            <li>Your encrypted capsules and files are not sent to a TrueLock message server.</li>
           </ul>
         </aside>
       </div>
     </section>
   </main>
-
-  <script src="./backend-config.js"></script>
   <script>
-    const form = document.getElementById("activationForm");
-    const result = document.getElementById("activationResult");
-    const errorBox = document.getElementById("activationError");
-    const codeBox = document.getElementById("activationCode");
-    const copyButton = document.getElementById("copyCodeButton");
-    const manualActivation = document.getElementById("manualActivation");
-    const params = new URLSearchParams(window.location.search);
-    const config = window.TRUELOCK_BACKEND || {};
-    const apiBase = (params.get("api") || window.TRUELOCK_API_BASE || config.apiBaseUrl || "").replace(/\/$/, "");
-
     document.querySelectorAll(".reveal").forEach((el) => el.classList.add("visible"));
-
-    form.addEventListener("submit", async (event) => {
-      event.preventDefault();
-      result.hidden = true;
-      errorBox.hidden = true;
-      manualActivation.hidden = true;
-
-      if (!apiBase) {
-        manualActivation.hidden = false;
-        return;
-      }
-
-      const payload = {
-        email: document.getElementById("emailInput").value.trim(),
-        orderId: document.getElementById("orderInput").value.trim(),
-        deviceId: document.getElementById("deviceInput").value.trim(),
-      };
-
-      try {
-        const response = await fetch(`${apiBase}/api/licenses/redeem`, {
-          method: "POST",
-          headers: { "content-type": "application/json" },
-          body: JSON.stringify(payload),
-        });
-        const data = await response.json();
-        if (!response.ok || !data.ok) {
-          throw new Error(data.message || data.code || "Activation failed.");
-        }
-        codeBox.value = data.activationCode;
-        result.hidden = false;
-      } catch (error) {
-        errorBox.textContent = error.message || "Activation failed.";
-        errorBox.hidden = false;
-      }
-    });
-
-    copyButton.addEventListener("click", async () => {
-      await navigator.clipboard.writeText(codeBox.value);
-      copyButton.textContent = "Copied";
-      setTimeout(() => { copyButton.textContent = "Copy code"; }, 1400);
-    });
   </script>
 </body>
 </html>

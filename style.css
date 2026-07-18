@@ -707,6 +707,9 @@
     .activation-panel {
       padding: 28px;
     }
+    .activation-title {
+      max-width: 680px;
+    }
     .activation-copy {
       color: var(--ink-soft);
       max-width: 680px;
@@ -724,6 +727,47 @@
     .activation-result {
       margin-top: 18px;
       padding: 18px;
+    }
+    .activation-info {
+      box-shadow: none;
+      background: linear-gradient(180deg, #ffffff, #f8fbff);
+    }
+    .inline-trust-link {
+      color: var(--primary);
+      font-weight: 800;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .numbered-steps {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding-left: 22px;
+      color: var(--ink-soft);
+      font-size: 0.9rem;
+      line-height: 1.55;
+    }
+    .numbered-steps li::marker {
+      color: var(--primary);
+      font-weight: 800;
+    }
+    .wallet-box {
+      margin: 12px 0 8px;
+      padding: 13px 14px;
+      border: 1px solid rgba(25,104,210,0.22);
+      border-radius: 12px;
+      background: #edf6ff;
+      color: var(--ink);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 0.82rem;
+      line-height: 1.45;
+      overflow-wrap: anywhere;
+    }
+    .support-note {
+      color: var(--ink-soft);
+      font-size: 0.92rem;
+      line-height: 1.65;
+      margin-bottom: 18px;
     }
     .activation-result textarea {
       width: 100%;
