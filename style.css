@@ -1189,6 +1189,80 @@
       .chain-card { padding: 20px; }
     }
 
+    .tech-hero .hero-grid {
+      align-items: stretch;
+    }
+
+    .tech-summary,
+    .tech-card {
+      border: 1px solid rgba(25, 58, 98, 0.12);
+      background: rgba(255, 255, 255, 0.88);
+      box-shadow: 0 18px 48px rgba(15, 37, 66, 0.10);
+    }
+
+    .tech-summary {
+      padding: 28px;
+      border-radius: 18px;
+    }
+
+    .tech-summary h2,
+    .tech-card h3 {
+      margin: 0 0 14px;
+      color: var(--ink);
+    }
+
+    .tech-summary ul {
+      display: grid;
+      gap: 12px;
+      margin: 0;
+      padding-left: 20px;
+      color: var(--muted);
+    }
+
+    .tech-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .tech-card {
+      min-height: 220px;
+      padding: 24px;
+      border-radius: 18px;
+    }
+
+    .tech-card p {
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .tech-card a {
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    .price-actions {
+      display: grid;
+      gap: 8px;
+    }
+
+    @media (max-width: 1020px) {
+      .tech-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 760px) {
+      .tech-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .tech-card {
+        min-height: 0;
+      }
+    }
+
     /* HOW RIGHT CASE CARD */
     .how-case {
       background: var(--card);

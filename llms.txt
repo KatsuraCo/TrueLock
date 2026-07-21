@@ -31,6 +31,8 @@ Business evaluation path:
 - one stakeholder group
 - short validation period
 - direct support discussion via support@truelock.pro
+- technology package review at https://truelock.pro/technology-package.html for VeilType + TrueLock licensing, white-label, SDK, exclusive rights, or source-code/IP acquisition
+- current starting anchor for full VeilType + TrueLock source-code/IP package: 350,000 USD, subject to diligence, scope and rights
 
 Trust boundary:
 - access enforcement is application-layer
@@ -39,6 +41,7 @@ Trust boundary:
 Primary pages:
 - https://truelock.pro/
 - https://truelock.pro/enterprise.html
+- https://truelock.pro/technology-package.html
 - https://truelock.pro/demo.html
 - https://truelock.pro/privacy-policy.html
 - https://truelock.pro/offer.html
